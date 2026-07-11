@@ -1,0 +1,120 @@
+{
+  "rss": [
+    {
+      "name": "RISC-V International Blog",
+      "url": "https://riscv.org/blog/feed/",
+      "category": "news",
+      "weight": 1.0
+    },
+    {
+      "name": "RISC-V International Feed",
+      "url": "https://riscv.org/feed/",
+      "category": "news",
+      "weight": 1.0
+    },
+    {
+      "name": "Phoronix",
+      "url": "https://www.phoronix.com/rss.php",
+      "category": "tech",
+      "weight": 0.9
+    },
+    {
+      "name": "CNX Software",
+      "url": "https://www.cnx-software.com/feed/",
+      "category": "tech",
+      "weight": 0.8
+    },
+    {
+      "name": "Hackaday",
+      "url": "https://hackaday.com/blog/feed/",
+      "category": "tech",
+      "weight": 0.7
+    }
+  ],
+  "arxiv": [
+    {
+      "name": "arXiv RISC-V",
+      "query": "\"RISC-V\" OR RISCV OR \"RISC V\"",
+      "category": "paper",
+      "max_results": 20,
+      "weight": 1.0
+    }
+  ],
+  "github": [
+    {
+      "name": "GitHub RISC-V repositories",
+      "query": "risc-v OR riscv",
+      "category": "tech",
+      "max_results": 15,
+      "weight": 0.7
+    }
+  ],
+  "markets": [
+    {
+      "name": "ARM Holdings",
+      "symbol": "ARM.US",
+      "enabled": false,
+      "category": "market"
+    },
+    {
+      "name": "Qualcomm",
+      "symbol": "QCOM.US",
+      "enabled": false,
+      "category": "market"
+    },
+    {
+      "name": "NVIDIA",
+      "symbol": "NVDA.US",
+      "enabled": false,
+      "category": "market"
+    },
+    {
+      "name": "Intel",
+      "symbol": "INTC.US",
+      "enabled": false,
+      "category": "market"
+    },
+    {
+      "name": "TSMC",
+      "symbol": "TSM.US",
+      "enabled": false,
+      "category": "market"
+    }
+  ],
+  "watchlist": {
+    "companies": [
+      "SiFive",
+      "Andes Technology",
+      "Ventana Micro Systems",
+      "Tenstorrent",
+      "Esperanto Technologies",
+      "SpacemiT",
+      "StarFive",
+      "Bouffalo Lab",
+      "Nuclei System Technology",
+      "Codasip",
+      "Semidynamics",
+      "Microchip",
+      "Synopsys",
+      "Imagination Technologies"
+    ],
+    "topics": [
+      "RISC-V",
+      "RISCV",
+      "RVA23",
+      "RVA22",
+      "RISC-V Vector",
+      "RVV",
+      "OpenSBI",
+      "QEMU",
+      "LLVM",
+      "GCC",
+      "Linux kernel",
+      "chiplet",
+      "AI accelerator",
+      "automotive MCU",
+      "embedded Linux",
+      "open hardware"
+    ]
+  }
+}
