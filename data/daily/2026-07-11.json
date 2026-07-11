@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T07:29:12.805331+00:00",
+  "generated_at": "2026-07-11T08:21:56.195876+00:00",
   "date": "2026-07-11",
   "items": [
     {
@@ -399,13 +399,58 @@
       "score": 2.32
     },
     {
-      "id": "30f997c29d597edf",
-      "title": "kywls405/riscv-cnn-accelerator-optimization updated on GitHub",
-      "url": "https://github.com/kywls405/riscv-cnn-accelerator-optimization",
+      "id": "caa07fc43640c58e",
+      "title": "xiebinbb/riscv-radar updated on GitHub",
+      "url": "https://github.com/xiebinbb/riscv-radar",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:22:46+00:00",
-      "summary": "RISC-V assembly optimization of CNN accelerator data-movement kernels Stars: 0.",
+      "published_at": "2026-07-11T08:20:12+00:00",
+      "summary": "Daily RISC-V industry radar: news, papers, startups, markets, and engineering signals. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24
+    },
+    {
+      "id": "d66b1b77c16213d2",
+      "title": "riscv/riscv-unified-db updated on GitHub",
+      "url": "https://github.com/riscv/riscv-unified-db",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-11T08:19:52+00:00",
+      "summary": "Monorepo containing a machine-readable database of the RISC-V specification and artifact generation tools Stars: 183.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24
+    },
+    {
+      "id": "cd2490d936e49caa",
+      "title": "amgspendingspree/pico2-swd-riscv updated on GitHub",
+      "url": "https://github.com/amgspendingspree/pico2-swd-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-11T08:15:37+00:00",
+      "summary": "🔧 Implement stateful SWD protocol for debugging RP2350 RISC-V cores on Raspberry Pi Pico2 using GPIOs from another Pico as a probe. Stars: 1.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24
+    },
+    {
+      "id": "89977c50f21bd668",
+      "title": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "url": "https://github.com/RISCVtestbed/riscvtestbed.github.io",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-11T08:00:20+00:00",
+      "summary": "RISC-V testbed Stars: 10.",
       "tags": [
         "RISC-V",
         "RISCV"
@@ -498,27 +543,13 @@
       "score": 2.22
     },
     {
-      "id": "3cd623ff978c68b2",
-      "title": "sainisumer/riscv_pipeline updated on GitHub",
-      "url": "https://github.com/sainisumer/riscv_pipeline",
-      "source": "GitHub RISC-V repositories",
-      "category": "tech",
-      "published_at": "2026-07-11T07:25:59+00:00",
-      "summary": "Stars: 0.",
-      "tags": [
-        "RISCV"
-      ],
-      "entities": [],
-      "score": 2.12
-    },
-    {
       "id": "b7e7fd80a43f6d0b",
       "title": "gitfahadahmad/RISCV-Processor updated on GitHub",
       "url": "https://github.com/gitfahadahmad/RISCV-Processor",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:25:14+00:00",
-      "summary": "Stars: 0.",
+      "published_at": "2026-07-11T08:19:25+00:00",
+      "summary": "32-bit RV32I Processor implementations in Verilog HDL including Single-Cycle, Multicycle, and 5-Stage Pipeline architectures. Stars: 0.",
       "tags": [
         "RISCV"
       ],
@@ -526,13 +557,13 @@
       "score": 2.12
     },
     {
-      "id": "391921c1e6a00e5e",
-      "title": "Chen-junjian/-AHB-lite-i-Cache-RTL- updated on GitHub",
-      "url": "https://github.com/Chen-junjian/-AHB-lite-i-Cache-RTL-",
+      "id": "b9ea263991a25b24",
+      "title": "ukp66482/RISC-V-MCU-on-Cmod-A7 updated on GitHub",
+      "url": "https://github.com/ukp66482/RISC-V-MCU-on-Cmod-A7",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:24:56+00:00",
-      "summary": "使用Verilog 语言实现一个面向微处理器（如 RISC-V/ARM Cortex-M）的高性能、轻量级指令缓存设计，采用4 way associative 实现， cachesize 为4KB。 Stars: 1.",
+      "published_at": "2026-07-11T08:11:41+00:00",
+      "summary": "Stars: 1.",
       "tags": [
         "RISC-V"
       ],
@@ -540,27 +571,13 @@
       "score": 2.12
     },
     {
-      "id": "793eec1d132beb11",
-      "title": "SiddGud/Processor_RISCV updated on GitHub",
-      "url": "https://github.com/SiddGud/Processor_RISCV",
+      "id": "020fdd9983fca850",
+      "title": "ruyisdk/ruyisdk-vscode-extension updated on GitHub",
+      "url": "https://github.com/ruyisdk/ruyisdk-vscode-extension",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:19:27+00:00",
-      "summary": "Stars: 0.",
-      "tags": [
-        "RISCV"
-      ],
-      "entities": [],
-      "score": 2.12
-    },
-    {
-      "id": "cccefa297b9c4dfe",
-      "title": "Seemafir6626/esp32-p4-decompiler-plugin updated on GitHub",
-      "url": "https://github.com/Seemafir6626/esp32-p4-decompiler-plugin",
-      "source": "GitHub RISC-V repositories",
-      "category": "tech",
-      "published_at": "2026-07-11T07:16:10+00:00",
-      "summary": "Enable full Ghidra support for the ESP32-P4 RISC-V microcontroller with custom Sleigh processor definitions, peripheral memory maps, and ROM symbol loading. Stars: 1.",
+      "published_at": "2026-07-11T08:10:40+00:00",
+      "summary": "VSCode Plugins for RISC-V Developers. A part of RuyiSDK. Stars: 3.",
       "tags": [
         "RISC-V"
       ],
@@ -568,27 +585,13 @@
       "score": 2.12
     },
     {
-      "id": "d60056593cb07a08",
-      "title": "meet2701/MulSched_xv6riscv updated on GitHub",
-      "url": "https://github.com/meet2701/MulSched_xv6riscv",
+      "id": "0c73e50369a7be42",
+      "title": "rtCarl/ultraviolet updated on GitHub",
+      "url": "https://github.com/rtCarl/ultraviolet",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:15:29+00:00",
-      "summary": "Stars: 0.",
-      "tags": [
-        "RISCV"
-      ],
-      "entities": [],
-      "score": 2.12
-    },
-    {
-      "id": "93a7f9333b9080cd",
-      "title": "AG2M4N/RISC-V-Processor updated on GitHub",
-      "url": "https://github.com/AG2M4N/RISC-V-Processor",
-      "source": "GitHub RISC-V repositories",
-      "category": "tech",
-      "published_at": "2026-07-11T07:09:01+00:00",
-      "summary": "Stars: 0.",
+      "published_at": "2026-07-11T07:55:46+00:00",
+      "summary": "🛠️ Build a RISC-native architecture combining RISC-V/ARM CPUs and CUDA GPUs on OpenBSD for a streamlined, secure, and efficient computing experience. Stars: 0.",
       "tags": [
         "RISC-V"
       ],
@@ -596,13 +599,13 @@
       "score": 2.12
     },
     {
-      "id": "80bb3acc0a6fcbc8",
-      "title": "Yifei-Zhou/Java-Compiler-Project updated on GitHub",
-      "url": "https://github.com/Yifei-Zhou/Java-Compiler-Project",
+      "id": "4690f8d59bc7d881",
+      "title": "AdityaViraj/RV641-Nexus updated on GitHub",
+      "url": "https://github.com/AdityaViraj/RV641-Nexus",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:08:09+00:00",
-      "summary": "This is a complete compiler project in Java using ANTLR to generate Risc-V assembly codes Stars: 1.",
+      "published_at": "2026-07-11T07:52:11+00:00",
+      "summary": "A High Performance Superscalar RISC-V Core & Instruction Set Simulator Stars: 0.",
       "tags": [
         "RISC-V"
       ],
@@ -610,15 +613,29 @@
       "score": 2.12
     },
     {
-      "id": "6258d95451042250",
-      "title": "hispark-rs/hisi-riscv-rs updated on GitHub",
-      "url": "https://github.com/hispark-rs/hisi-riscv-rs",
+      "id": "972c4cb05148ac3f",
+      "title": "niumuzhi2004/risc-v-uvc updated on GitHub",
+      "url": "https://github.com/niumuzhi2004/risc-v-uvc",
       "source": "GitHub RISC-V repositories",
       "category": "tech",
-      "published_at": "2026-07-11T07:07:36+00:00",
-      "summary": "Stars: 2.",
+      "published_at": "2026-07-11T07:51:58+00:00",
+      "summary": "UVM verification component for a RISC-V pipelined processor Stars: 0.",
       "tags": [
-        "RISCV"
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12
+    },
+    {
+      "id": "93cdc93db4b2ca04",
+      "title": "rindv2604/RV32I-PIPELINE-CORE updated on GitHub",
+      "url": "https://github.com/rindv2604/RV32I-PIPELINE-CORE",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-11T07:51:53+00:00",
+      "summary": "A 5-stage pipelined RISC-V RV32I processor core designed in SystemVerilog. Stars: 0.",
+      "tags": [
+        "RISC-V"
       ],
       "entities": [],
       "score": 2.12
@@ -759,18 +776,6 @@
       ],
       "entities": [],
       "score": 1.42
-    },
-    {
-      "id": "b701ed924fe9f388",
-      "title": "madmoorhen/rvem updated on GitHub",
-      "url": "https://github.com/madmoorhen/rvem",
-      "source": "GitHub RISC-V repositories",
-      "category": "tech",
-      "published_at": "2026-07-11T07:08:04+00:00",
-      "summary": "RISC V Emulation Stars: 0.",
-      "tags": [],
-      "entities": [],
-      "score": 1.2
     }
   ],
   "errors": []
