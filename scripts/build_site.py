@@ -18,11 +18,11 @@ DAILY_DIR = ROOT / "data" / "daily"
 SITE_DIR = ROOT / "site"
 DIST_DIR = ROOT / "dist"
 CATEGORIES = {
-    "news": "News",
-    "paper": "Papers",
-    "startup": "Startups",
-    "market": "Markets",
-    "tech": "Technology",
+    "news": "新闻",
+    "paper": "论文",
+    "startup": "初创与公司",
+    "market": "市场",
+    "tech": "技术",
 }
 
 
@@ -44,7 +44,10 @@ def item_card(item: dict[str, Any]) -> str:
     tags = "".join(f"<span>{escape(tag)}</span>" for tag in item.get("tags", [])[:5])
     entities = ", ".join(escape(entity) for entity in item.get("entities", [])[:4])
     entity_html = f"<p class=\"entities\">{entities}</p>" if entities else ""
-    summary = escape(item.get("summary") or "No summary available.")
+    title = escape(item.get("title_zh") or item.get("title") or "未命名资讯")
+    summary = escape(item.get("summary_zh") or item.get("summary") or "暂无摘要。")
+    why_it_matters = escape(item.get("why_it_matters_zh") or "")
+    why_html = f'<p class="why"><strong>值得关注</strong>{why_it_matters}</p>' if why_it_matters else ""
     return f"""
       <article class="item-card">
         <div class="item-meta">
@@ -52,8 +55,9 @@ def item_card(item: dict[str, Any]) -> str:
           <span>{escape(item['source'])}</span>
           <span>{fmt_date(item['published_at'])}</span>
         </div>
-        <h3><a href="{escape(item['url'])}" rel="noopener noreferrer" target="_blank">{escape(item['title'])}</a></h3>
+        <h3><a href="{escape(item['url'])}" rel="noopener noreferrer" target="_blank">{title}</a></h3>
         <p>{summary}</p>
+        {why_html}
         {entity_html}
         <div class="tag-row">{tags}</div>
       </article>
@@ -86,7 +90,7 @@ def render_index(data: dict[str, Any]) -> str:
             <section id="{key}" class="category-section">
               <div class="section-heading">
                 <h2>{label}</h2>
-                <span>{len(groups.get(key, []))} items</span>
+              <span>{len(groups.get(key, []))} 条</span>
               </div>
               <div class="item-grid">
                 {''.join(item_card(item) for item in section_items)}
@@ -101,7 +105,7 @@ def render_index(data: dict[str, Any]) -> str:
         error_html = f"<details class=\"errors\"><summary>Source warnings</summary><ul>{rows}</ul></details>"
 
     return f"""<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -121,14 +125,14 @@ def render_index(data: dict[str, Any]) -> str:
     </nav>
     <section class="hero">
       <div>
-        <p class="eyebrow">Daily industry intelligence</p>
+        <p class="eyebrow">每日产业情报</p>
         <h1>RISC-V Radar</h1>
-        <p class="lede">A static daily briefing that tracks public RISC-V news, papers, companies, markets, and engineering activity.</p>
+        <p class="lede">追踪 RISC-V 新闻、论文、公司、市场与工程动态的每日中文简报。</p>
       </div>
       <div class="hero-stats" aria-label="Daily counts">
-        <div><strong>{len(items)}</strong><span>Total items</span></div>
-        <div><strong>{len(top)}</strong><span>Top signals</span></div>
-        <div><strong>{escape(data['date'])}</strong><span>Briefing date</span></div>
+        <div><strong>{len(items)}</strong><span>资讯总数</span></div>
+        <div><strong>{len(top)}</strong><span>重点信号</span></div>
+        <div><strong>{escape(data['date'])}</strong><span>简报日期</span></div>
       </div>
     </section>
   </header>
@@ -137,7 +141,7 @@ def render_index(data: dict[str, Any]) -> str:
     <section class="top-section">
       <div class="section-heading">
         <h2>Top Signals</h2>
-        <span>Generated {fmt_date(data['generated_at'])}</span>
+        <span>生成于 {fmt_date(data['generated_at'])}</span>
       </div>
       <div class="item-grid featured">{top_cards}</div>
     </section>
@@ -145,7 +149,7 @@ def render_index(data: dict[str, Any]) -> str:
     {error_html}
   </main>
   <footer>
-    <p>Built from public metadata and source links. Keep summaries short, attributed, and traceable.</p>
+    <p>内容基于公开元数据与来源链接生成。摘要保持简洁，并保留可追溯来源。</p>
   </footer>
 </body>
 </html>

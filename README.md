@@ -7,6 +7,7 @@ RISC-V Radar is a small static intelligence briefing for public RISC-V signals: 
 ```bash
 export PYTHONPYCACHEPREFIX=/tmp/riscv-radar-pycache
 python scripts/collect.py
+MINIMAX_API_KEY=your_key python scripts/translate.py
 python scripts/build_site.py
 python -m http.server 8080 --directory dist
 ```
@@ -21,6 +22,9 @@ Open `http://localhost:8080`.
 - Market sources are configured as optional placeholders. Use a reliable finance API such as Alpha Vantage, Finnhub, or Polygon before enabling automated market collection.
 
 The collector stores normalized records in `data/daily/YYYY-MM-DD.json` and the static site in `dist/`.
+The translation step adds Chinese titles, summaries, and editorial takeaways while preserving the original source fields and links.
+
+For GitHub Actions, configure the repository secret `MINIMAX_API_KEY`. The workflow uses the China-region endpoint `https://api.minimaxi.com/v1` and model `MiniMax-M3`.
 
 ## Add sources
 

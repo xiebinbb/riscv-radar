@@ -29,6 +29,13 @@ jobs:
       - name: Collect public signals
         run: python scripts/collect.py
 
+      - name: Translate and summarize in Chinese
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MINIMAX_BASE_URL: https://api.minimaxi.com/v1
+          MINIMAX_MODEL: MiniMax-M3
+        run: python scripts/translate.py
+
       - name: Build static site
         run: python scripts/build_site.py
 
