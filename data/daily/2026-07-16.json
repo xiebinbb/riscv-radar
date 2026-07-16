@@ -1,0 +1,850 @@
+{
+  "generated_at": "2026-07-16T03:42:00.101211+00:00",
+  "date": "2026-07-16",
+  "items": [
+    {
+      "id": "e7bc01cf8a2a2301",
+      "title": "Support RAJA and Scientific Applications on RVV Architectures",
+      "url": "https://riscv.org/blog/support-raja-and-scientific-applications-on-rvv-architectures/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-02-17T09:09:50+00:00",
+      "summary": "The post Support RAJA and Scientific Applications on RVV Architectures appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.44,
+      "title_zh": "RISC-V向量架构支持RAJA与科学计算应用",
+      "summary_zh": "RISC-V International发布文章，介绍如何在RVV（RISC-V Vector）架构上支持RAJA性能可移植层及科学计算应用，发挥RISC-V向量扩展在HPC场景的潜力。",
+      "why_it_matters_zh": "表明RISC-V向量扩展在高性能计算领域生态持续完善，为科学计算应用提供新的开源硬件选择。",
+      "tags_zh": [
+        "RISC-V",
+        "RVV",
+        "RAJA",
+        "高性能计算",
+        "科学计算"
+      ]
+    },
+    {
+      "id": "32f6f05497a22c95",
+      "title": "RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses",
+      "url": "https://riscv.org/blog/risc-v-edge-inference-for-real-time-eye-movement-control-on-gapses-smart-glasses/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-07-07T10:25:40+00:00",
+      "summary": "The post RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V边缘推理实现GAPses智能眼镜实时眼动控制",
+      "summary_zh": "RISC-V International报道，基于RISC-V处理器的边缘推理技术在GAPses智能眼镜上实现实时眼动控制，推理在设备本地完成，满足可穿戴设备对低延迟与低功耗的严苛要求。",
+      "why_it_matters_zh": "展示RISC-V在边缘AI推理与可穿戴场景的落地能力，为智能眼镜等人机交互设备提供高效实时控制方案。",
+      "tags_zh": [
+        "RISC-V",
+        "边缘推理",
+        "智能眼镜",
+        "眼动控制",
+        "可穿戴设备"
+      ]
+    },
+    {
+      "id": "900b36fffd4de455",
+      "title": "Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast",
+      "url": "https://riscv.org/blog/shd-forecast-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-06-19T19:46:36+00:00",
+      "summary": "The post Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast",
+      "summary_zh": "The post Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "e4fa782616152682",
+      "title": "Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem",
+      "url": "https://riscv.org/blog/2026-elections/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-08T19:10:06+00:00",
+      "summary": "Voting is now open for RISC-V International's Board of Directors. Learn how to nominate, understand board member responsibilities, and discover key election dates. The post Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem",
+      "summary_zh": "Voting is now open for RISC-V International's Board of Directors. Learn how to nominate, understand board member responsibilities, and discover key election dates. The post Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "3c222002e3e8ab86",
+      "title": "We Created a Single Source for All RISC-V Specifications",
+      "url": "https://riscv.org/blog/ratified-specifications-library/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-07T16:22:00+00:00",
+      "summary": "The RISC-V Ratified Specifications Library consolidates all of the available RISC-V specifications into one single, accessible repository. The post We Created a Single Source for All RISC-V Specifications appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V International 发布统一规范资源库",
+      "summary_zh": "RISC-V International 推出 RISC-V Ratified Specifications Library，将所有已获批的 RISC-V 规范整合至单一可访问的资料库中，为开发者和研究人员提供一站式查阅入口，降低资料检索成本。",
+      "why_it_matters_zh": "统一规范入口有助于提升 RISC-V 生态协作效率，加速芯片设计与软件开发进程。",
+      "tags_zh": [
+        "RISC-V International",
+        "规范标准",
+        "生态建设"
+      ]
+    },
+    {
+      "id": "01660fbf85f57ace",
+      "title": "Docker on RISC-V: From Release to Production in 6 Days",
+      "url": "https://riscv.org/blog/docker-on-risc-v-from-release-to-production-in-6-days/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-04-28T10:08:37+00:00",
+      "summary": "The post Docker on RISC-V: From Release to Production in 6 Days appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Docker 在 RISC-V 平台实现 6 天内从发布到生产部署",
+      "summary_zh": "RISC-V 生态完成 Docker 容器支持的快速落地，从首个可用版本发布到生产环境部署仅用 6 天，展示了 RISC-V 社区在关键基础设施软件适配上的高效协作能力。",
+      "why_it_matters_zh": "容器支持是 RISC-V 进入服务器和云端市场的关键里程碑。",
+      "tags_zh": [
+        "Docker",
+        "RISC-V",
+        "容器技术",
+        "云端部署"
+      ]
+    },
+    {
+      "id": "332dc8b4803852d9",
+      "title": "Using a Performance Model to Implement a Superscalar CVA6",
+      "url": "https://riscv.org/blog/using-a-performance-model-to-implement-a-superscalar-cva6/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-24T11:01:06+00:00",
+      "summary": "The post Using a Performance Model to Implement a Superscalar CVA6 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "利用性能模型实现超标量CVA6处理器",
+      "summary_zh": "本文介绍了利用性能模型设计并实现超标量版本CVA6 RISC-V处理器的方法与流程，这是CVA6架构向更高性能演进的重要探索，对开源高性能CPU发展具有参考意义。",
+      "why_it_matters_zh": "超标量设计有望显著提升开源CVA6的性能，为高性能RISC-V处理器生态注入新动力。",
+      "tags_zh": [
+        "CVA6",
+        "超标量",
+        "性能模型",
+        "开源硬件",
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8afb524a8a4cfd42",
+      "title": "Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026",
+      "url": "https://riscv.org/blog/embedded-world-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-03T19:38:57+00:00",
+      "summary": "Ahead of Embedded World, we explore what our members and co-exhibitors will showcase in Nuremberg, the common threads linking their work, and what this reveals about the embedded landscape in 2026. The post Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "生产就绪、车规级、AI原生：RISC-V亮相Embedded World 2026",
+      "summary_zh": "Embedded World 2026展会前夕，RISC-V International介绍了成员及联合参展商将在纽伦堡展示的生产就绪、车规级及AI原生等嵌入式解决方案，展现RISC-V在嵌入式领域的最新布局。",
+      "why_it_matters_zh": "展示RISC-V在汽车与AI嵌入式领域日趋成熟，反映2026年嵌入式生态向生产落地演进的关键趋势。",
+      "tags_zh": [
+        "Embedded World 2026",
+        "RISC-V",
+        "车规级",
+        "AI原生",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "285d3942bf34b1cd",
+      "title": "RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual",
+      "url": "https://riscv.org/blog/risc-v-mentorship/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-02-10T17:24:47+00:00",
+      "summary": "Developer and RISC-V Mentee Animesh Agarwal talks us through what he learned during his time on placement at Ventana Micro, and how it changed how he thinks about ISAs and toolchains. The post RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V导师计划：远超参考手册的ISA学习之旅",
+      "summary_zh": "开发者Animesh Agarwal分享了他在Ventana Micro实习期间参加RISC-V导师计划的经历。他表示，这段经历让他认识到RISC-V ISA不仅仅是一份参考手册，更涉及工具链等更广泛的工程知识，改变了他对ISA和工具链的认知方式。",
+      "why_it_matters_zh": "通过真实实习案例展示了RISC-V生态中ISA与工具链结合的工程价值，为从业者理解RISC-V技术栈提供了实践参考。",
+      "tags_zh": [
+        "RISC-V",
+        "导师计划",
+        "Ventana Micro",
+        "ISA",
+        "工具链",
+        "人才培养"
+      ]
+    },
+    {
+      "id": "82d740bb253bd794",
+      "title": "Start Porting Software To RISC-V Today With Our New, Free Online Course",
+      "url": "https://riscv.org/blog/porting-software-riscv-course/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-01-29T08:36:47+00:00",
+      "summary": "Porting Software to RISC-V (LFD114) is our free course for experienced engineers who need to move performance-critical software to RISC-V. The post Start Porting Software To RISC-V Today With Our New, Free Online Course appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V International推出免费在线移植课程",
+      "summary_zh": "RISC-V International上线了一门名为《Porting Software to RISC-V》（课程编号LFD114）的免费在线课程，面向需要将高性能关键软件迁移到RISC-V平台的经验丰富工程师，帮助他们开启RISC-V软件移植工作。",
+      "why_it_matters_zh": "免费课程降低了工程师学习RISC-V软件移植的门槛，有助于加速RISC-V生态的软件适配和人才积累。",
+      "tags_zh": [
+        "RISC-V",
+        "在线课程",
+        "软件移植",
+        "LFD114",
+        "工程师培训"
+      ]
+    },
+    {
+      "id": "781e68feb01447ac",
+      "title": "riscv/meta-riscv updated on GitHub",
+      "url": "https://github.com/riscv/meta-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:36:49+00:00",
+      "summary": "OpenEmbedded/Yocto layer for RISC-V Architecture Stars: 440.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "meta-riscv 在 GitHub 更新",
+      "summary_zh": "meta-riscv 是面向 RISC-V 架构的 OpenEmbedded/Yocto 构建层，支持在 Yocto 生态中构建 RISC-V 嵌入式 Linux 发行版，目前在 GitHub 获得 440 个 Star。",
+      "why_it_matters_zh": "持续维护的 RISC-V Yocto 构建层，便于开发者快速搭建定制化嵌入式 Linux 发行版。",
+      "tags_zh": [
+        "RISC-V",
+        "Yocto",
+        "OpenEmbedded",
+        "嵌入式Linux"
+      ]
+    },
+    {
+      "id": "8672ab1df8d45426",
+      "title": "Lord1Egypt/KemetCore updated on GitHub",
+      "url": "https://github.com/Lord1Egypt/KemetCore",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:33:00+00:00",
+      "summary": "Open-source silicon: 10 hardware accelerator projects from SystemVerilog RTL to 7nm GDSII. CPUs (RISC-V + RVV), ML accelerators (conv, attention, sparse matmul, FP8/BF16), crypto (SHA-256/3, ML-KEM), graphics (ray-trace), and FPU library — all with bit-exact pymodel verification and cocotb tests. Stars: 3.",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "KemetCore 开源硅项目更新",
+      "summary_zh": "KemetCore 汇集 10 个开源硬件加速器项目，覆盖 SystemVerilog RTL 到 7nm GDSII 全流程，包含 RISC-V + RVV CPU、卷积/注意力/稀疏矩阵等 ML 加速器、SHA-256/3 与 ML-KEM 加密核、光追图形单元及 FPU 库，并附带 pymodel 位精确验证与 cocotb 测试。",
+      "why_it_matters_zh": "提供从 RTL 到 GDSII 的完整开源硅设计参考，覆盖 CPU、AI 加速、加密与图形。",
+      "tags_zh": [
+        "RISC-V",
+        "RVV",
+        "开源硬件",
+        "硬件加速器",
+        "7nm"
+      ]
+    },
+    {
+      "id": "2b64beb09e07e145",
+      "title": "chrislabs1988/avaota-f2-riscv-sbc-2026 updated on GitHub",
+      "url": "https://github.com/chrislabs1988/avaota-f2-riscv-sbc-2026",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:18:43+00:00",
+      "summary": "Small-footprint RISC-V Linux SBC for Allwinner V861 projects, built for embedded prototyping, hardware bring-up, and Linux validation on microSD-based setups. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "GitHub更新：avaota-f2-riscv-sbc-2026 项目",
+      "summary_zh": "基于Allwinner V861芯片的紧凑型RISC-V Linux单板计算机方案，支持microSD卡启动，主要面向嵌入式项目的原型开发、硬件调试初始化以及Linux系统验证等应用场景。",
+      "why_it_matters_zh": "为V861提供轻量级Linux开发板方案，降低嵌入式原型验证门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "SBC",
+        "Linux",
+        "Allwinner V861",
+        "嵌入式开发"
+      ]
+    },
+    {
+      "id": "cd2490d936e49caa",
+      "title": "amgspendingspree/pico2-swd-riscv updated on GitHub",
+      "url": "https://github.com/amgspendingspree/pico2-swd-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:17:56+00:00",
+      "summary": "🔧 Implement stateful SWD protocol for debugging RP2350 RISC-V cores on Raspberry Pi Pico2 using GPIOs from another Pico as a probe. Stars: 1.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "GitHub更新：pico2-swd-riscv 项目",
+      "summary_zh": "该项目在Raspberry Pi Pico2上实现有状态SWD调试协议，可用于调试RP2350的RISC-V内核，具体方法是利用另一块Pico的GPIO引脚配置为SWD探针完成调试。",
+      "why_it_matters_zh": "提供低成本的RP2350 RISC-V调试探针方案。",
+      "tags_zh": [
+        "RISC-V",
+        "RP2350",
+        "SWD",
+        "Raspberry Pi Pico",
+        "调试工具"
+      ]
+    },
+    {
+      "id": "9470c4ed16648f50",
+      "title": "$50 Forgix board pairs Raspberry Pi RP2354 MCU with Trion T8 FPGA in Teensy form factor",
+      "url": "https://www.cnx-software.com/2026/07/14/50-forgix-board-pairs-raspberry-pi-rp2354-mcu-with-trion-t8-fpga-in-teensy-form-factor/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-14T13:47:01+00:00",
+      "summary": "Adiuvo Engineering’s Forgix is a development board pairing a Raspberry Pi RP2354 microcontroller with 2MB flash and an Efinix Trion T8 FPGA in the Teensy 4.0 form factor. The board also features a 16 Mbit PSRAM chip, a USB-C port, a push-button, an RGB LED, and through and castellated holes routed to either the RP2354 MCU or Trion T8 FPGA for SPI, I2C, UART, ADC, USB 1.1, and custom interfaces. Forgix board specifications: SoC – Raspberry Pi RP2354B CPU Dual-core Arm Cortex-M33 @ 150 MHz with Arm Trustzone, Secure boot Dual-core 32-bit RISC-V Hazard3 @ 150 MHz (3-stage in-order pipeline; RV32IMAC with Zba, Zbb, Zbs, Zbkb, Zcb, Zcmp, and Zicsr extensions) Up to two cores can be used at a time, either 2x Arm, 2x RISC-V, or 1x Arm + 1x RISC-V Memory – 520 KB on-chip SRAM Storage – 2MB of stacked (in-package) flash memory FPGA – Efinix Trion T8F49 connected to [...] The post $50 Forgix board pairs Raspberry Pi RP2354 MCU with Trion T8 FPGA in Teensy form factor appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Forgix开发板：RP2354双核MCU搭配Trion T8 FPGA，售价50美元",
+      "summary_zh": "Adiuvo Engineering推出Forgix开发板，采用Teensy 4.0外形尺寸，集成Raspberry Pi RP2354 MCU（双核Arm Cortex-M33与双核RISC-V Hazard3）与Efinix Trion T8F49 FPGA，板载2MB闪存、16Mbit PSRAM、USB-C接口、按键和RGB LED，引脚可路由至MCU或FPGA，支持SPI、I2C、UART、ADC及USB 1.1等接口，售价50美元。",
+      "why_it_matters_zh": "该板将RISC-V Hazard3核MCU与FPGA在同一Teensy尺寸上结合，为需要在MCU与可编程逻辑间灵活分配工作的嵌入式开发者提供了低成本平台。",
+      "tags_zh": [
+        "RISC-V",
+        "开发板",
+        "FPGA",
+        "Raspberry Pi",
+        "Efinix",
+        "物联网"
+      ]
+    },
+    {
+      "id": "e13c5aaa1176e095",
+      "title": "M5Stack Stamp-C5 – A Tiny ESP32-C5 USB-C board/module with up to 19 GPIO, 3.7V battery support",
+      "url": "https://www.cnx-software.com/2026/07/10/m5stack-stamp-c5-a-tiny-esp32-c5-usb-c-board-module-with-up-to-19-gpio-3-7v-battery-support/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-10T11:21:21+00:00",
+      "summary": "M5Stack Stamp-C5, also known as the M5Stamp-C5, is a tiny wireless IoT USB-C board based on the Espressif ESP32-C5 RISC-V microcontroller with dual-band WiFi 6, Bluetooth LE, and 802.15.4 (Zigbee/Thread) connectivity. Despite its small size (19.1 x 17.6mm), the module exposes up to nineteen GPIO pins, eleven on standard 2.54mm pitch headers and castellated holes, and eight on an FPC extension connector. The board also supports battery charging and ships with an external IPEX antenna for wireless connectivity, since there’s no built-in antenna. M5Stack Stamp-C5 specifications: Wireless MCU – Espressif Systems ESP32-C5HF4 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 48 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip Storage – 320 KB ROM, 4MB SPI flash Wireless Dual-band (2.4/5 GHz) 802.11ax WiFi 6, 802.11b/g/n WiFi 4 backward compatibility WiFi modes: Station mode, SoftAP mode, SoftAP + [...] The post M5Stack Stamp-C5 – A Tiny ESP32-C5 USB-C board/module with up to 19 GPIO, 3.7V battery support appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "M5Stack Stamp-C5：基于ESP32-C5的微型USB-C物联网模组",
+      "summary_zh": "M5Stack Stamp-C5是一款仅有19.1×17.6mm的微型物联网开发板，基于乐鑫ESP32-C5 RISC-V单核微控制器，主核最高240MHz，支持双频WiFi 6、蓝牙LE以及802.15.4（Zigbee/Thread）。板载USB-C接口、3.7V电池充电与IPEX外部天线，标准2.54mm排针与FPC扩展共暴露最多19个GPIO引脚。",
+      "why_it_matters_zh": "ESP32-C5是乐鑫首款集成双频WiFi 6的RISC-V芯片，M5Stack以极小尺寸提供完整三协议无线能力，便于物联网终端快速原型开发。",
+      "tags_zh": [
+        "RISC-V",
+        "ESP32",
+        "WiFi 6",
+        "物联网",
+        "M5Stack",
+        "蓝牙"
+      ]
+    },
+    {
+      "id": "80c75efd924a296d",
+      "title": "ESP32-C5 devkit offers 2.8-inch capacitive touch display, dual-band Wi-Fi 6, Bluetooth 5 LE, LiPo battery support",
+      "url": "https://www.cnx-software.com/2026/07/07/esp32-c5-devkit-offers-2-8-inch-capacitive-touch-display-dual-band-wi-fi-6-bluetooth-5-le-lipo-battery-support/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-07T10:56:06+00:00",
+      "summary": "Last week, I wrote about the ESP32-C5-LCD-1.47 as one of the first ESP32-C5 devkits with a built-in display enabling dual-band WiFi 6 connectivity for IoT and HMI projects. However, one reader lamented the lack of touch-capable screens, at which point kwchow pointed to the ESP32-C5-Touch-LCD-2.8 model offering just that by pairing an ESP32-C5 with a 2.8-inch IPS display with capacitive touch and 320×480 resolution. The new board also features a microSD card slot, a USB-C port for power and programming, a built-in microphone and a speaker connector, a few sensors, and various I/Os connectors for expansion. Let’s have a closer look. ESP32-C5-Touch-LCD-2.8 specifications: Wireless module – Espressif Systems ESP32-C5-WROOM-1-N32R8 SoC – ESP32-C5HR8 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip, 8MB PSRAM Storage – 320 KB ROM Wireless [...] The post ESP32-C5 devkit offers 2.8-inch capacitive touch display, dual-band Wi-Fi 6, Bluetooth 5 LE, LiPo battery support appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "ESP32-C5 devkit offers 2.8-inch capacitive touch display, dual-band Wi-Fi 6, Bluetooth 5 LE, LiPo battery support",
+      "summary_zh": "Last week, I wrote about the ESP32-C5-LCD-1.47 as one of the first ESP32-C5 devkits with a built-in display enabling dual-band WiFi 6 connectivity for IoT and HMI projects. However, one reader lamented the lack of touch-capable screens, at which point kwchow pointed to the ESP32-C5-Touch-LCD-2.8 model offering just that by pairing an ESP32-C5 with a 2.8-inch IPS display with capacitive touch and 320×480 resolution. The new board also features a microSD card slot, a USB-C port for power and programming, a built-in microphone and a speaker connector, a few sensors, and various I/Os connectors for expansion. Let’s have a closer look. ESP32-C5-Touch-LCD-2.8 specifications: Wireless module – Espressif Systems ESP32-C5-WROOM-1-N32R8 SoC – ESP32-C5HR8 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip, 8MB PSRAM Storage – 320 KB ROM Wireless [...] The post ESP32-C5 devkit offers 2.8-inch capacitive touch display, dual-band Wi-Fi 6, Bluetooth 5 LE, LiPo battery support appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "a475e7bed35d146c",
+      "title": "ESP32-C5 dual-band WiFi 6 and Bluetooth LE IoT board features 1.47-inch color LCD",
+      "url": "https://www.cnx-software.com/2026/07/03/esp32-c5-dual-band-wifi-6-and-bluetooth-le-iot-board-features-1-47-inch-color-lcd/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-03T09:19:45+00:00",
+      "summary": "We’ve covered plenty of connected displays based on ESP32 chips over the years, but the Waveshare ESP32-C5-LCD-1.47 is a little different, since it’s the first to feature an ESP32-C5 chip for dual-band WiFi 6 connectivity. It’s basically based on the ESP32-C6-LCD-1.47 design, but replaces the ESP32-C6 supporting 2.4 GHz WiFi 6 with an ESP32-C5 capable of handling both 2.4 GHz and 5 GHz WiFi 6. Other features mostly remain the same: a 1.47-inch 262K-color display with 320 x 172 resolution, 4MB of flash, an RGB LED, a microSD card slot, and two 9-pin headers for GPIO expansion. Waveshare ESP32-C5-LCD-1.47 specifications: Wireless MCU – Espressif Systems ESP32-C5FH4 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip Storage – 320 KB ROM, 4MB flash Wireless Connectivity Dual-band (2.4GHz/5 GHz) 802.11ax WiFi [...] The post ESP32-C5 dual-band WiFi 6 and Bluetooth LE IoT board features 1.47-inch color LCD appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "ESP32-C5 dual-band WiFi 6 and Bluetooth LE IoT board features 1.47-inch color LCD",
+      "summary_zh": "We’ve covered plenty of connected displays based on ESP32 chips over the years, but the Waveshare ESP32-C5-LCD-1.47 is a little different, since it’s the first to feature an ESP32-C5 chip for dual-band WiFi 6 connectivity. It’s basically based on the ESP32-C6-LCD-1.47 design, but replaces the ESP32-C6 supporting 2.4 GHz WiFi 6 with an ESP32-C5 capable of handling both 2.4 GHz and 5 GHz WiFi 6. Other features mostly remain the same: a 1.47-inch 262K-color display with 320 x 172 resolution, 4MB of flash, an RGB LED, a microSD card slot, and two 9-pin headers for GPIO expansion. Waveshare ESP32-C5-LCD-1.47 specifications: Wireless MCU – Espressif Systems ESP32-C5FH4 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip Storage – 320 KB ROM, 4MB flash Wireless Connectivity Dual-band (2.4GHz/5 GHz) 802.11ax WiFi [...] The post ESP32-C5 dual-band WiFi 6 and Bluetooth LE IoT board features 1.47-inch color LCD appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "2fd69c6f6a9ce2b8",
+      "title": "diehlpkpapers/chapel-riscv updated on GitHub",
+      "url": "https://github.com/diehlpkpapers/chapel-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:38:06+00:00",
+      "summary": "Runs on the MILK-V hardware Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "Chapel语言RISC-V支持项目更新",
+      "summary_zh": "Chapel编程语言的RISC-V移植项目diehlpkpapers/chapel-riscv在GitHub完成更新，目前可在MILK-V硬件平台上运行。该项目是在开源硬件设备上部署并行编程语言的实践尝试，目前Star关注度仍为零。",
+      "why_it_matters_zh": "Chapel在RISC-V平台上的移植拓展了并行编程语言在开源硬件生态中的可用性。",
+      "tags_zh": [
+        "GitHub",
+        "Chapel",
+        "RISC-V",
+        "MILK-V",
+        "编程语言"
+      ]
+    },
+    {
+      "id": "a0a723d197bd10b9",
+      "title": "25narular4926/Out-Of-Order-Processor-RISC-V updated on GitHub",
+      "url": "https://github.com/25narular4926/Out-Of-Order-Processor-RISC-V",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:32:42+00:00",
+      "summary": "Out-of-order RV32IM RISC-V core in Chisel — BOOM(Berkeley Out of Order Machine)-style renaming, ROB, issue queue, LSU, and branch prediction. Verified with ChiselSim + Verilator. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub乱序RISC-V处理器项目更新",
+      "summary_zh": "GitHub上的Out-Of-Order-Processor-RISC-V项目更新，实现一款基于Chisel的乱序执行RV32IM RISC-V内核。该设计借鉴BOOM架构，包含寄存器重命名、ROB、发射队列、LSU和分支预测等模块，并通过ChiselSim与Verilator完成功能验证。",
+      "why_it_matters_zh": "该项目提供参考BOOM架构的开源乱序RISC-V处理器实现，对处理器设计研究与教学具有参考价值。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "Chisel",
+        "乱序执行",
+        "BOOM",
+        "处理器设计"
+      ]
+    },
+    {
+      "id": "d89d903dbdb1755e",
+      "title": "kyakyosharon/ripes-projects updated on GitHub",
+      "url": "https://github.com/kyakyosharon/ripes-projects",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:27:28+00:00",
+      "summary": "🖥️ Explore 20 hands-on experiments to master RISC-V computer architecture concepts using the Ripes simulator for effective learning. Stars: 25.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "Ripes 模拟器 RISC-V 教学项目仓库更新",
+      "summary_zh": "GitHub 仓库 ripes-projects 收录了 20 个基于 Ripes 模拟器的动手实验项目，涵盖 RISC-V 计算机架构核心概念，适合教学与自学场景，帮助学习者通过实践高效掌握指令集与处理器设计基础知识。该项目目前获得 25 颗星标。",
+      "why_it_matters_zh": "为学习者提供基于模拟器的低门槛实践途径，有助于直观理解 RISC-V 处理器架构核心概念。",
+      "tags_zh": [
+        "RISC-V",
+        "计算机架构",
+        "Ripes模拟器",
+        "教学资源",
+        "开源项目"
+      ]
+    },
+    {
+      "id": "463c2b3f9caeb1b5",
+      "title": "OpenXiangShan/XiangShanLab updated on GitHub",
+      "url": "https://github.com/OpenXiangShan/XiangShanLab",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:21:57+00:00",
+      "summary": "A learning and practice repository for the open-source XiangShan RISC-V processor, featuring a full pathway from environment setup to microarchitecture optimization, designed for developers, students, and researchers. Stars: 8.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "香山处理器学习实践仓库 XiangShanLab 更新",
+      "summary_zh": "GitHub 仓库 OpenXiangShan/XiangShanLab 是开源 RISC-V 处理器香山的配套学习实践平台，提供从环境搭建到微架构优化的完整学习路径，面向开发者、学生和研究人员设计，目前获得 8 颗星标。",
+      "why_it_matters_zh": "为开发者提供系统性学习资源，配套开源香山处理器降低 RISC-V 高性能 CPU 研发门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "香山处理器",
+        "开源硬件",
+        "微架构",
+        "学习实践"
+      ]
+    },
+    {
+      "id": "9b84120c4c481775",
+      "title": "OpenXiangShan/NEMU updated on GitHub",
+      "url": "https://github.com/OpenXiangShan/NEMU",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:18:22+00:00",
+      "summary": "Super fast RISC-V ISA emulator for XiangShan processor Stars: 337.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "OpenXiangShan/NEMU 项目在 GitHub 更新",
+      "summary_zh": "OpenXiangShan 团队在 GitHub 更新了 NEMU 项目，这是一款面向 XiangShan 处理器的超高速 RISC-V ISA 模拟器，目前获得 337 个 Star 关注。该工具为 XiangShan 开源处理器开发提供高效的指令集仿真支持。",
+      "why_it_matters_zh": "NEMU 是 XiangShan 处理器研发链中的关键仿真工具，其持续更新有助于加速 RISC-V 处理器的设计与验证流程。",
+      "tags_zh": [
+        "开源硬件",
+        "RISC-V",
+        "模拟器",
+        "XiangShan"
+      ]
+    },
+    {
+      "id": "b98ca20ee6a4523c",
+      "title": "LeeT27/ScatterV updated on GitHub",
+      "url": "https://github.com/LeeT27/ScatterV",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:17:43+00:00",
+      "summary": "Custom pipelined RISC-V processor with added instruction, RND, that loads pseudo-random number to register. Synthesized to Spartan-7 FPGA. Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "LeeT27/ScatterV 项目在 GitHub 更新",
+      "summary_zh": "LeeT27 在 GitHub 更新了 ScatterV 项目，这是一款采用流水线架构的自定义 RISC-V 处理器，新增 RND 指令可将伪随机数加载到寄存器中。项目已综合至 Spartan-7 FPGA，目前获得 1 个 Star，展现了 RISC-V 指令集的可扩展性。",
+      "why_it_matters_zh": "ScatterV 通过自定义指令探索 RISC-V 在 FPGA 上的实现路径，为研究指令集扩展与轻量级处理器设计提供参考。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "自定义指令",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "f2516b939e83f524",
+      "title": "Ai-Kiwi/toastium updated on GitHub",
+      "url": "https://github.com/Ai-Kiwi/toastium",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-07-16T03:17:31+00:00",
+      "summary": "Monolithic RISC-V operating system written from scratch in C and assembly. Contains preemptive multitasking with round-robin schulader, memory management (allocator & pager) and virtual memory. Designed with portability between architectures in mind. Targeting a handheld game console. Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "Ai-Kiwi/toastium updated on GitHub",
+      "summary_zh": "Monolithic RISC-V operating system written from scratch in C and assembly. Contains preemptive multitasking with round-robin schulader, memory management (allocator & pager) and virtual memory. Designed with portability between architectures in mind. Targeting a handheld game console. Stars: 1.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "e11c49aa4726ddde",
+      "title": "Linus Torvalds Reaffirms That Linux Is Not \"Anti-AI\" & Not A \"Social Warrior\" Project",
+      "url": "https://www.phoronix.com/news/Linux-Is-Not-Anti-AI",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-07-15T10:35:21+00:00",
+      "summary": "Overnight Linux creator Linus Torvalds wrote another well crafted message that reaffirms the Linux kernel position of not being against AI and lashing back against some kernel developers that are against AI/LLM usage within the kernel project...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linus Torvalds Reaffirms That Linux Is Not \"Anti-AI\" & Not A \"Social Warrior\" Project",
+      "summary_zh": "Overnight Linux creator Linus Torvalds wrote another well crafted message that reaffirms the Linux kernel position of not being against AI and lashing back against some kernel developers that are against AI/LLM usage within the kernel project...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "06bd6541c1152b58",
+      "title": "Linux Kernel Graphics Driver Proposed For GlandaGPU: An Open-Source Soft GPU Core",
+      "url": "https://www.phoronix.com/news/GlandaGPU-Linux-Driver-RFC",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-07-14T13:08:53+00:00",
+      "summary": "A new Direct Rendering Manager (DRM) kernel graphics driver has been sent out for GlandaGPU, an open-source custom 3D graphics core designed in VHDL and running on FPGA hardware...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 内核新增 GlandaGPU DRM 显卡驱动提案",
+      "summary_zh": "开发者提交了面向 GlandaGPU 的 Linux 内核 DRM 显卡驱动。GlandaGPU 是一款开源 3D 图形核心，采用 VHDL 设计，运行于 FPGA 硬件之上，可作为软 GPU 使用。",
+      "why_it_matters_zh": "开源软 GPU 与 FPGA 方案为 Linux 图形栈提供了新的可扩展选择，对教育和低功耗场景具有参考价值。",
+      "tags_zh": [
+        "Linux 内核",
+        "GPU",
+        "开源硬件",
+        "FPGA",
+        "DRM"
+      ]
+    },
+    {
+      "id": "8a128aa97dc6cf53",
+      "title": "New Linux Patches Aim To Better Handle Multiple Swap Devices",
+      "url": "https://www.phoronix.com/news/Linux-Improve-Multi-Swap-Device",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-07-14T00:38:08+00:00",
+      "summary": "For those having Linux systems with multiple swap devices, such as for swap tiering or layered swap handling, a set of patches posted today for the Linux kernel are looking to improve the situation...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 内核新补丁改善多 Swap 设备处理能力",
+      "summary_zh": "针对配置多个 swap 设备的 Linux 系统，新提交的补丁集优化了 swap tiering 与分层 swap 的处理逻辑，旨在提升多 swap 场景下的整体性能与可靠性。",
+      "why_it_matters_zh": "多 swap 设备优化有助于提升内存管理灵活性，对服务器和高负载场景下的系统调优具有实际意义。",
+      "tags_zh": [
+        "Linux 内核",
+        "内存管理",
+        "Swap",
+        "内核补丁"
+      ]
+    },
+    {
+      "id": "433f76edd9f8aa4d",
+      "title": "Reworked System Call Entry Handling Slated For Linux 7.3",
+      "url": "https://www.phoronix.com/news/Rework-Sysclal-Entry-Linux-7.3",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-07-13T10:17:21+00:00",
+      "summary": "Stemming from looking at a proposed Linux kernel patch to alter the Linux kernel's system call number handling, veteran Linux kernel developer Thomas Gleixner went down a rabbit hole of the kernel's system call entry handling to make a number of clean-ups and improvements to the code. That rework to the system call entry handling is now expected to land for the Linux 7.3 kernel cycle...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Reworked System Call Entry Handling Slated For Linux 7.3",
+      "summary_zh": "Stemming from looking at a proposed Linux kernel patch to alter the Linux kernel's system call number handling, veteran Linux kernel developer Thomas Gleixner went down a rabbit hole of the kernel's system call entry handling to make a number of clean-ups and improvements to the code. That rework to the system call entry handling is now expected to land for the Linux 7.3 kernel cycle...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "a3126d4e9fbade4c",
+      "title": "Raspberry Pi 5 IOMMU Driver Being Worked On For The Mainline Linux Kernel",
+      "url": "https://www.phoronix.com/news/Raspberry-Pi-5-IOMMU-Driver",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-07-13T10:01:00+00:00",
+      "summary": "While the Raspberry Pi 5 is already over two and a half years old, one of the missing elements of its support from the mainline Linux kernel has been the IOMMU driver. We are now seeing Raspberry Pi's downstream IOMMU driver being adapted for mainline with hopes of getting it into the upstream kernel...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Raspberry Pi 5 IOMMU Driver Being Worked On For The Mainline Linux Kernel",
+      "summary_zh": "While the Raspberry Pi 5 is already over two and a half years old, one of the missing elements of its support from the mainline Linux kernel has been the IOMMU driver. We are now seeing Raspberry Pi's downstream IOMMU driver being adapted for mainline with hopes of getting it into the upstream kernel...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "25b0069924342779",
+      "title": "Meet Moddo Pinch – The world’s smallest 32-bit Arduino-compatible board (2026 Edition)",
+      "url": "https://www.cnx-software.com/2026/07/14/meet-moddo-pinch-the-world-smallest-arduino-compatible-board-2026-edition/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-14T08:02:23+00:00",
+      "summary": "Canada-based Moddo has designed the Pinch board, which it claims is the world’s smallest 32-bit Arduino-compatible board so far, measuring just 10.9 x 10.5 mm. The board is powered by a Microchip SAMD11 Cortex-M0+ microcontroller with 4 KB SRAM and 16KB flash, features an RGB LED, reset/bootloader button, 3.3 V LDO, a USB-C port, and a total of 12 GPIOs. Moddo Pinch specifications: Microcontroller – Microchip SAM D11 (ATSAMD11D14A) MCU core – Arm Cortex-M0+ processor running at up to 48 MHz RAM – 4 KB SRAM Storage – 16 KB Flash (12 KB for sketches, 4 KB bootloader) USB – 1x USB Type-C port for power, programming (CDC serial), and HID Expansion – 16-pin header (1.27mm pitch) 12x GPIO (D0–D11) 5x analog input (A0–A4) 11x PWM 1x DAC 1x I2C, 1x SPI, 2x UART(multiplexed with USB & D5/D6) Debug – SWD on D5 (SWCLK) and D6 (SWDIO) Misc RGB LED [...] The post Meet Moddo Pinch – The world’s smallest 32-bit Arduino-compatible board (2026 Edition) appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "Moddo Pinch——号称全球最小的32位Arduino兼容开发板",
+      "summary_zh": "加拿大Moddo推出Pinch开发板，尺寸仅10.9 x 10.5 mm，搭载Microchip SAMD11 Cortex-M0+微控制器（48 MHz），配备4 KB SRAM、16 KB Flash、RGB LED、USB-C接口及12个GPIO，主打超紧凑嵌入式应用。",
+      "why_it_matters_zh": "极小尺寸兼具Arduino生态兼容，适合对体积敏感的穿戴与物联网原型开发。",
+      "tags_zh": [
+        "Arduino",
+        "嵌入式开发",
+        "Microchip SAMD11",
+        "超小型开发板"
+      ]
+    },
+    {
+      "id": "53d171bc8689fad3",
+      "title": "Raspberry Pi gets 10BASE-T1S/T1L Single Pair Ethernet (SPE) HAT+ board",
+      "url": "https://www.cnx-software.com/2026/07/13/raspberry-pi-gets-10base-t1s-t1l-single-pair-ethernet-spe-hat-board/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-13T00:00:30+00:00",
+      "summary": "Germany-based Brechel Electronic has launched two new Single Pair Ethernet (SPE) expansion boards for Raspberry Pi platforms: the BE-IIS-HPP-T1S and the BE-IIS-HPP-T1L. Designed for technology evaluation, industrial network prototyping, and educational laboratory use, these boards add 10 Mbit/s Ethernet communication over a single twisted pair to standard Raspberry Pi SBCs. The BE-IIS-HPP-T1S is based on the Microchip LAN8651 10BASE-T1S MAC-PHY and supports IEEE 802.3cg Single Pair Ethernet over multidrop networks with up to 8 nodes, enabling distances up to 25 meters on a shared bus. For longer-reach point-to-point links, the company offers the BE-IIS-HPP-T1L, built around Analog Devices ADIN1110 MAC-PHY. Both boards are part of the BE-IIS HAT++ ecosystem, which allows multiple industrial communication HATs to be stacked on a single Raspberry Pi without running into SPI or GPIO resource conflicts. Brechel Electronic 10BASE-T1L and 10BASE-T1S specifications: Compatibility – Raspberry Pi HAT+ compliant T1L – Supports Pi 3, 4, 5, and Zero [...] The post Raspberry Pi gets 10BASE-T1S/T1L Single Pair Ethernet (SPE) HAT+ board appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "树莓派迎来10BASE-T1S/T1L单对以太网SPE HAT+扩展板",
+      "summary_zh": "德国Brechel Electronic推出两款基于HAT+标准的单对以太网扩展板：BE-IIS-HPP-T1S采用Microchip LAN8651 MAC-PHY，支持多节点共享总线（最长25米）；BE-IIS-HPP-T1L采用Analog Devices ADIN1110，面向远距离点对点工业连接。",
+      "why_it_matters_zh": "为树莓派增加工业级单对以太网接入，便于工业网络与边缘计算原型验证。",
+      "tags_zh": [
+        "Raspberry Pi",
+        "单对以太网",
+        "工业通信",
+        "HAT+"
+      ]
+    },
+    {
+      "id": "66410279b0e5be88",
+      "title": "Bigme Hibreak Dual 2 – An Android 16 smartphone with 6.13-inch 80fps E-Ink and 5-inch LCD display (Crowdfunding)",
+      "url": "https://www.cnx-software.com/2026/07/15/bigme-hibreak-dual-2-an-android-16-smartphone-with-6-13-inch-80fps-e-ink-and-5-inch-lcd-display/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-15T13:08:21+00:00",
+      "summary": "Bigme has launched the Hibreak Dual 2, an Android 16 smartphone with a 6.13-inch 80fps E-Ink display on the front and a 5-inch LCD on the rear. Built around the MediaTek Dimensity 8300 processor and supports dual 5G connectivity, positioning it as an E-Ink smartphone with flagship-class hardware. The front E-Ink can be used for reading, writing, and general everyday use, whereas the LCD in the back serves as a conventional smartphone display for applications that require higher refresh rates and full-color output, like video gaming and navigation. This dual-screen setup allows users to switch between the two displays depending on the task. Bigme Hibreak Dual 2 specifications: SoC – MediaTek Dimensity 8300 CPU – Octa-core processor with 4x Arm Cortex-A715 and 4x Cortex-A510 GPU – Arm Mali-G615 VPU Video Encoding – H.264, HEVC Video Playback – H.264, HEVC, VP9, AV1 AI accelerator – MediaTek NPU 780 Memory – 12GB [...] The post Bigme Hibreak Dual 2 – An Android 16 smartphone with 6.13-inch 80fps E-Ink and 5-inch LCD display (Crowdfunding) appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Bigme Hibreak Dual 2：搭载Android 16的双屏墨水屏手机开启众筹",
+      "summary_zh": "Bigme推出Hibreak Dual 2双屏手机，正面为6.13英寸80fps E-Ink墨水屏，背面为5英寸LCD液晶屏，运行Android 16系统。该机搭载联发科Dimensity 8300八核处理器，支持双5G连接，可根据阅读、视频或导航等不同任务灵活切换两块屏幕，主打护眼阅读与全彩应用兼顾的使用体验。",
+      "why_it_matters_zh": "双屏墨水屏方案兼顾护眼阅读与传统应用需求，旗舰级硬件配置刷新墨水屏手机性能上限。",
+      "tags_zh": [
+        "墨水屏手机",
+        "Bigme",
+        "Android 16",
+        "联发科Dimensity 8300",
+        "众筹"
+      ]
+    },
+    {
+      "id": "638deb4d8da763b6",
+      "title": "Rikomagic DS04 – An Android 14 4K digital signage player powered by Rockchip RK3576 SoC",
+      "url": "https://www.cnx-software.com/2026/07/08/rikomagic-ds04-an-android-14-4k-digital-signage-player-powered-by-rockchip-rk3576-soc/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-08T07:47:02+00:00",
+      "summary": "Rikomagic DS04 is a new 4K digital signage player running Android 14 on a Rockchip RK3576 octa-core Cortex-A72/A53 processor paired with 4GB of RAM and 32GB of storage. It looks to be a cost-down version of the Rockchip RK3588-powered Rikomagic DS08 8K digital signage player with many of the same ports and features, including two 4K-capable HDMI 2.1 ports, a Gigabit Ethernet RJ45 jack, WiFi 6 and Bluetooth 5.2 connectivity, optional 4G LTE, and a few USB ports. Rikomagic DS04 specifications: SoC – Rockchip RK3576 CPU 4x Cortex-A72 cores at 2.3GHz, 4x Cortex-A53 cores at 2.2GHz Arm Cortex-M0 MCU at 400MHz GPU – ARM Mali-G52 MC3 GPU with support for OpenGL ES 1.1, 2.0, and 3.2, OpenCL up to 2.0, and Vulkan 1.1 NPU – 6 TOPS (INT8) AI accelerator with support for INT4/INT8/INT16/BF16/TF32 mixed operations. VPU Video Decoder – H.264, H.265, VP9, AV1, and AVS2 up to 8Kp30 or [...] The post Rikomagic DS04 – An Android 14 4K digital signage player powered by Rockchip RK3576 SoC appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Rikomagic DS04：搭载Rockchip RK3576的Android 14 4K数字标牌播放器",
+      "summary_zh": "Rikomagic DS04是一款基于Rockchip RK3576八核Cortex-A72/A53处理器、运行Android 14的4K数字标牌播放器，配备4GB内存和32GB存储，可视为RK3588版DS08的降本方案。它提供双HDMI 2.1接口、千兆以太网、WiFi 6、蓝牙5.2、可选4G LTE及多个USB接口，集成6 TOPS NPU，支持H.264/H.265/VP9/AV1/AVS2等视频硬件解码。",
+      "why_it_matters_zh": "RK3576以更低成本提供8K级视频解码与AI算力，适合中小规模商用标牌部署。",
+      "tags_zh": [
+        "数字标牌",
+        "Rikomagic",
+        "Rockchip RK3576",
+        "Android 14",
+        "4K播放器"
+      ]
+    },
+    {
+      "id": "cfac014475d5b2aa",
+      "title": "Beelink EQi Wildcat Lake Core 3 304 mini PC review – Part 1: Specifications, unboxing, teardown, and first boot",
+      "url": "https://www.cnx-software.com/2026/07/06/beelink-eqi-wildcat-lake-core-3-304-mini-pc-review-part-1-specifications-unboxing-teardown-and-first-boot/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-06T11:10:14+00:00",
+      "summary": "We’ve received our first Wildcat Lake hardware for review, as Beelink has sent us an EQi mini PC powered by the Intel Core 3 304 entry-level 5-core processor with a 15 TOPS AI accelerator. The mini PC ships with either 16GB of LPDDR5 (soldered-on) or 24GB/32GB of DDR5 (SO-DIMM) memory and 512GB UFS 3.1 storage. It also features two M.2 Key-M PCIe Gen4 sockets, 10GbE and 2.5GbE RJ45 ports, WiFI 6 and Bluetooth 5.2 connectivity, three display outputs via HDMI and USB4 ports, and more. We’ll start the review by listing the specifications, checking out the hardware with an unboxing and a teardown, before giving it a quick try with Windows 11 Pro. In the second part of the review, we’ll focus on Windows 11 Pro, with feature testing and benchmarks, before switching to Ubuntu 26.04 to test a recent Linux distribution on a Wildcat Lake mini PC. Beelink EQi [...] The post Beelink EQi Wildcat Lake Core 3 304 mini PC review – Part 1: Specifications, unboxing, teardown, and first boot appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Beelink EQi Wildcat Lake Core 3 304 mini PC review – Part 1: Specifications, unboxing, teardown, and first boot",
+      "summary_zh": "We’ve received our first Wildcat Lake hardware for review, as Beelink has sent us an EQi mini PC powered by the Intel Core 3 304 entry-level 5-core processor with a 15 TOPS AI accelerator. The mini PC ships with either 16GB of LPDDR5 (soldered-on) or 24GB/32GB of DDR5 (SO-DIMM) memory and 512GB UFS 3.1 storage. It also features two M.2 Key-M PCIe Gen4 sockets, 10GbE and 2.5GbE RJ45 ports, WiFI 6 and Bluetooth 5.2 connectivity, three display outputs via HDMI and USB4 ports, and more. We’ll start the review by listing the specifications, checking out the hardware with an unboxing and a teardown, before giving it a quick try with Windows 11 Pro. In the second part of the review, we’ll focus on Windows 11 Pro, with feature testing and benchmarks, before switching to Ubuntu 26.04 to test a recent Linux distribution on a Wildcat Lake mini PC. Beelink EQi [...] The post Beelink EQi Wildcat Lake Core 3 304 mini PC review – Part 1: Specifications, unboxing, teardown, and first boot appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "AI accelerator"
+      ]
+    },
+    {
+      "id": "657ee9de9325f367",
+      "title": "Tiny Calixto Systems AM62L STAMP SOM targets industrial automation, HMI applications, EV chargers",
+      "url": "https://www.cnx-software.com/2026/07/06/tiny-calixto-systems-am62l-stamp-som-targets-industrial-automation-hmi-applications-ev-chargers/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-07-06T07:00:35+00:00",
+      "summary": "Calixto Systems has introduced the AM62L STAMP SOM, a tiny (40x40mm) system-on-module around the Texas Instruments AM62L dual-core Arm Cortex-A53 CPU running at up to 1.25 GHz, along with an evaluation kit. Designed for embedded Linux applications, the module targets industrial automation, HMIs, EV chargers, and smart retail. Calixto AM62L STAMP SOM The SoM integrates up to 2GB LPDDR4x RAM and 8GB or 16GB eMMC storage, along with Gigabit Ethernet, two USB 2.0 OTG interfaces, dual SD interfaces, MIPI DSI and parallel RGB display support, McASP audio, and a wide range of industrial I/Os, including CAN FD, eight UARTs, four SPI buses, five I2C buses, ADC, DAC, PWM, GPIO, and a GPMC interface. It also integrates hardware security features such as AES encryption, RSA/ECC acceleration, DRBG, TRNG, and a unique device ID for secure embedded applications. AM62L STAMP SOM specifications: SoC – Texas Instruments Sitara AM62Lx single-core/dual-core Arm Cortex-A53 processor @ [...] The post Tiny Calixto Systems AM62L STAMP SOM targets industrial automation, HMI applications, EV chargers appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "embedded Linux"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Tiny Calixto Systems AM62L STAMP SOM targets industrial automation, HMI applications, EV chargers",
+      "summary_zh": "Calixto Systems has introduced the AM62L STAMP SOM, a tiny (40x40mm) system-on-module around the Texas Instruments AM62L dual-core Arm Cortex-A53 CPU running at up to 1.25 GHz, along with an evaluation kit. Designed for embedded Linux applications, the module targets industrial automation, HMIs, EV chargers, and smart retail. Calixto AM62L STAMP SOM The SoM integrates up to 2GB LPDDR4x RAM and 8GB or 16GB eMMC storage, along with Gigabit Ethernet, two USB 2.0 OTG interfaces, dual SD interfaces, MIPI DSI and parallel RGB display support, McASP audio, and a wide range of industrial I/Os, including CAN FD, eight UARTs, four SPI buses, five I2C buses, ADC, DAC, PWM, GPIO, and a GPMC interface. It also integrates hardware security features such as AES encryption, RSA/ECC acceleration, DRBG, TRNG, and a unique device ID for secure embedded applications. AM62L STAMP SOM specifications: SoC – Texas Instruments Sitara AM62Lx single-core/dual-core Arm Cortex-A53 processor @ [...] The post Tiny Calixto Systems AM62L STAMP SOM targets industrial automation, HMI applications, EV chargers appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "embedded Linux"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "source": "arXiv RISC-V",
+      "error": "HTTP Error 406: Not Acceptable"
+    }
+  ],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 26,
+    "total_items": 36,
+    "errors": [
+      "batch 2: MiniMax response did not contain a JSON array",
+      "batch 9: MiniMax returned incomplete JSON at character 445",
+      "batch 13: MiniMax returned incomplete JSON at character 440",
+      "batch 15: MiniMax response did not contain a JSON array",
+      "batch 18: MiniMax response did not contain a JSON array"
+    ],
+    "generated_at": "2026-07-16T03:46:48.765824+00:00"
+  }
+}
