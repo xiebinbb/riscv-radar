@@ -36,6 +36,9 @@ jobs:
           MINIMAX_MODEL: MiniMax-M3
         run: python scripts/translate.py
 
+      - name: Build Obsidian daily note
+        run: python scripts/build_obsidian.py
+
       - name: Build static site
         run: python scripts/build_site.py
 
@@ -43,7 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily
+          git add data/daily obsidian-vault
           git diff --cached --quiet || git commit -m "Update daily RISC-V radar"
           git push
 

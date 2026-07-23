@@ -23,8 +23,19 @@ Open `http://localhost:8080`.
 
 The collector stores normalized records in `data/daily/YYYY-MM-DD.json` and the static site in `dist/`.
 The translation step adds Chinese titles, summaries, and editorial takeaways while preserving the original source fields and links.
+The Obsidian export creates `obsidian-vault/daily/YYYY-MM-DD.md` and updates `obsidian-vault/index.md` for local indexing and search.
 
 For GitHub Actions, configure the repository secret `MINIMAX_API_KEY`. The workflow uses the China-region endpoint `https://api.minimaxi.com/v1` and model `MiniMax-M3`.
+
+## Obsidian
+
+Open `/Users/xiebinbb/github/riscv-radar/obsidian-vault/` as an Obsidian vault. After each daily workflow, pull the repository and Obsidian will index the new Markdown note locally.
+
+To build the newest local note manually:
+
+```bash
+python scripts/build_obsidian.py
+```
 
 ## Add sources
 
