@@ -33,6 +33,24 @@ def load_latest() -> dict[str, Any]:
     return json.loads(files[-1].read_text(encoding="utf-8"))
 
 
+def load_archive() -> dict[str, Any]:
+    items: list[dict[str, Any]] = []
+    files = sorted(DAILY_DIR.glob("*.json"))
+    for path in files:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        briefing_date = data.get("date", path.stem)
+        for item in data.get("items", []):
+            archived = dict(item)
+            archived["briefing_date"] = briefing_date
+            items.append(archived)
+    items.sort(key=lambda item: (item.get("published_at", ""), item.get("score", 0)), reverse=True)
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "days": len(files),
+        "items": items,
+    }
+
+
 def fmt_date(value: str) -> str:
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00")).strftime("%Y-%m-%d")
@@ -102,7 +120,7 @@ def render_index(data: dict[str, Any]) -> str:
     error_html = ""
     if errors:
         rows = "".join(f"<li>{escape(row['source'])}: {escape(row['error'])}</li>" for row in errors)
-        error_html = f"<details class=\"errors\"><summary>Source warnings</summary><ul>{rows}</ul></details>"
+        error_html = f"<details class=\"errors\"><summary>数据源警告</summary><ul>{rows}</ul></details>"
 
     return f"""<!doctype html>
 <html lang="zh-CN">
@@ -117,10 +135,11 @@ def render_index(data: dict[str, Any]) -> str:
     <nav>
       <a class="brand" href="./">RISC-V Radar</a>
       <div>
-        <a href="#news">News</a>
-        <a href="#paper">Papers</a>
-        <a href="#tech">Tech</a>
-        <a href="#market">Markets</a>
+        <a href="#news">新闻</a>
+        <a href="#paper">论文</a>
+        <a href="#tech">技术</a>
+        <a href="#market">市场</a>
+        <a href="search.html">搜索</a>
       </div>
     </nav>
     <section class="hero">
@@ -140,7 +159,7 @@ def render_index(data: dict[str, Any]) -> str:
     <section class="category-nav" aria-label="Categories">{category_nav}</section>
     <section class="top-section">
       <div class="section-heading">
-        <h2>Top Signals</h2>
+        <h2>重点信号</h2>
         <span>生成于 {fmt_date(data['generated_at'])}</span>
       </div>
       <div class="item-grid featured">{top_cards}</div>
@@ -151,6 +170,167 @@ def render_index(data: dict[str, Any]) -> str:
   <footer>
     <p>内容基于公开元数据与来源链接生成。摘要保持简洁，并保留可追溯来源。</p>
   </footer>
+</body>
+</html>
+"""
+
+
+def render_search() -> str:
+    category_labels = json.dumps(CATEGORIES, ensure_ascii=False)
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索 | RISC-V Radar</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header compact-header">
+    <nav>
+      <a class="brand" href="./">RISC-V Radar</a>
+      <div>
+        <a href="./">首页</a>
+        <a href="search.html" aria-current="page">搜索</a>
+      </div>
+    </nav>
+    <section class="search-hero">
+      <p class="eyebrow">历史情报检索</p>
+      <h1>搜索 RISC-V Radar</h1>
+      <p class="lede">搜索已保存的每日资讯、中文摘要、重点判断、标签和来源。</p>
+    </section>
+  </header>
+  <main>
+    <form class="search-form" id="search-form">
+      <label class="search-query">
+        <span>关键词</span>
+        <input id="query" type="search" placeholder="例如：RVV、芯片、AI 加速器" autocomplete="off">
+      </label>
+      <label>
+        <span>分类</span>
+        <select id="category">
+          <option value="all">全部分类</option>
+        </select>
+      </label>
+      <label>
+        <span>来源</span>
+        <select id="source">
+          <option value="all">全部来源</option>
+        </select>
+      </label>
+      <button type="submit">搜索</button>
+    </form>
+    <div class="search-toolbar">
+      <span id="search-status">正在加载历史索引…</span>
+      <button class="clear-button" id="clear-search" type="button">清除条件</button>
+    </div>
+    <section class="search-results" id="search-results" aria-live="polite"></section>
+  </main>
+  <footer>
+    <p>搜索内容来自已归档的每日 RISC-V Radar 数据。</p>
+  </footer>
+  <script>
+    const CATEGORY_LABELS = {category_labels};
+    const queryInput = document.querySelector("#query");
+    const categorySelect = document.querySelector("#category");
+    const sourceSelect = document.querySelector("#source");
+    const resultContainer = document.querySelector("#search-results");
+    const status = document.querySelector("#search-status");
+    const clearButton = document.querySelector("#clear-search");
+    let archiveItems = [];
+
+    function escapeHtml(value) {{
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }}
+
+    function searchableText(item) {{
+      return [
+        item.title_zh, item.title, item.summary_zh, item.summary,
+        item.why_it_matters_zh, item.source, item.briefing_date,
+        ...(item.tags_zh || []), ...(item.tags || []), ...(item.entities || [])
+      ].join(" ").toLocaleLowerCase("zh-CN");
+    }}
+
+    function resultCard(item) {{
+      const category = CATEGORY_LABELS[item.category] || item.category || "其他";
+      const title = item.title_zh || item.title || "未命名资讯";
+      const summary = item.summary_zh || item.summary || "暂无摘要。";
+      const why = item.why_it_matters_zh || "";
+      const tags = [...(item.tags_zh || []), ...(item.tags || [])]
+        .filter((tag, index, all) => all.indexOf(tag) === index)
+        .slice(0, 6)
+        .map(tag => `<span>${{escapeHtml(tag)}}</span>`).join("");
+      return `<article class="search-result">
+        <div class="item-meta"><span>${{escapeHtml(category)}}</span><span>${{escapeHtml(item.source)}}</span><span>${{escapeHtml((item.published_at || item.briefing_date || "").slice(0, 10))}}</span></div>
+        <h2><a href="${{escapeHtml(item.url)}}" rel="noopener noreferrer" target="_blank">${{escapeHtml(title)}}</a></h2>
+        <p>${{escapeHtml(summary)}}</p>
+        ${{why ? `<p class="why"><strong>值得关注</strong>${{escapeHtml(why)}}</p>` : ""}}
+        <div class="tag-row">${{tags}}</div>
+      </article>`;
+    }}
+
+    function updateUrl() {{
+      const params = new URLSearchParams();
+      if (queryInput.value.trim()) params.set("q", queryInput.value.trim());
+      if (categorySelect.value !== "all") params.set("category", categorySelect.value);
+      if (sourceSelect.value !== "all") params.set("source", sourceSelect.value);
+      const next = params.toString() ? `search.html?${{params.toString()}}` : "search.html";
+      history.replaceState(null, "", next);
+    }}
+
+    function renderResults() {{
+      const query = queryInput.value.trim().toLocaleLowerCase("zh-CN");
+      const category = categorySelect.value;
+      const source = sourceSelect.value;
+      const matches = archiveItems.filter(item =>
+        (!query || searchableText(item).includes(query)) &&
+        (category === "all" || item.category === category) &&
+        (source === "all" || item.source === source)
+      );
+      status.textContent = `找到 ${{matches.length}} 条资讯，共归档 ${{archiveItems.length}} 条`;
+      resultContainer.innerHTML = matches.length
+        ? matches.slice(0, 100).map(resultCard).join("")
+        : `<div class="search-empty"><h2>没有找到匹配内容</h2><p>换一个关键词，或清除分类和来源筛选。</p></div>`;
+      updateUrl();
+    }}
+
+    function populateFilters() {{
+      Object.entries(CATEGORY_LABELS).forEach(([value, label]) => {{
+        categorySelect.insertAdjacentHTML("beforeend", `<option value="${{escapeHtml(value)}}">${{escapeHtml(label)}}</option>`);
+      }});
+      [...new Set(archiveItems.map(item => item.source).filter(Boolean))].sort().forEach(source => {{
+        sourceSelect.insertAdjacentHTML("beforeend", `<option value="${{escapeHtml(source)}}">${{escapeHtml(source)}}</option>`);
+      }});
+    }}
+
+    async function init() {{
+      try {{
+        const response = await fetch("archive.json", {{ cache: "no-store" }});
+        if (!response.ok) throw new Error("archive unavailable");
+        const archive = await response.json();
+        archiveItems = archive.items || [];
+        populateFilters();
+        const params = new URLSearchParams(location.search);
+        queryInput.value = params.get("q") || "";
+        categorySelect.value = params.get("category") || "all";
+        sourceSelect.value = params.get("source") || "all";
+        renderResults();
+      }} catch (error) {{
+        status.textContent = "历史索引暂时不可用";
+        resultContainer.innerHTML = `<div class="search-empty"><h2>无法加载搜索索引</h2><p>请稍后刷新页面。</p></div>`;
+      }}
+    }}
+
+    document.querySelector("#search-form").addEventListener("submit", event => {{ event.preventDefault(); renderResults(); }});
+    [queryInput, categorySelect, sourceSelect].forEach(control => control.addEventListener("input", renderResults));
+    clearButton.addEventListener("click", () => {{ queryInput.value = ""; categorySelect.value = "all"; sourceSelect.value = "all"; renderResults(); }});
+    init();
+  </script>
 </body>
 </html>
 """
@@ -175,6 +355,9 @@ def main() -> int:
     data = load_latest()
     (DIST_DIR / "index.html").write_text(render_index(data), encoding="utf-8")
     (DIST_DIR / "latest.json").write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    archive = load_archive()
+    (DIST_DIR / "archive.json").write_text(json.dumps(archive, indent=2, ensure_ascii=False), encoding="utf-8")
+    (DIST_DIR / "search.html").write_text(render_search(), encoding="utf-8")
     (DIST_DIR / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Built site at {DIST_DIR}")
     return 0

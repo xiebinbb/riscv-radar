@@ -69,6 +69,17 @@ nav a {
   padding: 56px 20px 64px;
 }
 
+.compact-header .search-hero {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 42px 20px 48px;
+}
+
+.search-hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: var(--accent-strong);
@@ -246,6 +257,110 @@ main {
   color: var(--muted);
 }
 
+.search-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px 230px auto;
+  gap: 12px;
+  align-items: end;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.search-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.search-form input,
+.search-form select {
+  padding: 0 12px;
+}
+
+.search-form button,
+.clear-button {
+  padding: 0 18px;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.search-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 22px 0 14px;
+  color: var(--muted);
+}
+
+.clear-button {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--accent-strong);
+  font-size: 0.85rem;
+}
+
+.search-results {
+  display: grid;
+  gap: 12px;
+}
+
+.search-result {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.search-result h2 {
+  margin: 12px 0 10px;
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+
+.search-result h2 a {
+  text-decoration-color: rgba(15, 118, 110, 0.35);
+  text-underline-offset: 3px;
+}
+
+.search-result p {
+  max-width: 900px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.search-empty {
+  padding: 56px 20px;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.search-empty h2 {
+  margin-top: 0;
+  color: var(--ink);
+}
+
 footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -256,7 +371,8 @@ footer {
 @media (max-width: 940px) {
   .hero,
   .item-grid,
-  .item-grid.featured {
+  .item-grid.featured,
+  .search-form {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -276,7 +392,8 @@ footer {
   .hero,
   .item-grid,
   .item-grid.featured,
-  .category-nav {
+  .category-nav,
+  .search-form {
     grid-template-columns: 1fr;
   }
 
