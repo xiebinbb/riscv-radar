@@ -34,6 +34,12 @@ def yaml_value(value: Any) -> str:
     return json.dumps(str(value or ""), ensure_ascii=False)
 
 
+def error_text(value: Any) -> str:
+    if isinstance(value, dict):
+        return str(value.get("error", value))
+    return str(value)
+
+
 def fmt_date(value: str) -> str:
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00")).strftime("%Y-%m-%d")
@@ -97,7 +103,7 @@ def render_daily(data: dict[str, Any], date: str) -> str:
     errors = data.get("errors", []) + translation.get("errors", [])
 
     overview = "\n".join(f"- **{name}**：{counts.get(name, 0)} 条" for name in CATEGORIES.values())
-    error_note = "\n> [!warning] 数据源或翻译警告\n> " + "；".join(md_text(row.get("error", row)) for row in errors) if errors else ""
+    error_note = "\n> [!warning] 数据源或翻译警告\n> " + "；".join(md_text(error_text(row)) for row in errors) if errors else ""
     sections = []
     for key, label in CATEGORIES.items():
         section_items = groups.get(key, [])
