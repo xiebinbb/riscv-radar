@@ -1,0 +1,685 @@
+{
+  "generated_at": "2026-08-16T01:59:36.632475+00:00",
+  "date": "2026-08-16",
+  "items": [
+    {
+      "id": "2a93ee716c6337b4",
+      "title": "Tenstrorrent Posts GCC Compiler Patches For Ascalon XG Core",
+      "url": "https://www.phoronix.com/news/Tenstorrent-Ascalon-XG-GCC",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-12T20:14:37+00:00",
+      "summary": "While the Tenstorrent Ascalon X is known as their high performance out-of-order RISC-V RVA23 CPU core for extreme performance over the H and S models, a new GNU Compiler Collection (GCC) patch today from Tenstorrent makes known a new Ascalon XG core...",
+      "tags": [
+        "GCC",
+        "RISC-V",
+        "RVA23"
+      ],
+      "entities": [
+        "Tenstorrent"
+      ],
+      "score": 2.74,
+      "title_zh": "Tenstorrent 向 GCC 提交 Ascalon XG 核心编译器补丁",
+      "summary_zh": "Tenstorrent 向 GNU 编译器集合（GCC）提交了新核心 Ascalon XG 的补丁。Ascalon X 是其面向极致性能的高性能乱序 RISC-V RVA23 CPU 核心，此次曝光的 XG 为该家族新成员，进一步扩展了 Tenstorrent 的 RISC-V 处理器产品线。",
+      "why_it_matters_zh": "新核心提前进入 GCC 主线意味着硬件已临近可用阶段，将进一步丰富 RISC-V 高性能 CPU 的软件生态。",
+      "tags_zh": [
+        "Tenstorrent",
+        "GCC",
+        "RISC-V",
+        "Ascalon XG",
+        "编译器"
+      ]
+    },
+    {
+      "id": "e7bc01cf8a2a2301",
+      "title": "Support RAJA and Scientific Applications on RVV Architectures",
+      "url": "https://riscv.org/blog/support-raja-and-scientific-applications-on-rvv-architectures/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-02-17T09:09:50+00:00",
+      "summary": "The post Support RAJA and Scientific Applications on RVV Architectures appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.44,
+      "title_zh": "在 RVV 架构上支持 RAJA 与科学计算应用",
+      "summary_zh": "RISC-V International 发布技术文章，介绍如何在 RISC-V Vector（RVV）架构上支持 RAJA 编程框架及多种科学计算应用，进一步完善 RISC-V 在高性能计算（HPC）领域的软件栈与生态。",
+      "why_it_matters_zh": "RAJA 等高层并行编程框架获得 RVV 支持，可降低科学计算应用迁移门槛，加速 RISC-V 进入 HPC 市场。",
+      "tags_zh": [
+        "RISC-V International",
+        "RVV",
+        "RAJA",
+        "科学计算",
+        "HPC"
+      ]
+    },
+    {
+      "id": "8748ec4d3a2b2ef6",
+      "title": "WCH CH32V407/467 RISC-V MCU integrates Fast Ethernet MAC + PHY, 480 Mbps USB 2.0 PHY, up to 8 MB on-chip PSRAM",
+      "url": "https://www.cnx-software.com/2026/08/13/wch-ch32v407-467-risc-v-mcu-integrates-fast-ethernet-mac-phy-480-mbps-usb-2-0-phy-up-to-8-mb-on-chip-psram/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-13T04:38:57+00:00",
+      "summary": "WCH CH32V407 and CH32V467 are new 200 MHz RISC-V microcontrollers with a built-in 10/100 Mbps Ethernet MAC + PHY, a USB 2.0 high-speed (480 Mbps) host PHY, up to 8 MB on-chip PSRAM, and a range of peripherals for industrial IoT & edge AI applications. Both are based on the company’s Qingke V3V core with RVV vector extensions, delivering 4.11 CoreMark/MHz, a score higher than a typical Arm Cortex-M4 core. The main difference between the CH32V407 and CH32V467 is that the latter comes with 4 MB or 8 MB PSRAM, making it more suitable for display/HMI applications. WCH CH32V407/467 specifications: MCU Core – QingKe V3V 32-bit RISC-V (IMACV-X, X = custom) core @ up to 200 MHz RVV-vector instruction set and parallel computing Memory and storage 200KB SRAM 4MB or 8MB PSRAM memory (CH32V467 only) 512KB Flash SDIO Interface (MMC, SD/SDIO Cards, and CE-ATA) Optional Flexible Static Memory Controller (FSMC) [...] The post WCH CH32V407/467 RISC-V MCU integrates Fast Ethernet MAC + PHY, 480 Mbps USB 2.0 PHY, up to 8 MB on-chip PSRAM appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.34,
+      "title_zh": "WCH推出CH32V407/467 RISC-V MCU，集成以太网MAC+PHY与480 Mbps USB 2.0 PHY",
+      "summary_zh": "WCH发布CH32V407与CH32V467两款200 MHz RISC-V微控制器，集成10/100 Mbps以太网MAC+PHY、480 Mbps USB 2.0 PHY及最高8 MB片上PSRAM，基于青稞V3V内核并支持RVV向量扩展，性能优于典型Arm Cortex-M4，适用于工业物联网与边缘AI应用；CH32V467额外配备4 MB或8 MB PSRAM，更适合显示与HMI场景。",
+      "why_it_matters_zh": "国产RISC-V MCU集成高带宽外设与片上PSRAM，兼顾通信、显示与边缘AI需求，填补中高端MCU市场空白。",
+      "tags_zh": [
+        "WCH",
+        "CH32V407",
+        "CH32V467",
+        "RISC-V",
+        "RVV",
+        "青稞V3V",
+        "MCU",
+        "工业物联网",
+        "边缘AI",
+        "HMI"
+      ]
+    },
+    {
+      "id": "c378a9cee484043c",
+      "title": "Conflict to Compliance: RISC-V Extension Migration Across Spec, HW, and SW",
+      "url": "https://riscv.org/blog/conflict-to-compliance-risc-v-extension-migration-across-spec-hw-and-sw/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-07-29T08:46:17+00:00",
+      "summary": "The post Conflict to Compliance: RISC-V Extension Migration Across Spec, HW, and SW appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V International探讨扩展指令在规范、硬件与软件间的合规迁移",
+      "summary_zh": "RISC-V International发布文章，聚焦RISC-V扩展指令在规范定义、硬件实现与软件生态层面从冲突到合规的迁移路径，强调三方协同以避免生态碎片化、保障互操作性。",
+      "why_it_matters_zh": "扩展指令的统一合规关系到RISC-V生态碎片化与软硬件兼容，是产业规模化落地的关键。",
+      "tags_zh": [
+        "RISC-V International",
+        "扩展指令",
+        "硬件",
+        "软件",
+        "规范",
+        "生态"
+      ]
+    },
+    {
+      "id": "32f6f05497a22c95",
+      "title": "RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses",
+      "url": "https://riscv.org/blog/risc-v-edge-inference-for-real-time-eye-movement-control-on-gapses-smart-glasses/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-07-07T10:25:40+00:00",
+      "summary": "The post RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V在GAPses智能眼镜上实现实时眼动控制的边缘推理",
+      "summary_zh": "RISC-V International发布技术文章，介绍如何在GAPses智能眼镜上利用RISC-V架构实现实时眼动控制的边缘推理方案，展现了RISC-V在低功耗可穿戴设备中的应用潜力。",
+      "why_it_matters_zh": "展示RISC-V在边缘AI与低功耗可穿戴设备场景中的落地能力",
+      "tags_zh": [
+        "RISC-V",
+        "边缘推理",
+        "智能眼镜",
+        "可穿戴设备",
+        "眼动控制"
+      ]
+    },
+    {
+      "id": "900b36fffd4de455",
+      "title": "Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast",
+      "url": "https://riscv.org/blog/shd-forecast-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-06-19T19:46:36+00:00",
+      "summary": "The post Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "SHD Group 2026年RISC-V市场预测幕后解析",
+      "summary_zh": "RISC-V International分享了对SHD Group 2026年RISC-V市场预测报告的幕后解读，剖析其研究方法、数据来源及对RISC-V生态未来发展趋势的判断。",
+      "why_it_matters_zh": "为产业链了解RISC-V市场前景与生态发展趋势提供第三方研究参考",
+      "tags_zh": [
+        "RISC-V",
+        "市场预测",
+        "SHD Group",
+        "产业分析",
+        "2026年"
+      ]
+    },
+    {
+      "id": "e4fa782616152682",
+      "title": "Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem",
+      "url": "https://riscv.org/blog/2026-elections/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-08T19:10:06+00:00",
+      "summary": "Voting is now open for RISC-V International's Board of Directors. Learn how to nominate, understand board member responsibilities, and discover key election dates. The post Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem",
+      "summary_zh": "Voting is now open for RISC-V International's Board of Directors. Learn how to nominate, understand board member responsibilities, and discover key election dates. The post Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "3c222002e3e8ab86",
+      "title": "We Created a Single Source for All RISC-V Specifications",
+      "url": "https://riscv.org/blog/ratified-specifications-library/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-07T16:22:00+00:00",
+      "summary": "The RISC-V Ratified Specifications Library consolidates all of the available RISC-V specifications into one single, accessible repository. The post We Created a Single Source for All RISC-V Specifications appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "We Created a Single Source for All RISC-V Specifications",
+      "summary_zh": "The RISC-V Ratified Specifications Library consolidates all of the available RISC-V specifications into one single, accessible repository. The post We Created a Single Source for All RISC-V Specifications appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "01660fbf85f57ace",
+      "title": "Docker on RISC-V: From Release to Production in 6 Days",
+      "url": "https://riscv.org/blog/docker-on-risc-v-from-release-to-production-in-6-days/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-04-28T10:08:37+00:00",
+      "summary": "The post Docker on RISC-V: From Release to Production in 6 Days appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Docker on RISC-V：六天内从发布到生产",
+      "summary_zh": "RISC-V International发布文章，介绍Docker在RISC-V平台上的移植过程，从版本发布到生产环境部署仅用六天，展示了RISC-V生态在容器化领域的快速发展。",
+      "why_it_matters_zh": "Docker在RISC-V上的快速落地标志着生态日趋成熟，为开发者部署容器化应用奠定基础。",
+      "tags_zh": [
+        "Docker",
+        "RISC-V生态",
+        "容器化"
+      ]
+    },
+    {
+      "id": "332dc8b4803852d9",
+      "title": "Using a Performance Model to Implement a Superscalar CVA6",
+      "url": "https://riscv.org/blog/using-a-performance-model-to-implement-a-superscalar-cva6/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-24T11:01:06+00:00",
+      "summary": "The post Using a Performance Model to Implement a Superscalar CVA6 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "使用性能模型实现超标量CVA6处理器",
+      "summary_zh": "RISC-V International介绍了一种利用性能模型辅助微架构设计、实现超标量CVA6处理器的方法，为开源RISC-V处理器向高性能方向演进提供了新路径。",
+      "why_it_matters_zh": "超标量CVA6的实现方案为开源高性能RISC-V处理器开发提供了可借鉴的方法论。",
+      "tags_zh": [
+        "CVA6",
+        "超标量",
+        "性能模型"
+      ]
+    },
+    {
+      "id": "8afb524a8a4cfd42",
+      "title": "Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026",
+      "url": "https://riscv.org/blog/embedded-world-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-03T19:38:57+00:00",
+      "summary": "Ahead of Embedded World, we explore what our members and co-exhibitors will showcase in Nuremberg, the common threads linking their work, and what this reveals about the embedded landscape in 2026. The post Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026",
+      "summary_zh": "Ahead of Embedded World, we explore what our members and co-exhibitors will showcase in Nuremberg, the common threads linking their work, and what this reveals about the embedded landscape in 2026. The post Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026 appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "285d3942bf34b1cd",
+      "title": "RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual",
+      "url": "https://riscv.org/blog/risc-v-mentorship/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-02-10T17:24:47+00:00",
+      "summary": "Developer and RISC-V Mentee Animesh Agarwal talks us through what he learned during his time on placement at Ventana Micro, and how it changed how he thinks about ISAs and toolchains. The post RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual",
+      "summary_zh": "Developer and RISC-V Mentee Animesh Agarwal talks us through what he learned during his time on placement at Ventana Micro, and how it changed how he thinks about ISAs and toolchains. The post RISC-V Mentorship Taught Me the RISC-V ISA Is Far More Than a Reference Manual appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "bf2ae0acf2a963b6",
+      "title": "Comu is a $6 tiny CH32V203 RISC-V development board that fits inside a USB port",
+      "url": "https://www.cnx-software.com/2026/08/10/comu-6-tiny-ch32v203-risc-v-development-board-that-fits-inside-a-usb-port/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-10T04:00:17+00:00",
+      "summary": "Over the years, we have seen several tiny “omu” USB boards that share this “fits-in-a-USB-port” form factor. It started with the Tomu, based on a Silicon Labs EFM32 Cortex-M0+, followed by the Fomu with a Lattice iCE40 FPGA, Qomu with an EOS S3 Cortex-M4F MCU and FPGA, and the Somu, a tiny FIDO2 security key. Icy Electronics has now introduced Comu, another tiny development board based on the 144 MHz WCH CH32V203 RISC-V MCU. While measuring just 13 x 9.4 mm (slightly smaller than a microSD card), the board still packs two white LEDs, four capacitive touch buttons, and six GPIOs exposed through test pads. It is designed for bare-metal programming, custom USB HID projects, and USB packet experimentation. Comu specifications: MCU – WCH CH32V203V203F8 CPU – Single-core 32-bit RISC-V clocked at 144MHz Memory – 20KB SRAM Storage – 224KB Flash (64KB of 0-wait Flash and 160KB of normal Flash) [...] The post Comu is a $6 tiny CH32V203 RISC-V development board that fits inside a USB port appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Comu：基于CH32V203的可插入USB端口的6美元RISC-V开发板",
+      "summary_zh": "Icy Electronics推出Comu开发板，基于WCH CH32V203 RISC-V微控制器，主频144MHz。板子尺寸仅13×9.4mm，内置两颗白色LED、四个电容触摸按键和六个GPIO测试焊盘，支持裸机编程、自定义USB HID及USB数据包实验，售价约6美元。",
+      "why_it_matters_zh": "延续Tomu/Fomu等USB口形态设计，以RISC-V内核和低价定位为嵌入式实验和USB开发提供超紧凑平台。",
+      "tags_zh": [
+        "RISC-V",
+        "CH32V203",
+        "USB开发板",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "e2db537bd059bc27",
+      "title": "Espressif ESP32-C61-MINI-1/1U Wi-Fi 6 and BLE IoT module launched for about $2",
+      "url": "https://www.cnx-software.com/2026/08/04/espressif-esp32-c61-mini-1-1u-wi-fi-6-and-ble-iot-module-2-dollars/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-04T10:13:53+00:00",
+      "summary": "Back in 2024, Espressif Systems introduced the ESP32-C61 2.4 GHz WiFi 6 and Bluetooth LE (BLE) SoC as a low-cost variant of the ESP32-C6 without an 802.15.4 radio, a single RISC-V core, and lower-capacity SRAM (320KB vs 512KB). We had first seen the ESP32-C61 in the Wireless Tag ESP32P4C61 board introduced last June in a Kickstarter campaign last June, but Espressif has now started to sell samples of the ESP32-C61-MINI-1 and ESP32-C61-MINI-1U on AliExpress for $10.7 for a pack of 5 pieces, or around $2 per module. ESP32-C61-MINI-1/1U Module specifications: SoC – ESP32-C61 CPU core – Single-core 32-bit RISC-V microprocessor up to 160 MHz Memory 320KB SRAM Up to 8 MB PSRAM Storage 256KB ROM Up to 8 MB Quad SPI flash Wireless 2.4 GHz WiFi 1T1R Frequency: 2412 ~ 2484 MHz IEEE 802.11ax-compliant 20 MHz-only non-AP mode MCS0 ~ MCS9 Uplink and downlink OFDMA Downlink MU-MIMO Target wake time [...] The post Espressif ESP32-C61-MINI-1/1U Wi-Fi 6 and BLE IoT module launched for about $2 appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "乐鑫ESP32-C61-MINI-1/1U模组上市，单片约2美元",
+      "summary_zh": "乐鑫推出ESP32-C61-MINI-1/1U模组，基于ESP32-C61 SoC，集成单核32位RISC-V处理器（160MHz）、320KB SRAM，支持2.4GHz Wi-Fi 6和BLE。AliExpress上5片约10.7美元，单片约2美元，是ESP32-C6的无802.15.4低成本版本。",
+      "why_it_matters_zh": "以单核RISC-V和更低SRAM实现约2美元的Wi-Fi 6 IoT模组，进一步压低Wi-Fi 6入门门槛。",
+      "tags_zh": [
+        "ESP32-C61",
+        "Wi-Fi 6",
+        "BLE",
+        "RISC-V",
+        "乐鑫"
+      ]
+    },
+    {
+      "id": "a620b8910707733e",
+      "title": "takaebato/riscv-emulator updated on GitHub",
+      "url": "https://github.com/takaebato/riscv-emulator",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:57:12+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上的takaebato/riscv-emulator仓库更新",
+      "summary_zh": "GitHub上的RISC-V模拟器项目takaebato/riscv-emulator近日有更新，该仓库目前获得0个Star，属于个人维护的RISC-V模拟器实现，可用于在主机上运行RISC-V指令集程序。",
+      "why_it_matters_zh": "该项目反映RISC-V模拟器领域的持续开发活动，可供关注开源RISC-V工具链的开发者参考。",
+      "tags_zh": [
+        "RISC-V",
+        "GitHub",
+        "模拟器",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "e36e46b9c6642bf5",
+      "title": "Pranav9786/riscv-cpu updated on GitHub",
+      "url": "https://github.com/Pranav9786/riscv-cpu",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:55:43+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上的Pranav9786/riscv-cpu仓库更新",
+      "summary_zh": "GitHub上的RISC-V CPU项目Pranav9786/riscv-cpu近日有更新，该仓库目前获得0个Star，由个人开发者维护，属于RISC-V处理器设计与实现类项目。",
+      "why_it_matters_zh": "该项目展示了个人开发者对RISC-V处理器设计的探索，对了解开源RISC-V硬件生态具有参考价值。",
+      "tags_zh": [
+        "RISC-V",
+        "GitHub",
+        "CPU",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "a416f6d1b00540e9",
+      "title": "PassByYou888/zIPC updated on GitHub",
+      "url": "https://github.com/PassByYou888/zIPC",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:52:33+00:00",
+      "summary": "z_ipc：跨语言进程间通信引擎，共享内存 + 零拷贝，同机通信延迟 < 1ms。已支持 x86_64 / ARM64 / RISC-V / LoongArch。自动构建，开箱即用。 Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目zIPC更新：跨语言进程间通信引擎支持RISC-V",
+      "summary_zh": "z_ipc是一款跨语言进程间通信引擎，采用共享内存与零拷贝技术，同机通信延迟低于1ms。目前已支持x86_64、ARM64、RISC-V与LoongArch四种架构，提供自动构建，开箱即用。",
+      "why_it_matters_zh": "RISC-V生态中高性能跨语言IPC工具仍较稀缺，zIPC为多架构同机通信提供低延迟方案，有助于完善RISC-V软件栈。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "进程间通信",
+        "零拷贝",
+        "多架构"
+      ]
+    },
+    {
+      "id": "250c4b96d4289371",
+      "title": "fyz-m/RVC updated on GitHub",
+      "url": "https://github.com/fyz-m/RVC",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:50:48+00:00",
+      "summary": "Compiled programming language targeting RISC-V as the backend Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目RVC更新：面向RISC-V后端的编译型编程语言",
+      "summary_zh": "RVC是一门以RISC-V为编译后端的编译型编程语言项目，旨在为RISC-V平台提供专门的编译工具链与语言支持，目前项目尚处于早期阶段。",
+      "why_it_matters_zh": "专属RISC-V后端的编程语言有助于丰富RISC-V工具链多样性，降低开发者进入门槛，推动RISC-V软硬件协同发展。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "编程语言",
+        "编译器",
+        "工具链"
+      ]
+    },
+    {
+      "id": "f192e11e9f757258",
+      "title": "alnihill/risc-v-cpu updated on GitHub",
+      "url": "https://github.com/alnihill/risc-v-cpu",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:45:47+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上alnihill/risc-v-cpu仓库更新",
+      "summary_zh": "GitHub用户alnihill维护的risc-v-cpu仓库近期提交更新。该项目为RISC-V处理器CPU实现，目前Star数为0，社区关注度尚低，属于个人开发者维护的RISC-V处理器参考实现项目。",
+      "why_it_matters_zh": "个人开发者的RISC-V CPU实现项目持续更新，反映了RISC-V开源硬件生态的多元化发展。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "CPU设计",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "11acf2dd31198490",
+      "title": "maxxseminario/VestaRV updated on GitHub",
+      "url": "https://github.com/maxxseminario/VestaRV",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:41:01+00:00",
+      "summary": "A Custom RISC-V Core / SoC Stars: 3.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上maxxseminario/VestaRV仓库更新",
+      "summary_zh": "GitHub用户maxxseminario的VestaRV项目近期提交更新，这是一个定制RISC-V Core与SoC实现，目前Star数为3，属于小众但具有参考价值的片上系统级RISC-V设计项目。",
+      "why_it_matters_zh": "VestaRV作为定制RISC-V Core/SoC实现，为社区提供了系统级芯片设计的参考案例。",
+      "tags_zh": [
+        "RISC-V",
+        "SoC设计",
+        "开源硬件",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "270345789fef43d8",
+      "title": "OpenXiangShan/difftest updated on GitHub",
+      "url": "https://github.com/OpenXiangShan/difftest",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:40:22+00:00",
+      "summary": "Modern co-simulation framework for RISC-V CPUs Stars: 182.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "OpenXiangShan/difftest updated on GitHub",
+      "summary_zh": "Modern co-simulation framework for RISC-V CPUs Stars: 182.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "f0838227fbc7a4a2",
+      "title": "bbenchoff/AGaMEMnon updated on GitHub",
+      "url": "https://github.com/bbenchoff/AGaMEMnon",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:38:27+00:00",
+      "summary": "Open SDK and FPGA toolchain for the AGM AG32 RISC-V MCU with embedded AGRV2K fabric Stars: 37.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "bbenchoff/AGaMEMnon updated on GitHub",
+      "summary_zh": "Open SDK and FPGA toolchain for the AGM AG32 RISC-V MCU with embedded AGRV2K fabric Stars: 37.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "66187f327db94ff6",
+      "title": "daemonhorn/pve-riscv64-guest-support updated on GitHub",
+      "url": "https://github.com/daemonhorn/pve-riscv64-guest-support",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:37:34+00:00",
+      "summary": "riscv64 VM guest support for Proxmox VE 9 (TCG on x86_64) - overview, results, and build docs Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "Proxmox VE 9 新增 riscv64 虚拟机客户机支持",
+      "summary_zh": "GitHub 项目 daemonhorn/pve-riscv64-guest-support 为 Proxmox VE 9 提供 riscv64 架构虚拟机客户机支持，基于 x86_64 主机上的 TCG 模式实现，并附带概览、测试结果与构建文档。",
+      "why_it_matters_zh": "该项目让用户在 x86_64 宿主机上通过 QEMU TCG 运行 RISC-V 虚拟机，便于在主流虚拟化平台上测试和验证 RISC-V 软件栈。",
+      "tags_zh": [
+        "RISC-V",
+        "Proxmox VE",
+        "虚拟化",
+        "QEMU",
+        "TCG"
+      ]
+    },
+    {
+      "id": "cc639f87f4d1e9ff",
+      "title": "maulanasdqn/esp32-riscv updated on GitHub",
+      "url": "https://github.com/maulanasdqn/esp32-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:31:09+00:00",
+      "summary": "ESP32 RiscV Rust Engine Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "ESP32 RISC-V Rust 引擎项目更新",
+      "summary_zh": "GitHub 项目 maulanasdqn/esp32-riscv 提供面向 ESP32 的 RISC-V Rust 引擎，旨在 ESP32 平台上利用 Rust 语言进行 RISC-V 架构相关开发与实验。",
+      "why_it_matters_zh": "该项目探索在 ESP32 上结合 Rust 与 RISC-V 架构，为嵌入式 Rust 生态及 RISC-V 微控制器开发提供实验性参考实现。",
+      "tags_zh": [
+        "RISC-V",
+        "ESP32",
+        "Rust",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "b98e2965efdb0068",
+      "title": "zhu031227/Riscv_WebSoc2 updated on GitHub",
+      "url": "https://github.com/zhu031227/Riscv_WebSoc2",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-16T01:29:49+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "zhu031227/Riscv_WebSoc2 updated on GitHub",
+      "summary_zh": "Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "589788632515e4d4",
+      "title": "Linux Patches Enable Apple M4 NVMe Support",
+      "url": "https://www.phoronix.com/news/Linux-Apple-M4-NVMe-Patches",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-13T11:30:36+00:00",
+      "summary": "While the Apple M4 SoCs aren't yet supported by the mainline Linux kernel and the Apple M3 series hardware isn't yet ready for end-users, there are some early elements of the Apple M4 support beginning to come together by open-source developers working on the Apple Silicon support. Sent out to the Linux kernel mailing list were patches for enabling NVMe solid state drive support with the M4...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux Patches Enable Apple M4 NVMe Support",
+      "summary_zh": "While the Apple M4 SoCs aren't yet supported by the mainline Linux kernel and the Apple M3 series hardware isn't yet ready for end-users, there are some early elements of the Apple M4 support beginning to come together by open-source developers working on the Apple Silicon support. Sent out to the Linux kernel mailing list were patches for enabling NVMe solid state drive support with the M4...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "6afa469468a6ea67",
+      "title": "GCC 17 Compiler Adding \"-m128bit-atomic\" For 128-bit Atomic Memory Operations",
+      "url": "https://www.phoronix.com/news/GCC-Git-m128bit-atomic",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-12T18:40:00+00:00",
+      "summary": "Merged today to the GNU Compiler Collection Git code is the new -m128bit-atomic option for next year's GCC 17 feature release...",
+      "tags": [
+        "GCC"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "GCC 17 Compiler Adding \"-m128bit-atomic\" For 128-bit Atomic Memory Operations",
+      "summary_zh": "Merged today to the GNU Compiler Collection Git code is the new -m128bit-atomic option for next year's GCC 17 feature release...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "GCC"
+      ]
+    },
+    {
+      "id": "0bd013c4d67f6cd3",
+      "title": "Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks",
+      "url": "https://www.cnx-software.com/2026/08/13/qualcomm-snapdragon-c-arm-soc-outperforms-an-intel-n250-cpu-by-up-to-67-percent-in-unplugged-benchmarks/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-13T09:39:47+00:00",
+      "summary": "Qualcomm unveiled the Snapdragon C entry-level Arm SoC for $300+ Windows laptops at Computex 2026 with a ridiculously small amount of details last May, so we had to rely on the specs of the upcoming Acer Aspire Go 15 (AG15-Q31P) laptop. Qualcomm has now released a document entitled “Snapdragon C Platform Overview” with more technical details and “unplugged” benchmarks – meaning running on batteries – comparing a Snapdragon C laptop to one based on Intel Processor N250 Twin Lake SoC. The presentation Snapdragon C specifications: CPU – Up to an octa-core Kryo processor at up to 3.0 GHz (single-core) or 2.0 GHz (quad-core) with 2 MB total cache; note: no data for eight cores GPU – Qualcomm Adreno GPU at up to 900 MHz AI accelerator – Built-in Qualcomm Hexagon NPU (still unspecified performance) System Memory – Up to 16GB LPDDR5/5x or LPDDR4 Storage – PCIe 3.0 NVMe, UFS 2.2/3.1 [...] The post Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks",
+      "summary_zh": "Qualcomm unveiled the Snapdragon C entry-level Arm SoC for $300+ Windows laptops at Computex 2026 with a ridiculously small amount of details last May, so we had to rely on the specs of the upcoming Acer Aspire Go 15 (AG15-Q31P) laptop. Qualcomm has now released a document entitled “Snapdragon C Platform Overview” with more technical details and “unplugged” benchmarks – meaning running on batteries – comparing a Snapdragon C laptop to one based on Intel Processor N250 Twin Lake SoC. The presentation Snapdragon C specifications: CPU – Up to an octa-core Kryo processor at up to 3.0 GHz (single-core) or 2.0 GHz (quad-core) with 2 MB total cache; note: no data for eight cores GPU – Qualcomm Adreno GPU at up to 900 MHz AI accelerator – Built-in Qualcomm Hexagon NPU (still unspecified performance) System Memory – Up to 16GB LPDDR5/5x or LPDDR4 Storage – PCIe 3.0 NVMe, UFS 2.2/3.1 [...] The post Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "AI accelerator"
+      ]
+    },
+    {
+      "id": "c90579bc6692c238",
+      "title": "NXP FRDM-IMX95-PRO i.MX 95 board features 10GbE, faster 6400 MT/s LPDDR5 memory, dual M.2 expansion",
+      "url": "https://www.cnx-software.com/2026/08/11/nxp-frdm-imx95-pro-i-mx-95-board-features-10gbe-faster-6400-mt-s-lpddr5-memory-dual-m-2-expansion/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-11T14:12:30+00:00",
+      "summary": "NXP has introduced the FRDM-IMX95-PRO, a compact development board based on the i.MX 95 application processor in the larger 19×19 mm package. It features a 10GbE interface, Wi-Fi 6, Bluetooth 5.4, and 802.15.4 tri-radio connectivity, and two M.2 Key-M slots for AI accelerator cards or SSDs. The board also comes with 16 GB LPDDR5-6400 memory, a 32 GB eMMC flash, and NXP’s GoPoint demo interface for robotics, industrial networking, and vision processing applications. FRDM-IMX95-PRO board specifications: SoC – NXP i.MX 95 CPU Up to 6x Arm Cortex-A55 application cores clocked at 1.8/2.0 GHz with 32KB I-cache and D-cache, 64KB L2 cache, and 512KB L3 cache 1x Arm Cortex-M7 real-time core clocked at 800 MHz 1x Arm Cortex-M33 safety core clocked at 333 MHz GPU – Arm Mali-G310 V2 GPU for 2D/3D acceleration with support for OpenGL ES 3.2, OpenCL 3.0 VPU 1080p60/4Kp30 H.265 and H.264 encode and decode JPEG Encoder, [...] The post NXP FRDM-IMX95-PRO i.MX 95 board features 10GbE, faster 6400 MT/s LPDDR5 memory, dual M.2 expansion appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "NXP推出FRDM-IMX95-PRO开发板：搭载i.MX 95，支持10GbE与双M.2扩展",
+      "summary_zh": "NXP推出基于i.MX 95应用处理器的FRDM-IMX95-PRO开发板，配备10GbE接口、Wi-Fi 6、Bluetooth 5.4及802.15.4三频无线连接，搭载16GB LPDDR5-6400内存、32GB eMMC闪存和双M.2 Key-M插槽，可用于AI加速卡或SSD扩展，面向机器人、工业网络及视觉处理等场景。",
+      "why_it_matters_zh": "紧凑型开发板提供高速网络与AI加速扩展能力，适合边缘AI与工业应用快速原型开发。",
+      "tags_zh": [
+        "NXP",
+        "i.MX 95",
+        "开发板",
+        "边缘计算",
+        "10GbE",
+        "LPDDR5"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "source": "arXiv RISC-V",
+      "error": "The read operation timed out"
+    }
+  ],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 19,
+    "total_items": 29,
+    "errors": [
+      "batch 4: MiniMax response did not contain a JSON array",
+      "batch 6: MiniMax returned incomplete JSON at character 347",
+      "batch 11: MiniMax response did not contain a JSON array",
+      "batch 13: MiniMax response did not contain a JSON array",
+      "batch 14: MiniMax response did not contain a JSON array"
+    ],
+    "generated_at": "2026-08-16T02:02:24.807454+00:00"
+  }
+}
