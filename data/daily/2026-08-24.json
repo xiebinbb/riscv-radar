@@ -1,0 +1,999 @@
+{
+  "generated_at": "2026-08-24T02:00:00.069994+00:00",
+  "date": "2026-08-24",
+  "items": [
+    {
+      "id": "397790de1909349a",
+      "title": "StarFive Dubhe-100 – A 64-bit, RVA23-compliant RISC-V core for high-performance applications",
+      "url": "https://www.cnx-software.com/2026/08/20/starfive-dubhe-100-a-64-bit-rva23-compliant-risc-v-core-for-high-performance-applications/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T00:00:37+00:00",
+      "summary": "StarFive has launched a new high-performance 64-bit RISC-V core from the Dubhe family with the RVA23-compliant Dubhe-100 designed for servers and HPC, as well as other high-performance applications. The new RISC-V IP core delivers a SPECint2006 score of 15/GHz, supports Vector and Vector Crypto extensions, and features a deep out-of-order design with a 15-stage pipeline and 6-wide issue. StarFive Dubhe-100 key features and specifications: ISA – RV64GCBVH 15-stage pipeline, 6-issue Superscalar, deep out-of-order execution Support Multi-core cache coherence Support instruction fusion Support AIA1.0 Performance SPECint2006: 15/GHz Dhrystone v2.2: 10.0/MHz (legal) HPM (Hardware Performance Monitor) RISC-V standard HPM support Micro-architecture level analysis and performance tuning PMP & PMA (Physical Memory Protection / Physical Memory Attributes) Configurable 16/32/64 PMP supported regions, minimum 4096-byte region size Support predefined PMA and Svpbmt Debug & Trace Standard debug module compliant with RISC-V Debug Spec Standard Trace module interface compliant with RISC-V Trace Spec Power Management [...] The post StarFive Dubhe-100 – A 64-bit, RVA23-compliant RISC-V core for high-performance applications appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V",
+        "RVA23"
+      ],
+      "entities": [
+        "StarFive"
+      ],
+      "score": 2.52,
+      "title_zh": "StarFive发布Dubhe-100：64位RVA23合规RISC-V高性能核心",
+      "summary_zh": "StarFive推出Dubhe家族新款64位RISC-V核心Dubhe-100，符合RVA23规范，面向服务器和HPC等高性能应用。该IP核SPECint2006得分15/GHz，支持Vector及Vector Crypto扩展，采用15级流水线、6发射超标量和深度乱序执行架构，并支持多核缓存一致性与AIA1.0。",
+      "why_it_matters_zh": "Dubhe-100为RISC-V阵营带来服务器级高性能IP核选项，有助于推动RISC-V在服务器与HPC领域与x86、Arm的竞争与替代。",
+      "tags_zh": [
+        "StarFive",
+        "Dubhe-100",
+        "RISC-V",
+        "RVA23",
+        "高性能计算",
+        "服务器IP核"
+      ]
+    },
+    {
+      "id": "e7bc01cf8a2a2301",
+      "title": "Support RAJA and Scientific Applications on RVV Architectures",
+      "url": "https://riscv.org/blog/support-raja-and-scientific-applications-on-rvv-architectures/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-02-17T09:09:50+00:00",
+      "summary": "The post Support RAJA and Scientific Applications on RVV Architectures appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.44,
+      "title_zh": "RISC-V International推进RAJA及科学应用在RVV架构上的支持",
+      "summary_zh": "RISC-V International发布关于在RVV（RISC-V Vector）架构上支持RAJA及科学计算应用的最新进展。RAJA是面向高性能计算的性能可移植库，相关工作旨在扩展RISC-V向量扩展在科学计算领域的软件生态覆盖。",
+      "why_it_matters_zh": "RAJA等关键科学计算库对RVV的支持，将完善RISC-V向量扩展在HPC场景的软件栈，推动RVV在科研与超算领域的实际落地。",
+      "tags_zh": [
+        "RISC-V International",
+        "RVV",
+        "RAJA",
+        "科学计算",
+        "HPC"
+      ]
+    },
+    {
+      "id": "e7bf6a4dcdc1a01b",
+      "title": "BeRo1985/pasriscv updated on GitHub",
+      "url": "https://github.com/BeRo1985/pasriscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:32:36+00:00",
+      "summary": "PasRISCV is a RV64GCV/RVA23 RISC-V emulator, which is implemented in Object Pascal Stars: 6.",
+      "tags": [
+        "RISC-V",
+        "RISCV",
+        "RVA23"
+      ],
+      "entities": [],
+      "score": 2.36,
+      "title_zh": "BeRo1985在GitHub更新pasriscv RISC-V模拟器项目",
+      "summary_zh": "PasRISCV是一款使用Object Pascal编写的RV64GCV/RVA23 RISC-V模拟器，已在GitHub开源并获得6颗星，为RISC-V生态提供跨平台验证工具。",
+      "why_it_matters_zh": "为RISC-V开发者提供Object Pascal实现的完整指令集模拟器，支持RV64GCV与RVA23标准。",
+      "tags_zh": [
+        "RISC-V",
+        "模拟器",
+        "Object Pascal",
+        "开源项目",
+        "RV64GCV"
+      ]
+    },
+    {
+      "id": "8748ec4d3a2b2ef6",
+      "title": "WCH CH32V407/467 RISC-V MCU integrates Fast Ethernet MAC + PHY, 480 Mbps USB 2.0 PHY, up to 8 MB on-chip PSRAM",
+      "url": "https://www.cnx-software.com/2026/08/13/wch-ch32v407-467-risc-v-mcu-integrates-fast-ethernet-mac-phy-480-mbps-usb-2-0-phy-up-to-8-mb-on-chip-psram/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-13T04:38:57+00:00",
+      "summary": "WCH CH32V407 and CH32V467 are new 200 MHz RISC-V microcontrollers with a built-in 10/100 Mbps Ethernet MAC + PHY, a USB 2.0 high-speed (480 Mbps) host PHY, up to 8 MB on-chip PSRAM, and a range of peripherals for industrial IoT & edge AI applications. Both are based on the company’s Qingke V3V core with RVV vector extensions, delivering 4.11 CoreMark/MHz, a score higher than a typical Arm Cortex-M4 core. The main difference between the CH32V407 and CH32V467 is that the latter comes with 4 MB or 8 MB PSRAM, making it more suitable for display/HMI applications. WCH CH32V407/467 specifications: MCU Core – QingKe V3V 32-bit RISC-V (IMACV-X, X = custom) core @ up to 200 MHz RVV-vector instruction set and parallel computing Memory and storage 200KB SRAM 4MB or 8MB PSRAM memory (CH32V467 only) 512KB Flash SDIO Interface (MMC, SD/SDIO Cards, and CE-ATA) Optional Flexible Static Memory Controller (FSMC) [...] The post WCH CH32V407/467 RISC-V MCU integrates Fast Ethernet MAC + PHY, 480 Mbps USB 2.0 PHY, up to 8 MB on-chip PSRAM appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.34,
+      "title_zh": "WCH推出CH32V407/467 RISC-V MCU，集成以太网与高速USB PHY",
+      "summary_zh": "WCH发布200 MHz的CH32V407和CH32V467 RISC-V微控制器，基于青稞V3V内核并支持RVV向量扩展，内置10/100 Mbps以太网MAC+PHY与480 Mbps USB 2.0高速PHY，CH32V467额外集成4MB或8MB片上PSRAM，适用于工业物联网与边缘AI应用。",
+      "why_it_matters_zh": "新品性能达4.11 CoreMark/MHz，超越Cortex-M4，丰富了国产RISC-V高端MCU选项。",
+      "tags_zh": [
+        "WCH",
+        "CH32V407",
+        "CH32V467",
+        "RISC-V MCU",
+        "青稞V3V",
+        "RVV向量扩展",
+        "以太网",
+        "USB 2.0",
+        "工业物联网",
+        "边缘AI"
+      ]
+    },
+    {
+      "id": "a408171d6ea01e97",
+      "title": "Martin Fink’s Ferrite Engineering Lifts the Lid on ‘Schrödinger’s Instruction’",
+      "url": "https://riscv.org/blog/ferrite-engineering-edacrux/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-21T13:03:55+00:00",
+      "summary": "EDACrux, offered free to the RISC-V ecosystem, serves to demonstrate how success is built upon our members’ commitment to openness. The post Martin Fink’s Ferrite Engineering Lifts the Lid on ‘Schrödinger’s Instruction’ appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Martin Fink 的 Ferrite Engineering 揭秘\"薛定谔指令\"",
+      "summary_zh": "RISC-V International 介绍 Martin Fink 旗下 Ferrite Engineering 提出的\"薛定谔指令\"概念，并宣布其 EDACrux 工具免费提供给 RISC-V 生态，彰显成员对开放协作的承诺。",
+      "why_it_matters_zh": "EDACrux 免费开放降低了开发门槛，体现 RISC-V 生态对开放共享的持续投入。",
+      "tags_zh": [
+        "RISC-V",
+        "Ferrite Engineering",
+        "EDACrux",
+        "开放生态"
+      ]
+    },
+    {
+      "id": "c378a9cee484043c",
+      "title": "Conflict to Compliance: RISC-V Extension Migration Across Spec, HW, and SW",
+      "url": "https://riscv.org/blog/conflict-to-compliance-risc-v-extension-migration-across-spec-hw-and-sw/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-07-29T08:46:17+00:00",
+      "summary": "The post Conflict to Compliance: RISC-V Extension Migration Across Spec, HW, and SW appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "从冲突到合规：RISC-V 扩展在规范、硬件与软件间的迁移",
+      "summary_zh": "RISC-V International 发布技术文章，讨论 RISC-V 扩展在规范、硬件与软件层面之间的一致性迁移问题，探讨如何从版本冲突走向规范合规，确保生态系统的兼容与稳定。",
+      "why_it_matters_zh": "扩展迁移的合规性直接影响 RISC-V 生态兼容性与碎片化风险，关系到产业落地。",
+      "tags_zh": [
+        "RISC-V",
+        "扩展规范",
+        "硬件软件协同",
+        "生态合规"
+      ]
+    },
+    {
+      "id": "32f6f05497a22c95",
+      "title": "RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses",
+      "url": "https://riscv.org/blog/risc-v-edge-inference-for-real-time-eye-movement-control-on-gapses-smart-glasses/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-07-07T10:25:40+00:00",
+      "summary": "The post RISC-V Edge Inference for Real-Time Eye-Movement Control on GAPses Smart Glasses appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V边缘推理助力GAPses智能眼镜实时眼动控制",
+      "summary_zh": "RISC-V International发布文章，介绍GAPses智能眼镜如何利用RISC-V边缘推理能力实现实时眼动控制，展示了RISC-V在可穿戴边缘AI场景中的应用潜力。",
+      "why_it_matters_zh": "体现了RISC-V在智能可穿戴设备中实现低延迟、低功耗本地化AI推理的落地价值。",
+      "tags_zh": [
+        "RISC-V",
+        "边缘推理",
+        "智能眼镜",
+        "眼动控制",
+        "可穿戴设备"
+      ]
+    },
+    {
+      "id": "900b36fffd4de455",
+      "title": "Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast",
+      "url": "https://riscv.org/blog/shd-forecast-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-06-19T19:46:36+00:00",
+      "summary": "The post Behind The Scenes of SHD Group’s 2026 RISC-V Market Forecast appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "揭秘SHD Group 2026年RISC-V市场预测的背后",
+      "summary_zh": "RISC-V International发布深度文章，揭秘SHD Group 2026年RISC-V市场预测背后的数据来源、分析方法与核心洞察，帮助读者理解预测结论的来龙去脉。",
+      "why_it_matters_zh": "了解第三方机构对RISC-V市场的预测逻辑，有助于把握RISC-V产业的未来发展趋势。",
+      "tags_zh": [
+        "RISC-V",
+        "市场预测",
+        "SHD Group",
+        "产业分析"
+      ]
+    },
+    {
+      "id": "e4fa782616152682",
+      "title": "Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem",
+      "url": "https://riscv.org/blog/2026-elections/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-08T19:10:06+00:00",
+      "summary": "Voting is now open for RISC-V International's Board of Directors. Learn how to nominate, understand board member responsibilities, and discover key election dates. The post Call for Candidates: Help Us Build a Board That Represents Our Entire Ecosystem appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V International 董事会候选人征集启动",
+      "summary_zh": "RISC-V International 董事会换届投票现已开启，现公开征集候选人。相关页面说明了提名流程、董事职责要求以及关键选举日程，呼吁生态各方积极参与，共建具有代表性的领导团队。",
+      "why_it_matters_zh": "董事会构成直接影响 RISC-V 生态战略方向，各方代表参与治理关乎标准走向。",
+      "tags_zh": [
+        "RISC-V International",
+        "董事会",
+        "社区治理",
+        "候选人征集"
+      ]
+    },
+    {
+      "id": "3c222002e3e8ab86",
+      "title": "We Created a Single Source for All RISC-V Specifications",
+      "url": "https://riscv.org/blog/ratified-specifications-library/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-05-07T16:22:00+00:00",
+      "summary": "The RISC-V Ratified Specifications Library consolidates all of the available RISC-V specifications into one single, accessible repository. The post We Created a Single Source for All RISC-V Specifications appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V 推出已批准规范统一资源库",
+      "summary_zh": "RISC-V International 上线 RISC-V Ratified Specifications Library，将所有已获批准的可用规范整合至统一、可访问的资源库，方便开发者与厂商一站式检索全部 RISC-V 官方规范文档。",
+      "why_it_matters_zh": "规范统一收录降低了查阅门槛，有助于生态各方快速获取权威标准文本。",
+      "tags_zh": [
+        "RISC-V",
+        "规范库",
+        "标准文档",
+        "RISC-V International"
+      ]
+    },
+    {
+      "id": "01660fbf85f57ace",
+      "title": "Docker on RISC-V: From Release to Production in 6 Days",
+      "url": "https://riscv.org/blog/docker-on-risc-v-from-release-to-production-in-6-days/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-04-28T10:08:37+00:00",
+      "summary": "The post Docker on RISC-V: From Release to Production in 6 Days appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Docker登陆RISC-V：六天从发布到生产",
+      "summary_zh": "RISC-V International发表文章，介绍Docker在RISC-V平台上从版本发布到生产部署仅用六天完成的完整过程，涵盖适配、测试与上线等关键环节，展现了该架构在容器化领域的生态成熟度。",
+      "why_it_matters_zh": "Docker快速完成RISC-V适配标志着其软件栈日趋完善，开发者可更便捷地在RISC-V平台上构建和部署容器化应用。",
+      "tags_zh": [
+        "Docker",
+        "RISC-V",
+        "容器化",
+        "软件生态"
+      ]
+    },
+    {
+      "id": "332dc8b4803852d9",
+      "title": "Using a Performance Model to Implement a Superscalar CVA6",
+      "url": "https://riscv.org/blog/using-a-performance-model-to-implement-a-superscalar-cva6/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-24T11:01:06+00:00",
+      "summary": "The post Using a Performance Model to Implement a Superscalar CVA6 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "利用性能模型实现超标量CVA6处理器",
+      "summary_zh": "研究团队借助性能建模方法，在硬件流片前评估并优化架构方案，实现了超标量版本的CVA6 RISC-V处理器设计，展示了敏捷开发流程在开源处理器领域的应用价值。",
+      "why_it_matters_zh": "超标量设计显著提升CVA6指令吞吐能力，性能模型加速开发流程，对推动开源RISC-V高性能处理器发展具有重要意义。",
+      "tags_zh": [
+        "CVA6",
+        "超标量",
+        "性能模型",
+        "处理器设计"
+      ]
+    },
+    {
+      "id": "8afb524a8a4cfd42",
+      "title": "Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026",
+      "url": "https://riscv.org/blog/embedded-world-2026/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-03-03T19:38:57+00:00",
+      "summary": "Ahead of Embedded World, we explore what our members and co-exhibitors will showcase in Nuremberg, the common threads linking their work, and what this reveals about the embedded landscape in 2026. The post Production-Ready, Automotive-Grade, AI-Native: RISC-V at Embedded World 2026 appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V亮相Embedded World 2026：聚焦生产级、汽车级与AI原生",
+      "summary_zh": "嵌入式世界大会前夕，RISC-V International梳理其成员单位在纽伦堡的展示重点，涵盖生产就绪、汽车级认证和AI原生等方向，展现2026年嵌入式领域发展趋势。",
+      "why_it_matters_zh": "展示RISC-V生态在汽车与AI嵌入式场景的商业化进展，预示行业新方向",
+      "tags_zh": [
+        "RISC-V",
+        "Embedded World 2026",
+        "汽车电子",
+        "AI原生",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "dfdb8bb06c6e352c",
+      "title": "boli-del/riscv-isa-implementation updated on GitHub",
+      "url": "https://github.com/boli-del/riscv-isa-implementation",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:45:08+00:00",
+      "summary": "an ECE222-based datapath for pipelined risc-v ISA w additional fun research/idea verifications Stars: 2.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "GitHub开源项目更新：基于ECE222的RISC-V ISA流水线实现",
+      "summary_zh": "GitHub仓库boli-del/riscv-isa-implementation更新了基于ECE222课程设计的RISC-V流水线数据通路，并附带额外的功能研究与想法验证，当前Star数为2。",
+      "why_it_matters_zh": "为RISC-V指令集提供教学用流水线数据通路实现，适合课堂学习与研究验证",
+      "tags_zh": [
+        "RISC-V",
+        "GitHub",
+        "开源项目",
+        "教学",
+        "流水线"
+      ]
+    },
+    {
+      "id": "da748fec59abfdac",
+      "title": "cluis11/isa-encoder-riscv-2013083843 updated on GitHub",
+      "url": "https://github.com/cluis11/isa-encoder-riscv-2013083843",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:44:29+00:00",
+      "summary": "Codificador de instrucciones RISC-V RV32I con desglose visual de campos (R, I, S, B). Proyecto individual CE-4301, TEC. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "RISC-V RV32I指令编码器项目更新",
+      "summary_zh": "GitHub上的RISC-V RV32I指令编码器，支持R、I、S、B四种格式字段的可视化分解展示，为哥斯达黎加理工大学CE-4301课程个人项目。",
+      "why_it_matters_zh": "课程教学辅助工具，可视化展示RV32I各格式指令的字段编码细节。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32I",
+        "指令编码",
+        "教学项目"
+      ]
+    },
+    {
+      "id": "d66b1b77c16213d2",
+      "title": "riscv/riscv-unified-db updated on GitHub",
+      "url": "https://github.com/riscv/riscv-unified-db",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:26:08+00:00",
+      "summary": "Monorepo containing a machine-readable database of the RISC-V specification and artifact generation tools Stars: 209.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "riscv/riscv-unified-db仓库更新",
+      "summary_zh": "官方riscv/riscv-unified-db为单一代码仓库，内含机器可读的RISC-V规范数据库及配套产物生成工具，获209颗星关注。",
+      "why_it_matters_zh": "官方维护的结构化RISC-V规范数据库，利于工具链开发与自动化验证。",
+      "tags_zh": [
+        "RISC-V",
+        "规范数据库",
+        "工具链",
+        "官方仓库"
+      ]
+    },
+    {
+      "id": "c64ec19b68595b2a",
+      "title": "Espressif Systems releases a Linux BSP developer preview for ESP32-S31 RISC-V microprocessor",
+      "url": "https://www.cnx-software.com/2026/08/22/espressif-systems-releases-a-linux-bsp-developer-preview-for-esp32-s31-risc-v-microprocessor/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-22T04:26:56+00:00",
+      "summary": "The ESP32-S31 microprocessor is getting Linux support from Espressif Systems. The ESP32-S31 dual-core RISC-V microprocessor was first unveiled in March, two ESP32-S31 development boards followed in May, and mass production was announced a few weeks ago. The new RISC-V chip features an MMU (Memory Management Unit), which makes Linux much easier to handle, and the development boards also come with 16MB PSRAM, so a minimal Linux image is possible. Moving from theory to practice, Espressif Systems has now released a developer preview version of the ESP Linux BSP for ESP32-S31, and some community Linux ports are also in the works (more on that at the end of the article). Let’s focus on the official ESP Linux BSP. The aforementioned repo only contains the image layout and packaging tools used by the ESP32-S31 Buildroot integration, and the core of the project can be found in the esp-buildroot-external repo with ESP32-S31 NOR boot [...] The post Espressif Systems releases a Linux BSP developer preview for ESP32-S31 RISC-V microprocessor appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "乐鑫科技发布ESP32-S31 RISC-V微处理器Linux BSP开发者预览版",
+      "summary_zh": "乐鑫科技为ESP32-S31双核RISC-V微处理器发布ESP Linux BSP开发者预览版。该芯片集成MMU并搭配16MB PSRAM，结合Buildroot可运行最小Linux镜像，社区Linux移植也在推进中。",
+      "why_it_matters_zh": "MMU加持让ESP32-S31可运行Linux，扩展乐鑫芯片在需要操作系统场景的应用空间。",
+      "tags_zh": [
+        "乐鑫科技",
+        "ESP32-S31",
+        "RISC-V",
+        "Linux BSP",
+        "Buildroot"
+      ]
+    },
+    {
+      "id": "a530d3b95b137ea6",
+      "title": "Linux 7.2 release – Main changes, Arm, RISC-V, and MIPS architectures",
+      "url": "https://www.cnx-software.com/2026/08/21/linux-7-2-release-main-changes-arm-risc_v-amd-mips-architecture/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T22:00:18+00:00",
+      "summary": "Linus Torvalds released Linux 7.2 on LKML last Sunday: Well, this last week of the release was – once again – bigger than I would have wished for, but hey, with the whole “new normal” thing, if I delayed releases for that reason we’d probably never have a release at all. There are a number of fairly late reverts – the drm scheduling reverts stand out, but there’s a few other ones in here too. It may not be pretty, but it’s the correct way to deal with “oh, that code wasn’t ready and caused problems”. People will be trying that again later. But while the drm reverts stand out and are some of the bigger patches in here, there’s a lot of small fixes all over. Mostly in drivers, but networking remained fairly active this last week too. And then there are a few random patches to architecture files [...] The post Linux 7.2 release – Main changes, Arm, RISC-V, and MIPS architectures appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Linux 7.2正式发布，涵盖Arm、RISC-V和MIPS架构更新",
+      "summary_zh": "Linus Torvalds发布Linux 7.2，发布周合并了大量补丁，包含drm调度等多项revert以及驱动和网络修复，同时更新了Arm、RISC-V和MIPS等架构文件。",
+      "why_it_matters_zh": "Linux 7.2纳入RISC-V架构相关更新，反映RISC-V在Linux主线生态持续完善。",
+      "tags_zh": [
+        "Linux 7.2",
+        "Linus Torvalds",
+        "RISC-V",
+        "Arm",
+        "MIPS",
+        "Linux内核"
+      ]
+    },
+    {
+      "id": "21478e9584d1ee96",
+      "title": "KAGA FEI ES4L15MA1 is a ridiculously small, ready-to-use BLE 6.0 module based on Nordic nRF54L15 SoC",
+      "url": "https://www.cnx-software.com/2026/08/20/kaga-fei-es4l15ma1-is-a-ridiculously-small-ready-to-use-ble-6-0-module-based-on-nordic-nrf54l15-soc/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T03:58:42+00:00",
+      "summary": "Japanese company KAGA FEI has introduced another incredibly small ES4L15MA1 Bluetooth LE 6.0 module based on Nordic Semiconductor’s nRF54L15 ultra-low-power Cortex-M33 wireless MCU. Launched alongside the larger EC4L15MA1 module, the ES4L15MA1 module appears to be based on the same hardware as the ES4L15BA1 “world’s smallest module” unveiled in 2024 with an 8.55 x 3.25 x 1.00 mm form factor. The main difference is that the new modules come with ready-to-use embedded software providing a command-based API via UART to shorten product development cycles and lower development costs for IoT devices relying on Bluetooth LE 6.0 connectivity. KAGA FEI ES4L15MA1 specifications: SoC – Nordic Semiconductor nRF54L15 MCU cores Arm Cortex-M33 with Arm TrustZone @ 128MHz RISC-V coprocessor for software-defined peripheral Memory – 256KB SRAM Storage – 1.5MB non-volatile memory Wireless Bluetooth 6.0 Data rates – 2Mbps, 1Mbps, 500kbps, 125kbps Features (TBC in built-in firmware) AoA / AoD Channel Sounding Frequency – 2402 [...] The post KAGA FEI ES4L15MA1 is a ridiculously small, ready-to-use BLE 6.0 module based on Nordic nRF54L15 SoC appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "KAGA FEI推出基于Nordic nRF54L15的超小型BLE 6.0模块ES4L15MA1",
+      "summary_zh": "KAGA FEI推出基于Nordic Semiconductor nRF54L15的BLE 6.0模块ES4L15MA1，尺寸仅8.55×3.25×1.00毫米。SoC集成Arm Cortex-M33核与RISC-V协处理器，预装嵌入式软件并通过UART提供指令API，可缩短物联网产品开发周期并降低成本。",
+      "why_it_matters_zh": "集成RISC-V协处理器与预编译固件，显著简化BLE 6.0物联网终端开发流程。",
+      "tags_zh": [
+        "BLE 6.0",
+        "Nordic nRF54L15",
+        "RISC-V",
+        "物联网模块"
+      ]
+    },
+    {
+      "id": "81c78a2440a944b7",
+      "title": "Pine64 hits pause on Linux devices due to RAM and eMMC shortage/high prices",
+      "url": "https://www.cnx-software.com/2026/08/19/pine64-hits-pause-on-linux-devices-due-to-ram-and-emmc-shortage-high-prices/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-19T10:29:53+00:00",
+      "summary": "While some companies keep increasing prices, the Pine64 community has now announced they don’t intend to manufacture Linux devices due to the current RAM and eMMC flash shortage and related high prices. Pine64 started with the launch of the Pine A64 development board in 2015, and since then they have launched more Arm and RISC-V Linux SBCs, Linux smartphones, and Linux tablets and e-Readers. We used to get several announcements per year, but this year so far, we only covered one: the Pine64 PineVoice. But it’s not a Linux device, and instead, a smart speaker based on a BL602 RISC-V microcontroller. Here’s the full (unedited) announcement published on Telegram, which you should also find on other Pine64 channels: Hi everyone! Just a quick reminder that due to the current DRAM/eMMC shortage, there isn’t any plans to continue producing more Linux devices in the near future. Whether production continues or not [...] The post Pine64 hits pause on Linux devices due to RAM and eMMC shortage/high prices appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Pine64因DRAM与eMMC缺货涨价暂停Linux设备生产",
+      "summary_zh": "Pine64宣布因DRAM与eMMC闪存短缺及涨价，近期暂停Linux设备生产。该社区自2015年发布Pine A64以来推出过多款Arm与RISC-V Linux SBC、手机、平板及电子阅读器；今年仅发布过基于BL602 RISC-V微控制器的PineVoice智能音箱。",
+      "why_it_matters_zh": "存储芯片供应链紧张波及开源硬件社区，RISC-V与Arm SBC生产同步承压。",
+      "tags_zh": [
+        "Pine64",
+        "RISC-V",
+        "供应链",
+        "DRAM"
+      ]
+    },
+    {
+      "id": "8d36c1ac71766720",
+      "title": "Coizi/5-stage-riscv updated on GitHub",
+      "url": "https://github.com/Coizi/5-stage-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:58:52+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "Coizi/5-stage-riscv updated on GitHub",
+      "summary_zh": "Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "3d10cd8d57b56fd9",
+      "title": "AxC1271/RISCV-v3 updated on GitHub",
+      "url": "https://github.com/AxC1271/RISCV-v3",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:55:34+00:00",
+      "summary": "This repository features a 2-way superscalar in-order processor supporting various types of branch predictor schemes. Static timing analysis, simulations, and formal verification techniques will be used to verify performance and correctness. Stars: 1.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "AxC1271/RISCV-v3 updated on GitHub",
+      "summary_zh": "This repository features a 2-way superscalar in-order processor supporting various types of branch predictor schemes. Static timing analysis, simulations, and formal verification techniques will be used to verify performance and correctness. Stars: 1.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "19b665603f3d5932",
+      "title": "Ali-Hadi123/5-stage-pipelined-riscv-processor updated on GitHub",
+      "url": "https://github.com/Ali-Hadi123/5-stage-pipelined-riscv-processor",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:54:48+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上的五级流水线RISC-V处理器项目获更新",
+      "summary_zh": "Ali-Hadi123/5-stage-pipelined-riscv-processor 在 GitHub 更新，项目聚焦五级流水线 RISC-V 处理器；当前 Stars 为 0，尚未形成明显关注度。",
+      "why_it_matters_zh": "该项目可用于观察五级流水线 RISC-V 处理器的开源实现，但当前影响力有限。",
+      "tags_zh": [
+        "RISC-V",
+        "处理器",
+        "五级流水线",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "87ea68967c457959",
+      "title": "DivByDiamond/OnyxOS updated on GitHub",
+      "url": "https://github.com/DivByDiamond/OnyxOS",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:47:37+00:00",
+      "summary": "OnyxOS - RISC-V operating system (kernel + shell + bootloader + compiler), ultra ~272KB Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上的RISC-V轻量操作系统OnyxOS获更新",
+      "summary_zh": "DivByDiamond/OnyxOS 在 GitHub 更新，是一套面向 RISC-V 的操作系统，包含内核、Shell、Bootloader 和编译器，整体约 272KB，当前 Stars 为 0。",
+      "why_it_matters_zh": "体积小巧且组件完整，适合关注 RISC-V 轻量系统与自包含工具链的开发者研究。",
+      "tags_zh": [
+        "RISC-V",
+        "OnyxOS",
+        "操作系统",
+        "轻量系统",
+        "Bootloader",
+        "编译器"
+      ]
+    },
+    {
+      "id": "15747591d776148d",
+      "title": "DivByDiamond/OnyxKernel updated on GitHub",
+      "url": "https://github.com/DivByDiamond/OnyxKernel",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:47:29+00:00",
+      "summary": "RISC-V 64-bit kernel for OnyxOS - Rust, freestanding, POSIX-like syscalls, ultra ~125KB Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "DivByDiamond/OnyxKernel 在 GitHub 更新",
+      "summary_zh": "RISC-V 64 位操作系统内核项目 OnyxKernel 在 GitHub 更新，采用 Rust 编写，独立运行，支持类 POSIX 系统调用，内核体积约 125KB。",
+      "why_it_matters_zh": "为 RISC-V 平台提供轻量级 Rust 内核方案，体积小且遵循 POSIX 语义，适合嵌入式与实验场景。",
+      "tags_zh": [
+        "RISC-V",
+        "操作系统内核",
+        "Rust",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "c7f0dcb5191f5cef",
+      "title": "DivByDiamond/OnyxCompiller updated on GitHub",
+      "url": "https://github.com/DivByDiamond/OnyxCompiller",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:47:16+00:00",
+      "summary": "Self-hosting C compiler for OnyxOS - RISC-V, C23, single-pass, self-hosted Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "DivByDiamond/OnyxCompiller 在 GitHub 更新",
+      "summary_zh": "面向 OnyxOS 的自托管 C 编译器项目 OnyxCompiller 在 GitHub 更新，支持 C23 标准，采用单遍编译流程，目标平台为 RISC-V，已实现自我编译。",
+      "why_it_matters_zh": "自托管编译器减少对外部工具链依赖，展示 RISC-V 工具链自举的可行性。",
+      "tags_zh": [
+        "RISC-V",
+        "C 编译器",
+        "C23",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "d2cb0546f2b635bc",
+      "title": "TejasDasa/RISC-V-Processor updated on GitHub",
+      "url": "https://github.com/TejasDasa/RISC-V-Processor",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:44:55+00:00",
+      "summary": "Custom single-cycle RV32I SoC in SystemVerilog with freestanding C execution, memory-mapped UART/timer peripherals, and a bare-metal runtime. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目TejasDasa/RISC-V-Processor更新",
+      "summary_zh": "基于SystemVerilog的自定义单周期RV32I SoC，支持独立C程序执行，配备内存映射UART与定时器外设及裸机运行时环境。Star数为0。",
+      "why_it_matters_zh": "单周期RV32I实现结构清晰，适合作为RISC-V处理器教学与入门项目的参考。",
+      "tags_zh": [
+        "RV32I",
+        "SystemVerilog",
+        "SoC",
+        "GitHub",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "fd6d167928f856a4",
+      "title": "vyges-ip/caliptra-riscv-core updated on GitHub",
+      "url": "https://github.com/vyges-ip/caliptra-riscv-core",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:37:51+00:00",
+      "summary": "Caliptra IP: caliptra-riscv-core (extracted from chipsalliance/caliptra-rtl) Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目vyges-ip/caliptra-riscv-core更新",
+      "summary_zh": "Caliptra IP模块caliptra-riscv-core从chipsalliance/caliptra-rtl项目中提取而来，Star数为0。",
+      "why_it_matters_zh": "Caliptra项目源自chipsalliance，聚焦硬件安全与信任根设计。",
+      "tags_zh": [
+        "Caliptra",
+        "chipsalliance",
+        "GitHub",
+        "硬件安全",
+        "信任根"
+      ]
+    },
+    {
+      "id": "54503b674262f23a",
+      "title": "isaacyihill4429/avaotaf2-loader-update updated on GitHub",
+      "url": "https://github.com/isaacyihill4429/avaotaf2-loader-update",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:34:40+00:00",
+      "summary": "A lightweight AvaotaF2 loader and update utility for the Allwinner V861 RISC-V Linux board, helping users obtain suitable release files and prepare workflows for testing, board bring-up, and embedded development. Stars: 22.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目更新：avaotaf2-loader-update（AvaotaF2加载与更新工具）",
+      "summary_zh": "针对Allwinner V861 RISC-V Linux开发板的轻量级AvaotaF2加载与更新工具，可帮助用户便捷获取合适的固件发布文件，简化板级bring-up、测试与嵌入式开发工作流程，目前在GitHub获得22颗星标。",
+      "why_it_matters_zh": "该工具降低了Allwinner V861 RISC-V开发板的使用门槛，便于社区开展板级bring-up与嵌入式测试。",
+      "tags_zh": [
+        "RISC-V",
+        "Allwinner V861",
+        "AvaotaF2",
+        "Linux开发板",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "11acf2dd31198490",
+      "title": "maxxseminario/VestaRV updated on GitHub",
+      "url": "https://github.com/maxxseminario/VestaRV",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-24T01:31:52+00:00",
+      "summary": "A Custom RISC-V Core / SoC Stars: 3.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目更新：VestaRV（自定义RISC-V核/SoC）",
+      "summary_zh": "VestaRV是开发者maxxseminario在GitHub上开源的自定义RISC-V核与SoC设计项目，提供从处理器核心到片上系统的可定制实现方案，适合作为学习与参考，目前获得3颗星标。",
+      "why_it_matters_zh": "作为开源的自定义RISC-V核/SoC项目，VestaRV为处理器架构研究与定制芯片设计提供了实践参考。",
+      "tags_zh": [
+        "RISC-V",
+        "SoC",
+        "自定义内核",
+        "开源硬件",
+        "处理器设计"
+      ]
+    },
+    {
+      "id": "345f7fe69dfb24f4",
+      "title": "Linux 7.3 Improving RAID 5/6 Benchmark-Based Algorithm Selection",
+      "url": "https://www.phoronix.com/news/Linux-7.3-XOR-RAID6-Benchmark",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-24T00:38:25+00:00",
+      "summary": "Following the main set of memory management \"MM\" changes submitted for Linux 7.3, Andrew Morton sent in his \"non-MM\" pull request of the other patches he's been collecting from various developers for this next Linux kernel release. Standing out there were some improvements to the RAID 5/6 benchmark-based algorithm selection...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.3 改进 RAID 5/6 基于基准测试的算法选择",
+      "summary_zh": "Andrew Morton 为 Linux 7.3 提交了非 MM 部分的 pull request，其中包含对 RAID 5/6 基于基准测试的算法选择机制的改进。这些补丁来自多位开发者，旨在优化存储子系统的性能与决策逻辑。",
+      "why_it_matters_zh": "RAID 5/6 算法选择改进可提升 Linux 存储性能与可靠性，对服务器和数据中心用户具有实际价值。",
+      "tags_zh": [
+        "Linux",
+        "RAID",
+        "内核",
+        "存储",
+        "基准测试"
+      ]
+    },
+    {
+      "id": "4e71b2b6c2139c5a",
+      "title": "GCC Patch Adjusting AMD Zen 5 Misprediction Cost Nets 12% Win In Benchmark",
+      "url": "https://www.phoronix.com/news/AMD-Zen-5-Mispredict-Cost",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-23T10:56:12+00:00",
+      "summary": "An AMD compiler engineer posted a patch on Saturday for the GNU Compiler Collection (GCC). The two-line patch adjusts the misprediction cost for Zen 4 and Zen 5 processors, which ends up yielding a 12% improvement in one SPEC CPU benchmark on Zen 5 and a 9% improvement on Zen 4...",
+      "tags": [
+        "GCC"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "GCC 补丁调整 AMD Zen 5 分支预测失败代价",
+      "summary_zh": "一位 AMD 编译器工程师向 GCC 提交了一个仅两行的补丁，调整 Zen 4 与 Zen 5 处理器的分支预测失败（misprediction）成本参数。该补丁在 Zen 5 上使一项 SPEC CPU 基准测试性能提升 12%，在 Zen 4 上提升 9%。",
+      "why_it_matters_zh": "该补丁显著提升 AMD Zen 处理器在 SPEC CPU 上的编译性能，反映编译器与 CPU 微架构协同优化的空间。",
+      "tags_zh": [
+        "GCC",
+        "AMD",
+        "Zen 5",
+        "分支预测",
+        "编译器"
+      ]
+    },
+    {
+      "id": "6c288a790822cb95",
+      "title": "Linux 7.3 Introduces New AES Encryption APIs - Will Open Up More Performance",
+      "url": "https://www.phoronix.com/news/Linux-7.3-New-Crypto-AES-APIs",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-23T10:42:14+00:00",
+      "summary": "Eric Biggers of Google continues carrying out great work on the Linux kernel crypto code. For Linux 7.3 he's landed work on new library APIs for most of the AES encryption modes used within the kernel. Moving forward this will open the door to more performance optimizations, reducing code duplication, and other enhancements...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.3 引入新 AES 加密 API，有望提升性能",
+      "summary_zh": "Google 工程师 Eric Biggers 持续推进 Linux 内核加密工作。在 Linux 7.3 中，他为内核中大多数 AES 加密模式引入新的库 API，为未来性能优化打开大门，同时减少代码重复，带来其他改进。",
+      "why_it_matters_zh": "新 API 为 AES 加密释放更多优化空间，有助提升内核加密效率并降低维护成本。",
+      "tags_zh": [
+        "Linux 7.3",
+        "AES加密",
+        "内核开发",
+        "性能优化",
+        "Google"
+      ]
+    },
+    {
+      "id": "ebe1b318f6f8aa75",
+      "title": "Longtime Linux CIFS/SMB3 Maintainer Passes Away",
+      "url": "https://www.phoronix.com/news/SMB3-CIFS-Maintainer-Change",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-23T00:31:41+00:00",
+      "summary": "There is a changing of the guard with Linux 7.3 as the maintainer of the Common Internet File System (CIFS) / SMB3 code within the Linux kernel. Longtime maintainer, principal Linux CIFS author, and current Microsoft employee Steve French has stepped down due to health reasons...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux CIFS/SMB3 长期维护者因健康原因卸任",
+      "summary_zh": "随着 Linux 7.3 发布，内核通用互联网文件系统（CIFS）/ SMB3 代码迎来人事变动。长期维护者、CIFS 主要作者、现任 Microsoft 员工的 Steve French 因健康原因卸任维护者职务。",
+      "why_it_matters_zh": "CIFS/SMB3 是 Linux 与 Windows 文件共享的关键组件，维护者更替将影响该子系统的未来发展。",
+      "tags_zh": [
+        "Linux 7.3",
+        "CIFS",
+        "SMB3",
+        "内核维护者",
+        "Microsoft"
+      ]
+    },
+    {
+      "id": "f4b19cca3fde8897",
+      "title": "eCryptfs Sees Fixes For Potential Malicious Intent, Some Dating Back To Its 2006 Debut",
+      "url": "https://www.phoronix.com/news/Linux-7.3-eCryptfs",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-23T00:24:17+00:00",
+      "summary": "The eCryptfs stacked cryptographic filesystem implementation for the Linux kernel to transparently encrypt files saw a number of bug fixes for the Linux 7.3 kernel. A number of these bug fixes deal with potential maliciously-crafted data and vulnerable going back to the 2006 introduction of eCryptfs as this option known for its use on Ubuntu home directory encryption and Chrome OS...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "eCryptfs 在 Linux 7.3 中获得多项修复，部分问题可追溯至 2006 年",
+      "summary_zh": "Linux 内核的 eCryptfs 堆叠加密文件系统在 7.3 版本中获得多项错误修复，其中部分针对潜在恶意构造数据的漏洞，最早可追溯至 2006 年 eCryptfs 首次引入时。该方案曾被 Ubuntu 家用目录加密和 Chrome OS 采用。",
+      "why_it_matters_zh": "修复涉及潜在恶意数据风险，影响 Ubuntu 加密家目录与 Chrome OS 用户的安全。",
+      "tags_zh": [
+        "eCryptfs",
+        "Linux 7.3",
+        "文件系统",
+        "内核安全"
+      ]
+    },
+    {
+      "id": "ff82c295e74a2c22",
+      "title": "Apple HFS / HFS+ File-System Support Continues Seeing Fixes With Linux 7.3",
+      "url": "https://www.phoronix.com/news/Apple-HFS-Linux-7.3",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-22T19:01:47+00:00",
+      "summary": "In early 2025 it was being discussed to potentially drop the HFS and HFS+ file-system support with the code having been orphaned over a decade and becoming a maintenance burden. But that dismal outlook quickly turned around with some developers stepping up to maintain the old Apple file-system support. Over a year later, fortunately, it's turned out to be a success story with more HFS/HFS+ file-system fixes continuing to work their way into the mainline Linux kernel...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Apple HFS/HFS+ 文件系统支持在 Linux 7.3 中继续获得修复",
+      "summary_zh": "苹果 HFS 与 HFS+ 文件系统支持曾因长期缺乏维护者而面临被移除的风险，但在开发者接手维护后，相关补丁随主线内核持续合入。Linux 7.3 再次合入多项 HFS/HFS+ 修复，成为社区维护的正面案例。",
+      "why_it_matters_zh": "社区维护者及时介入，避免旧文件系统支持被移除，保障了用户兼容性。",
+      "tags_zh": [
+        "HFS",
+        "HFS+",
+        "Linux 7.3",
+        "文件系统",
+        "内核"
+      ]
+    },
+    {
+      "id": "7926d1aae1ca60b1",
+      "title": "AMD RDNA 4m Firmware Published For Linux Ahead Of Launch",
+      "url": "https://www.phoronix.com/news/AMD-RDNA-4m-Firmware-Published",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-22T11:08:14+00:00",
+      "summary": "In addition to AMD's Friday afternoon big code drop of all the UALink enablement patches for the Linux kernel and the AMDGPU driver, there was another big drop from AMD to end out the week... Upstreamed to the linux-firmware.git repository is all the firmware binaries needed by the open-source driver stack for initializing their forthcoming RDNA 4m \"GFX 11.7\" graphics...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AMD RDNA 4m 显卡固件已提交至 Linux 上游仓库",
+      "summary_zh": "AMD 将即将推出的 RDNA 4m \"GFX 11.7\" 显卡所需全部固件二进制文件推送至 linux-firmware.git 仓库，供开源驱动栈初始化使用，赶在新产品发布前完成上游支持。",
+      "why_it_matters_zh": "开源驱动提前适配新硬件，意味着 RDNA 4m 显卡发布后即可在 Linux 上即开即用。",
+      "tags_zh": [
+        "AMD",
+        "RDNA 4m",
+        "Linux",
+        "开源驱动",
+        "固件"
+      ]
+    },
+    {
+      "id": "7eb8d3305294dd67",
+      "title": "AMD Posts Massive Patch Series For Enabling UALink In The Linux Kernel",
+      "url": "https://www.phoronix.com/news/UALink-Series-2-Linux",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-21T20:07:08+00:00",
+      "summary": "Whether coincidental or intentional, AMD engineers tend to drop interesting, feature patches for the open-source/Linux space on Friday afternoons. Hitting the kernel mailing list minutes ago were two patch series sent out by AMDGPU maintainer Alex Deucher for introducing UALink infrastructure...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AMD 提交大规模补丁 在 Linux 内核启用 UALink",
+      "summary_zh": "AMD 工程师在 Linux 内核邮件列表发布由 AMDGPU 维护者 Alex Deucher 发出的两套补丁系列，为 Linux 内核引入 UALink 基础设施支持，完善 AMDGPU 驱动相关功能。",
+      "why_it_matters_zh": "UALink 上游化将完善 AMD 在 Linux 平台的开放生态，为后续数据中心互联技术落地铺路。",
+      "tags_zh": [
+        "AMD",
+        "UALink",
+        "Linux内核",
+        "AMDGPU",
+        "开源"
+      ]
+    },
+    {
+      "id": "c9fc97b07f7c7bdb",
+      "title": "Linux 7.3 Lands Improvements For Voodoo 3 / 4 / 5 & Vintage Atari Computers In 2026",
+      "url": "https://www.phoronix.com/news/Linux-7.3-FBDEV",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-21T17:53:28+00:00",
+      "summary": "At a time when Linux continues dropping older hardware drivers due to the influx of AI/LLM-generated bug reports and patches for hardware extremely unlikely to be used with modern versions of the mainline Linux kernel, Voodoo graphics cards and vintage Atari computers are seeing some reprieve with the upcoming Linux 7.3 kernel release...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.3为Voodoo 3/4/5和老式Atari电脑带来改进",
+      "summary_zh": "尽管Linux因AI/LLM生成的错误报告而持续淘汰老旧硬件驱动，但即将发布的Linux 7.3内核为Voodoo显卡和老式Atari电脑带来了一些改进，让这些古董硬件获得喘息之机。",
+      "why_it_matters_zh": "显示Linux社区仍关注复古硬件支持，与近期大量淘汰老旧驱动的趋势形成有趣对比。",
+      "tags_zh": [
+        "Linux",
+        "内核",
+        "Voodoo",
+        "Atari",
+        "复古硬件"
+      ]
+    },
+    {
+      "id": "58d215c9bb963934",
+      "title": "Linux 7.3 Ready With CXL Type-2 Driver Support For AMD Solarflare NICs",
+      "url": "https://www.phoronix.com/news/AMD-Solarflare-NIC-CXL-Type-2",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-21T10:33:07+00:00",
+      "summary": "With the mainline Linux 7.2 kernel there is now the basic support in place for CXL Type-2 accelerator drivers within the CXL core subsystem code. The first in-tree Type-2 driver with the Linux kernel is for the new AMD Solarflare NIC hardware...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.3就绪，将引入AMD Solarflare网卡CXL Type-2驱动支持",
+      "summary_zh": "Linux 7.2内核已在CXL核心子系统中加入CXL Type-2加速器驱动的基础支持，而Linux 7.3将引入首个in-tree Type-2驱动，专为新型AMD Solarflare网卡硬件设计。",
+      "why_it_matters_zh": "首个CXL Type-2网卡驱动进入主线内核，标志着CXL生态在硬件加速领域进入新阶段。",
+      "tags_zh": [
+        "Linux",
+        "CXL",
+        "Type-2",
+        "AMD",
+        "Solarflare",
+        "NIC"
+      ]
+    },
+    {
+      "id": "0bd013c4d67f6cd3",
+      "title": "Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks",
+      "url": "https://www.cnx-software.com/2026/08/13/qualcomm-snapdragon-c-arm-soc-outperforms-an-intel-n250-cpu-by-up-to-67-percent-in-unplugged-benchmarks/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-13T09:39:47+00:00",
+      "summary": "Qualcomm unveiled the Snapdragon C entry-level Arm SoC for $300+ Windows laptops at Computex 2026 with a ridiculously small amount of details last May, so we had to rely on the specs of the upcoming Acer Aspire Go 15 (AG15-Q31P) laptop. Qualcomm has now released a document entitled “Snapdragon C Platform Overview” with more technical details and “unplugged” benchmarks – meaning running on batteries – comparing a Snapdragon C laptop to one based on Intel Processor N250 Twin Lake SoC. The presentation Snapdragon C specifications: CPU – Up to an octa-core Kryo processor at up to 3.0 GHz (single-core) or 2.0 GHz (quad-core) with 2 MB total cache; note: no data for eight cores GPU – Qualcomm Adreno GPU at up to 900 MHz AI accelerator – Built-in Qualcomm Hexagon NPU (still unspecified performance) System Memory – Up to 16GB LPDDR5/5x or LPDDR4 Storage – PCIe 3.0 NVMe, UFS 2.2/3.1 [...] The post Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks",
+      "summary_zh": "Qualcomm unveiled the Snapdragon C entry-level Arm SoC for $300+ Windows laptops at Computex 2026 with a ridiculously small amount of details last May, so we had to rely on the specs of the upcoming Acer Aspire Go 15 (AG15-Q31P) laptop. Qualcomm has now released a document entitled “Snapdragon C Platform Overview” with more technical details and “unplugged” benchmarks – meaning running on batteries – comparing a Snapdragon C laptop to one based on Intel Processor N250 Twin Lake SoC. The presentation Snapdragon C specifications: CPU – Up to an octa-core Kryo processor at up to 3.0 GHz (single-core) or 2.0 GHz (quad-core) with 2 MB total cache; note: no data for eight cores GPU – Qualcomm Adreno GPU at up to 900 MHz AI accelerator – Built-in Qualcomm Hexagon NPU (still unspecified performance) System Memory – Up to 16GB LPDDR5/5x or LPDDR4 Storage – PCIe 3.0 NVMe, UFS 2.2/3.1 [...] The post Qualcomm Snapdragon C Arm SoC outperforms an Intel N250 CPU by up to 67 percent in “unplugged” benchmarks appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "AI accelerator"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "source": "arXiv RISC-V",
+      "error": "The read operation timed out"
+    }
+  ],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 38,
+    "total_items": 41,
+    "errors": [
+      "batch 11: MiniMax returned incomplete JSON at character 332",
+      "batch 21: MiniMax returned incomplete JSON at character 184"
+    ],
+    "generated_at": "2026-08-24T02:04:32.351680+00:00"
+  }
+}
