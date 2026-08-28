@@ -1,0 +1,1570 @@
+{
+  "generated_at": "2026-08-28T11:29:32.969883+00:00",
+  "date": "2026-08-28",
+  "items": [
+    {
+      "id": "9cd96ff7113036f9",
+      "title": "An Embedded RISC-V Evaluation of Kolmogorov--Arnold Networks in Hard-Constrained Recurrent Physics-Informed Models",
+      "url": "https://arxiv.org/abs/2608.00737v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-01T16:20:24+00:00",
+      "summary": "Hard-constrained recurrent physics-informed networks (HRPINNs) embed known dynamics inside a recurrent numerical integrator and restrict a neural branch to learning only the residual dynamics that the first-principles model does not capture. Kolmogorov--Arnold Networks (KANs) have been proposed as parameter-efficient replacements for multilayer perceptrons (MLPs) in such residual branches, but their learnable B-spline activations follow a markedly different execution profile. Building on prior work that characterized when a vanilla B-spline KAN matches or underperforms an MLP as an HRPINN residual branch in discovery accuracy, this paper asks whether that parameter efficiency survives deployment. Using identical trained weights, we measured execution latency, energy per integration step, and dependability under post-training quantization in the closed recurrent loop on a RISC-V RV64GC platform without vector extensions (StarFive VisionFive~2, SiFive U74). For the two accuracy-comparable pairs, the KAN residual branch executed $13.5\\times$ and $8.0\\times$ slower and consumed $11.3\\times$ and $5.6\\times$ more energy per integration step (3.7\\,$μ$J against 0.33\\,$μ$J for the smallest pair); across all four parameter-matched size tiers the ranges are $4.7\\times$--$14.5\\times$ and $4.7\\times$--$18.7\\times$. Under INT8 quantization, KAN trajectories diverged up to $43\\times$ earlier than matched MLPs; the damage traces to weight quantization, not to input-side knot-interval misassignment. These results indicate that the parameter efficiency reported for KANs does not transfer to deployment cost on scalar embedded cores, and that an MLP residual branch is the more dependable default for embedded HRPINN deployment unless specific quantization co-design is used.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "SiFive",
+        "StarFive"
+      ],
+      "score": 2.73,
+      "title_zh": "An Embedded RISC-V Evaluation of Kolmogorov--Arnold Networks in Hard-Constrained Recurrent Physics-Informed Models",
+      "summary_zh": "Hard-constrained recurrent physics-informed networks (HRPINNs) embed known dynamics inside a recurrent numerical integrator and restrict a neural branch to learning only the residual dynamics that the first-principles model does not capture. Kolmogorov--Arnold Networks (KANs) have been proposed as parameter-efficient replacements for multilayer perceptrons (MLPs) in such residual branches, but their learnable B-spline activations follow a markedly different execution profile. Building on prior work that characterized when a vanilla B-spline KAN matches or underperforms an MLP as an HRPINN residual branch in discovery accuracy, this paper asks whether that parameter efficiency survives deployment. Using identical trained weights, we measured execution latency, energy per integration step, and dependability under post-training quantization in the closed recurrent loop on a RISC-V RV64GC platform without vector extensions (StarFive VisionFive~2, SiFive U74). For the two accuracy-comparable pairs, the KAN residual branch executed $13.5\\times$ and $8.0\\times$ slower and consumed $11.3\\times$ and $5.6\\times$ more energy per integration step (3.7\\,$μ$J against 0.33\\,$μ$J for the smallest pair); across all four parameter-matched size tiers the ranges are $4.7\\times$--$14.5\\times$ and $4.7\\times$--$18.7\\times$. Under INT8 quantization, KAN trajectories diverged up to $43\\times$ earlier than matched MLPs; the damage traces to weight quantization, not to input-side knot-interval misassignment. These results indicate that the parameter efficiency reported for KANs does not transfer to deployment cost on scalar embedded cores, and that an MLP residual branch is the more dependable default for embedded HRPINN deployment unless specific quantization co-design is used.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "1abe7070f7f12136",
+      "title": "GCC Patches Added -mcpu=native -mtune=native Support For RISC-V",
+      "url": "https://www.phoronix.com/news/GCC-RISC-V-mcpu-mtune-native",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T10:08:15+00:00",
+      "summary": "A SiFive engineer posted patches today for the GNU Compiler Collection (GCC) for adding -mtune=native -mcpu=native support for the compiler on RISC-V...",
+      "tags": [
+        "GCC",
+        "RISC-V"
+      ],
+      "entities": [
+        "SiFive"
+      ],
+      "score": 2.62,
+      "title_zh": "GCC Patches Added -mcpu=native -mtune=native Support For RISC-V",
+      "summary_zh": "A SiFive engineer posted patches today for the GNU Compiler Collection (GCC) for adding -mtune=native -mcpu=native support for the compiler on RISC-V...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "GCC",
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "ff91a2cd0a00fc6c",
+      "title": "FRESCO: Complete and Scalable Temporal Safety for CHERI Application Processors",
+      "url": "https://arxiv.org/abs/2608.26353v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-26T19:36:30+00:00",
+      "summary": "CHERI provides hardware-enforced spatial memory safety. While prior work extends it with heap temporal safety, stack use-after-return remains unaddressed. Existing defenses fall short: compiler analysis reliably catches only references that escape as function return values, while dynamic sanitizers impose overheads that preclude production deployment. We present FRESCO, built on the principle that a stack capability must not outlive the frame that created it. FRESCO \"colors\" the stack pointer with per-invocation provenance identifiers; every capability derived from it inherits that lifetime and is hardware-invalidated the moment the function exits, regardless of how or where it escaped. Because stack frames retire orders of magnitude more frequently than heap allocations, FRESCO manages the resulting color pressure through: 1) Color Saver, a static capability-aware escape analysis that confines coloring to functions needing it, and whose core algorithm we mechanically verify in Rocq, and 2) capability-color segmentation, which partitions memory into disjoint segments, each with an independent color namespace. Color segmentation lets stack and heap temporal safety coexist on one system, making FRESCO the first hardware/software co-design to provide complete and scalable temporal safety for CHERI application processors. We realize FRESCO on the CHERI-RISC-V QEMU full-system emulator and the out-of-order CHERI-Toooba FPGA softcore, with software support in the CHERI-enabled Clang/LLVM compiler and CheriBSD OS. FRESCO systematically prevents use-after-return, use-after-free, and double-free across the NIST Juliet Test Suite and CVEs, with only a small run-time overhead in SPEC CPU (4% g.m.), SQLite, and PostgreSQL (10-14%).",
+      "tags": [
+        "LLVM",
+        "QEMU",
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.61,
+      "title_zh": "FRESCO：为CHERI应用处理器提供完整且可扩展的时间内存安全",
+      "summary_zh": "针对CHERI此前未覆盖的栈 use-after-return 漏洞，提出基于栈指针着色的方案：为每次函数调用附加生命周期标识，由其派生的capability在函数退出时由硬件自动失效；配合Color Saver静态逃逸分析与Color Pressure控制机制缓解高频栈帧退役带来的着色压力，为生产部署提供低开销路径。",
+      "why_it_matters_zh": "它补齐了CHERI在栈时间安全上的关键缺口，使软硬协同的内存保护方案首次具备生产可用性。",
+      "tags_zh": [
+        "CHERI",
+        "内存安全",
+        "RISC-V",
+        "硬件能力",
+        "能力着色"
+      ]
+    },
+    {
+      "id": "96e9a7aa0fc3bd0c",
+      "title": "RVANNS: Mixed-Precision Indexing and Locality-Aware Graph Traversal on RISC-V",
+      "url": "https://arxiv.org/abs/2608.09077v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-10T03:27:04+00:00",
+      "summary": "Approximate nearest neighbor search (ANNS) on CPUs is increasingly constrained by candidate-vector movement and decoding rather than peak arithmetic throughput. Although the RISC-V Vector Extension (RVV) provides vector-length-agnostic execution and LMUL-based register grouping, generic low-precision decoding still incurs conversion overhead, while irregular graph traversal generates scattered accesses that degrade cache locality and memory-level parallelism. We present RVANNS, an RVV-oriented ANNS engine that jointly optimizes vector representation and graph locality. Its Mixed-Precision Multi-Layer Index (MPMI) represents each vector with a dense 8-bit affine base and sparse FP16/FP32 residuals, fusing reconstruction with distance accumulation and aligning widening with LMUL-sized register groups. ROrder co-locates likely co-visited graph nodes and sorts remapped adjacency lists, transforming scattered payload probes into denser, predominantly forward-moving address streams. Integrated into Milvus, RVANNS achieves 3.39x and 4.94x speedups over scalar execution on real 128-bit and 256-bit RVV processors, respectively. Under controlled HNSW configurations, it improves throughput by 2.27--2.76x over RVV SIMD+FP32 and by 1.18--1.59x over the corresponding AVX-512 and SVE baselines. On Cohere10M, it further delivers 1.82--2.27x higher QPS/W than the evaluated GPU baselines.",
+      "tags": [
+        "RISC-V",
+        "RISC-V Vector",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.61,
+      "title_zh": "RVANNS：面向RISC-V的混合精度索引与局部性感知图遍历",
+      "summary_zh": "针对CPU上近似最近邻搜索受限于访存与解码开销的问题，提出基于RISC-V向量扩展（RVV）的ANNS引擎。MPMI以8位仿射基底叠加稀疏FP16/FP32残差表示向量，并将重建与距离累加融合、对齐LMUL寄存器组；ROrder通过节点重排与邻接表排序提升图遍历的缓存局部性与内存级并行。",
+      "why_it_matters_zh": "展示了RVV在AI检索负载下的实用加速路径，为RISC-V进入边缘ML平台提供新证据。",
+      "tags_zh": [
+        "RISC-V",
+        "向量扩展",
+        "近似最近邻搜索",
+        "混合精度",
+        "AI推理"
+      ]
+    },
+    {
+      "id": "44c6e443ad9c12f9",
+      "title": "Exploring spectral element methods on the Tenstorrent RISC-V accelerator",
+      "url": "https://arxiv.org/abs/2608.22964v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-24T08:29:26+00:00",
+      "summary": "The growing availability of commodity RISC-V hardware has sparked interest in its use for High Performance Computing (HPC), with PCIe accelerator cards offering a practical near-term pathway to adoption. The Tenstorrent Wormhole is one example, with dedicated vector and matrix units across 128 Tensix cores, and is widely available. In this paper, we explore porting the AX kernel of Nekbone, a widely used HPC mini-application derived from the Gordon Bell Prize-winning Nek5000 spectral element solver, onto the Wormhole accelerator. This kernel evaluates the Poisson operator, and we describe the mapping of the algorithm onto the Tensix. The initial performance results reveal that the host-side data transposition, required for the z-direction gradient computation, is a severe bottleneck. Consequently, we investigated two optimisation strategies that yield dramatic improvements, achieving 242.97 GFLOPS for 100000 elements across 128 Tensix cores, outperforming a 24-core Xeon Platinum CPU and drawing approximately 7 times less power.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "Tenstorrent"
+      ],
+      "score": 2.55,
+      "title_zh": "Exploring spectral element methods on the Tenstorrent RISC-V accelerator",
+      "summary_zh": "The growing availability of commodity RISC-V hardware has sparked interest in its use for High Performance Computing (HPC), with PCIe accelerator cards offering a practical near-term pathway to adoption. The Tenstorrent Wormhole is one example, with dedicated vector and matrix units across 128 Tensix cores, and is widely available. In this paper, we explore porting the AX kernel of Nekbone, a widely used HPC mini-application derived from the Gordon Bell Prize-winning Nek5000 spectral element solver, onto the Wormhole accelerator. This kernel evaluates the Poisson operator, and we describe the mapping of the algorithm onto the Tensix. The initial performance results reveal that the host-side data transposition, required for the z-direction gradient computation, is a severe bottleneck. Consequently, we investigated two optimisation strategies that yield dramatic improvements, achieving 242.97 GFLOPS for 100000 elements across 128 Tensix cores, outperforming a 24-core Xeon Platinum CPU and drawing approximately 7 times less power.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "e8bde1dd5eb2ce69",
+      "title": "Porting and Benchmarking Chapel on Emerging RISC-V Hardware: an HPC Viability Study",
+      "url": "https://arxiv.org/abs/2608.14799v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-14T18:11:12+00:00",
+      "summary": "The Chapel programming language recently added support for the RISC-V architecture. Here we discuss what changes were needed for Chapel to work on RISC-V as well as lessons learned from the porting process. We use some of Chapel's extensive benchmark suite to gain further insight into the suitability of the RISC-V architecture for future HPC use. We compare performance on SiFive P550 and Unmatched boards and a Sophon SG2042 with a variety of other recent HPC CPU platforms. Various portability and performance anomalies arose on different architectures and will be discussed. While the RISC-V machines represent smaller preliminary offerings and not HPC-class hardware, these results still provide hope that RISC-V hardware can become viable for HPC in the near future.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "SiFive"
+      ],
+      "score": 2.55,
+      "title_zh": "Porting and Benchmarking Chapel on Emerging RISC-V Hardware: an HPC Viability Study",
+      "summary_zh": "The Chapel programming language recently added support for the RISC-V architecture. Here we discuss what changes were needed for Chapel to work on RISC-V as well as lessons learned from the porting process. We use some of Chapel's extensive benchmark suite to gain further insight into the suitability of the RISC-V architecture for future HPC use. We compare performance on SiFive P550 and Unmatched boards and a Sophon SG2042 with a variety of other recent HPC CPU platforms. Various portability and performance anomalies arose on different architectures and will be discussed. While the RISC-V machines represent smaller preliminary offerings and not HPC-class hardware, these results still provide hope that RISC-V hardware can become viable for HPC in the near future.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "397790de1909349a",
+      "title": "StarFive Dubhe-100 – A 64-bit, RVA23-compliant RISC-V core for high-performance applications",
+      "url": "https://www.cnx-software.com/2026/08/20/starfive-dubhe-100-a-64-bit-rva23-compliant-risc-v-core-for-high-performance-applications/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T00:00:37+00:00",
+      "summary": "StarFive has launched a new high-performance 64-bit RISC-V core from the Dubhe family with the RVA23-compliant Dubhe-100 designed for servers and HPC, as well as other high-performance applications. The new RISC-V IP core delivers a SPECint2006 score of 15/GHz, supports Vector and Vector Crypto extensions, and features a deep out-of-order design with a 15-stage pipeline and 6-wide issue. StarFive Dubhe-100 key features and specifications: ISA – RV64GCBVH 15-stage pipeline, 6-issue Superscalar, deep out-of-order execution Support Multi-core cache coherence Support instruction fusion Support AIA1.0 Performance SPECint2006: 15/GHz Dhrystone v2.2: 10.0/MHz (legal) HPM (Hardware Performance Monitor) RISC-V standard HPM support Micro-architecture level analysis and performance tuning PMP & PMA (Physical Memory Protection / Physical Memory Attributes) Configurable 16/32/64 PMP supported regions, minimum 4096-byte region size Support predefined PMA and Svpbmt Debug & Trace Standard debug module compliant with RISC-V Debug Spec Standard Trace module interface compliant with RISC-V Trace Spec Power Management [...] The post StarFive Dubhe-100 – A 64-bit, RVA23-compliant RISC-V core for high-performance applications appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V",
+        "RVA23"
+      ],
+      "entities": [
+        "StarFive"
+      ],
+      "score": 2.52,
+      "title_zh": "StarFive Dubhe-100：面向服务器与HPC的64位RVA23合规RISC-V核心",
+      "summary_zh": "StarFive推出Dubhe-100高性能64位RISC-V核心，符合RVA23规范，面向服务器及HPC应用。SPECint2006得分15/GHz，支持Vector和Vector Crypto扩展，采用15级流水线、6发射超标量深度乱序设计。ISA为RV64GCBVH，支持多核缓存一致性、AIA1.0及标准HPM硬件性能监控，配备可配置PMP区域。",
+      "why_it_matters_zh": "Dubhe-100以15/GHz SPECint2006性能进入服务器级RISC-V核心竞争，增强RISC-V在高性能计算领域的实力。",
+      "tags_zh": [
+        "StarFive",
+        "RISC-V核心",
+        "高性能计算",
+        "服务器",
+        "RVA23",
+        "Dubhe"
+      ]
+    },
+    {
+      "id": "f8b56e5748f7aa38",
+      "title": "ANTMAN: An Efficient and Interpretable RTL-Level Run-Time Detection Framework for Stealthy Branch Predictor Attacks on BOOM",
+      "url": "https://arxiv.org/abs/2608.09498v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-10T12:03:09+00:00",
+      "summary": "Runtime detection of microarchitectural side channel attacks remains significantly underexplored in RISCV compared with x86 and ARM ISAs, posing a serious threat to critical applications. State-of-the-art branch predictor attacks bypass traditional data and instruction caches by directly exploiting the state of internal history tables, making them inherently stealthy. Recent research has explored offline detection of microarchitectural attacks on RISC-V; however, efficient runtime detection of microarchitectural attacks on RISC-V hardware remains significantly unaddressed. State-of-the-art hardware-based runtime detection solutions leverage hardware performance counters (HPCs) but suffer from a restricted set of counter registers and tradeoffs between detection accuracy, detection speed, and sampling granularity, making them impractical for stealthy attacks. Moreover, sampling HPCs after distinct intervals leaves intermediate relationships between different microarchitectural blocks unobserved. Additionally, proprietary x86 and ARM ISAs constrain researchers from modifying processor microarchitectural designs. To address these limitations, we propose the first secure-by-design, highly interpretable, non-intrusive, RTL-level runtime detection solution for stealthy branch predictor attacks on BOOM RISC-V, evaluated under both simplified Next-Line Predictor (NLP) and complex TAGE predictor configurations. The attack detection relies on association rules extracted offline and embedded in hardware as a non-intrusive rule monitor that enables runtime detection. The proposed approach achieves excellent detection speed, terminates execution before secret disclosure, and produces zero false positives while remaining flexible for detecting previously unseen variants within the same family of branch predictor attacks.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.49,
+      "title_zh": "ANTMAN：面向BOOM处理器分支预测器隐蔽攻击的高效RTL级运行时检测框架",
+      "summary_zh": "微架构侧信道攻击的运行时检测在RISC-V领域相较x86和ARM仍明显不足。最新分支预测器攻击绕过传统缓存直接利用内部历史表状态，隐蔽性极强。已有研究探索了RISC-V微架构攻击的离线检测，但高效的运行时检测仍显著欠缺。现有基于HPC的方案受计数器数量限制，在精度、速度和采样粒度间难以权衡。",
+      "why_it_matters_zh": "ANTMAN针对RISC-V BOOM提出RTL级运行时检测框架，弥补了微架构安全防护在RISC-V平台的关键空白。",
+      "tags_zh": [
+        "ANTMAN",
+        "RISC-V安全",
+        "分支预测器攻击",
+        "侧信道",
+        "BOOM"
+      ]
+    },
+    {
+      "id": "5a71249fe627b04c",
+      "title": "LACE: Large Language Model Aided Multi-Agent Framework for Agile RISC-V Instruction Extension",
+      "url": "https://arxiv.org/abs/2608.02915v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-03T22:07:06+00:00",
+      "summary": "Domain-specific Instruction Set Architecture eXtensions (ISAX) are widely adopted in the RISC-V ecosystem to accelerate emerging workloads, but implementing and validating ISAXes across different cores remains slow and fragmented. Existing frameworks still require per-core interface adaptation, and differential testing often breaks once either the microarchitecture or the ISAX changes. We present LACE, an LLM-aided multi-agent workflow that translates natural-language ISAX intents into a compact two-level IR (operation-level and HDL task-level), performs retrieval-guided localized RTL edits over large repositories, and closes the loop with a compiler-agnostic riscv-formal checking flow (assuming RVFI availability or instrumentation). Across four embedded RISC-V cores, LACE raises pass@1 generation accuracy from near-zero to 72.8\\% within our evaluation setup, while improving code localization and reducing integration rework. The code of LACE is available at https://github.com/UMN-ZhaoLab/LACE.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.49,
+      "title_zh": "LACE：基于大语言模型多智能体的RISC-V指令扩展框架",
+      "summary_zh": "论文提出LACE框架，利用大语言模型多智能体工作流，将自然语言描述的指令扩展意图转化为两级中间表示，对大型RTL代码库进行检索引导的局部编辑，并通过与编译器无关的riscv-formal检查流程完成验证。在四款嵌入式RISC-V核上将pass@1生成准确率从接近零提升至72.8%，并改善了代码定位效果。",
+      "why_it_matters_zh": "将LLM多智能体引入RISC-V定制指令设计与验证流程，显著加速ISAX落地。",
+      "tags_zh": [
+        "RISC-V",
+        "指令扩展",
+        "大语言模型",
+        "多智能体",
+        "形式化验证",
+        "RTL"
+      ]
+    },
+    {
+      "id": "52068e7fa38760dc",
+      "title": "An Empirical Evaluation of Using Large Language Models for Automated Model-Based Test Generation",
+      "url": "https://arxiv.org/abs/2608.27094v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-27T13:13:12+00:00",
+      "summary": "Large language models have shown strong potential for software engineering tasks, particularly software testing. Model-based testing (MBT) is a software testing technique. To address the broad scalability challenge for industrial adoption of MBTs, our paper presents an empirical evaluation of Large Language Models (LLMs) for automated model-based test generation, compared with a state-of-the-art model-based testing tool (GraphWalker) and its built-in algorithms (random and quick random for edge and vertex coverage settings). Our evaluation indicates strong potential to optimize and shorten test paths and step sizes using the recent five state-of-the-art LLMs (GPT-5.1, GPT-5.2, Claude Opus 4.5, Claude Sonnet 4.5, and Gemini 2.5 Pro) against four GraphWalker models (two web applications (Parabank and Testinium) and two hardware applications (TLC and RISC-V) ) of escalating complexity.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "大语言模型在自动化基于模型测试中的实证评估",
+      "summary_zh": "论文对GPT-5.1、GPT-5.2、Claude Opus 4.5、Claude Sonnet 4.5和Gemini 2.5 Pro五款主流大语言模型在基于模型的测试（MBT）生成中的表现进行实证评估，对照工具为GraphWalker及其内置随机与快速随机算法，测试对象包括Parabank、Testinium、TLC和RISC-V四个复杂度递增的模型。",
+      "why_it_matters_zh": "首次系统评估主流LLM对MBT工业落地的优化潜力，覆盖RISC-V场景。",
+      "tags_zh": [
+        "RISC-V",
+        "软件测试",
+        "大语言模型",
+        "模型驱动测试",
+        "自动化测试"
+      ]
+    },
+    {
+      "id": "614a7d327842a3c9",
+      "title": "AI with Authority, from Application to Silicon",
+      "url": "https://arxiv.org/abs/2608.21356v2",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-25T22:53:45+00:00",
+      "summary": "For sixty years, machine verification has been a major cost overhead, affordable only for exceptional artifacts. Here we report that generative AI inverts this relationship: at AI speed, machine verification is not only economical but essential to productivity --- it is the incorruptible referee that lets one person safely direct autonomous machine work at scale. In five weeks, one researcher on consumer AI subscriptions directed a small fleet of AI agents from application code, through a verified compiler and executive, to a RISC-V processor taped out on a community silicon shuttle; no proof passed through human review, and no RTL was written by a human. The working discipline --- the Salt method --- rests on a proof kernel no hallucinated proof can pass: mathematical claims travel between agents as kernel-checked artifacts, and human attention is reserved for statements, designs, and rulings. Verification is stated link by link, from the Lean 4 kernel to SAT-checked equivalence at the silicon boundary. We publish the complete accounting: theorem provenance, a pre-registered token meter, floor-bounded human time, and an error ledger whose catch numbering runs to #256 --- a monotone counter over the mathematics campaign's append-only flags ledger, maintained 2026-07-07 to 2026-07-20 (one number, #79, was never assigned; later catches are recorded un-numbered) --- against zero incorrect proofs reaching the record.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "AI驱动从应用到芯片：单人五周完成RISC-V处理器流片",
+      "summary_zh": "研究者借助生成式AI与机器验证，在五周内通过验证编译器与执行器，在社区硅班车流片了一款RISC-V处理器，全程无人工编写RTL且无证明经人工审阅。Salt方法以机器验证为内核，由一人指挥AI代理完成端到端芯片开发。",
+      "why_it_matters_zh": "展示AI与形式化验证结合可在数周内完成从应用到硅的完整流片，颠覆传统芯片设计流程。",
+      "tags_zh": [
+        "RISC-V",
+        "生成式AI",
+        "机器验证",
+        "Salt方法",
+        "芯片设计"
+      ]
+    },
+    {
+      "id": "ceec86e3e30acbd2",
+      "title": "CTTE: An Open Dual-Protocol RISC-V Trace Encoder for N-Trace and E-Trace",
+      "url": "https://arxiv.org/abs/2608.18170v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-17T16:13:02+00:00",
+      "summary": "RISC-V standardizes two processor-trace formats, N-Trace and E-Trace, that share a hart-to-encoder instruction trace interface but differ in compression, messages, and framing. To the best of our knowledge, as of August 2026, no publicly available synthesizable N-Trace encoder and no published hardware encoder with both back ends behind a common front end have been reported. We present CTTE (CEDARtools.TraceEncoder), an open SystemVerilog encoder with a protocol-agnostic front end and selectable N-Trace/Nexus or E-Trace back ends. CTTE implements the N-Trace 1.0 program-trace message set in both instruction-trace modes, supports parameterized N-Trace address width, follows the RISC-V Trace Control Interface, and announces output-bandwidth loss before state re-convergence on the evaluated N-Trace path. CTTE has been integrated with six RISC-V cores from five suppliers. We evaluate 64-bit RISC-V systems booting Linux, including a two-hart SMP system, and demonstrate source-side process-context filtering that doubles observation depth for a target process in a fixed buffer. Verification combines instruction-exact round trips, RTL invariants, formal model checking, and machine-judged hardware campaigns with negative controls. With hardware and configuration held constant, workload choice changes trace cost from 0.21 to 4.90 bits per retired instruction. A common front end also enables controlled back-end comparisons while exposing synchronization and transport effects that must be separated from wire-format effects. RTL, register sources, tests, formal properties, decoder extensions, and build scripts are released under CERN-OHL-S-2.0; proprietary integration is available under an Accemic commercial license.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "CTTE：开源双协议RISC-V追踪编码器，支持N-Trace与E-Trace",
+      "summary_zh": "CTTE是开源SystemVerilog编码器，采用协议无关前端与可切换的N-Trace/Nexus或E-Trace后端，实现N-Trace 1.0程序追踪消息集，支持参数化N-Trace地址宽度并遵循RISC-V Trace Control Interface，已与五家供应商的六款RISC-V核心集成。",
+      "why_it_matters_zh": "首个同时支持N-Trace与E-Trace的开源硬件编码器，为RISC-V调试追踪提供统一方案。",
+      "tags_zh": [
+        "RISC-V",
+        "N-Trace",
+        "E-Trace",
+        "开源硬件",
+        "追踪编码器",
+        "SystemVerilog"
+      ]
+    },
+    {
+      "id": "746fe0b274ba9462",
+      "title": "InSPECtor: Improving SLEIGH Processor Specification Veracity via Proxy",
+      "url": "https://arxiv.org/abs/2608.13042v2",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-17T01:53:48+00:00",
+      "summary": "Processor specifications underpin critical security and program- analysis tools such as disassemblers, decompilers, and emulators, yet, their correctness is rarely examined. Errors in specifications distort program behaviour, obscure vulnerabilities, and enable analysis-evasion techniques. Validating processor specifications is a non-trivial task. Our study is a significant undertaking to enable, for the first time, the systematic validation of open-source SLEIGH language specifications, predominantly used by Ghidra. We design and implement a testing framework based on an automated oracle validation strategy by proxy. Our approach leverages the structure encoded in a specification itself to enumerate decodable instruction forms and generate targeted initial states. Then differentially test the successful decoding and emulation of those instructions by comparing emulators exercising the processor specification against hardware references. Applying InSPECtor across diverse, open-source specifications---x86-64, AArch64, ARM/Thumb, RISC-V, MSP430---embedding differences in specification styles, author preferences, and instruction set architecture designs, we uncovered over 38,920 discrepancies that led to 125 unique bugs with proposed fixes, identifying decoding and semantic defects as well as cross-vendor inconsistencies. We distill our findings into 8 concrete recommendations to drive future improvements. Our work underscores the importance of specification correctness and provides a practical tool to substantially improve the fidelity of SLEIGH processor specifications, strengthening the reliability of downstream security and analysis tools.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "InSPECtor: Improving SLEIGH Processor Specification Veracity via Proxy",
+      "summary_zh": "Processor specifications underpin critical security and program- analysis tools such as disassemblers, decompilers, and emulators, yet, their correctness is rarely examined. Errors in specifications distort program behaviour, obscure vulnerabilities, and enable analysis-evasion techniques. Validating processor specifications is a non-trivial task. Our study is a significant undertaking to enable, for the first time, the systematic validation of open-source SLEIGH language specifications, predominantly used by Ghidra. We design and implement a testing framework based on an automated oracle validation strategy by proxy. Our approach leverages the structure encoded in a specification itself to enumerate decodable instruction forms and generate targeted initial states. Then differentially test the successful decoding and emulation of those instructions by comparing emulators exercising the processor specification against hardware references. Applying InSPECtor across diverse, open-source specifications---x86-64, AArch64, ARM/Thumb, RISC-V, MSP430---embedding differences in specification styles, author preferences, and instruction set architecture designs, we uncovered over 38,920 discrepancies that led to 125 unique bugs with proposed fixes, identifying decoding and semantic defects as well as cross-vendor inconsistencies. We distill our findings into 8 concrete recommendations to drive future improvements. Our work underscores the importance of specification correctness and provides a practical tool to substantially improve the fidelity of SLEIGH processor specifications, strengthening the reliability of downstream security and analysis tools.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "293474da3689e8de",
+      "title": "ROLoad-PMP: Securing Sensitive Operations for Kernels and Bare-Metal Firmware",
+      "url": "https://arxiv.org/abs/2608.13287v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-13T14:23:36+00:00",
+      "summary": "A common way for attackers to compromise victim systems is hijacking sensitive operations (e.g., control-flow transfers) with attacker-controlled inputs. Existing solutions in general only protect parts of these targets and have high performance overheads, which are impractical and hard to deploy on systems with limited resources (e.g., IoT devices) or for low-level software like kernels and bare-metal firmware. In this paper, we present a lightweight hardware-software co-design solution ROLoad-PMP to protect sensitive operations from being hijacked for low-level software. First, we propose new instructions, which only load data from read-only memory regions with specific keys, to guarantee the integrity of pointees pointed by (potentially corrupted) data pointers. Then, we provide a program hardening mechanism to protect sensitive operations, by classifying and placing their operands into read-only memory with different keys at compile-time and loading them with ROLoad-PMP-family instructions at runtime. We have implemented an FPGA-based prototype of ROLoad-PMP based on RISC-V, and demonstrated an important defense application, i.e., forward-edge control-flow integrity. Results showed that ROLoad-PMP only costs few extra hardware resources (< 1.40%). Moreover, it enables many lightweight (e.g., with negligible overheads < 0.853%) defenses, and provides broader and stronger security guarantees than existing hardware solutions, e.g., ARM BTI and Intel CET.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "ROLoad-PMP: Securing Sensitive Operations for Kernels and Bare-Metal Firmware",
+      "summary_zh": "A common way for attackers to compromise victim systems is hijacking sensitive operations (e.g., control-flow transfers) with attacker-controlled inputs. Existing solutions in general only protect parts of these targets and have high performance overheads, which are impractical and hard to deploy on systems with limited resources (e.g., IoT devices) or for low-level software like kernels and bare-metal firmware. In this paper, we present a lightweight hardware-software co-design solution ROLoad-PMP to protect sensitive operations from being hijacked for low-level software. First, we propose new instructions, which only load data from read-only memory regions with specific keys, to guarantee the integrity of pointees pointed by (potentially corrupted) data pointers. Then, we provide a program hardening mechanism to protect sensitive operations, by classifying and placing their operands into read-only memory with different keys at compile-time and loading them with ROLoad-PMP-family instructions at runtime. We have implemented an FPGA-based prototype of ROLoad-PMP based on RISC-V, and demonstrated an important defense application, i.e., forward-edge control-flow integrity. Results showed that ROLoad-PMP only costs few extra hardware resources (< 1.40%). Moreover, it enables many lightweight (e.g., with negligible overheads < 0.853%) defenses, and provides broader and stronger security guarantees than existing hardware solutions, e.g., ARM BTI and Intel CET.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "504157b6ab13e414",
+      "title": "FPGA Lifecycle Management for RISC-V Systems",
+      "url": "https://arxiv.org/abs/2608.18156v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-13T13:27:45+00:00",
+      "summary": "FPGA lifecycle management remains tied to proprietary toolchains and host architectures, leaving RISC-V without a vendor-neutral model for scalable bitstream deployment. A host-agnostic control-plane architecture is presented that shifts lifecycle management to the operating-system layer by leveraging standard Linux capabilities, thereby decoupling deployment from specific ISAs and vendor stacks. This enables Linux-capable RISC-V processors to serve as control hosts in heterogeneous FPGA systems. Prototyped on a Zynq-7000 SoC and generalizable to RISC-V platforms, the architecture provides a portable foundation for fleet-scale FPGA management.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "面向RISC-V系统的FPGA生命周期管理架构",
+      "summary_zh": "针对FPGA生命周期管理依赖专有工具链和特定主机架构的问题，研究提出一种与主机无关的控制平面架构，将管理功能下沉到操作系统层，借助标准Linux能力解耦比特流部署与ISA及厂商栈。该架构使支持Linux的RISC-V处理器可作为异构FPGA系统的控制主机，并在Zynq-7000 SoC上完成原型验证，可推广至各类RISC-V平台。",
+      "why_it_matters_zh": "为RISC-V平台上FPGA大规模、厂商中立的统一管理提供了可移植的控制基础。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "生命周期管理",
+        "Linux",
+        "异构计算"
+      ]
+    },
+    {
+      "id": "1d184331dee69612",
+      "title": "MAUPITI: On-Device Prototype-Based Learning on a Smart Infrared Sensor",
+      "url": "https://arxiv.org/abs/2608.07192v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-07T13:07:24+00:00",
+      "summary": "Low-resolution infrared (IR) array sensors represent an interesting solution for privacy-preserving human sensing in embedded systems. In this letter, we describe a smart multi-pixel IR sensor integrating a 16$\\times$16 thermal MOSFET (TMOS) array and a RISC-V microcontroller extended with low-precision SIMD instructions, capable of on-device learning and continual adaptation for pose and gesture recognition tasks under tight memory and power constraints ($<$32kB on-chip memory, $\\approx$1.5mW). To avoid the memory overheads of backpropagation and replay buffers, we adopt a prototype-based Nearest Class Mean (NCM) classifier in which a simple Convolutional Neural Network (CNN) encoder is trained and quantized offline, while class prototypes are stored and updated on the device in streaming mode. With experiments on two datasets, we show that this approach yields accuracy on par with a conventional classifier, with negligible latency overheads in both the classification and the prototype update ($<$0.29% considering both phases), effectively enabling online adaptation of the perception framework.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "MAUPITI：基于RISC-V智能红外传感器的片上原型学习",
+      "summary_zh": "研究提出集成16×16 TMOS热阵列与RISC-V微控制器的智能红外传感器，扩展低精度SIMD指令以支持片上持续学习与自适应，用于姿态和手势识别。系统采用基于原型的最近类均值（NCM）分类器，CNN编码器离线训练并量化，类原型在设备上以流式模式存储更新，在两个数据集上精度与对比方法相当。",
+      "why_it_matters_zh": "展示了RISC-V加定制SIMD在超低功耗、隐私敏感嵌入式感知场景的实用潜力。",
+      "tags_zh": [
+        "RISC-V",
+        "SIMD",
+        "片上学习",
+        "红外传感",
+        "嵌入式AI"
+      ]
+    },
+    {
+      "id": "a5f758e4866201ac",
+      "title": "MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model",
+      "url": "https://arxiv.org/abs/2608.06916v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-07T07:50:42+00:00",
+      "summary": "Quantized Neural Networks~(QNN) with low-bitwidth data have proven promising in efficient storage and computation on edge devices. To mitigate accuracy degradation while maximizing speedup, layer-wise mixed-precision quantization~(MPQ) becomes a popular solution. However, existing algorithms for exploring MPQ schemes are limited in flexibility and efficiency. Comprehending the complex impacts of different MPQ schemes on post-training quantization and quantization-aware training results is a challenge for conventional methods. Furthermore, an end-to-end framework for the optimization and deployment of MPQ models is missing in existing work. To address these challenges, we propose the MiCo framework, a holistic MPQ exploration and deployment framework for edge AI applications. The framework adopts a novel optimization algorithm to search for accuracy-optimal quantization configurations under strict latency constraints. We further extended the framework to MiCoPro, which introduces a robust Hardware-Aware Proxy (HAP) model to enhance prediction accuracy and hardware versatility. By leveraging target-specific latency modeling, MiCoPro enables rapid exploration and direct deployment from PyTorch models to bare-metal C code. We demonstrate the versatility of our framework on both the BitFusion accelerator and SIMD-extended RISC-V processors, achieving up to 40\\% of latency reduction with less than 3\\% of accuracy drop.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "MiCoPro：基于硬件感知代理模型的端到端混合精度软硬件协同设计",
+      "summary_zh": "针对边缘设备上量化神经网络存在的精度下降与加速难题，提出端到端混合精度量化框架MiCo，采用新颖优化算法搜索精度最优的量化配置，并实现从搜索到部署的完整流程，兼顾灵活性与效率。",
+      "why_it_matters_zh": "为边缘AI提供兼顾精度与速度的量化部署方案，弥补了现有MPQ方案在端到端优化上的不足。",
+      "tags_zh": [
+        "混合精度量化",
+        "硬件软件协同设计",
+        "边缘AI",
+        "神经网络压缩"
+      ]
+    },
+    {
+      "id": "d0507c950898e4d4",
+      "title": "Retention-Aware RISC-V ISA Extension and Memory Controller on FPGA for MLC NVM",
+      "url": "https://arxiv.org/abs/2608.06725v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-07T02:38:16+00:00",
+      "summary": "Non-volatile memory (NVM) technologies, particularly Multi-Level Cell (MLC) NVMs, offer significant potential for increasing memory density. MLC NVMs provide a tradeoff between write latency and retention time, where faster writes/stores result in lower retention and slower writes yield higher retention. However, limited work has been done to validate and prototype NVM-based systems in hardware, leveraging this tradeoff at the system level. In this paper, we present a novel memory controller architecture and a RISC-V instruction set extension to optimize MLC NVM write operations by balancing speed and retention time. Our custom NVM controller, built around a finite state machine with an AXI memory-mapped interface, efficiently manages read/write operations with enhanced burst transfers, minimizing latency. Additionally, we introduce a fast-store instruction in RISC-V to increasing write performance while addressing retention limitations. Further, we design a dedicated AXI slave peripheral that supports bit-significance-aware writes: critical bits (e.g., MSBs) are written using slower, high-retention writes, while non-critical bits (e.g., LSBs) use faster, low-retention writes to help enhance performance without compromising data reliability. These enhancements are implemented in hardware on an FPGA platform. Experimental results show that our controller reduces hardware overhead by 30% compared to conventional designs, and the fast-store instruction improves performance by over 7% for streaming workloads with less than 0.08% hardware overhead. The bit-wise AXI peripheral has a LUT utilization staying below 3.5% even for 64x64 matrices, and under 1% for 32x32 sizes, making it viable for integration into larger SoCs.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "面向MLC NVM的保留感知RISC-V指令扩展与FPGA存储控制器",
+      "summary_zh": "针对多级单元非易失性存储器写入速度与数据保留时间的权衡难题，在FPGA上设计新型存储控制器，并扩展RISC-V指令集加入快速存储指令，通过AXI存储器映射接口提升突发传输效率。",
+      "why_it_matters_zh": "首次在硬件层面验证了NVM速度-保留权衡的可行性，为RISC-V平台高效利用MLC NVM提供系统级方案。",
+      "tags_zh": [
+        "RISC-V指令扩展",
+        "MLC NVM",
+        "FPGA",
+        "存储控制器"
+      ]
+    },
+    {
+      "id": "93a0095e827884e0",
+      "title": "A Centralized Performance Monitoring Architecture for Heterogeneous Multicore SoCs",
+      "url": "https://arxiv.org/abs/2608.04247v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-04T21:57:50+00:00",
+      "summary": "Hardware Performance Counters (HPCs) are widely used to enable event-driven software mechanisms such as profile guided optimization, performance analysis, and dynamic resource management in real-time systems. However, in modern embedded System-on-a-Chip (SoCs), different components - including processors, accelerators, interconnects, and memory controllers - typically implement separate and heterogeneous HPC modules. This distributed monitoring infrastructure requires multiple software interfaces and complicates the collection, synchronization, and correlation of performance data across the system. In this work, we propose a centralized performance monitoring architecture to efficiently collect, correlate, and process architectural events across multiple hardware components. Our design introduces Event Monitoring Units (EVUs) that capture and forward microarchitectural events to an Advanced Performance Monitoring Unit (APMU). The APMU integrates programmable counters and a specialized processing element to support flexible, event-driven software mechanisms. We implement our design for an AXI4-based system and integrate it into a RISC-V based SoC platform, which lacks advanced cross-component performance monitoring support. We demonstrate the effectiveness of our approach through case studies on real-time resource regulation, application profiling, and counter attribution.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "面向异构多核SoC的集中式性能监控架构",
+      "summary_zh": "现代嵌入式SoC中各组件通常配备独立且异构的硬件性能计数器(HPC)，导致性能数据采集、同步和关联复杂。本文提出集中式性能监控架构，引入事件监控单元(EVU)采集微架构事件并转发至高级分析模块，实现跨硬件组件的高效事件收集、关联与处理。",
+      "why_it_matters_zh": "统一异构组件的性能监控接口，简化跨组件性能数据采集与关联，为实时系统的资源管理提供支撑。",
+      "tags_zh": [
+        "性能监控",
+        "异构多核SoC",
+        "硬件性能计数器",
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "5efc58dee38c1bdd",
+      "title": "Investigating reservoir computing for branch prediction in pipelined processors using emerging CMOS memristor devices",
+      "url": "https://arxiv.org/abs/2607.27140v2",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-08-04T13:38:42+00:00",
+      "summary": "This project aimed to develop a novel reservoir compute (RC) implementation framework targeting high-speed operation and integration with CMOS digital logic. With the target workload of branch prediction (BP) for multistage pipelined central pro-cessing unit (CPU) cores. For this, a novel memristor based RC design framework was developed within the context of the workload requirements. This was then implemented in simulation using industry standard modelling languages of System Verilog (SV) and Verilog-AMS (VAMS).The developed RC design framework was subsequently verified using a basic sequence detection task before further benchmarking for its effectiveness at BP. The developed RC framework was tested using the Dhrystone performance benchmark, while targeting the RISC-V RV64GC instruction set architecture (ISA). Conducted testing demonstrates that RC shows great promise for ap-plication to BP and is capable of achieving impressive overall prediction accuracy. However, testing also shows that further refinement of the developed RC design framework is necessary to address shortfalls in the adaptability of the proposed RC system. As comparison against the state of the art TAGE predictor showed the proposed RC design framework to be 15x slower to adapt to changes in branching behaviour.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "基于CMOS忆阻器的储备计算分支预测研究",
+      "summary_zh": "本文提出基于忆阻器的储备计算(RC)实现框架，面向多级流水线CPU的分支预测任务。使用SystemVerilog与Verilog-AMS建模实现，并在RISC-V RV64GC ISA上通过Dhrystone基准测试验证，展示了储备计算在高速分支预测中的潜力。",
+      "why_it_matters_zh": "为流水线处理器分支预测提供新型忆阻器RC方案，结合CMOS数字逻辑，有望提升预测速度与能效。",
+      "tags_zh": [
+        "分支预测",
+        "储备计算",
+        "忆阻器",
+        "RISC-V RV64GC",
+        "流水线处理器"
+      ]
+    },
+    {
+      "id": "24871002144cdc6b",
+      "title": "Analyzing RV32/RV64 Trade-offs for FreeRTOS Latency on 8-Stage RISC-V Soft Processors",
+      "url": "https://arxiv.org/abs/2608.00353v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-07-31T23:48:03+00:00",
+      "summary": "Although many commercial RISC-V platforms provide real-time operating system support, practical examples that explain how to enable a preemptive RTOS on a custom bare-metal RISC-V soft processor remain limited, leaving the interaction between processor microarchitecture, interrupt handling, and RTOS context switching difficult to understand from simple hardware implementation examples. This paper presents the design and evaluation of FreeRTOS on custom 8-stage RV32/RV64 RISC-V soft processors with machine-mode CSRs, a CLINT timer, trap and exception control logic, and the required context-switch path. Using this platform, we compare RV32 and RV64 under the same microarchitectural organization and firmware structure using two Rhealstone-derived latency microbenchmarks, task switching and task preemption, measured with the mcycle counter. RV64 requires 36.6% and 17.7% more cycles for task switching and preemption, respectively. Instruction-level analysis attributes this overhead to the doubled RV64 trap frame, wider pointer-based kernel data structures, and 64-bit scheduler priority handling. The RTL, firmware, and benchmark code are released as open source.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "在8级RISC-V软处理器上分析RV32/RV64运行FreeRTOS的延迟权衡",
+      "summary_zh": "本文在自研8级RV32/RV64软处理器上实现了FreeRTOS，包含machine模式CSR、CLINT定时器、陷进与异常逻辑以及上下文切换路径，并基于Rhealstone微基准测量任务切换与抢占延迟。结果显示RV64相比RV32在这两项上分别多消耗36.6%和17.7%的时钟周期。",
+      "why_it_matters_zh": "为定制RISC-V软核移植实时操作系统提供了完整实现参考，并量化了RV64相对RV32在RTOS场景下的具体性能开销。",
+      "tags_zh": [
+        "RISC-V",
+        "FreeRTOS",
+        "软核",
+        "实时系统",
+        "微架构"
+      ]
+    },
+    {
+      "id": "6f3d5d093cec480b",
+      "title": "Implementing Homomorphic Encryption-Based Logic Locking in System-on-Chip Designs",
+      "url": "https://arxiv.org/abs/2607.28542v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-07-30T17:11:14+00:00",
+      "summary": "This study presents a logic locking scheme based on the binary Ring Learning With Errors algorithm, implemented in a RISC-V System-on-Chip design. Unlike traditional logic locking methods that require providing users with raw locking parameters, the proposed approach secures critical logic paths in the privilege switching process without exposing these sensitive parameters. The implemented locking module itself consumes 3519 Look-Up Tables and 2645 Registers, leading to an overall overhead of 6.0% in Look-Up Tables and 6.9% in Registers compared to the baseline system. The unlock process requires about 2.6 us, introducing moderate performance impact, primarily affecting system-level operations while preserving user-level computational efficiency.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "在RISC-V片上系统中实现基于同态加密的逻辑锁定方案",
+      "summary_zh": "本文在RISC-V SoC中实现基于二元环学习差错问题的逻辑锁定，保护特权切换中的关键逻辑路径且无需暴露敏感参数；模块占用3519个LUT和2645个寄存器，开销约为6.0%的LUT与6.9%的寄存器，解锁过程耗时约2.6微秒。",
+      "why_it_matters_zh": "提供了无需交付明文密钥的硬件IP保护思路，可在不泄露敏感参数的前提下防止SoC被逆向或篡改。",
+      "tags_zh": [
+        "RISC-V",
+        "SoC",
+        "硬件安全",
+        "逻辑锁定",
+        "同态加密"
+      ]
+    },
+    {
+      "id": "8b0c45ef03c13805",
+      "title": "World RISC-V Days: Turin Italy",
+      "url": "https://riscv.org/blog/world-risc-v-days-turin-italy/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动在意大利都灵举办",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 活动信息，该活动落地意大利都灵，旨在汇聚 RISC-V 开发者与产业伙伴，共同推动开源指令集生态发展。",
+      "why_it_matters_zh": "该活动有助于在欧洲推广 RISC-V 架构并加强当地开发者社区交流。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "意大利",
+        "都灵",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "5a2db0c7c8feef71",
+      "title": "World RISC-V Days: Tel Aviv Israel",
+      "url": "https://riscv.org/blog/world-risc-v-days-tel-aviv-israel/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动在以色列特拉维夫举办",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 活动信息，该活动落地以色列特拉维夫，旨在汇聚 RISC-V 开发者与产业伙伴，共同推动开源指令集生态发展。",
+      "why_it_matters_zh": "该活动有助于在中东地区扩大 RISC-V 的影响力并促进国际开发者协作。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "以色列",
+        "特拉维夫",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "2c8b6c3e29e4b343",
+      "title": "World RISC-V Days: Gujarat India",
+      "url": "https://riscv.org/blog/world-risc-v-days-gujarat-india/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:08+00:00",
+      "summary": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Gujarat India",
+      "summary_zh": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "97bedbdfbe6140d7",
+      "title": "World RISC-V Days: Boston USA",
+      "url": "https://riscv.org/blog/world-risc-v-days-boston-usa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:07+00:00",
+      "summary": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Boston USA",
+      "summary_zh": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8400c639e3dd2c04",
+      "title": "World RISC-V Days: Nairobi Africa",
+      "url": "https://riscv.org/blog/world-risc-v-days-nairobi-africa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:06+00:00",
+      "summary": "The post World RISC-V Days: Nairobi Africa appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动在内罗毕举办",
+      "summary_zh": "RISC-V International 在肯尼亚内罗毕举办 World RISC-V Days 活动，面向非洲开发者推广 RISC-V 开放指令集架构，促进当地开源硬件生态的交流与发展。",
+      "why_it_matters_zh": "活动首次落地非洲，有助于扩大 RISC-V 生态在全球新兴市场的影响力。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "非洲",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "336ac57bd6343357",
+      "title": "World RISC-V Days: Buenos Aires Argentina",
+      "url": "https://riscv.org/blog/world-risc-v-days-buenos-aires-argentina/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:05+00:00",
+      "summary": "The post World RISC-V Days: Buenos Aires Argentina appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动在布宜诺斯艾利斯举办",
+      "summary_zh": "RISC-V International 在阿根廷布宜诺斯艾利斯举办 World RISC-V Days 活动，面向南美地区开发者普及 RISC-V 开放指令集架构，推动开源硬件生态本地化发展。",
+      "why_it_matters_zh": "活动覆盖南美，有助于 RISC-V 生态在拉美开发者社区的拓展。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "南美",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "7d9c04ff5062d338",
+      "title": "World RISC-V Days: Graz Austria",
+      "url": "https://riscv.org/blog/world-risc-v-days-graz-austria/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:03+00:00",
+      "summary": "The post World RISC-V Days: Graz Austria appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "世界RISC-V日活动落地奥地利格拉茨",
+      "summary_zh": "RISC-V International将在奥地利格拉茨举办World RISC-V Days活动，汇聚欧洲开发者共同推广开源RISC-V指令集架构。",
+      "why_it_matters_zh": "活动进入欧洲核心城市，有助于扩大RISC-V生态影响力，推动开源硬件在奥地利的本地化推广。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "f4447e4b7c030445",
+      "title": "World RISC-V Days: Mymensingh Bangladesh",
+      "url": "https://riscv.org/blog/world-risc-v-days-mymensingh-bangladesh/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:02+00:00",
+      "summary": "The post World RISC-V Days: Mymensingh Bangladesh appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "世界RISC-V日活动走进孟加拉国迈门辛",
+      "summary_zh": "RISC-V International将在孟加拉国迈门辛举办World RISC-V Days活动，推动开源指令集架构在南亚新兴技术社区的普及。",
+      "why_it_matters_zh": "RISC-V走进孟加拉国高校与开发者社区，有助于培养当地开源硬件人才，拓展南亚市场。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "be7ae1d469a5d180",
+      "title": "World RISC-V Days: Dhaka Bangladesh",
+      "url": "https://riscv.org/blog/world-risc-v-days-dhaka-bangladesh/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:01+00:00",
+      "summary": "The post World RISC-V Days: Dhaka Bangladesh appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 即将登陆孟加拉国达卡",
+      "summary_zh": "RISC-V International 公布，World RISC-V Days 系列活动将在孟加拉国达卡举办，旨在向当地开发者社区推广 RISC-V 开放指令集架构及生态。",
+      "why_it_matters_zh": "该活动有助于推动 RISC-V 在南亚地区的普及，扩大开放硬件生态的影响力。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "孟加拉国",
+        "达卡",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "767b25e5550bba6c",
+      "title": "World RISC-V Days: Heraklion Greece",
+      "url": "https://riscv.org/blog/world-risc-v-days-heraklion-greece/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:00+00:00",
+      "summary": "The post World RISC-V Days: Heraklion Greece appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 即将登陆希腊伊拉克利翁",
+      "summary_zh": "RISC-V International 宣布，World RISC-V Days 系列活动将在希腊克里特岛伊拉克利翁举办，面向当地开发者介绍 RISC-V 开放指令集架构及生态进展。",
+      "why_it_matters_zh": "该活动显示 RISC-V 在欧洲持续扩展，有助于吸引更多开发者加入开源硬件社区。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "希腊",
+        "伊拉克利翁",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "579123edffd79df6",
+      "title": "Armbian 26.8 Released With Installer Rewrite, UEFI ISO Images",
+      "url": "https://www.phoronix.com/news/Armbian-26.8-Released",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T12:41:00+00:00",
+      "summary": "Armbian as the Debian/Ubuntu-derived distribution that provides an optimized platform for ARM and RISC-V single board computers is out today with a major update...",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Armbian 26.8发布：重写安装器并新增UEFI ISO镜像支持",
+      "summary_zh": "Armbian是基于Debian/Ubuntu的Linux发行版，专为ARM和RISC-V单板计算机提供优化平台。最新26.8版本带来重大更新，重写了安装程序，并新增UEFI ISO镜像支持。",
+      "why_it_matters_zh": "安装器重写与UEFI支持提升了RISC-V开发板的部署体验与系统兼容性。",
+      "tags_zh": [
+        "Armbian",
+        "RISC-V",
+        "UEFI",
+        "Linux发行版",
+        "单板计算机"
+      ]
+    },
+    {
+      "id": "706854bf290b0601",
+      "title": "KexiMleko/riscv32-sim updated on GitHub",
+      "url": "https://github.com/KexiMleko/riscv32-sim",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:29:03+00:00",
+      "summary": "Cycle-accurate RV32I RISC-V simulator for learning datapath design, pipelining, out-of-order execution, and branch prediction. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "GitHub项目riscv32-sim更新：面向教学的周期精确RV32I模拟器",
+      "summary_zh": "KexiMleko/riscv32-sim是一款周期精确的RV32I RISC-V模拟器，用于学习数据通路设计、流水线、乱序执行与分支预测等CPU微架构知识。该项目近日在GitHub更新。",
+      "why_it_matters_zh": "为学习者提供实践RISC-V微架构的开源工具，有助于深入理解处理器实现细节。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32I",
+        "模拟器",
+        "开源教育",
+        "CPU设计"
+      ]
+    },
+    {
+      "id": "5c9003a2145e596d",
+      "title": "Verified-zkEVM/riscv-zkvm updated on GitHub",
+      "url": "https://github.com/Verified-zkEVM/riscv-zkvm",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:14:17+00:00",
+      "summary": "Lean extraction of the Sail RISC-V specification for verified zkVM projects Stars: 2.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "Verified-zkEVM/riscv-zkvm updated on GitHub",
+      "summary_zh": "Lean extraction of the Sail RISC-V specification for verified zkVM projects Stars: 2.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V",
+        "RISCV"
+      ]
+    },
+    {
+      "id": "89977c50f21bd668",
+      "title": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "url": "https://github.com/RISCVtestbed/riscvtestbed.github.io",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:00:48+00:00",
+      "summary": "RISC-V testbed Stars: 10.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "summary_zh": "RISC-V testbed Stars: 10.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V",
+        "RISCV"
+      ]
+    },
+    {
+      "id": "2def2e1b476f482c",
+      "title": "USB-C Deskradar – An ESP32-C3 ADS-B flight tracker with a 1.28-inch round display",
+      "url": "https://www.cnx-software.com/2026/08/27/usb-c-deskradar-an-esp32-c3-ads-b-flight-tracker-with-a-1-28-inch-round-display/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-27T14:39:30+00:00",
+      "summary": "The USB-C Deskradar is an ESP32-C3-based, aviation-themed ADS-B flight tracker that tracks and displays live aircraft positions around your location on a sonar-style circular grid. A 1.28-inch round display and a 3D-printed enclosure provide a real-time view of flights around a configured location. As we’ll see further below, it appears to be an open-source project that was picked up by Chinese vendors and started popping up on AliExpress as an inexpensive desk gadget. USB-C Deskradar specifications: Wireless module –16-pin ESP32-C3 Super Mini module SoC – Espressif Systems ESP32-C3FH4, single-core 32-bit RISC-V microcontroller @ up to 160 MHz; 400 KB SRAM; 4MB flash USB – USB Type-C port for programming Ceramic antenna Display – 1.28-inch round TFT color LCD with GC9A01 controller; 240×240 resolution; driven via SPI Misc Hardware button (connected to GPIO 9 / BOOT pin, active LOW) Short tap – Cycles radar range presets (e.g., 5, 10, 15, 25 [...] The post USB-C Deskradar – An ESP32-C3 ADS-B flight tracker with a 1.28-inch round display appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "USB-C Deskradar：基于ESP32-C3的ADS-B桌面飞行追踪器",
+      "summary_zh": "USB-C Deskradar是一款基于ESP32-C3（RISC-V架构）的桌面飞行追踪器，通过1.28英寸圆形显示屏以声呐风格实时显示周边空域的飞机位置。该项目为开源设计，已被中国厂商量产并在AliExpress销售。",
+      "why_it_matters_zh": "将开源硬件与航空爱好者场景结合的低成本桌面小工具，体现ESP32-C3在创客项目中的灵活应用。",
+      "tags_zh": [
+        "ESP32-C3",
+        "ADS-B",
+        "开源硬件",
+        "飞行追踪"
+      ]
+    },
+    {
+      "id": "9eb8b0ad012ca028",
+      "title": "$60+ Nordic Semi nRF93M1 Development Kit (DK) targets LTE Cat 1 bis IoT applications",
+      "url": "https://www.cnx-software.com/2026/08/24/60-nordic-semi-nrf93m1-development-kit-dk-targets-lte-cat-1-bis-iot-applications/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-24T04:28:22+00:00",
+      "summary": "Nordic Semiconductor has launched the nRF93M1 DK (Development Kit) based on the nRF93M1-LABA LTE Cat 1 bis with Wi-Fi and cellular location and a Nordic Semi nRF54L15 host microcontroller. The nRF93M1 module was first introduced at Embedded World 2026 last March, and the company has now announced general availability of the nRF93M1-LABA smart modem module for Europe, Asia, the Middle East, Africa, and sampling of the nRF93M1-LACA module for global markets, scheduled to become available in Q3 2026. The announcement also covers the launch of the nRF93M1 Development Kit, which was teased last March with limited details. Time to have a closer look. nRF93M1 DK specifications: Host MCU – Nordic Semiconductor nRF54L15 MCU cores Arm Cortex-M33 with Arm TrustZone @ 128MHz RISC-V coprocessor for software-defined peripheral Memory – 256KB SRAM Storage – 1.5MB non-volatile memory Wireless Bluetooth 6.0 Data rates – 2Mbps, 1Mbps, 500kbps, 125kbps Features (TBC in built-in firmware) AoA [...] The post $60+ Nordic Semi nRF93M1 Development Kit (DK) targets LTE Cat 1 bis IoT applications appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Nordic Semiconductor推出nRF93M1开发套件，面向LTE Cat 1 bis物联网应用",
+      "summary_zh": "Nordic Semiconductor发布nRF93M1开发套件，基于nRF93M1-LABA LTE Cat 1 bis蜂窝调制解调器模组，搭配nRF54L15（Cortex-M33+RISC-V协处理器）主控，支持Wi-Fi和蜂窝定位。nRF93M1-LABA已面向欧亚中东非地区量产供货，nRF93M1-LACA面向全球市场提供样片，预计2026年Q3正式上市。",
+      "why_it_matters_zh": "套件集成蜂窝、Wi-Fi、定位与低功耗蓝牙，为蜂窝物联网终端开发提供一体化解决方案。",
+      "tags_zh": [
+        "Nordic Semiconductor",
+        "nRF93M1",
+        "LTE Cat 1 bis",
+        "物联网"
+      ]
+    },
+    {
+      "id": "c64ec19b68595b2a",
+      "title": "Espressif Systems releases a Linux BSP developer preview for ESP32-S31 RISC-V microprocessor",
+      "url": "https://www.cnx-software.com/2026/08/22/espressif-systems-releases-a-linux-bsp-developer-preview-for-esp32-s31-risc-v-microprocessor/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-22T04:26:56+00:00",
+      "summary": "The ESP32-S31 microprocessor is getting Linux support from Espressif Systems. The ESP32-S31 dual-core RISC-V microprocessor was first unveiled in March, two ESP32-S31 development boards followed in May, and mass production was announced a few weeks ago. The new RISC-V chip features an MMU (Memory Management Unit), which makes Linux much easier to handle, and the development boards also come with 16MB PSRAM, so a minimal Linux image is possible. Moving from theory to practice, Espressif Systems has now released a developer preview version of the ESP Linux BSP for ESP32-S31, and some community Linux ports are also in the works (more on that at the end of the article). Let’s focus on the official ESP Linux BSP. The aforementioned repo only contains the image layout and packaging tools used by the ESP32-S31 Buildroot integration, and the core of the project can be found in the esp-buildroot-external repo with ESP32-S31 NOR boot [...] The post Espressif Systems releases a Linux BSP developer preview for ESP32-S31 RISC-V microprocessor appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "乐鑫科技发布ESP32-S31 Linux BSP开发者预览版",
+      "summary_zh": "乐鑫科技为ESP32-S31双核RISC-V微处理器发布Linux BSP开发者预览版。该芯片内置MMU，开发板集成16MB PSRAM，可运行最小Linux镜像。除官方BSP外，社区也在推进相关Linux移植项目。",
+      "why_it_matters_zh": "内置MMU让ESP32-S31具备运行Linux的能力，扩展了乐鑫RISC-V芯片在边缘计算与嵌入式Linux应用中的潜力。",
+      "tags_zh": [
+        "ESP32-S31",
+        "乐鑫科技",
+        "RISC-V",
+        "Linux BSP",
+        "MMU"
+      ]
+    },
+    {
+      "id": "a530d3b95b137ea6",
+      "title": "Linux 7.2 release – Main changes, Arm, RISC-V, and MIPS architectures",
+      "url": "https://www.cnx-software.com/2026/08/21/linux-7-2-release-main-changes-arm-risc_v-amd-mips-architecture/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T22:00:18+00:00",
+      "summary": "Linus Torvalds released Linux 7.2 on LKML last Sunday: Well, this last week of the release was – once again – bigger than I would have wished for, but hey, with the whole “new normal” thing, if I delayed releases for that reason we’d probably never have a release at all. There are a number of fairly late reverts – the drm scheduling reverts stand out, but there’s a few other ones in here too. It may not be pretty, but it’s the correct way to deal with “oh, that code wasn’t ready and caused problems”. People will be trying that again later. But while the drm reverts stand out and are some of the bigger patches in here, there’s a lot of small fixes all over. Mostly in drivers, but networking remained fairly active this last week too. And then there are a few random patches to architecture files [...] The post Linux 7.2 release – Main changes, Arm, RISC-V, and MIPS architectures appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Linux 7.2正式发布，涵盖Arm、RISC-V与MIPS架构更新",
+      "summary_zh": "Linus Torvalds发布Linux 7.2，最后一周合并窗口规模偏大，包含多项drm调度回退以及各架构补丁。本版本涉及Arm、RISC-V和MIPS架构代码更新，整体以驱动修复为主。",
+      "why_it_matters_zh": "新内核持续完善RISC-V架构支持，反映RISC-V在Linux主线中的活跃度和生态成熟度不断提升。",
+      "tags_zh": [
+        "Linux 7.2",
+        "RISC-V",
+        "Arm",
+        "MIPS",
+        "内核"
+      ]
+    },
+    {
+      "id": "21478e9584d1ee96",
+      "title": "KAGA FEI ES4L15MA1 is a ridiculously small, ready-to-use BLE 6.0 module based on Nordic nRF54L15 SoC",
+      "url": "https://www.cnx-software.com/2026/08/20/kaga-fei-es4l15ma1-is-a-ridiculously-small-ready-to-use-ble-6-0-module-based-on-nordic-nrf54l15-soc/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-20T03:58:42+00:00",
+      "summary": "Japanese company KAGA FEI has introduced another incredibly small ES4L15MA1 Bluetooth LE 6.0 module based on Nordic Semiconductor’s nRF54L15 ultra-low-power Cortex-M33 wireless MCU. Launched alongside the larger EC4L15MA1 module, the ES4L15MA1 module appears to be based on the same hardware as the ES4L15BA1 “world’s smallest module” unveiled in 2024 with an 8.55 x 3.25 x 1.00 mm form factor. The main difference is that the new modules come with ready-to-use embedded software providing a command-based API via UART to shorten product development cycles and lower development costs for IoT devices relying on Bluetooth LE 6.0 connectivity. KAGA FEI ES4L15MA1 specifications: SoC – Nordic Semiconductor nRF54L15 MCU cores Arm Cortex-M33 with Arm TrustZone @ 128MHz RISC-V coprocessor for software-defined peripheral Memory – 256KB SRAM Storage – 1.5MB non-volatile memory Wireless Bluetooth 6.0 Data rates – 2Mbps, 1Mbps, 500kbps, 125kbps Features (TBC in built-in firmware) AoA / AoD Channel Sounding Frequency – 2402 [...] The post KAGA FEI ES4L15MA1 is a ridiculously small, ready-to-use BLE 6.0 module based on Nordic nRF54L15 SoC appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "KAGA FEI ES4L15MA1：基于Nordic nRF54L15的超小型BLE 6.0模块",
+      "summary_zh": "日本KAGA FEI推出基于Nordic Semiconductor nRF54L15的ES4L15MA1蓝牙LE 6.0模块，尺寸仅8.55x3.25x1.00mm。模块搭载Arm Cortex-M33内核与RISC-V协处理器，配备256KB SRAM和1.5MB非易失性存储，并预装嵌入式软件，通过UART提供基于指令的API，可缩短IoT产品开发周期并降低成本。",
+      "why_it_matters_zh": "模块预装固件与UART命令API，开发者无需深入底层即可快速集成BLE 6.0连接，显著缩短产品上市周期。",
+      "tags_zh": [
+        "蓝牙LE 6.0",
+        "nRF54L15",
+        "Nordic Semiconductor",
+        "IoT模块",
+        "KAGA FEI"
+      ]
+    },
+    {
+      "id": "81c78a2440a944b7",
+      "title": "Pine64 hits pause on Linux devices due to RAM and eMMC shortage/high prices",
+      "url": "https://www.cnx-software.com/2026/08/19/pine64-hits-pause-on-linux-devices-due-to-ram-and-emmc-shortage-high-prices/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-19T10:29:53+00:00",
+      "summary": "While some companies keep increasing prices, the Pine64 community has now announced they don’t intend to manufacture Linux devices due to the current RAM and eMMC flash shortage and related high prices. Pine64 started with the launch of the Pine A64 development board in 2015, and since then they have launched more Arm and RISC-V Linux SBCs, Linux smartphones, and Linux tablets and e-Readers. We used to get several announcements per year, but this year so far, we only covered one: the Pine64 PineVoice. But it’s not a Linux device, and instead, a smart speaker based on a BL602 RISC-V microcontroller. Here’s the full (unedited) announcement published on Telegram, which you should also find on other Pine64 channels: Hi everyone! Just a quick reminder that due to the current DRAM/eMMC shortage, there isn’t any plans to continue producing more Linux devices in the near future. Whether production continues or not [...] The post Pine64 hits pause on Linux devices due to RAM and eMMC shortage/high prices appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Pine64因DRAM和eMMC短缺暂停Linux设备生产",
+      "summary_zh": "Pine64社区宣布因当前DRAM和eMMC闪存短缺及价格上涨，暂不计划继续生产Linux设备。Pine64自2015年推出Pine A64开发板以来，已发布多款Arm和RISC-V Linux SBC、智能手机、平板及电子阅读器，但今年仅推出基于BL602 RISC-V微控制器的智能音箱PineVoice。",
+      "why_it_matters_zh": "DRAM与eMMC供应紧张波及开源硬件领域，Pine64暂停Linux设备生产或影响RISC-V及Arm SBC生态发展。",
+      "tags_zh": [
+        "Pine64",
+        "RISC-V",
+        "Linux SBC",
+        "供应链短缺",
+        "DRAM"
+      ]
+    },
+    {
+      "id": "546e693c76f8ebeb",
+      "title": "DinhKhanhDang27/KLTN updated on GitHub",
+      "url": "https://github.com/DinhKhanhDang27/KLTN",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:26:53+00:00",
+      "summary": "SHA-256 with RISC-V CPU SOC on Altera DE0 Nano Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "DinhKhanhDang27/KLTN updated on GitHub",
+      "summary_zh": "SHA-256 with RISC-V CPU SOC on Altera DE0 Nano Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "19957d46310bd2f7",
+      "title": "8lall0/racccoon updated on GitHub",
+      "url": "https://github.com/8lall0/racccoon",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:20:32+00:00",
+      "summary": "A minimal RISCV-32 toy kernel written in C3 Stars: 5.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "8lall0/racccoon updated on GitHub",
+      "summary_zh": "A minimal RISCV-32 toy kernel written in C3 Stars: 5.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "dc99b4804d69601f",
+      "title": "juyuan-tech/ignium updated on GitHub",
+      "url": "https://github.com/juyuan-tech/ignium",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:20:28+00:00",
+      "summary": "Ignium (炬元微内核): a from-scratch Rust microkernel, RISC-V first, with OpenHarmony ecosystem compatibility. Built by Shangqiu Juyuan Technology Co., Ltd. Apache-2.0. Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "炬元科技更新Ignium Rust微内核项目，优先适配RISC-V",
+      "summary_zh": "Ignium是商丘炬元科技从零开发的Rust微内核，优先支持RISC-V架构，并兼容OpenHarmony生态。项目以Apache-2.0许可证开源，目前GitHub Stars为1。",
+      "why_it_matters_zh": "该项目展示了国产厂商在Rust与RISC-V微内核方向的探索，并与OpenHarmony生态对接，值得关注其后续进展。",
+      "tags_zh": [
+        "RISC-V",
+        "Rust",
+        "微内核",
+        "OpenHarmony",
+        "开源"
+      ]
+    },
+    {
+      "id": "62ad08cc76dba4ff",
+      "title": "noor-ul-ain12/rv32i-single-cycle-asic updated on GitHub",
+      "url": "https://github.com/noor-ul-ain12/rv32i-single-cycle-asic",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:17:10+00:00",
+      "summary": "Complete RTL-to-GDSII ASIC design flow implementation of a 32-bit single-cycle RISC-V (RV32I) processor using OpenLane/LibreLane toolchain and Sky130 PDK. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目更新RV32I单周期处理器完整ASIC设计流程",
+      "summary_zh": "该项目基于OpenLane/LibreLane工具链和Sky130 PDK，完成了32位单周期RISC-V（RV32I）处理器从RTL到GDSII的完整ASIC设计流程。",
+      "why_it_matters_zh": "提供了开源且可复现的RISC-V处理器芯片实现参考，适合教学与入门级流片实践。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32I",
+        "ASIC",
+        "OpenLane",
+        "Sky130"
+      ]
+    },
+    {
+      "id": "54503b674262f23a",
+      "title": "isaacyihill4429/avaotaf2-loader-update updated on GitHub",
+      "url": "https://github.com/isaacyihill4429/avaotaf2-loader-update",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:11:00+00:00",
+      "summary": "A lightweight AvaotaF2 loader and update utility for the Allwinner V861 RISC-V Linux board, helping users obtain suitable release files and prepare workflows for testing, board bring-up, and embedded development. Stars: 22.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub更新AvaotaF2加载与更新工具，面向Allwinner V861 RISC-V开发板",
+      "summary_zh": "一个轻量级的AvaotaF2加载与更新工具，适用于Allwinner V861 RISC-V Linux开发板，帮助用户获取合适的发布文件，为测试、板卡启动和嵌入式开发准备相应的工作流。Star数：22。",
+      "why_it_matters_zh": "为Allwinner V861 RISC-V Linux开发板提供便捷的刷机与启动支持，降低嵌入式开发者的入门门槛。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "Allwinner V861",
+        "AvaotaF2",
+        "嵌入式开发",
+        "启动加载器"
+      ]
+    },
+    {
+      "id": "be5fda191ce62a2d",
+      "title": "ayeshaahmed321/riscv_ecc_soc updated on GitHub",
+      "url": "https://github.com/ayeshaahmed321/riscv_ecc_soc",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:10:14+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub更新RISC-V ECC SoC项目仓库",
+      "summary_zh": "GitHub上的riscv_ecc_soc仓库，名称暗示涉及RISC-V架构与ECC（纠错码）相关的SoC设计工作，目前Star数为0，社区关注度较低。",
+      "why_it_matters_zh": "仓库聚焦RISC-V与ECC纠错SoC融合方向，可关注其后续技术进展。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "SoC",
+        "ECC"
+      ]
+    },
+    {
+      "id": "35de7aee986a4d73",
+      "title": "openjdk/riscv-port updated on GitHub",
+      "url": "https://github.com/openjdk/riscv-port",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:07:42+00:00",
+      "summary": "https://openjdk.org/projects/riscv-port Stars: 65.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "OpenJDK RISC-V 移植项目 GitHub 仓库更新",
+      "summary_zh": "OpenJDK 官方的 RISC-V 移植项目在 GitHub 上有最新更新。该项目旨在为 RISC-V 架构提供 JDK 支持，目前已获得 65 个 Star。该仓库隶属于 OpenJDK 组织，是 Java 生态向 RISC-V 平台迁移的重要基础工作。",
+      "why_it_matters_zh": "OpenJDK 对 RISC-V 的支持是 Java 生态在该架构落地成熟的关键标志，有助于推动 RISC-V 在服务器和桌面领域的发展。",
+      "tags_zh": [
+        "RISC-V",
+        "OpenJDK",
+        "Java",
+        "移植"
+      ]
+    },
+    {
+      "id": "648481cfd6688b3f",
+      "title": "rob-ng15/PAWSv3 updated on GitHub",
+      "url": "https://github.com/rob-ng15/PAWSv3",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:06:55+00:00",
+      "summary": "The PAWS Risc-V FPGA Project, with an updated pipelined CPU, and a shared memory bus. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "PAWSv3 RISC-V FPGA 项目 GitHub 仓库更新",
+      "summary_zh": "PAWS RISC-V FPGA 项目在 GitHub 上完成更新，主要包括升级的流水线 CPU 设计以及新增的共享内存总线。该项目面向 FPGA 平台，目前 Star 数为 0，仍处于早期开发阶段，适合教学与原型验证。",
+      "why_it_matters_zh": "该项目为 RISC-V 在 FPGA 上的教学与原型设计提供了开放参考实现，对学习 CPU 流水线和总线架构具有参考价值。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "开源硬件",
+        "CPU设计"
+      ]
+    },
+    {
+      "id": "b32f48b0a4dc517f",
+      "title": "random-banana-web/Hades-V-RISC-V updated on GitHub",
+      "url": "https://github.com/random-banana-web/Hades-V-RISC-V",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T11:02:56+00:00",
+      "summary": "5-stage pipelined RV32I RISC-V CPU in SystemVerilog having hazard detection, data forwarding, and control-flow handling built from scratch, targeting FPGA bring-up Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "random-banana-web/Hades-V-RISC-V updated on GitHub",
+      "summary_zh": "5-stage pipelined RV32I RISC-V CPU in SystemVerilog having hazard detection, data forwarding, and control-flow handling built from scratch, targeting FPGA bring-up Stars: 1.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "d721494c5ac89f99",
+      "title": "john-paul-sm/Pipelined-RISCV updated on GitHub",
+      "url": "https://github.com/john-paul-sm/Pipelined-RISCV",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T10:56:55+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "john-paul-sm/Pipelined-RISCV updated on GitHub",
+      "summary_zh": "Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "0a51e6d04bdf380d",
+      "title": "ni-sh-a-char/RESENTMENT---kernel updated on GitHub",
+      "url": "https://github.com/ni-sh-a-char/RESENTMENT---kernel",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-08-28T10:55:50+00:00",
+      "summary": "A capability-secure, AI-native kernel for x86_64, ARM64 and RISC-V. Authority expires, the system is a graph you can hash, and inference is a scheduling class. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "ni-sh-a-char/RESENTMENT---kernel updated on GitHub",
+      "summary_zh": "A capability-secure, AI-native kernel for x86_64, ARM64 and RISC-V. Authority expires, the system is a graph you can hash, and inference is a scheduling class. Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "deddf848a93d85ec",
+      "title": "AMD Introduces New \"GFX1250-STRICT\" GPU Target In LLVM",
+      "url": "https://www.phoronix.com/news/AMD-gfx1250-strict",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T10:22:43+00:00",
+      "summary": "The AMD GFX1250 IP is what's used by the new Instinct MI450 series accelerators. That's been around within the Linux kernel, AMDGPU LLVM compiler back-end, and related codebases the past year. Interestingly merged yesterday is a new \"gfx1250-strict\" target...",
+      "tags": [
+        "LLVM",
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.64,
+      "title_zh": "AMD Introduces New \"GFX1250-STRICT\" GPU Target In LLVM",
+      "summary_zh": "The AMD GFX1250 IP is what's used by the new Instinct MI450 series accelerators. That's been around within the Linux kernel, AMDGPU LLVM compiler back-end, and related codebases the past year. Interestingly merged yesterday is a new \"gfx1250-strict\" target...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "LLVM",
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "7cda661520a6ab93",
+      "title": "Chris Mason Steps Down As Btrfs Co-Maintainer, Departing Meta",
+      "url": "https://www.phoronix.com/news/Chris-Mason-Leaving-Meta",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-28T11:17:55+00:00",
+      "summary": "Longtime Linux kernel developer Chris Mason is departing Meta. In the process of doing so, he is also stepping down from his co-maintainership role of the Btrfs file-system...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Chris Mason Steps Down As Btrfs Co-Maintainer, Departing Meta",
+      "summary_zh": "Longtime Linux kernel developer Chris Mason is departing Meta. In the process of doing so, he is also stepping down from his co-maintainership role of the Btrfs file-system...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "fb9443e2cfb5d045",
+      "title": "Old IBM Driver Joins Insecure SGI Drivers In Being Removed For Linux 7.3",
+      "url": "https://www.phoronix.com/news/Old-IBM-SGI-Drivers-Linux-7.3",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-28T09:58:09+00:00",
+      "summary": "The char/misc changes were merged this week for the Linux 7.3 cycle. While there is a lot of IIO driver churn as usual and updates to the likes of the Google Binder drivers, there continues to be the 2026 trend of removing old hardware drivers that are rarely updated these days and likely have no active users left on the mainline Linux kernel. This trend is further pushed along by the surplus of AI/LLM-generated bug reports and patches these days causing additional maintenance burden for these obsolete drivers...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Old IBM Driver Joins Insecure SGI Drivers In Being Removed For Linux 7.3",
+      "summary_zh": "The char/misc changes were merged this week for the Linux 7.3 cycle. While there is a lot of IIO driver churn as usual and updates to the likes of the Google Binder drivers, there continues to be the 2026 trend of removing old hardware drivers that are rarely updated these days and likely have no active users left on the mainline Linux kernel. This trend is further pushed along by the surplus of AI/LLM-generated bug reports and patches these days causing additional maintenance burden for these obsolete drivers...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "45ac76623ac7b092",
+      "title": "Intel Linux Driver Orphaned For Limiting RF Exposure To Humans",
+      "url": "https://www.phoronix.com/news/Intel-Linux-SAR-Driver-Orphaned",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-27T21:13:01+00:00",
+      "summary": "Over the past year and a half a number of open-source drivers in the Linux kernel have been orphaned as a result of departures from the company. The impact has ranged from the Intel CPU \"coretemp\" temperature driver being orphaned without a maintainer to other lesser known Intel drivers. Another lesser known Intel driver is now being orphaned with no longer having a maintainer at the company: the Intel Specific Absorption Rate Driver...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Intel SAR内核驱动因员工离职成为孤儿驱动",
+      "summary_zh": "过去一年半，多个Linux内核开源驱动因Intel员工离职失去维护者。最新的Intel Specific Absorption Rate（SAR）驱动同样无人接管，该驱动用于限制人体所受射频辐射强度。",
+      "why_it_matters_zh": "关键驱动长期缺乏维护可能影响Linux内核稳定性及射频安全合规功能。",
+      "tags_zh": [
+        "Intel",
+        "Linux内核",
+        "SAR",
+        "开源驱动"
+      ]
+    },
+    {
+      "id": "1af2d1b7caefcc16",
+      "title": "Linux 7.3 Adds RWF_DONTCACHE Support For Block Devices",
+      "url": "https://www.phoronix.com/news/Linux-7.3-Block",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-27T14:15:30+00:00",
+      "summary": "With the never-ending quest for greater I/O performance in the HPC space and the demands all the more relentless in the AI era, the Linux kernel block subsystem activity continues to be as vibrant as ever along with the ongoing innovations in the IO_uring space...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux内核块设备新增RWF_DONTCACHE支持",
+      "summary_zh": "Linux内核块子系统持续推进I/O性能优化，最新内核为块设备新增RWF_DONTCACHE支持。该特性通过io_uring实现，旨在满足HPC与AI时代对高性能存储I/O的严苛需求。",
+      "why_it_matters_zh": "RWF_DONTCACHE可避免缓存污染，提升高负载场景下的存储I/O效率。",
+      "tags_zh": [
+        "Linux内核",
+        "io_uring",
+        "块设备",
+        "I/O性能"
+      ]
+    },
+    {
+      "id": "af2ecb98475dda23",
+      "title": "LLVM Improves Zen 1 / Zen 2 Support To Deal With \"Notoriously Bad\" PDEP/PEXT",
+      "url": "https://www.phoronix.com/news/LLVM-Improve-AMD-PDEP-PEXT",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-27T10:05:07+00:00",
+      "summary": "The LLVM/Clang compiler toolchain merged overnight better support for the nearly decade-old AMD Zen 1 processors and also helps with Zen+ and Zen 2 processors too. This latest work thanks to the open-source community is for providing more informed instruction scheduling around PDEP and PEXT that end up being quite costly for these original Zen processors...",
+      "tags": [
+        "LLVM"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "LLVM 改进 AMD Zen 1/Zen 2 处理器 PDEP/PEXT 指令调度支持",
+      "summary_zh": "LLVM/Clang 合并了对近十年历史的 AMD Zen 1 以及 Zen+、Zen 2 处理器的改进支持。该工作由开源社区贡献，主要针对 PDEP 和 PEXT 指令进行更合理的调度优化，这两条指令在初代 Zen 处理器上开销极高。",
+      "why_it_matters_zh": "这意味着老款 AMD Zen 系列处理器在编译后程序的性能有望得到改善，减少指令延迟带来的性能损失。",
+      "tags_zh": [
+        "LLVM",
+        "AMD Zen",
+        "PDEP/PEXT",
+        "编译器优化",
+        "开源"
+      ]
+    },
+    {
+      "id": "bc82c11494de8a2b",
+      "title": "Patches Provide For Much Faster In-Kernel Zstd Due To Embarrassingly Bad Inefficiency",
+      "url": "https://www.phoronix.com/news/In-Kernel-Zstd-BMI2-Probing",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T19:55:10+00:00",
+      "summary": "Patches sent out to the Linux kernel mailing list today can provide much more efficient Zstd compression and decompression by addressing a very unfortunate oversight in the existing code...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 内核 Zstd 压缩补丁修复\"令人尴尬\"的低效问题",
+      "summary_zh": "开发者向 Linux 内核邮件列表提交了 Zstd 压缩与解压缩性能优化补丁，修复了现有代码中一处\"非常不幸的疏忽\"，可显著提升内核内压缩效率。",
+      "why_it_matters_zh": "该补丁能显著加速内核内 Zstd 压缩与解压缩，提升依赖压缩功能的文件系统等性能。",
+      "tags_zh": [
+        "Linux内核",
+        "Zstd",
+        "内核补丁",
+        "压缩算法",
+        "性能优化"
+      ]
+    },
+    {
+      "id": "740c405d796852a6",
+      "title": "AMD Proposes New LLVM iTHP Option For Squeezing More Performance",
+      "url": "https://www.phoronix.com/news/LLVM-fenable-readonly-thp",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T14:49:36+00:00",
+      "summary": "AMD's compiler team is proposing a new LLVM Clang compiler option, -fenable-readonly-thp for implementing instruction Transparent Huge Pages \"iTHP\" at compile and link-time. With -fenable-readonly-thp, they are finding more performance out of SPEC CPU, Geekbench, and other workloads from the arranging of 2MB segment alignment at link time and allowing the executable text range can be promoted to huge pages...",
+      "tags": [
+        "LLVM"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AMD提议在LLVM Clang中加入iTHP新编译选项以提升性能",
+      "summary_zh": "AMD编译器团队提议在LLVM Clang中加入新的-fenable-readonly-thp编译选项，通过链接时进行2MB段对齐并将可执行文本段提升为大页，可在SPEC CPU、Geekbench等测试中获得更佳性能。该方案将指令级透明大页（iTHP）的实现前移至编译和链接阶段。",
+      "why_it_matters_zh": "该特性把大页优化下沉到编译链接阶段，无需运行时改动即可提升多类基准性能。",
+      "tags_zh": [
+        "AMD",
+        "LLVM",
+        "Clang",
+        "iTHP",
+        "编译器优化",
+        "性能调优"
+      ]
+    },
+    {
+      "id": "258240f621ddc85d",
+      "title": "Fedora + Tuned-PPD Performance Regression Should Be Fixed With New Linux Kernel",
+      "url": "https://www.phoronix.com/news/Fedora-Tuned-PPD-Perf-Fix",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T14:13:00+00:00",
+      "summary": "Earlier this month when benchmarking six Linux distributions on the new Framework Laptop 13 Pro powered by Intel Core Ultra Series 3 \"Panther Lake\", the performance was strangely slow on Fedora Workstation 44. When digging further into it, the performance loss was with Fedora 44 using Tuned-PPD by default where as other Linux distributions default to Power Profiles Daemon. Ultimately, after Red Hat engineers got involved, was found to be a bug within the Intel P-State kernel driver exhibited by Tuned-PPD. The latest Linux kernel already has a fix in place and will be back-ported to Fedora 44...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Fedora 44因Tuned-PPD出现性能下降，新Linux内核已修复",
+      "summary_zh": "在搭载Intel Core Ultra Series 3 \"Panther Lake\"的Framework Laptop 13 Pro基准测试中，Fedora Workstation 44出现异常性能下降。调查发现其默认使用Tuned-PPD，而其他发行版默认使用Power Profiles Daemon；问题根源为Intel P-State内核驱动在与Tuned-PPD配合时的Bug，最新Linux内核已修复并将回移植至Fedora 44。",
+      "why_it_matters_zh": "该修复将改善Panther Lake平台在Fedora上的能效与性能表现，影响Intel新一代硬件的Linux用户体验。",
+      "tags_zh": [
+        "Fedora",
+        "Linux内核",
+        "Tuned-PPD",
+        "Intel Panther Lake",
+        "性能调优"
+      ]
+    },
+    {
+      "id": "f8bc0c4e739ee28d",
+      "title": "Linux 7.3 FUSE Delivering Nice Performance Improvements",
+      "url": "https://www.phoronix.com/news/Linux-7.3-FUSE",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-08-26T12:31:00+00:00",
+      "summary": "The Linux kernel's FUSE code for enabling file-systems in user-space is enjoying some nice speed boosts with the in-development Linux 7.3 kernel...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.3 FUSE Delivering Nice Performance Improvements",
+      "summary_zh": "The Linux kernel's FUSE code for enabling file-systems in user-space is enjoying some nice speed boosts with the in-development Linux 7.3 kernel...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "1f7e888482b9554e",
+      "title": "Microduck – A duck-like biped robot designed for physical AI experimentation and fun",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-28T07:33:42+00:00",
+      "summary": "Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects. This follows the launch of the Reachy Mini desktop robot earlier this year that featured a Raspberry Pi CM4 module or could interface to a computer instead. In some ways, we may think of the Microduck as a Reachy Mini with legs, but the company says both are different products. The Reachy Mini targets human-robot interaction, while the Microduck focuses on motion/action, although it also features a microphone and a speaker for audio interaction. Microduck specifications: SoC – Rockchip RK3566 CPU – Quad-core Cortex-A55 processor @ up to 1.8 GHz GPU – Arm Mali-G52 NPU – 0.8 TOPS AI accelerator VPU 4Kp60 H.265/H.264/VP9 video decoder 1080p60 H.264/H.265 video encoder System Memory – 1GB RAM Storage [...] The post Microduck – A duck-like biped robot designed for physical AI experimentation and fun appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Microduck – A duck-like biped robot designed for physical AI experimentation and fun",
+      "summary_zh": "Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects. This follows the launch of the Reachy Mini desktop robot earlier this year that featured a Raspberry Pi CM4 module or could interface to a computer instead. In some ways, we may think of the Microduck as a Reachy Mini with legs, but the company says both are different products. The Reachy Mini targets human-robot interaction, while the Microduck focuses on motion/action, although it also features a microphone and a speaker for audio interaction. Microduck specifications: SoC – Rockchip RK3566 CPU – Quad-core Cortex-A55 processor @ up to 1.8 GHz GPU – Arm Mali-G52 NPU – 0.8 TOPS AI accelerator VPU 4Kp60 H.265/H.264/VP9 video decoder 1080p60 H.264/H.265 video encoder System Memory – 1GB RAM Storage [...] The post Microduck – A duck-like biped robot designed for physical AI experimentation and fun appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "AI accelerator"
+      ]
+    },
+    {
+      "id": "80a50756b2518732",
+      "title": "Lantronix Open-M 720G/520G – Ultra-compact LGA system-on-modules based on MediaTek Genio 720 and Genio 520 SoCs",
+      "url": "https://www.cnx-software.com/2026/08/26/lantronix-open-m-720g-520g-ultra-compact-lga-system-on-module-based-on-mediatek-genio-720-and-genio-520-socs/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-25T22:00:44+00:00",
+      "summary": "Lantronix Open-M 720G and 520G are compact (43x44mm) LGA system-on-modules (SoM) powered by 6nm MediaTek Genio 720 and Genio 520 SoCs, offering an AI performance of 10 TOPS, and designed for Edge IoT applications running low-power Vision AI and GenAI tasks. The Genio 720 dual-camera module ships with 8GB LPDDR5 and the Genio 520 single-camera module with 4GB LPDDR5. Both offer 128GB UFS storage, Gigabit Ethernet, optional WiFi 6 and Bluetooth 5.3 connectivity, dual display support, audio inputs/outputs, USB 3.2/2.0 interfaces, PCIe Gen2 x1, and more. Lantronix Open-M 720G/520G specifications: SoC (one or the other) MediaTek Genio 520 (MT8371) CPU – 2x Cortex-A78 up to 2.2GHz, 6x Cortex-A55 up to 2.0 GHz GPU – Arm Mali-G57 MC2 up to 880 MHz VPU Video Decode – Up to 1920 x 1200 @ 60fps Video Encode – Up to 1920 x 1200 @ 60fps ISP – 1x ISP NPU – NPU850 AI accelerator [...] The post Lantronix Open-M 720G/520G – Ultra-compact LGA system-on-modules based on MediaTek Genio 720 and Genio 520 SoCs appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Lantronix推出基于MediaTek Genio 720/520的超紧凑LGA系统模块",
+      "summary_zh": "Lantronix发布Open-M 720G/520G超紧凑LGA系统模块（43x44mm），搭载6nm MediaTek Genio 720/520处理器，AI算力达10 TOPS。720G支持双摄配8GB LPDDR5，520G为单摄配4GB LPDDR5，均配备128GB UFS、千兆以太网、可选WiFi 6和蓝牙5.3，面向边缘IoT视觉AI与生成式AI应用。",
+      "why_it_matters_zh": "超紧凑尺寸集成10 TOPS AI算力与丰富接口，为边缘视觉AI和GenAI部署提供高集成度方案。",
+      "tags_zh": [
+        "Lantronix",
+        "MediaTek Genio",
+        "系统模块",
+        "边缘AI",
+        "物联网"
+      ]
+    },
+    {
+      "id": "f407557bd99cfc16",
+      "title": "$299 Arduino Ventuno Q SBC combines Qualcomm Dragonwing IQ8 SoC and STM32H5 MCU",
+      "url": "https://www.cnx-software.com/2026/08/25/299-arduino-ventuno-q-sbc-combines-qualcomm-dragonwing-iq8-soc-and-stm32h5-mcu/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-25T08:00:50+00:00",
+      "summary": "The Arduino Ventuno Q is a single board computer pairing a Qualcomm Dragonwing IQ8 (IQ-8275) octa-core Edge AI SoC with an STM32H5F5 Arm Cortex-M33 microcontroller for real-time I/Os. First introduced at Embedded World 2026, the Ventuno Q is the second Qualcomm-based Arduino board after the Arduino UNO Q launched in October 2025. It’s quite a different beast with a larger design featuring 16GB LPDDR5, 64GB eMMC flash, an M.2 socket for NVMe storage, 2.5GbE and Wi-Fi 6 networking, a 4K-capable HDMI output, and two USB 3.2 ports, while still offloading real-time I/O to a Cortex-M33 microcontroller. Arduino Ventuno Q (ABX00181) specifications: SoC – Qualcomm Dragonwing IQ8 (IQ-8275, also known as QCS8275): CPU – Octa-core Kryo Gen 6 (Arm Cortex-A78/A55) processor GPU – Adreno A623 AI accelerator -Hexagon Tensor AI Processor (NPU) up to 40 dense TOPS ISP – Qualcomm Spectra 692/690 ISP Microcontroller (MCU) – STMicro STM32H5F5 CPU core – [...] The post $299 Arduino Ventuno Q SBC combines Qualcomm Dragonwing IQ8 SoC and STM32H5 MCU appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "Arduino Ventuno Q开发板搭载Qualcomm Dragonwing IQ8，售价299美元",
+      "summary_zh": "Arduino推出售价299美元的Ventuno Q单板计算机，搭载Qualcomm Dragonwing IQ8八核边缘AI SoC搭配STM32H5 Cortex-M33 MCU，NPU算力达40 TOPS。板载16GB LPDDR5、64GB eMMC、M.2 NVMe、2.5GbE、Wi-Fi 6及4K HDMI，是继UNO Q后第二款Qualcomm平台Arduino板。",
+      "why_it_matters_zh": "299美元价位融合40 TOPS NPU与实时MCU协处理，为边缘AI开发提供高性价比平台。",
+      "tags_zh": [
+        "Arduino",
+        "Qualcomm Dragonwing",
+        "单板计算机",
+        "边缘AI",
+        "STM32"
+      ]
+    },
+    {
+      "id": "24654223e7fcad7b",
+      "title": "Running Multiple Linux Kernels Without Hypervisor",
+      "url": "https://hackaday.com/2026/08/27/running-multiple-linux-kernels-without-hypervisor/",
+      "source": "Hackaday",
+      "category": "tech",
+      "published_at": "2026-08-28T02:00:17+00:00",
+      "summary": "In a move that’s no doubt going to trigger a lot of confusion and nostalgia, Mklinux is back, in a sense. As the announcement makes clear, this is multikernel Linux, …read more",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.32,
+      "title_zh": "Mklinux回归：无需hypervisor即可并行运行多个Linux内核",
+      "summary_zh": "经典项目Mklinux以多内核Linux的形式回归，允许在同一系统上并行运行多个Linux内核实例，无需传统hypervisor。该方案降低了多内核场景下的虚拟化开销，为内核隔离、并行计算和开发调试提供了新思路。",
+      "why_it_matters_zh": "跳过hypervisor层可显著降低资源开销，为多内核调试与隔离场景提供更轻量的替代路径。",
+      "tags_zh": [
+        "Linux",
+        "Mklinux",
+        "多内核",
+        "内核虚拟化",
+        "开源项目"
+      ]
+    }
+  ],
+  "errors": [],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 47,
+    "total_items": 67,
+    "errors": [
+      "batch 1: MiniMax response did not contain a JSON array",
+      "batch 3: MiniMax returned incomplete JSON at character 75",
+      "batch 7: MiniMax response did not contain a JSON array",
+      "batch 13: MiniMax response did not contain a JSON array",
+      "batch 18: MiniMax returned incomplete JSON at character 671",
+      "batch 22: MiniMax returned incomplete JSON at character 753",
+      "batch 26: MiniMax returned incomplete JSON at character 620",
+      "batch 27: MiniMax response did not contain a JSON array",
+      "batch 28: MiniMax response did not contain a JSON array",
+      "batch 32: MiniMax response did not contain a JSON array"
+    ],
+    "generated_at": "2026-08-28T11:36:05.307566+00:00"
+  }
+}
