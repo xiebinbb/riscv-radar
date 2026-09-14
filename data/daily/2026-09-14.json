@@ -1,0 +1,797 @@
+{
+  "generated_at": "2026-09-14T05:03:18.531992+00:00",
+  "date": "2026-09-14",
+  "items": [
+    {
+      "id": "60447d36aaf3c3ba",
+      "title": "ArmSoM Sige6 Allwinner A733 SBC features up to 128GB soldered-on eMMC flash, 16GB LPDDR5",
+      "url": "https://www.cnx-software.com/2026/09/01/armsom-sige6-allwinner-a733-sbc-features-up-to-128gb-soldered-on-emmc-flash-16gb-lpddr5/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-01T06:41:00+00:00",
+      "summary": "ArmSoM Sige6 is yet another SBC powered by the Allwinner A733 octa-core SoC, offered in a credit card form factor with up to 128GB soldered-on eMMC flash and up to 16GB LPDDR5. The single board computer features a microSD card slot and an M.2 M-key PCIe 3.0 x2 slot for storage, Gigabit Ethernet (with optional PoE), WiFi 6, and Bluetooth 5.4 connectivity, HDMI 2.0 and MIPI DSI display interfaces, a MIPI CSI camera interface, USB 3.0/2.0 ports, a 3.5mm audio jack, a 40-pin GPIO header, and more. ArmSom Sige6 specifications: SoC – Allwinner A733-HN3 CPU Dual-core Arm Cortex-A76 @ up to 2.00 GHz Hexa-core Arm Cortex-A55 @ up to 1.80 GHz Single-core RISC-V E902 real-time core GPU – Imagination Technologies BXM-4-64 MC1 GPU with support for OpenGL ES 3.2, Vulkan 1.3, and OpenCL 3.0 VPU 4Kp60/8Kp24 H.265/VP9/AVS2 decoding, 4Kp30 H.264 decoding 4Kp30 H.265/H.264 encoding AI accelerator – 3 TOPS NPU Process [...] The post ArmSoM Sige6 Allwinner A733 SBC features up to 128GB soldered-on eMMC flash, 16GB LPDDR5 appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator",
+        "RISC-V"
+      ],
+      "entities": [
+        "Imagination Technologies"
+      ],
+      "score": 2.52,
+      "title_zh": "ArmSoM Sige6单板计算机发布：搭载全志A733，最高板载128GB eMMC",
+      "summary_zh": "ArmSoM推出Sige6单板计算机，搭载全志A733八核SoC（双核Cortex-A76＋六核Cortex-A55＋单核RISC-V E902实时核），板载最高128GB eMMC和16GB LPDDR5。板卡配备M.2 PCIe 3.0 x2插槽、千兆以太网（可选PoE）、WiFi 6、蓝牙5.4、HDMI 2.0、MIPI DSI/CSI、40针GPIO等接口，集成3 TOPS NPU。",
+      "why_it_matters_zh": "Sige6是少数同时集成RISC-V E902实时核与3 TOPS NPU的开发板，且存储配置较高，适合边缘AI与嵌入式应用开发。",
+      "tags_zh": [
+        "ArmSoM",
+        "Sige6",
+        "全志A733",
+        "RISC-V",
+        "E902",
+        "单板计算机",
+        "eMMC"
+      ]
+    },
+    {
+      "id": "6a117c74abdc7b5e",
+      "title": "Orange Pi Zero 4 – Compact Allwinner A733 SBC offers HDMI, USB-C DP, GbE, WiFI 6, PCIe FFC connector for $26.5 and up",
+      "url": "https://www.cnx-software.com/2026/08/31/orange-pi-zero-4-allwinner-a733-sbc-offers-hdmi-usb-c-dp-gbe-wifi-6-pcie-ffc-connector/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-08-31T07:13:46+00:00",
+      "summary": "Orange Pi Zero 4 is an affordable yet feature-rich Allwinner A733 single board computer (SBC) with up to 8GB RAM, eMMC/UFS storage footprint, a microSD card slot, and plenty of I/Os. The board packs mini HDMI and USB-C DisplayPort, Gigabit Ethernet, WiFi 6 and Bluetooth 5.4, two MIPI CSI camera connectors, a Raspberry Pi-style PCIe FFC connector, and two GPIO headers into a compact 55x50mm form factor. Orange Pi Zero 4 specifications: SoC – Allwinner A733 CPU Dual-core Arm Cortex-A76 @ up to 2.00 GHz Hexa-core Arm Cortex-A55 @ up to 1.79 GHz Single-core RISC-V E902 real-time core up to 200 MHz GPU – Imagination Technologies BXM-4-64 MC1 GPU with support for OpenGL ES 3.2, Vulkan 1.3, OpenCL 3.0 VPU 8Kp24 H.265/VP9/AVS2 decoding 4Kp30 H.265/H.264 encoding AI accelerator – 3 TOPS NPU System Memory – 1GB, 2GB, 4GB, 6GB, or 8GB LPDDR5/LPDDR4/LPDDR4x; note: 16GB is also listed in the specs, [...] The post Orange Pi Zero 4 – Compact Allwinner A733 SBC offers HDMI, USB-C DP, GbE, WiFI 6, PCIe FFC connector for $26.5 and up appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator",
+        "RISC-V"
+      ],
+      "entities": [
+        "Imagination Technologies"
+      ],
+      "score": 2.52,
+      "title_zh": "Orange Pi Zero 4发布：紧凑型全志A733开发板，起价26.5美元",
+      "summary_zh": "Orange Pi推出Zero 4紧凑型开发板，尺寸仅55×50mm，搭载全志A733 SoC（集成RISC-V E902实时核），最高8GB LPDDR5内存。板卡提供mini HDMI、USB-C DP、千兆以太网、WiFi 6、蓝牙5.4、双MIPI CSI及树莓派式PCIe FFC接口，集成3 TOPS NPU，起售价26.5美元。",
+      "why_it_matters_zh": "以26.5美元低价提供含RISC-V实时核的全志A733平台和PCIe FFC扩展能力，性价比突出，适合低成本嵌入式项目。",
+      "tags_zh": [
+        "Orange Pi",
+        "Zero 4",
+        "全志A733",
+        "RISC-V",
+        "E902",
+        "单板计算机",
+        "SBC"
+      ]
+    },
+    {
+      "id": "427f6a7d6cac7a6f",
+      "title": "Qualcomm introduces Dragonwing Q-2390 and IQ-2390 for consumer and industrial AIoT applications",
+      "url": "https://www.cnx-software.com/2026/09/01/qualcomm-introduces-dragonwing-q-2390-and-iq-2390-for-consumer-and-industrial-aiot-applications/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-01T14:24:27+00:00",
+      "summary": "Qualcomm has announced the Qualcomm Dragonwing Q-2390 and IQ-2390 quad-core Cortex-A78/A55 processors for AIoT consumer, commercial and industrial applications. The Dragonwing Q-2390 processor is designed for commercial and consumer devices, notably for applications such as retail and smart home products, as well as smart displays and enterprise edge devices, while the Dragonwing IQ-2390 processor is the SKU from the Dragonwing IQ2 Series designed for industrial automation, machine vision, building management and energy systems. Qualcomm IQ-2390 and Q-2390 specifications: CPU 1x Arm Cortex-A78 core up to 1.5 or 1.9 GHz depending on SKU 3x Arm Cortex-A55 cores up to 1.5 or 1.9 GHz depending on SKU Optional SiFive E61 RISC-V real-time core up to 600MHz with 768kB memory Cache – 512 KB L3 cache GPU – Qualcomm Adreno 704 up to 1.1 GHz Audio DSP – Qualcomm Hexagon V66 up to 1.1 GHz NPU – Qualcomm Hexagon up to 1.1 TOPS DPU [...] The post Qualcomm introduces Dragonwing Q-2390 and IQ-2390 for consumer and industrial AIoT applications appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "SiFive"
+      ],
+      "score": 2.4,
+      "title_zh": "Qualcomm introduces Dragonwing Q-2390 and IQ-2390 for consumer and industrial AIoT applications",
+      "summary_zh": "Qualcomm has announced the Qualcomm Dragonwing Q-2390 and IQ-2390 quad-core Cortex-A78/A55 processors for AIoT consumer, commercial and industrial applications. The Dragonwing Q-2390 processor is designed for commercial and consumer devices, notably for applications such as retail and smart home products, as well as smart displays and enterprise edge devices, while the Dragonwing IQ-2390 processor is the SKU from the Dragonwing IQ2 Series designed for industrial automation, machine vision, building management and energy systems. Qualcomm IQ-2390 and Q-2390 specifications: CPU 1x Arm Cortex-A78 core up to 1.5 or 1.9 GHz depending on SKU 3x Arm Cortex-A55 cores up to 1.5 or 1.9 GHz depending on SKU Optional SiFive E61 RISC-V real-time core up to 600MHz with 768kB memory Cache – 512 KB L3 cache GPU – Qualcomm Adreno 704 up to 1.1 GHz Audio DSP – Qualcomm Hexagon V66 up to 1.1 GHz NPU – Qualcomm Hexagon up to 1.1 TOPS DPU [...] The post Qualcomm introduces Dragonwing Q-2390 and IQ-2390 for consumer and industrial AIoT applications appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8e85ce86fae3a56d",
+      "title": "For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice",
+      "url": "https://riscv.org/blog/automotive-mips/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-10T13:37:52+00:00",
+      "summary": "MIPS’ Sameer Wasson explains why an automotive OEM’s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control. The post For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice",
+      "summary_zh": "MIPS’ Sameer Wasson explains why an automotive OEM’s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control. The post For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8b0c45ef03c13805",
+      "title": "World RISC-V Days: Turin Italy",
+      "url": "https://riscv.org/blog/world-risc-v-days-turin-italy/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Turin Italy",
+      "summary_zh": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "5a2db0c7c8feef71",
+      "title": "World RISC-V Days: Tel Aviv Israel",
+      "url": "https://riscv.org/blog/world-risc-v-days-tel-aviv-israel/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Tel Aviv Israel",
+      "summary_zh": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "2c8b6c3e29e4b343",
+      "title": "World RISC-V Days: Gujarat India",
+      "url": "https://riscv.org/blog/world-risc-v-days-gujarat-india/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:08+00:00",
+      "summary": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Gujarat India",
+      "summary_zh": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "97bedbdfbe6140d7",
+      "title": "World RISC-V Days: Boston USA",
+      "url": "https://riscv.org/blog/world-risc-v-days-boston-usa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:07+00:00",
+      "summary": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Boston USA",
+      "summary_zh": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8400c639e3dd2c04",
+      "title": "World RISC-V Days: Nairobi Africa",
+      "url": "https://riscv.org/blog/world-risc-v-days-nairobi-africa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:06+00:00",
+      "summary": "The post World RISC-V Days: Nairobi Africa appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动将在内罗毕举办",
+      "summary_zh": "RISC-V International 宣布 World RISC-V Days 活动将在非洲内罗毕举行，旨在推动 RISC-V 架构在全球范围内的推广与社区建设，吸引当地开发者与企业参与开源硬件生态。",
+      "why_it_matters_zh": "RISC-V 社区活动拓展至非洲，有助于扩大 RISC-V 在新兴市场的技术影响力和开发者基础。",
+      "tags_zh": [
+        "RISC-V",
+        "社区活动",
+        "非洲",
+        "World RISC-V Days"
+      ]
+    },
+    {
+      "id": "336ac57bd6343357",
+      "title": "World RISC-V Days: Buenos Aires Argentina",
+      "url": "https://riscv.org/blog/world-risc-v-days-buenos-aires-argentina/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:05+00:00",
+      "summary": "The post World RISC-V Days: Buenos Aires Argentina appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动将在布宜诺斯艾利斯举办",
+      "summary_zh": "RISC-V International 宣布 World RISC-V Days 活动将在阿根廷布宜诺斯艾利斯举办，旨在促进南美洲开发者参与 RISC-V 开源硬件生态建设与技术交流。",
+      "why_it_matters_zh": "RISC-V 社区活动首次深入南美洲，有利于提升该地区对开源指令集的关注与采用。",
+      "tags_zh": [
+        "RISC-V",
+        "社区活动",
+        "南美洲",
+        "World RISC-V Days"
+      ]
+    },
+    {
+      "id": "7d9c04ff5062d338",
+      "title": "World RISC-V Days: Graz Austria",
+      "url": "https://riscv.org/blog/world-risc-v-days-graz-austria/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:03+00:00",
+      "summary": "The post World RISC-V Days: Graz Austria appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "世界RISC-V日活动在奥地利格拉茨举办",
+      "summary_zh": "RISC-V International在世界RISC-V日系列活动中于奥地利格拉茨举办线下活动，汇聚当地开发者、研究人员与产业伙伴，共同探讨开源指令集架构的技术发展与生态建设。",
+      "why_it_matters_zh": "活动落地欧洲中部，有助于扩大RISC-V在中欧开发者社区的影响力，推动开源硬件生态的国际化交流。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "奥地利",
+        "格拉茨",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "f4447e4b7c030445",
+      "title": "World RISC-V Days: Mymensingh Bangladesh",
+      "url": "https://riscv.org/blog/world-risc-v-days-mymensingh-bangladesh/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:02+00:00",
+      "summary": "The post World RISC-V Days: Mymensingh Bangladesh appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "世界RISC-V日活动在孟加拉国迈门辛举办",
+      "summary_zh": "RISC-V International在世界RISC-V日系列活动中走进孟加拉国迈门辛，面向高校学生与开发者推广RISC-V开源指令集架构，促进南亚地区对RISC-V技术的认知与参与。",
+      "why_it_matters_zh": "活动进入南亚新兴市场，有助于RISC-V在发展中国家的教育普及与本地开发者社区建设。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "孟加拉国",
+        "南亚",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "be7ae1d469a5d180",
+      "title": "World RISC-V Days: Dhaka Bangladesh",
+      "url": "https://riscv.org/blog/world-risc-v-days-dhaka-bangladesh/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:01+00:00",
+      "summary": "The post World RISC-V Days: Dhaka Bangladesh appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动将在孟加拉国达卡举办",
+      "summary_zh": "RISC-V International 宣布将在孟加拉国达卡举办 World RISC-V Days 活动，旨在推动 RISC-V 架构在当地开发者社区和教育领域的普及与交流。",
+      "why_it_matters_zh": "World RISC-V Days 是 RISC-V International 的全球巡回活动，在南亚新兴市场举办有助于扩大 RISC-V 生态影响力。",
+      "tags_zh": [
+        "RISC-V",
+        "社区活动",
+        "World RISC-V Days",
+        "孟加拉国"
+      ]
+    },
+    {
+      "id": "89977c50f21bd668",
+      "title": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "url": "https://github.com/RISCVtestbed/riscvtestbed.github.io",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T05:00:09+00:00",
+      "summary": "RISC-V testbed Stars: 10.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "RISCVtestbed GitHub 仓库更新",
+      "summary_zh": "RISCVtestbed/riscvtestbed.github.io 是一个 RISC-V 测试平台项目仓库，目前在 GitHub 上获得 10 个 Star，近期有代码更新。",
+      "why_it_matters_zh": "RISC-V 测试平台对芯片设计与验证环节具有实用参考价值，仓库活跃度值得关注。",
+      "tags_zh": [
+        "RISC-V",
+        "GitHub",
+        "测试平台",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "339b3d0b46e5d888",
+      "title": "HariharanGanesh/TinyNPU_ADAS_PurePL updated on GitHub",
+      "url": "https://github.com/HariharanGanesh/TinyNPU_ADAS_PurePL",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:48:09+00:00",
+      "summary": "A pure PL FPGA AI Accelerator for RISC-V ADAS. Features an INT8 systolic array, hardware bounding box decoding, and a 200MHz HDMI video pipeline for high-speed YOLOv8 inference on the PYNQ-Z2. Stars: 1.",
+      "tags": [
+        "AI accelerator",
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "HariharanGanesh/TinyNPU_ADAS_PurePL updated on GitHub",
+      "summary_zh": "A pure PL FPGA AI Accelerator for RISC-V ADAS. Features an INT8 systolic array, hardware bounding box decoding, and a 200MHz HDMI video pipeline for high-speed YOLOv8 inference on the PYNQ-Z2. Stars: 1.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "AI accelerator",
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "4623731f26ce230e",
+      "title": "NguyenToQuocViet/RISCV-TinyLLM-Dilithium updated on GitHub",
+      "url": "https://github.com/NguyenToQuocViet/RISCV-TinyLLM-Dilithium",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:41:23+00:00",
+      "summary": "Heterogeneous SoC integrating a custom RV32I RISC-V processor, TinyLLM accelerator, and Dilithium post-quantum cryptography accelerator. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "NguyenToQuocViet/RISCV-TinyLLM-Dilithium updated on GitHub",
+      "summary_zh": "Heterogeneous SoC integrating a custom RV32I RISC-V processor, TinyLLM accelerator, and Dilithium post-quantum cryptography accelerator. Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V",
+        "RISCV"
+      ]
+    },
+    {
+      "id": "6850dd2933c75f98",
+      "title": "JetKVM Mini – A low-cost, ESP32-P4X-based KVM with Ethernet or WiFi connectivity",
+      "url": "https://www.cnx-software.com/2026/09/14/jetkvm-mini-a-low-cost-esp32-p4x-based-kvm-with-ethernet-or-wifi-connectivity/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-14T02:03:40+00:00",
+      "summary": "JetKVM Mini is a smaller, lower-cost version of the popular JetKVM KVM over IP solution. The new model features a small information display, offers Ethernet or WiFi connectivity, and supports 1080p video capture. The main under-the-hood change is that they ditched Linux on a Rockchip RV1106G3 SoC and now rely on an ESP32-P4X (ESP32-P4 version 3.x and greater) to handle video capture, H.264 encoding, USB, and other features. The largest cost saving is removing the RAM and eMMC flash required by Linux. JetKVM Mini specifications: SoC – Espressif Systems ESP32-P4X CPU Dual-core 32-bit RISC-V HP (High-performance) CPU @ up to 400 MHz with AI instruction extension and single-precision FPU Single-RISC-V LP (Low-power) MCU core @ up to 40 MHz Memory 768 KB HP L2MEM (for dual-core CPU), 32 KB LP SRAM, 8 KB TCM (for LP MCU core) 32 MB PSRAM Storage – 128 KB HP ROM, 16 KB LP ROM [...] The post JetKVM Mini – A low-cost, ESP32-P4X-based KVM with Ethernet or WiFi connectivity appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "JetKVM Mini：基于ESP32-P4X的低成本KVM over IP方案",
+      "summary_zh": "JetKVM Mini是JetKVM的小型低成本版本，搭载ESP32-P4X双核RISC-V SoC，支持1080p视频采集与H.264编码，提供以太网或WiFi连接，并配备小型信息显示屏。相比前代基于Linux的方案，去除了RAM和eMMC闪存以降低成本。",
+      "why_it_matters_zh": "该方案展示了ESP32-P4X在KVM场景下替代Linux SoC的潜力，大幅简化硬件成本，适合远程管理应用。",
+      "tags_zh": [
+        "ESP32-P4X",
+        "KVM",
+        "RISC-V",
+        "JetKVM",
+        "远程管理"
+      ]
+    },
+    {
+      "id": "29edf182b05ca557",
+      "title": "ESP32-C5 Pico board follows Raspberry Pi Pico form factor, ships with on-board or external antenna",
+      "url": "https://www.cnx-software.com/2026/09/09/esp32-c5-pico-board-follows-raspberry-pi-pico-form-factor-ships-with-on-board-or-external-antenna/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-09T07:00:50+00:00",
+      "summary": "Waveshare ESP32-C5 Pico board brings the ESP32-C5 dual-band WiFi 6, Bluetooth LE, and 802.15.4 (Zigbee/Thread) SoC to the Raspberry Pi Pico form factor. The board features an ESP32-C5-MINI-1 Series module with PCB or external antenna, two 20-pin GPIO headers, a USB-C port for power and programming, Reset and Boot buttons, and a few LEDs. It also supports Li-Ion battery charging and discharging. Waveshare ESP32-C5 Pico specifications: Wireless module – ESP32-C5-MINI-1 or ESP32-C5-MINI-1U Wireless MCU – Espressif Systems ESP32-C5HF4 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 48 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip Storage – 320 KB ROM, 4MB SPI flash Wireless Dual-band (2.4/5 GHz) 802.11ax WiFi 6, 802.11b/g/n WiFi 4 backward compatibility WiFi modes: Station mode, SoftAP mode, SoftAP + Station mode, and promiscuous mode Bluetooth 5.0 Low Energy (LE) with Mesh support, up [...] The post ESP32-C5 Pico board follows Raspberry Pi Pico form factor, ships with on-board or external antenna appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Waveshare推出ESP32-C5 Pico开发板，兼容树莓派Pico尺寸",
+      "summary_zh": "Waveshare ESP32-C5 Pico采用树莓派Pico外形设计，搭载ESP32-C5-MINI-1模块，支持双频WiFi 6、Bluetooth LE及802.15.4（Zigbee/Thread）。板载单核RISC-V处理器@240MHz，配备USB-C接口、双20-pin GPIO排针及Li-Ion电池充放电，可选PCB或外置天线。",
+      "why_it_matters_zh": "该板将ESP32-C5的WiFi 6与Thread/Zigbee能力引入Pico生态，丰富了物联网原型开发选项。",
+      "tags_zh": [
+        "ESP32-C5",
+        "WiFi 6",
+        "Raspberry Pi Pico",
+        "RISC-V",
+        "Waveshare",
+        "物联网"
+      ]
+    },
+    {
+      "id": "55c81a4e0fb3085a",
+      "title": "YuzukiNeko – A Linux-capable Allwinner F101 RISC-V SBC with Raspberry Pi Pico form factor",
+      "url": "https://www.cnx-software.com/2026/09/08/yuzukineko-a-linux-capable-allwinner-f101-64-bit-risc-v-sbc-with-raspberry-pi-pico-form-factor/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-07T17:01:57+00:00",
+      "summary": "YuzukiHD has made another open-source hardware Linux SBC. YuzukiNeko is a Raspberry Pi Pico-sized single board computer powered by a new Allwinner F101 RISC-V SoC. The Allwinner F101 processor features a single 1.008 GHz C907 RISC-V core, 8MB or 16 MB PSRAM, and support for various display interfaces such as MIPI DSI, 24-bit RGB, and LVDS. The YuzukiNeko board itself features the F101 SoC, an SPI NOR flash, a microSD card for storage, a USB-C port, and two 20-pin GPIO headers. YuzukiNeko specifications: SoC – Allwinner F101 CPU – T-head C907 RISC-V core up to 1.008 GHz Memory – 8MB or 16MB PSRAM @ 252 MHz Package – QFN-68 Storage 128 Mbit NOR flash (PY25Q128HA-SUH-IT) MicroSD card slot USB – USB Type-C port for data, power, and programming Expansion 2x 20-pin expansion headers with GPIOs, ADC, 5V, 3.3V, and GND 5x pads with HP out (analog speaker output) and four [...] The post YuzukiNeko – A Linux-capable Allwinner F101 RISC-V SBC with Raspberry Pi Pico form factor appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "YuzukiNeko：基于全志F101的RISC-V Linux单板电脑",
+      "summary_zh": "YuzukiHD推出开源Linux单板电脑YuzukiNeko，采用Raspberry Pi Pico尺寸规格，搭载全志Allwinner F101 RISC-V SoC（单核T-head C907，主频1.008 GHz），支持8/16MB PSRAM、MIPI DSI/RGB/LVDS显示接口，提供USB-C、microSD和双20针GPIO扩展。",
+      "why_it_matters_zh": "RISC-V SBC阵营再添新成员，以极小尺寸和开源设计降低RISC-V开发门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "SBC",
+        "全志Allwinner",
+        "开源硬件",
+        "Linux"
+      ]
+    },
+    {
+      "id": "0d200400c19ac4d2",
+      "title": "Amlogic A311Y3 Cortex-A78/A55 Edge AI system-on-module delivers up to 8 TOPS",
+      "url": "https://www.cnx-software.com/2026/09/03/amlogic-a311y3-cortex-a78-a55-edge-ai-system-on-module-delivers-up-to-8-tops/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-03T13:46:18+00:00",
+      "summary": "Boardcon CM311Y3 system-on-module (SoM) is powered by an Amlogic A311Y3 octa-core Cortex-A78/A55 SoC with an 8 TOPS NPU and targets 4K video surveillance systems, AI edge computing devices, interactive terminals, enterprise thin clients, and autonomous robots. The module comes with up to 16GB LPDDR5 and up to 256 GB eMMC flash, exposes 210 pins through castellated edges, and a development board is also provided for evaluation and early software development. We don’t often see new SoMs or SBCs based on Amlogic SoCs these days, so let’s have a closer look. Boardcon CM311Y3 System-on-Module CM311Y3 specifications: SoC – Amlogic A311Y3 CPU 2x ARM Cortex-A78 cores @ 2.4GHx 6x ARM Cortex-A55 cores @ 2.0GHz RISC-V core for system control processing RISC-V core for Always-on power management and Sensor Hub GPU – Arm Mali-G625 MC1 with support for OpenGL ES 3.2, Vulkan 1.4, and OpenCL 3.0 VPU Video Decoder – H.264 up to [...] The post Amlogic A311Y3 Cortex-A78/A55 Edge AI system-on-module delivers up to 8 TOPS appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Boardcon CM311Y3：搭载Amlogic A311Y3的8 TOPS边缘AI系统模块",
+      "summary_zh": "Boardcon推出CM311Y3系统模块，基于Amlogic A311Y3八核SoC（2核Cortex-A78 + 6核Cortex-A55），集成8 TOPS NPU，最高16GB LPDDR5和256GB eMMC，配备两路RISC-V协处理核，面向边缘AI、4K视频监控和机器人应用。",
+      "why_it_matters_zh": "Amlogic新品集成NPU与RISC-V协处理核，为边缘AI设备提供高算力低功耗平台选择。",
+      "tags_zh": [
+        "边缘AI",
+        "Amlogic",
+        "系统模块",
+        "RISC-V",
+        "NPU"
+      ]
+    },
+    {
+      "id": "37a6e7cb53e68845",
+      "title": "tectijuana/interfaz updated on GitHub",
+      "url": "https://github.com/tectijuana/interfaz",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T05:01:50+00:00",
+      "summary": "Lenguajes de Interfaz (Assembly Language for ARM / RISCV) Stars: 22.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目tectijuana/interfaz更新",
+      "summary_zh": "GitHub上的tectijuana/interfaz项目（Lenguajes de Interfaz）提供ARM和RISC-V架构汇编语言接口编程的教学资源与示例代码，当前星标数为22。",
+      "why_it_matters_zh": "为开发者学习ARM和RISC-V架构汇编语言与底层接口编程提供了实用的开源参考资源。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "ARM",
+        "汇编语言",
+        "教学项目"
+      ]
+    },
+    {
+      "id": "05b5571ad3e6c45c",
+      "title": "openhwgroup/cvw updated on GitHub",
+      "url": "https://github.com/openhwgroup/cvw",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T05:01:30+00:00",
+      "summary": "CORE-V Wally is a configurable RISC-V Processor associated with RISC-V System-on-Chip Design textbook. Contains a 5-stage pipeline, support for A, B, C, D, F, M and Q extensions, and optional caches, BP, FPU, VM/MMU, AHB, RAMs, and peripherals. Stars: 622.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目openhwgroup/cvw更新",
+      "summary_zh": "CORE-V Wally是OpenHW Group维护的可配置RISC-V处理器开源实现，配套RISC-V SoC设计教材使用。项目采用5级流水线，支持A、B、C、D、F、M、Q等指令扩展，并可选配缓存、分支预测器、FPU、MMU、AHB总线、RAM及外设，GitHub星标数622。",
+      "why_it_matters_zh": "Wally为高校教学与工程实践提供了一套完整的RISC-V CPU与SoC开源参考设计。",
+      "tags_zh": [
+        "GitHub",
+        "RISC-V",
+        "CORE-V",
+        "Wally",
+        "SoC",
+        "开源处理器"
+      ]
+    },
+    {
+      "id": "d8ac78da4fe51043",
+      "title": "colinyap/RISC-V-CPU-with-Zmmul-and-custom-CRC-instructions updated on GitHub",
+      "url": "https://github.com/colinyap/RISC-V-CPU-with-Zmmul-and-custom-CRC-instructions",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:49:18+00:00",
+      "summary": "Multicycle RISC-V processor with support for all base instructions (except ECALL, EBREAK, FENCE which are treated as NOP), Zmmul as well as custom 16-bit CRC. Made for the ChampionCHIP Competition Malaysian Edition hosted by Chipinventor and ASEM Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub更新：支持Zmmul与自定义CRC指令的RISC-V多周期处理器",
+      "summary_zh": "该项目实现多周期RISC-V处理器，支持除ECALL、EBREAK、FENCE（按NOP处理）外的全部基础指令，并扩展Zmmul乘法指令及自定义16位CRC指令，专为Chipinventor与ASEM联合举办的ChampionCHIP马来西亚赛区竞赛设计。",
+      "why_it_matters_zh": "展示Zmmul扩展与自定义指令的实际实现，可作竞赛与教学参考。",
+      "tags_zh": [
+        "RISC-V",
+        "多周期处理器",
+        "Zmmul",
+        "自定义指令",
+        "FPGA",
+        "竞赛"
+      ]
+    },
+    {
+      "id": "9a38eb993ce2c8ba",
+      "title": "AravindRajeshkanna/vernier-rv32 updated on GitHub",
+      "url": "https://github.com/AravindRajeshkanna/vernier-rv32",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:46:48+00:00",
+      "summary": "vernier-rv32 is an open-source FPGA SoC design project centered around the RISC-V (RV32) instruction set architecture (ISA) Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub更新：基于RV32指令集的开源FPGA SoC设计项目",
+      "summary_zh": "vernier-rv32是一个围绕RISC-V RV32指令集架构构建的开源FPGA SoC设计项目，提供可在FPGA上运行的完整片上系统实现方案。",
+      "why_it_matters_zh": "为嵌入式SoC开发与RISC-V学习提供可参考的FPGA实现范例。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32",
+        "FPGA",
+        "SoC",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "126d9327a248eb98",
+      "title": "suysh-msra/riscv_core updated on GitHub",
+      "url": "https://github.com/suysh-msra/riscv_core",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:39:41+00:00",
+      "summary": "a repo for a Riscv compatible CPU. Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub仓库suysh-msra/riscv_core更新",
+      "summary_zh": "该仓库为一个RISC-V兼容CPU项目，Star数为0。",
+      "why_it_matters_zh": "仓库Star为0，关注度低，暂无明显社区影响力。",
+      "tags_zh": [
+        "RISC-V",
+        "CPU",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "85952e7d471e21b4",
+      "title": "persfi/riscv-snn-accelerator updated on GitHub",
+      "url": "https://github.com/persfi/riscv-snn-accelerator",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-14T04:35:53+00:00",
+      "summary": "RV32I core + event-driven SNN accelerator in Verilog Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub仓库persfi/riscv-snn-accelerator更新",
+      "summary_zh": "该仓库基于RV32I核心，配套事件驱动SNN脉冲神经网络加速器，采用Verilog实现，Star数为0。",
+      "why_it_matters_zh": "将RISC-V与神经形态计算结合，属于小众探索方向，尚未获得社区关注。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32I",
+        "SNN",
+        "加速器",
+        "Verilog"
+      ]
+    },
+    {
+      "id": "3fe7000d3f887d9a",
+      "title": "Zstd Improvement For Linux 7.4 To Avoid Redundant Initialization",
+      "url": "https://www.phoronix.com/news/Zstd-Linux-7.4-Avoid-Redundant",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-13T14:04:23+00:00",
+      "summary": "In addition to Usama Arif's recent Linux patches for addressing a major inefficiency within the Linux kernel's Zstd compression code, he also has a separate patch series destined for Linux 7.4 to further enhance the Zstd compression/decompression performance by avoiding redundant initialization...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux 7.4将进一步优化Zstd压缩，避免冗余初始化",
+      "summary_zh": "除了Usama Arif最近提交的修复Linux内核Zstd压缩代码重大低效问题的补丁外，他还准备了另一组针对Linux 7.4的补丁系列，通过避免冗余初始化进一步提升Zstd压缩与解压性能。",
+      "why_it_matters_zh": "这些优化可减少不必要的内存初始化开销，显著提升内核中Zstd压缩与解压的执行效率。",
+      "tags_zh": [
+        "Linux内核",
+        "Zstd压缩",
+        "性能优化"
+      ]
+    },
+    {
+      "id": "26878f24cee7f7ff",
+      "title": "BFS File-System Being Removed For Linux 7.4",
+      "url": "https://www.phoronix.com/news/BFS-Filesystem-To-Be-Removed",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-13T11:03:26+00:00",
+      "summary": "The latest upstream file-system to be removed from the mainline Linux kernel is... BFS...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "BFS文件系统将在Linux 7.4中被移除",
+      "summary_zh": "Linux 7.4将移除主线内核中的BFS文件系统。BFS此前作为上游文件系统长期保留在Linux内核中，由于缺乏持续维护，在本轮内核更新中被正式删除。",
+      "why_it_matters_zh": "BFS作为内核中长期存在的文件系统被移除，体现了上游维护者持续清理无活跃维护代码、精简内核的策略方向。",
+      "tags_zh": [
+        "Linux内核",
+        "文件系统",
+        "BFS"
+      ]
+    },
+    {
+      "id": "1d4f42da60c7f492",
+      "title": "Linux's IO_uring Sees Some \"Crazy\" Patches That Deliver Very Nice Improvements",
+      "url": "https://www.phoronix.com/news/Linux-IO-uring-Crazy-Friday",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-11T16:21:33+00:00",
+      "summary": "Linux block subsystem maintainer and IO_uring lead developer Jens Axboe continues to uncover new opportunities for making the wonderful IO_uring framework even more performant within the Linux kernel. For ending out the week he's posted some \"crazy\" patches delivering some significant gains...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux's IO_uring Sees Some \"Crazy\" Patches That Deliver Very Nice Improvements",
+      "summary_zh": "Linux block subsystem maintainer and IO_uring lead developer Jens Axboe continues to uncover new opportunities for making the wonderful IO_uring framework even more performant within the Linux kernel. For ending out the week he's posted some \"crazy\" patches delivering some significant gains...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "1c5a8e9e6fc5dcfd",
+      "title": "Mold High Speed Linker Being Rewritten In Rust, Hopes To Be The Default Linker On Linux",
+      "url": "https://www.phoronix.com/news/Mold-Linker-In-Rust-Coming",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-11T13:21:42+00:00",
+      "summary": "The Mold high performance linker that typically outperforms the likes of LLVM lld, GNU LD, Wild, and others is being rewritten in the Rust programming language and also has an ambitious goal of being adopted as the default linker on Linux systems...",
+      "tags": [
+        "LLVM"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Mold High Speed Linker Being Rewritten In Rust, Hopes To Be The Default Linker On Linux",
+      "summary_zh": "The Mold high performance linker that typically outperforms the likes of LLVM lld, GNU LD, Wild, and others is being rewritten in the Rust programming language and also has an ambitious goal of being adopted as the default linker on Linux systems...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "LLVM"
+      ]
+    },
+    {
+      "id": "3b72a805c6ddc529",
+      "title": "GCC 13.5 Released With 265+ Bug Fixes",
+      "url": "https://www.phoronix.com/news/GCC-13.5-Released",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-11T09:47:06+00:00",
+      "summary": "For those continuing to rely on the GCC 13 compiler in production that debuted more than three years ago, GCC 13.5 released today with more than 265 bug fixes. GCC 13.5 also caps off the GCC 13 series as the last planned point release...",
+      "tags": [
+        "GCC"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "GCC 13.5 发布，修复超过 265 个 Bug",
+      "summary_zh": "GCC 13.5 编译器今日发布，包含超过 265 个 Bug 修复。作为 GCC 13 系列的收官版本，GCC 13.5 是该三年多前首发系列的最后一个计划更新，仍在生产环境中使用旧版本的用户值得关注。",
+      "why_it_matters_zh": "这是 GCC 13 系列的最后一个版本，为仍依赖此版本的生产环境用户提供重要的稳定性修复。",
+      "tags_zh": [
+        "GCC",
+        "编译器",
+        "开源工具链"
+      ]
+    },
+    {
+      "id": "670480243f25651a",
+      "title": "Intel BFF Driver Slated For Linux 7.4 Introduction",
+      "url": "https://www.phoronix.com/news/Intel-BFF-Driver-For-Linux-7.4",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-10T12:54:35+00:00",
+      "summary": "Last month I covered Intel posting a new driver named \"BFF\" for the Linux kernel. This BFF driver is for a new hardware feature debuting with next-gen Diamond Rapids processors for better dealing with aging CPU silicon where some bits may become stuck over time...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Intel BFF 驱动将随 Linux 7.4 引入",
+      "summary_zh": "Intel 此前发布了名为 BFF 的新型 Linux 内核驱动，计划随 Linux 7.4 正式合并。该驱动面向下一代 Diamond Rapids 处理器，用于处理 CPU 硅片老化导致部分比特卡死的问题。",
+      "why_it_matters_zh": "新驱动针对下一代 Diamond Rapids 处理器，应对硅片老化引发的比特卡死问题，体现 Intel 在硬件可靠性管理上的新方向。",
+      "tags_zh": [
+        "Intel",
+        "Linux内核",
+        "Diamond Rapids"
+      ]
+    },
+    {
+      "id": "24039922a2a6b1ea",
+      "title": "XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management",
+      "url": "https://www.cnx-software.com/2026/09/07/xiao-samd21-plus-and-rp2040-plus-usb-c-boards-get-additional-gpio-pins-integrated-li-ion-battery-management/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-07T01:07:22+00:00",
+      "summary": "Seeed Studio has expanded its XIAO Plus Series introduced in 2025, with the XIAO SAMD21 Plus and XIAO RP2040 Plus USB-C boards adding several GPIOs and integrated Li-ion battery management to the XIAO (SAMD21) and XIAO RP2040, launched in 2020 and 2021, respectively, while keeping the same form factor. XIAO SAMD21 Plus Specifications: MCU – Microchip SAMD21G18 Arm Cortex-M0+ microcontroller at up to 48MHz with 256KB Flash,32KB SRAM USB – 1x USB Type-C port for power and programming Expansion I/Os 2x 7-pin “legacy” headers with 11x analog inputs, 11x digital I/Os, 1x DAC, SPI, UART, and I2C Castellated holes and pads with 16x digital I/Os, I2C,and I2S 3.3V I/O voltage (not 5V tolerant) Misc Reset and Boot buttons RGB LED Charge LED Power Supply 5V via USB-C port Pads for battery On-board PMIC Dimensions – 23.5×17.5 mm Temperature Range – -40°C ~ 85°C The upgraded variant of the XIAO SAMD21 [...] The post XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management",
+      "summary_zh": "Seeed Studio has expanded its XIAO Plus Series introduced in 2025, with the XIAO SAMD21 Plus and XIAO RP2040 Plus USB-C boards adding several GPIOs and integrated Li-ion battery management to the XIAO (SAMD21) and XIAO RP2040, launched in 2020 and 2021, respectively, while keeping the same form factor. XIAO SAMD21 Plus Specifications: MCU – Microchip SAMD21G18 Arm Cortex-M0+ microcontroller at up to 48MHz with 256KB Flash,32KB SRAM USB – 1x USB Type-C port for power and programming Expansion I/Os 2x 7-pin “legacy” headers with 11x analog inputs, 11x digital I/Os, 1x DAC, SPI, UART, and I2C Castellated holes and pads with 16x digital I/Os, I2C,and I2S 3.3V I/O voltage (not 5V tolerant) Misc Reset and Boot buttons RGB LED Charge LED Power Supply 5V via USB-C port Pads for battery On-board PMIC Dimensions – 23.5×17.5 mm Temperature Range – -40°C ~ 85°C The upgraded variant of the XIAO SAMD21 [...] The post XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": []
+    },
+    {
+      "id": "ee33d994e9b41d49",
+      "title": "GPIBee (UsbGpib V3) USB-to-GPIB adapter gains Ethernet (PoE), but launches as closed-source hardware",
+      "url": "https://www.cnx-software.com/2026/09/02/gpibee-usbgpib-v3-usb-to-gpib-adapter-gains-ethernet-poe-but-launches-as-closed-source-hardware/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-02T10:13:55+00:00",
+      "summary": "Last December, we wrote about XyphroLabs’s UsbGpib open-source hardware, affordable, and portable USB-to-GPIB adapter designed for legacy GPIB/IEEE-488 instruments and offering modern hardware and software. At the time, the UsbGpib V3 was also in the works with Ethernet (PoE) support, and the good news is that it’s now available, but named GPIBee. The less good news is that while V1 and V2 were both open-source hardware products (and still are), the GPIBee has been released as closed-source hardware for reasons we’ll explain below. GPIBee specifications: Microcontroller – Not disclosed. But not the Microchip ATMega32U4 8-bit AVR MCU found in V2 since its USB interface is limited to 12 Mbps Host interfaces USB 2.0 (480 Mbps) Type-C port with support for four modes Full USBTMC (USB Test and Measurement Class) VXI-11 over USB-Ethernet (CDC NCM) linux-gpib native interface Prologix-compatible (++ commands) via CDC UART (virtual COM port) 10/100Mbps Ethernet RJ45 port [...] The post GPIBee (UsbGpib V3) USB-to-GPIB adapter gains Ethernet (PoE), but launches as closed-source hardware appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "GPIBee (UsbGpib V3) USB-to-GPIB adapter gains Ethernet (PoE), but launches as closed-source hardware",
+      "summary_zh": "Last December, we wrote about XyphroLabs’s UsbGpib open-source hardware, affordable, and portable USB-to-GPIB adapter designed for legacy GPIB/IEEE-488 instruments and offering modern hardware and software. At the time, the UsbGpib V3 was also in the works with Ethernet (PoE) support, and the good news is that it’s now available, but named GPIBee. The less good news is that while V1 and V2 were both open-source hardware products (and still are), the GPIBee has been released as closed-source hardware for reasons we’ll explain below. GPIBee specifications: Microcontroller – Not disclosed. But not the Microchip ATMega32U4 8-bit AVR MCU found in V2 since its USB interface is limited to 12 Mbps Host interfaces USB 2.0 (480 Mbps) Type-C port with support for four modes Full USBTMC (USB Test and Measurement Class) VXI-11 over USB-Ethernet (CDC NCM) linux-gpib native interface Prologix-compatible (++ commands) via CDC UART (virtual COM port) 10/100Mbps Ethernet RJ45 port [...] The post GPIBee (UsbGpib V3) USB-to-GPIB adapter gains Ethernet (PoE), but launches as closed-source hardware appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": []
+    }
+  ],
+  "errors": [
+    {
+      "source": "arXiv RISC-V",
+      "error": "HTTP Error 429: Unknown Error"
+    }
+  ],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 22,
+    "total_items": 34,
+    "errors": [
+      "batch 2: MiniMax returned incomplete JSON at character 528",
+      "batch 3: MiniMax response did not contain a JSON array",
+      "batch 4: MiniMax response did not contain a JSON array",
+      "batch 8: MiniMax response did not contain a JSON array",
+      "batch 15: MiniMax response did not contain a JSON array",
+      "batch 17: MiniMax returned incomplete JSON at character 706"
+    ],
+    "generated_at": "2026-09-14T05:07:30.165851+00:00"
+  }
+}
