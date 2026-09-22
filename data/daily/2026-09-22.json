@@ -1,0 +1,921 @@
+{
+  "generated_at": "2026-09-22T05:05:44.452891+00:00",
+  "date": "2026-09-22",
+  "items": [
+    {
+      "id": "4c0895aba9cb453d",
+      "title": "V Questions with… Openchip’s Cesc Guim and Marc Fernández",
+      "url": "https://riscv.org/blog/v-questions-with-openchips-cesc-guim-and-marc-fernandez/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-17T21:59:27+00:00",
+      "summary": "'V Questions with…' uncovers the backstory to a RISC-V member's latest work in 5 questions. Here, I talk to the duo behind BER10, the sovereign SoC that Barcelona's Openchip taped out in under two years. The post <span class=\"vq-prefix\">V Questions with… </span>Openchip’s Cesc Guim and Marc Fernández appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "V Questions with… Openchip’s Cesc Guim and Marc Fernández",
+      "summary_zh": "'V Questions with…' uncovers the backstory to a RISC-V member's latest work in 5 questions. Here, I talk to the duo behind BER10, the sovereign SoC that Barcelona's Openchip taped out in under two years. The post <span class=\"vq-prefix\">V Questions with… </span>Openchip’s Cesc Guim and Marc Fernández appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8e85ce86fae3a56d",
+      "title": "For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice",
+      "url": "https://riscv.org/blog/automotive-mips/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-10T13:37:52+00:00",
+      "summary": "MIPS’ Sameer Wasson explains why an automotive OEM’s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control. The post For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice",
+      "summary_zh": "MIPS’ Sameer Wasson explains why an automotive OEM’s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control. The post For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "5a2db0c7c8feef71",
+      "title": "World RISC-V Days: Tel Aviv Israel",
+      "url": "https://riscv.org/blog/world-risc-v-days-tel-aviv-israel/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days活动落地以色列特拉维夫",
+      "summary_zh": "RISC-V International宣布在以色列特拉维夫举办World RISC-V Days活动，面向当地开发者与产业生态推广RISC-V开源指令集架构，促进区域社区交流与技术协作。",
+      "why_it_matters_zh": "活动覆盖中东地区，反映RISC-V International持续推动开源指令集架构在全球范围的生态扩展与社区建设。",
+      "tags_zh": [
+        "RISC-V",
+        "社区活动",
+        "以色列"
+      ]
+    },
+    {
+      "id": "8b0c45ef03c13805",
+      "title": "World RISC-V Days: Turin Italy",
+      "url": "https://riscv.org/blog/world-risc-v-days-turin-italy/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days活动在意大利都灵举办",
+      "summary_zh": "RISC-V International在意大利都灵举办World RISC-V Days活动，汇聚当地技术社区与产业代表，共同探讨RISC-V开源指令集的应用前景与生态发展。",
+      "why_it_matters_zh": "都灵站活动体现RISC-V在欧洲南部市场的进一步渗透，有助于推动当地开源贡献者、企业与学术界的协作。",
+      "tags_zh": [
+        "RISC-V",
+        "社区活动",
+        "意大利"
+      ]
+    },
+    {
+      "id": "2c8b6c3e29e4b343",
+      "title": "World RISC-V Days: Gujarat India",
+      "url": "https://riscv.org/blog/world-risc-v-days-gujarat-india/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:08+00:00",
+      "summary": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动落地印度古吉拉特邦",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 古吉拉特邦站活动信息，延续该系列在全球多地推广 RISC-V 开放架构的巡回分享。",
+      "why_it_matters_zh": "活动进入印度市场，有助于推动 RISC-V 生态在南亚地区的本地化发展与社区建设。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "印度",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "97bedbdfbe6140d7",
+      "title": "World RISC-V Days: Boston USA",
+      "url": "https://riscv.org/blog/world-risc-v-days-boston-usa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:07+00:00",
+      "summary": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 活动走进美国波士顿",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 波士顿站活动信息，持续面向北美开发者与产业伙伴推广 RISC-V 开放指令集架构。",
+      "why_it_matters_zh": "北美站活动有助于扩大 RISC-V 在主流技术市场的开发者基础与产业影响力。",
+      "tags_zh": [
+        "RISC-V",
+        "World RISC-V Days",
+        "波士顿",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "8400c639e3dd2c04",
+      "title": "World RISC-V Days: Nairobi Africa",
+      "url": "https://riscv.org/blog/world-risc-v-days-nairobi-africa/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:06+00:00",
+      "summary": "The post World RISC-V Days: Nairobi Africa appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 内罗毕站活动公告",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 内罗毕（非洲）站活动信息。世界 RISC-V Days 是面向全球社区的系列活动，旨在推动 RISC-V 开源指令集架构的传播，为开发者与生态伙伴提供线下交流与合作的平台。",
+      "why_it_matters_zh": "活动落地非洲城市内罗毕，扩展 RISC-V 国际社区的地理覆盖范围与当地开发者参与度。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "非洲",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "336ac57bd6343357",
+      "title": "World RISC-V Days: Buenos Aires Argentina",
+      "url": "https://riscv.org/blog/world-risc-v-days-buenos-aires-argentina/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:05+00:00",
+      "summary": "The post World RISC-V Days: Buenos Aires Argentina appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days 布宜诺斯艾利斯站活动公告",
+      "summary_zh": "RISC-V International 发布 World RISC-V Days 布宜诺斯艾利斯（阿根廷）站活动信息。该系列活动面向全球 RISC-V 社区，旨在推动开源指令集架构的推广，促进当地开发者、研究机构与企业的交流与协作。",
+      "why_it_matters_zh": "活动落地南美，有助于 RISC-V 生态在拉美市场的拓展与开发者群体增长。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "南美洲",
+        "社区活动"
+      ]
+    },
+    {
+      "id": "7d9c04ff5062d338",
+      "title": "World RISC-V Days: Graz Austria",
+      "url": "https://riscv.org/blog/world-risc-v-days-graz-austria/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:03+00:00",
+      "summary": "The post World RISC-V Days: Graz Austria appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Graz Austria",
+      "summary_zh": "The post World RISC-V Days: Graz Austria appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "f4447e4b7c030445",
+      "title": "World RISC-V Days: Mymensingh Bangladesh",
+      "url": "https://riscv.org/blog/world-risc-v-days-mymensingh-bangladesh/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:02+00:00",
+      "summary": "The post World RISC-V Days: Mymensingh Bangladesh appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Mymensingh Bangladesh",
+      "summary_zh": "The post World RISC-V Days: Mymensingh Bangladesh appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "cd2490d936e49caa",
+      "title": "amgspendingspree/pico2-swd-riscv updated on GitHub",
+      "url": "https://github.com/amgspendingspree/pico2-swd-riscv",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:01:13+00:00",
+      "summary": "🔧 Implement stateful SWD protocol for debugging RP2350 RISC-V cores on Raspberry Pi Pico2 using GPIOs from another Pico as a probe. Stars: 1.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "amgspendingspree/pico2-swd-riscv updated on GitHub",
+      "summary_zh": "🔧 Implement stateful SWD protocol for debugging RP2350 RISC-V cores on Raspberry Pi Pico2 using GPIOs from another Pico as a probe. Stars: 1.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V",
+        "RISCV"
+      ]
+    },
+    {
+      "id": "89977c50f21bd668",
+      "title": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "url": "https://github.com/RISCVtestbed/riscvtestbed.github.io",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:00:09+00:00",
+      "summary": "RISC-V testbed Stars: 10.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "RISCVtestbed/riscvtestbed.github.io updated on GitHub",
+      "summary_zh": "RISC-V testbed Stars: 10.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V",
+        "RISCV"
+      ]
+    },
+    {
+      "id": "e5aeb99869ca9e3b",
+      "title": "Krishna-Gorai/riscv-cache-extension updated on GitHub",
+      "url": "https://github.com/Krishna-Gorai/riscv-cache-extension",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T04:56:45+00:00",
+      "summary": "Open-source RTL reproduction of 'Seamless Cache Extension for FPGA-based Multi-Core RISC-V SoC' (Kamaleldin et al., IEEE SOCC 2024): a snoop-coherent private L1 data-cache sub-system for in-order RISC-V cores. Stars: 0.",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.24,
+      "title_zh": "GitHub开源RISC-V缓存扩展RTL实现更新",
+      "summary_zh": "GitHub开源项目复现IEEE SOCC 2024论文，为FPGA多核RISC-V SoC实现侦听一致性私有L1数据缓存子系统，适用于顺序执行RISC-V核心，可作为参考设计复用。",
+      "why_it_matters_zh": "为开源社区提供FPGA多核RISC-V SoC缓存一致性参考实现，降低多核开发门槛",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "缓存一致性",
+        "FPGA",
+        "SoC"
+      ]
+    },
+    {
+      "id": "2a46e8e09bc204d4",
+      "title": "Nordic nRF54LC10A – A tiny Bluetooth LE and 802.15.4 SoC with sub-50 nA hibernation mode",
+      "url": "https://www.cnx-software.com/2026/09/22/nordic-nrf54lc10a-a-tiny-bluetooth-le-and-802-15-4-soc-with-sub-50-na-hibernation-mode/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-22T00:00:23+00:00",
+      "summary": "Nordic Semiconductor recently expanded its nRF54L Series with the nRF54LC10A, a new SoC with less memory and a smaller peripheral set compared to the higher-end nRF54L15, while supporting Bluetooth LE with Channel Sounding and IEEE 802.15.4 for Thread, Zigbee, and Matter. Built on a 22nm process, the SoC combines a 128 MHz Arm Cortex-M33 processor with a multiprotocol 2.4 GHz radio. It also features a sub-50 nA hibernation mode for devices shipped with (3V) batteries installed, reducing battery drain during storage and transportation. Nordic Semiconductor nRF54LC10A specifications CPU Arm Cortex-M33 @ 128 MHz with DSP, FPU, MPU, and TrustZone 128 MHz RISC-V coprocessor (VPR) with I/O acceleration for SoftPeripherals and time-critical offload Performance – 239 CoreMark/mA, 503 CoreMark (preliminary) Memory – 192 KB RAM Storage – Up to 1012 KB NVM Wireless Bluetooth 5.4 LE with direction-finding, Bluetooth Mesh, etc. Ready for future Bluetooth releases Bluetooth Channel Sounding support for [...] The post Nordic nRF54LC10A – A tiny Bluetooth LE and 802.15.4 SoC with sub-50 nA hibernation mode appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Nordic推出nRF54LC10A超低功耗蓝牙SoC，内置RISC-V协处理器",
+      "summary_zh": "Nordic Semiconductor扩展nRF54L系列，发布nRF54LC10A SoC。采用22nm工艺，集成128 MHz Arm Cortex-M33与RISC-V协处理器VPR，支持蓝牙5.4 LE信道探测及IEEE 802.15.4协议，待机休眠电流低于50 nA。",
+      "why_it_matters_zh": "超低功耗设计适合电池供电物联网终端，内置RISC-V协处理器分担I/O负载",
+      "tags_zh": [
+        "Nordic",
+        "蓝牙低功耗",
+        "RISC-V",
+        "协处理器",
+        "物联网"
+      ]
+    },
+    {
+      "id": "ef91d220c4ca3f2d",
+      "title": "CVITEK CV1842H-P-based edge AI camera module offers night vision and AI-ISP support (Crowdfunding)",
+      "url": "https://www.cnx-software.com/2026/09/16/cvitek-cv1842h-p-based-edge-ai-camera-module-offers-night-vision-and-ai-isp-support/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-16T00:00:55+00:00",
+      "summary": "The AIMORELOGY Ovis is an open-source AI vision camera module built around the CVITEK CV1842H-P SoC, with full-color 1080p night vision and 1.5 TOPS edge AI inference in a compact modular design. It is designed for drones, robotics, security systems, smart cameras, and custom embedded vision products. The camera features a compact stacked design, with a 20 × 20 mm Core board that includes the CVITEK CV1842H-P SoC, 2 Gbit NAND flash, USB, and UART debug pads. A Sensor board with the SC235HAI image sensor connects on top and also adds Ethernet and UART interfaces. An optional CVBS board goes between the Sensor board and the Ovis Core board. AIMORELOGY Ovis specifications: Ovis Core Board SoC – CVITEK CV1842H-P CPU – 1x Arm Cortex-A53 core @ 1.1 GHz, 1x RISC-V C906 core @ 800 MHz NPU – 1.5 TOPS @ INT8 with BF16 support ISP – AI-ISP with real-time 1080p [...] The post CVITEK CV1842H-P-based edge AI camera module offers night vision and AI-ISP support (Crowdfunding) appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "CVITEK CV1842H-P 边缘AI相机模组发布，支持AI-ISP夜视",
+      "summary_zh": "AIMORELOGY Ovis开源AI相机模组采用CVITEK CV1842H-P芯片，含Arm Cortex-A53和RISC-V C906双核，NPU算力1.5 TOPS，支持1080p全彩夜视。模块化堆叠设计兼容以太网和CVBS扩展，可用于无人机、机器人和智能安防等嵌入式视觉场景。",
+      "why_it_matters_zh": "开源模块化设计结合RISC-V与AI-ISP夜视能力，降低嵌入式AI视觉开发门槛。",
+      "tags_zh": [
+        "边缘AI",
+        "RISC-V",
+        "AI-ISP",
+        "开源硬件",
+        "嵌入式视觉"
+      ]
+    },
+    {
+      "id": "f5e2250e5405764f",
+      "title": "Morse Micro Wi-Fi HaLow USB adapters add 802.11ah connectivity to PCs and routers",
+      "url": "https://www.cnx-software.com/2026/09/14/morse-micro-wi-fi-halow-usb-adapters-add-802-11ah-connectivity-to-pcs-and-routers/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-14T09:00:51+00:00",
+      "summary": "Last year, we saw Morse Micro introduce the MM8108 Wi-Fi HaLow (802.11ah) SoC with up to 43.33 Mbps throughput, along with an MM8108-RD09 USB dongle reference design, for which we had virtually no details at the time. Morse Micro has now released USB-A and USB-C Wi-Fi HaLow adapters based on that reference design. The adapters let PCs and routers connect to 802.11ah networks through USB without a dedicated expansion card and feature an external SMA antenna delivering up to 26 dBm transmit power. Wi-Fi HaLow USB network adapter specifications: SoC – Morse Micro MM8108 32-bit RISC-V Host Applications Processor (HAP) Standard – IEEE802.11ah Wi-Fi HaLow Frequency band – 850-950 MHz (Worldwide sub-1 GHz license-exempt range) Operating Modes – Access Point (AP) and Station (STA). Channel Width – 1/2/4/8 MHz Modulation – BPSK, QPSK, 16QAM, 64QAM, 256QAM. Data rate – Up to 43.3 Mbps using 256-QAM modulation at an 8 MHz bandwidth [...] The post Morse Micro Wi-Fi HaLow USB adapters add 802.11ah connectivity to PCs and routers appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Morse Micro推出Wi-Fi HaLow USB适配器，基于RISC-V MM8108芯片",
+      "summary_zh": "Morse Micro发布基于MM8108芯片的Wi-Fi HaLow USB适配器，内置RISC-V主机处理器，支持802.11ah协议与850-950MHz频段，吞吐速率43.3Mbps，发射功率达26dBm，支持AP和STA模式。无需扩展卡即可为PC和路由器增加远距离sub-1GHz连接能力。",
+      "why_it_matters_zh": "首款USB形态Wi-Fi HaLow适配器让现有设备便捷接入远距离低功耗sub-1GHz网络。",
+      "tags_zh": [
+        "Wi-Fi HaLow",
+        "RISC-V",
+        "物联网",
+        "USB适配器",
+        "802.11ah"
+      ]
+    },
+    {
+      "id": "6850dd2933c75f98",
+      "title": "JetKVM Mini – A low-cost, ESP32-P4X-based KVM with Ethernet or WiFi connectivity",
+      "url": "https://www.cnx-software.com/2026/09/14/jetkvm-mini-a-low-cost-esp32-p4x-based-kvm-with-ethernet-or-wifi-connectivity/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-14T02:03:40+00:00",
+      "summary": "JetKVM Mini is a smaller, lower-cost version of the popular JetKVM KVM over IP solution. The new model features a small information display, offers Ethernet or WiFi connectivity, and supports 1080p video capture. The main under-the-hood change is that they ditched Linux on a Rockchip RV1106G3 SoC and now rely on an ESP32-P4X (ESP32-P4 version 3.x and greater) to handle video capture, H.264 encoding, USB, and other features. The largest cost saving is removing the RAM and eMMC flash required by Linux. JetKVM Mini specifications: SoC – Espressif Systems ESP32-P4X CPU Dual-core 32-bit RISC-V HP (High-performance) CPU @ up to 400 MHz with AI instruction extension and single-precision FPU Single-RISC-V LP (Low-power) MCU core @ up to 40 MHz Memory 768 KB HP L2MEM (for dual-core CPU), 32 KB LP SRAM, 8 KB TCM (for LP MCU core) 32 MB PSRAM Storage – 128 KB HP ROM, 16 KB LP ROM [...] The post JetKVM Mini – A low-cost, ESP32-P4X-based KVM with Ethernet or WiFi connectivity appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "JetKVM Mini：基于ESP32-P4X的低成本KVM设备",
+      "summary_zh": "JetKVM推出新款低成本KVM over IP设备JetKVM Mini，采用乐鑫ESP32-P4X取代此前基于Linux的Rockchip RV1106G3方案。该SoC集成双核32位RISC-V HP CPU（最高400MHz）与单核LP MCU（40MHz），支持1080p视频采集、H.264编码及USB功能，并提供Ethernet或WiFi连接。省去RAM与eMMC flash，大幅降低BOM成本。",
+      "why_it_matters_zh": "ESP32-P4X的RISC-V能力使JetKVM Mini无需Linux即可完成视频采集与编码，降低硬件成本，为嵌入式KVM方案树立新标杆。",
+      "tags_zh": [
+        "ESP32-P4X",
+        "JetKVM",
+        "RISC-V",
+        "KVM",
+        "乐鑫",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "29edf182b05ca557",
+      "title": "ESP32-C5 Pico board follows Raspberry Pi Pico form factor, ships with on-board or external antenna",
+      "url": "https://www.cnx-software.com/2026/09/09/esp32-c5-pico-board-follows-raspberry-pi-pico-form-factor-ships-with-on-board-or-external-antenna/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-09T07:00:50+00:00",
+      "summary": "Waveshare ESP32-C5 Pico board brings the ESP32-C5 dual-band WiFi 6, Bluetooth LE, and 802.15.4 (Zigbee/Thread) SoC to the Raspberry Pi Pico form factor. The board features an ESP32-C5-MINI-1 Series module with PCB or external antenna, two 20-pin GPIO headers, a USB-C port for power and programming, Reset and Boot buttons, and a few LEDs. It also supports Li-Ion battery charging and discharging. Waveshare ESP32-C5 Pico specifications: Wireless module – ESP32-C5-MINI-1 or ESP32-C5-MINI-1U Wireless MCU – Espressif Systems ESP32-C5HF4 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 48 MHz acting as the main processor for power-sensitive applications Memory – 384 KB SRAM on-chip Storage – 320 KB ROM, 4MB SPI flash Wireless Dual-band (2.4/5 GHz) 802.11ax WiFi 6, 802.11b/g/n WiFi 4 backward compatibility WiFi modes: Station mode, SoftAP mode, SoftAP + Station mode, and promiscuous mode Bluetooth 5.0 Low Energy (LE) with Mesh support, up [...] The post ESP32-C5 Pico board follows Raspberry Pi Pico form factor, ships with on-board or external antenna appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Waveshare推出ESP32-C5 Pico开发板，兼容树莓派Pico外形",
+      "summary_zh": "Waveshare发布ESP32-C5 Pico开发板，采用ESP32-C5-MINI-1模组，支持双频WiFi 6、Bluetooth LE及802.15.4（Zigbee/Thread）。SoC集成单核RISC-V处理器（240MHz）与低功耗RISC-V核（48MHz），兼容树莓派Pico的双20-pin GPIO接口，提供USB-C接口、Reset/Boot按键及锂电池充放电管理。",
+      "why_it_matters_zh": "ESP32-C5 Pico将WiFi 6与多协议无线能力带入树莓派Pico生态，为物联网开发提供高性价比、可扩展的RISC-V平台。",
+      "tags_zh": [
+        "ESP32-C5",
+        "Waveshare",
+        "RISC-V",
+        "WiFi 6",
+        "树莓派Pico",
+        "乐鑫"
+      ]
+    },
+    {
+      "id": "55c81a4e0fb3085a",
+      "title": "YuzukiNeko – A Linux-capable Allwinner F101 RISC-V SBC with Raspberry Pi Pico form factor",
+      "url": "https://www.cnx-software.com/2026/09/08/yuzukineko-a-linux-capable-allwinner-f101-64-bit-risc-v-sbc-with-raspberry-pi-pico-form-factor/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-07T17:01:57+00:00",
+      "summary": "YuzukiHD has made another open-source hardware Linux SBC. YuzukiNeko is a Raspberry Pi Pico-sized single board computer powered by a new Allwinner F101 RISC-V SoC. The Allwinner F101 processor features a single 1.008 GHz C907 RISC-V core, 8MB or 16 MB PSRAM, and support for various display interfaces such as MIPI DSI, 24-bit RGB, and LVDS. The YuzukiNeko board itself features the F101 SoC, an SPI NOR flash, a microSD card for storage, a USB-C port, and two 20-pin GPIO headers. YuzukiNeko specifications: SoC – Allwinner F101 CPU – T-head C907 RISC-V core up to 1.008 GHz Memory – 8MB or 16MB PSRAM @ 252 MHz Package – QFN-68 Storage 128 Mbit NOR flash (PY25Q128HA-SUH-IT) MicroSD card slot USB – USB Type-C port for data, power, and programming Expansion 2x 20-pin expansion headers with GPIOs, ADC, 5V, 3.3V, and GND 5x pads with HP out (analog speaker output) and four [...] The post YuzukiNeko – A Linux-capable Allwinner F101 RISC-V SBC with Raspberry Pi Pico form factor appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "全志F101 RISC-V SBC YuzukiNeko发布：树莓派Pico尺寸",
+      "summary_zh": "YuzukiHD推出开源Linux单板计算机YuzukiNeko，采用全志F101 SoC，集成单核平头哥C907 RISC-V核心，主频1.008 GHz，板载8/16 MB PSRAM与128 Mbit NOR Flash，支持MIPI DSI、24位RGB与LVDS显示接口，配备USB-C、microSD卡槽及双20针GPIO扩展头，外形与树莓派Pico相当。",
+      "why_it_matters_zh": "RISC-V SBC采用树莓派Pico紧凑尺寸，降低开发门槛，适合爱好者与嵌入式开发者快速上手。",
+      "tags_zh": [
+        "RISC-V",
+        "SBC",
+        "全志F101",
+        "Linux",
+        "开源硬件",
+        "平头哥C907"
+      ]
+    },
+    {
+      "id": "1a662c207d2d2c26",
+      "title": "ana-florentina-neacsu/space-invaders-RISC-V updated on GitHub",
+      "url": "https://github.com/ana-florentina-neacsu/space-invaders-RISC-V",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:04:39+00:00",
+      "summary": "A game of Space Invaders made in RISC V. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上出现RISC-V汇编版太空侵略者游戏",
+      "summary_zh": "GitHub用户ana-florentina-neacsu发布了一个用RISC-V汇编实现的太空侵略者（Space Invaders）小游戏项目，展示了RISC-V架构在复古游戏开发中的可编程性。目前项目处于早期阶段，关注度较低。",
+      "why_it_matters_zh": "用RISC-V汇编实现经典游戏，可作为学习架构指令与底层编程的参考项目。",
+      "tags_zh": [
+        "RISC-V",
+        "GitHub",
+        "游戏开发",
+        "汇编",
+        "太空侵略者"
+      ]
+    },
+    {
+      "id": "f37b7eddeca29003",
+      "title": "sirmick/redoubt updated on GitHub",
+      "url": "https://github.com/sirmick/redoubt",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:04:38+00:00",
+      "summary": "Secure RISC-V OS Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "sirmick/redoubt：安全 RISC-V 操作系统仓库更新",
+      "summary_zh": "GitHub 上的 sirmick/redoubt 项目更新，项目定位为安全 RISC-V 操作系统（Secure RISC-V OS），目前 Star 数为 0。该仓库面向 RISC-V 架构的安全 OS 方向，但社区关注度尚低，成熟度有待观察。",
+      "why_it_matters_zh": "RISC-V 安全操作系统是新兴方向，值得持续关注项目进展与社区反馈。",
+      "tags_zh": [
+        "RISC-V",
+        "操作系统",
+        "安全OS",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "d89d903dbdb1755e",
+      "title": "kyakyosharon/ripes-projects updated on GitHub",
+      "url": "https://github.com/kyakyosharon/ripes-projects",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:04:35+00:00",
+      "summary": "🖥️ Explore 20 hands-on experiments to master RISC-V computer architecture concepts using the Ripes simulator for effective learning. Stars: 27.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "kyakyosharon/ripes-projects：基于 Ripes 模拟器的 RISC-V 架构实验合集",
+      "summary_zh": "GitHub 上的 kyakyosharon/ripes-projects 项目更新，提供 20 个动手实验，帮助学习者借助 Ripes 模拟器掌握 RISC-V 计算机体系结构概念，仓库 Star 数为 27，适合作为 RISC-V 入门与教学的实践资源。",
+      "why_it_matters_zh": "通过模拟器实验降低学习门槛，适合教学与自学 RISC-V 体系结构。",
+      "tags_zh": [
+        "RISC-V",
+        "计算机体系结构",
+        "Ripes",
+        "模拟器",
+        "教学"
+      ]
+    },
+    {
+      "id": "3dd67cee95703f01",
+      "title": "daryl-888/RISCV_FPGA updated on GitHub",
+      "url": "https://github.com/daryl-888/RISCV_FPGA",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:04:23+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub 仓库 daryl-888/RISCV_FPGA 更新",
+      "summary_zh": "GitHub 上的 RISC-V FPGA 项目 daryl-888/RISCV_FPFA 仓库已更新。该项目涉及 RISC-V 在 FPGA 上的实现，目前获得 0 颗星标，关注度较低。",
+      "why_it_matters_zh": "FPGA 上的 RISC-V 实现可探索定制化芯片设计路径，适合硬件爱好者参考。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "开源硬件",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "aae5d9c5461b9e97",
+      "title": "EricSpencer00/Resilient updated on GitHub",
+      "url": "https://github.com/EricSpencer00/Resilient",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:03:04+00:00",
+      "summary": "Statically-typed compiled language for safety-critical embedded systems — Z3-verified contracts, no_std runtime, self-healing live blocks. Ships to Cortex-M, RISC-V, and bare metal. Stars: 5.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub 仓库 EricSpencer00/Resilient 更新",
+      "summary_zh": "EricSpencer00/Resilient 是一种面向安全关键嵌入式系统的静态类型编译语言，集成 Z3 验证合约、no_std 运行时和自愈 live 块，支持 Cortex-M、RISC-V 及裸机部署，目前获得 5 颗星标。",
+      "why_it_matters_zh": "形式化验证与 RISC-V 嵌入式结合，为安全关键场景提供可靠性保障。",
+      "tags_zh": [
+        "RISC-V",
+        "嵌入式系统",
+        "形式化验证",
+        "编译语言",
+        "Cortex-M"
+      ]
+    },
+    {
+      "id": "9c8072b39701b7f2",
+      "title": "satyansh2004/riscv-assembly updated on GitHub",
+      "url": "https://github.com/satyansh2004/riscv-assembly",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:02:49+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "satyansh2004/riscv-assembly updated on GitHub",
+      "summary_zh": "Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISCV"
+      ]
+    },
+    {
+      "id": "c4ba55d95cb4dd2e",
+      "title": "aabrahamy/RV32I_CPU updated on GitHub",
+      "url": "https://github.com/aabrahamy/RV32I_CPU",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T05:01:30+00:00",
+      "summary": "single-cycle RISC-V processor Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "aabrahamy/RV32I_CPU updated on GitHub",
+      "summary_zh": "single-cycle RISC-V processor Stars: 0.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "330deaa3f11041ac",
+      "title": "SMAbdullah-772/RV32I_Processor updated on GitHub",
+      "url": "https://github.com/SMAbdullah-772/RV32I_Processor",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T04:57:32+00:00",
+      "summary": "RTL (Verilog) Implementation of Single Cycle Processor of RISC-V 32 bit Integer Extension. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上RV32I_Processor仓库更新",
+      "summary_zh": "RV32I_Processor 是一个使用 Verilog HDL 编写的 RISC-V 32位整数扩展（RV32I）单周期处理器 RTL 实现项目，采用单周期架构实现 RV32I 指令集，适合作为学习 RISC-V 架构与 Verilog 硬件设计的入门参考，目前获得 0 个 Star。",
+      "why_it_matters_zh": "单周期 RV32I 实现是理解 RISC-V 指令集与处理器流水线的典型教学示例。",
+      "tags_zh": [
+        "RV32I",
+        "Verilog",
+        "单周期处理器",
+        "开源硬件",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "7a2cf5d8074303b4",
+      "title": "choreographr/choreographr updated on GitHub",
+      "url": "https://github.com/choreographr/choreographr",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T04:55:07+00:00",
+      "summary": "Choreographr is an all purpose extensible AI agent system written entirely in Rust. It has a client/server architecture and can run many sessions simulataneously. It can be run locally or in the cloud. LLM generated code can be run in a sandboxed RISC-V VM for complete security and observability. Stars: 5.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上choreographr仓库更新",
+      "summary_zh": "choreographr 是一个完全使用 Rust 编写的可扩展 AI 代理系统，采用客户端/服务器架构，支持本地与云端部署。其亮点是大语言模型（LLM）生成的代码可在沙盒化的 RISC-V 虚拟机中运行，以提供安全性和可观测性，目前获得 5 个 Star。",
+      "why_it_matters_zh": "利用 RISC-V VM 沙盒执行 LLM 代码，为 AI 代理安全隔离提供了新方案。",
+      "tags_zh": [
+        "choreographr",
+        "Rust",
+        "AI代理",
+        "RISC-V VM",
+        "沙盒安全",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "0c73e50369a7be42",
+      "title": "rtCarl/ultraviolet updated on GitHub",
+      "url": "https://github.com/rtCarl/ultraviolet",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-09-22T04:55:04+00:00",
+      "summary": "🛠️ Build a RISC-native architecture combining RISC-V/ARM CPUs and CUDA GPUs on OpenBSD for a streamlined, secure, and efficient computing experience. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目rtCarl/ultraviolet：构建RISC-V/ARM与CUDA GPU异构架构",
+      "summary_zh": "GitHub项目rtCarl/ultraviolet尝试在OpenBSD上整合RISC-V与ARM CPU以及CUDA GPU，构建精简、安全、高效的RISC原生计算架构。该项目目前Star数为0，仍处于早期阶段。",
+      "why_it_matters_zh": "探索异构架构在BSD系统上的整合可能，为开源生态提供新选择，但项目尚处于早期阶段。",
+      "tags_zh": [
+        "RISC-V",
+        "ARM",
+        "OpenBSD",
+        "CUDA",
+        "异构计算"
+      ]
+    },
+    {
+      "id": "4921bf932ce3a932",
+      "title": "AMD Begins Preparing Open-Source Linux Driver For Graphics Cards With GDDR7",
+      "url": "https://www.phoronix.com/news/AMDGPU-Linux-Prep-GDDR7",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T20:52:36+00:00",
+      "summary": "AMD sent out their latest Linux kernel graphics driver patches today for enabling some new hardware IP blocks. And as part of that, preparing for GDDR7 video memory with the AMDGPU driver...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AMD开始为搭载GDDR7显存的显卡准备开源Linux驱动",
+      "summary_zh": "AMD近日向Linux内核提交最新图形驱动补丁，为部分新硬件IP模块的启用做准备，其中包含在AMGPU驱动中加入对GDDR7显存支持的相关代码。",
+      "why_it_matters_zh": "GDDR7支持预示AMD下一代Radeon显卡即将到来，开源驱动的提前准备有助于Linux社区及时适配。",
+      "tags_zh": [
+        "AMD",
+        "Linux",
+        "GDDR7",
+        "开源驱动",
+        "Radeon"
+      ]
+    },
+    {
+      "id": "0e6c5fc3aafbfae0",
+      "title": "Patches Posted For Enabling Apple Silicon Mac Speaker & Headset Jack Support On Linux",
+      "url": "https://www.phoronix.com/news/Apple-Mac-Speaker-Headset-Linux",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T18:03:01+00:00",
+      "summary": "While the downstream Asahi Linux kernel has offered working speaker support and headset jack capabilities on Apple Silicon Macs, the mainline Linux kernel hasn't supported this functionality. But a set of 28 patches sent out today on the Linux kernel mailing list are working toward mainlining this important functionality for using Apple Macs on the upstream Linux desktop...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "补丁提交：Linux主线内核将支持Apple Silicon Mac扬声器与耳机插孔",
+      "summary_zh": "Asahi Linux下游内核已支持Apple Silicon Mac的扬声器与耳机插孔功能，但主线Linux内核一直缺失该能力。开发者今日向Linux内核邮件列表提交了28个补丁，致力于将这一重要功能合入上游内核，方便用户在主流Linux桌面环境中使用Mac硬件。",
+      "why_it_matters_zh": "补丁合入后将显著提升Mac设备在Linux桌面上的硬件兼容性与日常使用体验。",
+      "tags_zh": [
+        "Linux",
+        "Apple Silicon",
+        "Asahi Linux",
+        "内核开发"
+      ]
+    },
+    {
+      "id": "1f1a495877ad50a2",
+      "title": "AMD EPYC Server Performance Up ~8% Geo Mean For 2026 With Linux Kernel Improvements",
+      "url": "https://www.phoronix.com/review/linux-618-73-amd-epyc",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T15:00:00+00:00",
+      "summary": "With the in-development Linux 7.3 kernel showing some nice performance improvements over Linux 7.2 in different areas, Linux 7.2 also having brought some nice gains especially for I/O, and the preceding kernels also having seen some nice performance optimizations this year, I wanted to measure how far the Linux kernel performance has evolved so far in 2026. Today's article is looking at that with how the Linux kernel performance has evolved since the Linux 6.18 LTS kernel at the end of 2025 to the current Linux 7.3 kernel.",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux内核持续优化，AMD EPYC服务器2026年性能提升约8%",
+      "summary_zh": "Phoronix对Linux 6.18 LTS（2025年末）至开发版7.3内核进行了基准对比测试。结果显示，AMD EPYC服务器整体性能获得约8%的几何平均提升，其中Linux 7.3相较7.2在多个领域表现优异，7.2在I/O方面也带来明显增益，全年内核优化效果显著。",
+      "why_it_matters_zh": "持续的内核优化可显著提升数据中心服务器性能表现，帮助企业释放硬件潜力。",
+      "tags_zh": [
+        "Linux",
+        "AMD EPYC",
+        "服务器",
+        "性能优化"
+      ]
+    },
+    {
+      "id": "8c2944fa792dcaa6",
+      "title": "Patches Posted With Aim To Mainline Linux Kernel Support For The Amazon Kindle 4",
+      "url": "https://www.phoronix.com/news/Amazon-Kindle-4-Linux-Patches",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T13:05:33+00:00",
+      "summary": "Amazon released the Kindle 4 back in 2011 with a 6-inch E-ink display, 2GB internal storage, and running a modified version of Linux. In the years since the Amazon Kindle 4 has been jail-broken and there are some customized Linux distributions with a patched kernel to run on the Kindle 4. Now in 2026 there are patches on the Linux kernel mailing list looking to mainline support for that fifteen year old e-reader device...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Patches Posted With Aim To Mainline Linux Kernel Support For The Amazon Kindle 4",
+      "summary_zh": "Amazon released the Kindle 4 back in 2011 with a 6-inch E-ink display, 2GB internal storage, and running a modified version of Linux. In the years since the Amazon Kindle 4 has been jail-broken and there are some customized Linux distributions with a patched kernel to run on the Kindle 4. Now in 2026 there are patches on the Linux kernel mailing list looking to mainline support for that fifteen year old e-reader device...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "b9f6006438100393",
+      "title": "Orphaned VMs: Running VMs Uninterrupted While Host Kernel Is Offline For Reboots/Updates",
+      "url": "https://www.phoronix.com/news/Orphaned-VMs-Linux-Patches",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T11:38:44+00:00",
+      "summary": "Here's some very intriguing work taking place by a Google engineer... With the hyperscalers and other cloud providers pushing for zero-downtime, a set of experimental patches for \"Orphaned VMs\" allow for the virtual machines to continue to run while the host kernel is offline for security updates or rebooting with the Live Update Orchestrator. The experimental patches and request for feedback from other Linux kernel stakeholders was sent out this weekend on Orphaned VMs...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Orphaned VMs: Running VMs Uninterrupted While Host Kernel Is Offline For Reboots/Updates",
+      "summary_zh": "Here's some very intriguing work taking place by a Google engineer... With the hyperscalers and other cloud providers pushing for zero-downtime, a set of experimental patches for \"Orphaned VMs\" allow for the virtual machines to continue to run while the host kernel is offline for security updates or rebooting with the Live Update Orchestrator. The experimental patches and request for feedback from other Linux kernel stakeholders was sent out this weekend on Orphaned VMs...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "cb7470f0b79e7c7a",
+      "title": "AMD BC-250 Continues Being Improved Under Linux With Patches Now Enabling The PSP",
+      "url": "https://www.phoronix.com/news/AMD-BC-250-Linux-PSP-Support",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T10:22:16+00:00",
+      "summary": "The AMD BC-250 as the product designed at the time for cryptocurrency mining and based on a cut-down Sony PlayStation 5 APU continues having an interesting second-life being re-tasked for Linux use from general purpose workloads to AI. Sent out this weekend were the latest Linux kernel patches for continuing to enable more of the BC-250...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AMD BC-250 在 Linux 下持续改进，新补丁启用 PSP",
+      "summary_zh": "AMD BC-250 最初为加密货币挖矿设计，基于索尼 PS5 APU 的精简版本，如今在 Linux 上迎来第二春，被重新用于通用计算和 AI 负载。本周末发布的最新 Linux 内核补丁进一步启用了更多 BC-250 功能。",
+      "why_it_matters_zh": "BC-250 在 Linux 上的复用展现了 PS5 APU 的灵活性，拓展了其在 AI 等领域的应用潜力。",
+      "tags_zh": [
+        "AMD",
+        "Linux",
+        "BC-250",
+        "PSP",
+        "GPU"
+      ]
+    },
+    {
+      "id": "e279c5b153c30505",
+      "title": "Linux's Perf Script Command Much Faster With Overhaul As Python Module",
+      "url": "https://www.phoronix.com/news/Linux-Perf-Python-Module",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-21T09:57:16+00:00",
+      "summary": "A big patch series sent out this weekend for the Linux kernel's perf subsystem removes the embedded Python and Perl scripting in favor of standalone Python scripts with a new Python perf module. This perf module for Python written in C is much faster than the status quo...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Linux perf 脚本命令重构，性能大幅提升",
+      "summary_zh": "本周末提交的大型补丁系列移除了 Linux 内核 perf 子系统中内嵌的 Python 和 Perl 脚本，改用独立的 Python 脚本配合新的 Python perf 模块。该模块以 C 编写，相比现有方案速度显著提升。",
+      "why_it_matters_zh": "perf 工具重构带来明显性能提升，为内核开发者提供更高效的分析调试手段。",
+      "tags_zh": [
+        "Linux",
+        "perf",
+        "Python",
+        "内核"
+      ]
+    },
+    {
+      "id": "62d0f26c260e24b8",
+      "title": "Apple Video Decode Driver Posted For Upstream Linux Kernel Review",
+      "url": "https://www.phoronix.com/news/Apple-Video-Decode-AVD-Linux",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-09-18T15:52:30+00:00",
+      "summary": "The latest Apple Silicon enablement code working its way from the Asahi Linux project toward the upstream Linux kernel is the AVD driver used for accelerated video playback across Apple M1 / M2 / M3 SoCs...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Asahi Linux提交Apple AVD视频解码驱动以纳入上游Linux内核",
+      "summary_zh": "Asahi Linux项目正将面向Apple Silicon的AVD（Apple Video Decoder）加速视频解码驱动提交至Linux上游内核进行审查，该驱动可在M1、M2、M3等SoC上实现硬件加速视频播放，是其逆向工程Apple GPU与媒体子系统的最新进展。",
+      "why_it_matters_zh": "这将补齐Apple Silicon在Linux下的硬件视频解码能力，对Linux-on-Apple生态与开源驱动成熟度具有重要意义。",
+      "tags_zh": [
+        "Apple Silicon",
+        "Linux内核",
+        "视频解码",
+        "Asahi Linux",
+        "GPU驱动"
+      ]
+    },
+    {
+      "id": "24039922a2a6b1ea",
+      "title": "XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management",
+      "url": "https://www.cnx-software.com/2026/09/07/xiao-samd21-plus-and-rp2040-plus-usb-c-boards-get-additional-gpio-pins-integrated-li-ion-battery-management/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-07T01:07:22+00:00",
+      "summary": "Seeed Studio has expanded its XIAO Plus Series introduced in 2025, with the XIAO SAMD21 Plus and XIAO RP2040 Plus USB-C boards adding several GPIOs and integrated Li-ion battery management to the XIAO (SAMD21) and XIAO RP2040, launched in 2020 and 2021, respectively, while keeping the same form factor. XIAO SAMD21 Plus Specifications: MCU – Microchip SAMD21G18 Arm Cortex-M0+ microcontroller at up to 48MHz with 256KB Flash,32KB SRAM USB – 1x USB Type-C port for power and programming Expansion I/Os 2x 7-pin “legacy” headers with 11x analog inputs, 11x digital I/Os, 1x DAC, SPI, UART, and I2C Castellated holes and pads with 16x digital I/Os, I2C,and I2S 3.3V I/O voltage (not 5V tolerant) Misc Reset and Boot buttons RGB LED Charge LED Power Supply 5V via USB-C port Pads for battery On-board PMIC Dimensions – 23.5×17.5 mm Temperature Range – -40°C ~ 85°C The upgraded variant of the XIAO SAMD21 [...] The post XIAO SAMD21 Plus and RP2040 Plus USB-C boards get additional GPIO pins, integrated Li-ion battery management appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "Seeed Studio扩展XIAO Plus系列，推出SAMD21与RP2040 USB-C升级版开发板",
+      "summary_zh": "Seeed Studio在2025年推出的XIAO Plus系列基础上，新增XIAO SAMD21 Plus和XIAO RP2040 Plus两款USB-C开发板，在保留原有小巧外形的同时增加GPIO引脚，并集成锂电池充电管理，分别搭载Microchip SAMD21G18和Raspberry Pi RP2040双核MCU。",
+      "why_it_matters_zh": "升级版在保持极小尺寸的同时改善供电管理与I/O扩展性，适合便携式、可穿戴及电池供电的嵌入式原型开发。",
+      "tags_zh": [
+        "SAMD21",
+        "RP2040",
+        "Seeed Studio",
+        "开发板",
+        "USB-C",
+        "嵌入式"
+      ]
+    },
+    {
+      "id": "6e85983ce1918f51",
+      "title": "Brainchip AKD1500 M.2 and PCIe Edge AI cards, BrainBoard 1500 SPI module now available for $99 and up",
+      "url": "https://www.cnx-software.com/2026/09/21/brainchip-akd1500-m-2-and-pcie-edge-ai-cards-brainboard-1500-spi-module/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-09-21T00:00:36+00:00",
+      "summary": "Back in November 2025, we wrote about the Brainchip AKD1500 PCIe/SPI Edge AI co-processor designed for low-power systems and delivering up to 800 GOPS at just 300 mW. In recent months, the company has launched several hardware platforms based on the ADK1500. At the end of July, Brainchip introduced the AKD1500 M.2 B+M Key development card for $129, shortly followed by the $99 BrainBoard 1500 module in August, and a few days ago, the company started selling the AKD1500 PCIe development card for $149. Brainchip AKD1500 M.2 B+M Key development card Specifications: AI accelerator – AKD1500 neuromorphic co-processor Akida Neuron Fabric clocked at 5 to 400 MHz 1MB on-chip Local memory 800 GOPS at less than 300 mW Adaptive on-chip learning, no cloud required Package – 7×7 mm MFCTFBGA169 package, 0.5 mm pitch Process – 22 nm FD-SOI CMOS digital logic process Host Interface – B+M Key edge connector for [...] The post Brainchip AKD1500 M.2 and PCIe Edge AI cards, BrainBoard 1500 SPI module now available for $99 and up appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "BrainChip推出AKD1500系列Edge AI开发硬件,起售价99美元",
+      "summary_zh": "BrainChip基于AKD1500神经形态协处理器推出三款Edge AI开发平台,包括售价129美元的M.2 B+M Key卡、99美元的BrainBoard 1500 SPI模块以及149美元的PCIe开发卡。该芯片采用22nm FD-SOI工艺,搭载Akida Neuron Fabric,功耗低于300毫瓦,算力最高达800 GOPS,支持片上自适应学习,无需依赖云端。",
+      "why_it_matters_zh": "神经形态处理器以低于300mW的功耗提供800 GOPS算力,并支持本地自适应学习,为低功耗边缘AI设备提供了兼具推理与学习能力的高效方案。",
+      "tags_zh": [
+        "BrainChip",
+        "AKD1500",
+        "Edge AI",
+        "神经形态处理器",
+        "M.2",
+        "PCIe",
+        "Akida"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "source": "arXiv RISC-V",
+      "error": "HTTP Error 406: Not Acceptable"
+    }
+  ],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 29,
+    "total_items": 39,
+    "errors": [
+      "batch 1: MiniMax returned incomplete JSON at character 104",
+      "batch 5: MiniMax response did not contain a JSON array",
+      "batch 6: MiniMax response did not contain a JSON array",
+      "batch 13: MiniMax response did not contain a JSON array",
+      "batch 17: MiniMax returned incomplete JSON at character 431"
+    ],
+    "generated_at": "2026-09-22T05:09:08.218970+00:00"
+  }
+}
