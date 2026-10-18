@@ -1,0 +1,1339 @@
+{
+  "generated_at": "2026-10-18T04:41:29.667962+00:00",
+  "date": "2026-10-18",
+  "items": [
+    {
+      "id": "b1a8014540572c7a",
+      "title": "SVRF: Efficient Register Storage for Long-Vector Architectures",
+      "url": "https://arxiv.org/abs/2610.07078v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-05T10:09:16+00:00",
+      "summary": "Vector processors exploit data-level parallelism to provide high computational throughput, but very long vectors can make the Vector Register File (VRF) a significant source of area, energy, and register pressure. This cost is exacerbated when vector instructions operate on values with scalar semantics: although such values are architecturally represented using vector registers, they do not require full-width storage. This paper proposes the Scalarized Vector Register File (SVRF), a microarchitectural enhancement that redirects scalar-semantics vector values to a dedicated scalar register file, avoiding unnecessary allocation and access of full-width physical vector registers. The SVRF integrates with vector register renaming while preserving compatibility with the supported vector ISA. We implement and evaluate SVRF in an Register Transfer Level (RTL)-based RISC-V Vector Extension (RVV)-compliant vector processing unit supporting very long vectors. Across representative HPC and AI/ML workloads, the SVRF reduces vector-register pressure and VRF activity without degrading performance. By exploiting the resulting reduction in VRF demand, the proposed design achieves up to 15.8% VRF area reduction and up to 6% total area reduction, while reducing total power by up to 12% in evaluated configurations. Some workloads also achieve up to 1.12X speedup.",
+      "tags": [
+        "RISC-V",
+        "RISC-V Vector",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.61,
+      "title_zh": "SVRF：面向长向量架构的高效寄存器存储方案",
+      "summary_zh": "向量处理器利用数据级并行提供高吞吐，但超长向量会使向量寄存器文件（VRF）在面积、能耗和寄存器压力上产生显著开销。该论文提出SVRF，将标量语义的向量值重定向到专用标量寄存器文件，避免全宽物理向量寄存器的分配与访问，并集成向量寄存器重命名以保持对向量ISA的兼容性，已在RTL级RISC-V向量扩展（RVV）上完成实现与评估。",
+      "why_it_matters_zh": "在兼容向量ISA的前提下降低VRF开销，对RISC-V长向量处理器微架构设计具有参考价值。",
+      "tags_zh": [
+        "RISC-V",
+        "向量扩展",
+        "微架构",
+        "寄存器文件"
+      ]
+    },
+    {
+      "id": "ed9859ee1e07b941",
+      "title": "A Framework for Accelerating Transformer Inference on RISC-V for Edge AI",
+      "url": "https://arxiv.org/abs/2610.08688v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-06T17:06:11+00:00",
+      "summary": "This work presents a framework for accelerating transformer-based language models (LMs) on resource-constrained IoT devices. The framework targets compact LMs: BERT-Tiny (B-Ty), MobileBERT (M-Bt), MiniLM (M-Lm), Electra (E-Lt) and DeBERTa (D-Bt) -- selected for their architectural diversity and use in edge inference scenarios. The proposed flow derives lightweight instruction set extensions tailored to the non-obvious computational patterns of these models. In addition, a custom instruction is introduced to accelerate the address generation stage of batch matrix multiplication, achieving a performance improvement of 15.39--21.74% with modest ASIC overheads of 6.79% in area and 2.33% in power. To further enhance performance without incurring additional processor core hardware cost, an optional compiler-directed loop unrolling strategy is employed, trading increased code size for overall reduced execution time. Evaluation on the Synopsys trv32p3f RISC-V core demonstrates inference speedups of up to 2.19x, and FPGA implementation on the AMD Zynq UltraScale+ ZCU102 shows a 32.94% area overhead at 75 MHz, whereas the ASIC implementation using the TSMC 28 nm library incurs a 21.08% area overhead while operating at 250 MHz.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "Synopsys"
+      ],
+      "score": 2.55,
+      "title_zh": "面向RISC-V边缘AI的Transformer推理加速框架",
+      "summary_zh": "该工作提出面向资源受限IoT设备的Transformer加速框架，目标模型涵盖BERT-Tiny、MobileBERT、MiniLM、Electra和DeBERTa。通过派生定制指令集扩展以加速这些模型的非典型计算模式，并新增用于批矩阵乘法地址生成的专用指令，实现15.39–21.74%的性能提升，ASIC面积与功耗开销仅6.79%和2.33%。",
+      "why_it_matters_zh": "为RISC-V边缘设备部署Transformer提供低开销软硬件协同加速方案，性能与代价的权衡值得关注。",
+      "tags_zh": [
+        "RISC-V",
+        "边缘AI",
+        "Transformer",
+        "指令扩展",
+        "IoT"
+      ]
+    },
+    {
+      "id": "20a0ddbea7134210",
+      "title": "AdaptViT: Runtime-Adaptive Vision Transformer Deployment on Custom RISC-V",
+      "url": "https://arxiv.org/abs/2610.02288v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-01T15:29:31+00:00",
+      "summary": "Deploying Vision Transformers (ViTs) on low-power edge devices is challenging due to high computational demands. Conventional pruning frameworks require a separate compiled binary for each sparsity level, increasing storage overhead and limiting runtime adaptability. This paper presents an end-to-end deployment pipeline that transforms pretrained ViTs into a single runtime-configurable binary, enabling dynamic compute-budget switching on embedded CPUs. This is achieved by restructuring generated C kernels with modified loop bounds and binary-mask control logic, allowing execution to switch across discrete sparsity levels via compact external configuration files. Compared to multi-binary deployment, the proposed runtime-adaptive approach reduces on-device storage by up to 4.86x, requiring only 163 MB for ViT-Base instead of nearly 800 MB. To maximize pruning efficiency, we introduce a hardware-aligned block pruning strategy for Multi-Layer Perceptron (MLP) layers. In addition, a custom ISA extension is proposed to exploit input-reuse patterns in linear projection kernels. On a Synopsys TRV32P3FX RISC-V processor, the full system achieves up to 2.8x speedup at 65% MLP and 50% attention-head pruning for ViT-Base. The ISA extension alone provides a 1.56x speedup and 33% lower inference energy, with a 24.7% area overhead in a TSMC 28 nm implementation.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "Synopsys"
+      ],
+      "score": 2.55,
+      "title_zh": "AdaptViT：面向RISC-V的运行时自适应Vision Transformer部署",
+      "summary_zh": "本文提出端到端部署流水线，将预训练Vision Transformer转换为单一运行时可配置二进制，在嵌入式CPU上通过外部配置文件动态切换算力预算与稀疏度级别。相比多二进制方案，片上存储开销最高降低4.86倍，ViT-Base仅需163 MB而非近800 MB，并引入硬件感知剪枝进一步压缩。",
+      "why_it_matters_zh": "把多个稀疏度模型合并为单一二进制，显著降低边缘设备部署ViT的存储与运行时切换开销。",
+      "tags_zh": [
+        "Vision Transformer",
+        "RISC-V",
+        "边缘计算",
+        "模型剪枝",
+        "推理部署"
+      ]
+    },
+    {
+      "id": "2a32db29702dd3fe",
+      "title": "Efficient Linkage-Based Compartmentalization on CHERI",
+      "url": "https://arxiv.org/abs/2609.36731v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-29T05:04:49+00:00",
+      "summary": "We present an efficient linkage-based model for in-process compartmentalization built on CHERI memory safety, which enables fine-grained compartmentalization of the entire UNIX user-space, scaling to 10K+ compartments on desktop systems. The model's \"push-button\" compartmentalization along existing library boundaries regularly hosts 500+ compartments per process for large applications such as Chromium, far exceeding the number of concurrently available protection domains supported by other mechanisms (e.g., up to 16 for Intel MPK). Custom policies can further subdivide libraries. Of the thousands of C/C++ programs tested, only the V8 JavaScript engine required source-level adaptation (<300 lines of changed code concerning garbage collection and JIT compilation). We implement the model for CHERI-extended versions of Armv8-A and RISC-V through support in the compiler toolchain and operating system. Case studies illustrate the smooth delegation of memory between compartments, compartment-aware debugging and visualization, as well as extensibility to a complex managed language runtime, demonstrating the benefits of our single-address-space model. We evaluate using multiple processors, including Arm's superscalar Morello and, notably, the first commercial CHERI-enabled RISC-V application core---Codasip's in-order dual-issue X730.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "Codasip"
+      ],
+      "score": 2.55,
+      "title_zh": "CHERI上基于链接的高效进程内隔离方案",
+      "summary_zh": "本文提出基于链接的进程内隔离模型，依托CHERI内存安全机制，将整个UNIX用户空间细粒度分区，桌面系统上可扩展至10K+隔间。Chromium等大型应用常驻500+隔间，远超Intel MPK仅16个并发保护域。测试的数千C/C++程序中仅V8需源码适配（<300行），已实现于CHERI扩展的Armv8-A与RISC-V。",
+      "why_it_matters_zh": "在CHERI平台上以极低开销实现大规模进程内隔离，为RISC-V提供可扩展的细粒度软件安全防护。",
+      "tags_zh": [
+        "CHERI",
+        "RISC-V",
+        "内存安全",
+        "进程内隔离",
+        "软件安全"
+      ]
+    },
+    {
+      "id": "6af5c0614b68eedf",
+      "title": "TALU: A Reconfigurable Tiled-ALU Grid for RISC-V",
+      "url": "https://arxiv.org/abs/2610.19277v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-13T22:54:10+00:00",
+      "summary": "Lane-based RISC-V vector processors exploit data parallelism well but pay a recurring cost for two common patterns: reductions, which require a separate tree pass, and deep dependent expression chains, which cannot be fused and are issued as serial vector instructions. We present TALU, a 5-stage RISC-V core whose execute stage is an NxN grid of registered ALU tiles instead of a single ALU. The grid is a reconfigurable, feed-forward spatial fabric: tiles route operands only from non-backward neighbours, and added diagonal forwarding lets a reduction collapse spatially. A minimal custom extension configures the per-tile operation, routing, and per-tile constants, and streams operands through the array. On a single fabric, TALU runs ordinary scalar code, single deep-path expressions, and multi-lane vector kernels. On the benchmark suite of the RISC-V2 vector processor, TALU is 1.8-5.5x faster than RISC-V2 and 4.5-15.5x faster than Vicuna at equal lane count, with a reduction cost (dot÷add) of 1.05x versus 1.96x and 1.26x for the vector cores. A retimed implementation places and routes at 1.03 GHz in 45 nm in 0.30 mm2, half the area of RISC-V2.",
+      "tags": [
+        "RISC-V",
+        "RISC-V Vector"
+      ],
+      "entities": [],
+      "score": 2.49,
+      "title_zh": "TALU：面向RISC-V的可重构ALU网格架构",
+      "summary_zh": "论文提出TALU，一种采用NxN寄存器化ALU网格作为执行阶段的5级RISC-V核。该空间织构仅允许前向路由，配合对角线转发可实现归约操作的空间折叠，单个阵列即可运行标量代码、深度依赖表达式以及多 lane 向量内核，在RISC-V2向量处理器基准测试中取得1.8至5.5倍加速。",
+      "why_it_matters_zh": "用可重构ALU网格同时替代标量执行与向量加速，为降低RISC-V核在归约和依赖链场景下的开销提供了新思路。",
+      "tags_zh": [
+        "RISC-V",
+        "处理器架构",
+        "向量计算",
+        "可重构计算"
+      ]
+    },
+    {
+      "id": "748eeed9b4264941",
+      "title": "dorian-zhao/champollion updated on GitHub",
+      "url": "https://github.com/dorian-zhao/champollion",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:40:53+00:00",
+      "summary": "🍎🪨📜🔍 Run RISC-V Linux programs on arm64: Apple silicon Macs and arm64 Linux hosts. RV64GC plus the RVA23 userland extensions (Zba/Zbb/Zbs/Zicond, Zfhmin/Zfa, experimental RVV subset). A Rosetta 2-style user-mode JIT translator — Direct mode (rvrun), riscv64 containers in a lightweight Linux VM, or binfmt_misc. Stars: 2.",
+      "tags": [
+        "RISC-V",
+        "RISCV",
+        "RVA23",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.48,
+      "title_zh": "champollion：在arm64主机上运行RISC-V Linux程序",
+      "summary_zh": "GitHub项目dorian-zhao/champollion更新，可在Apple Silicon及arm64 Linux主机上运行RISC-V Linux程序。支持RV64GC及RIVA23用户态扩展（Zba、Zbb、Zbs、Zicond、Zfhmin、Zfa及实验性RVV子集），提供类Rosetta 2的用户态JIT翻译器，支持直接模式及轻量Linux虚拟机运行RISC-V容器。",
+      "why_it_matters_zh": "为开发者提供在Apple Silicon上无缝运行RISC-V生态工具链的能力，降低跨架构测试门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "arm64",
+        "JIT翻译器",
+        "Apple Silicon",
+        "开源工具"
+      ]
+    },
+    {
+      "id": "b85ac5814d0f4196",
+      "title": "Avaota F2 – Allwinner V861 RISC-V SBC targets AI cameras with PTZ and audio support",
+      "url": "https://www.cnx-software.com/2026/10/02/avaota-f2-allwinner-v861-risc-v-sbc-targets-ai-cameras-with-ptz-and-audio-support/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-02T02:00:37+00:00",
+      "summary": "Avaota F2 is the first SBC based on an Allwinner V861 dual-core 64-bit RISC-V SoC with 128MB on-chip DDR3 memory, support for 4K cameras, H.265 video codec, and a 1 TOPS AI accelerator. It’s an update to the earlier Avaota F1 camera board based on an Allwinner V821 SoC. The new open-source hardware F2 SBC offers several benefits, including support for both Full HD and 4K camera sensors, motor control for the PTZ (Pan-Tilt-Zoom) feature, and improved audio support through speaker (one) and microphone (two) connectors. However, the F1 also included WiFi, which the Avaota F2 lacks. Avaota F2 specifications: SoC – Allwinner V861M2-XXX CPU Dual-Core RISC-V XuanTie C907 (RV64GCBV/RV32GGCBV) clocked up to 1.4GHz with RVV 1.0 extensions Single-core RISC-V XuanTie E907 (RV32IMAFC) clocked up to 800MHz VPU Video Encoder H.264/H.265 up to 4K @ 25fps (M)JPEG up to 8192×8192 Video Decoder – (M)JPEG up to 1080p60 AI accelerator – [...] The post Avaota F2 – Allwinner V861 RISC-V SBC targets AI cameras with PTZ and audio support appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator",
+        "RISC-V",
+        "RVV"
+      ],
+      "entities": [],
+      "score": 2.46,
+      "title_zh": "Avaota F2：搭载全志V861双核RISC-V SoC的AI相机开发板",
+      "summary_zh": "Avaota F2是首款基于全志V861双核64位RISC-V SoC的单板计算机，集成128MB片上DDR3内存，支持4K摄像头、H.265视频编解码及1 TOPS AI加速器，新增PTZ电机控制和双麦克风/单扬声器音频接口，但取消了上一代F1的WiFi功能。",
+      "why_it_matters_zh": "作为首款全志V861开源开发板填补了RISC-V AI相机硬件空白，但缺少WiFi限制了无线应用场景。",
+      "tags_zh": [
+        "RISC-V",
+        "SBC",
+        "全志V861",
+        "AI相机",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "fc615c10f2695cea",
+      "title": "Minimum RISC-V: Maximum FPGA Efficiency",
+      "url": "https://arxiv.org/abs/2610.21552v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-15T09:14:15+00:00",
+      "summary": "RISC-V processors are now widely available for FPGAs, with most FPGA vendors replacing their proprietary soft-CPU architectures with this instruction-set architecture (ISA). Although contemporary FPGAs are increasingly resource- and feature-rich, a soft processor system---including memory---often occupies a disproportionately large footprint and delivers only modest performance relative to the potential of the target device. In this work we first design a lightweight but deeply pipelined RISC-V core that can run above 700 MHz in a mid-range device and that is capable of retiring one instruction per clock under ideal conditions. We then develop and demonstrate a new optimization method that compiles the final application binary and a specialized processor instance contemporaneously. The method expands each instruction into an application-specific encoding, removes unused datapath and decode logic during synthesis, and yields cores that remain assembler-compatible with the original program while no longer being binary-compatible with a general-purpose RISC-V. We implement example designs on RV32I (base integer), RV32M (integer multiply), and RV32F (single-precision floating-point) configurations. Our optimized RISC-V is as small as 170 ALMs and closes timing at 775 MHz in an Altera Agilex-5 device. Finally, we show that these processors can be packed into a deterministic area and stepped-and-repeated continuously without material impact on performance, enabling predictable multi-core density planning.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "论文提出面向FPGA的轻量化深度流水线RISC-V软核",
+      "summary_zh": "论文设计了一款轻量但深度流水线的RISC-V软处理器，在中端FPGA上频率超700 MHz，理想条件下可每周期退役一条指令；同时提出一种将应用二进制与专用处理器实例协同编译的优化方法，将每条指令扩展为应用专属编码并移除未使用的数据通路与解码逻辑。",
+      "why_it_matters_zh": "该方法显著降低RISC-V软核在FPGA上的资源占用，为嵌入式与高性能计算场景提供更高效部署方案。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "软核处理器",
+        "编译器优化"
+      ]
+    },
+    {
+      "id": "cccc624c3b27144d",
+      "title": "Where the SRAM Goes: Per-Symbol Attribution of Static Memory in FreeRTOS-C and Embassy-Rust IoT Firmware on a 64 KB RISC-V Microcontroller",
+      "url": "https://arxiv.org/abs/2610.21064v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-15T01:12:20+00:00",
+      "summary": "Selecting a firmware stack for a memory-constrained microcontroller is usually guided by aggregate binary sizes, which report how much SRAM a build consumes but not where it goes or why. We address that gap with a per-symbol attribution method that decomposes static RAM into architectural categories - scheduler heap, network buffers and pools, task stacks, and linker-reserved regions - by bounding sized ELF symbols to the .data, .bss and .stack section ranges. The method is validated by reconciling every category sum exactly against the size-based totals for all sixteen builds. We apply it to eight cumulative firmware milestones, from a bare task scaffold to a full MQTT-over-Ethernet client, implemented twice, in FreeRTOS-C and in Embassy-Rust, on the CH32V203RBT6, a RISC-V microcontroller with 64 KB SRAM and an on-chip Ethernet MAC and PHY, with functional parity verified on hardware at every milestone. The decomposition shows that both stacks spend a nearly identical share of their RAM on networking (63.8% versus 63.9%), yet the absolute cost differs by 4.4 times: 40,719 bytes for lwIP against 9,316 bytes for smoltcp. FreeRTOS task stacks grow linearly at roughly 1 KB per task while Embassy async state grows with state-machine complexity. We also report that lwIP could not be integrated under an all-static discipline on this platform, requiring a 20 KB arena that smoltcp does not. The measurement harness, the attribution tool, and the sixteen firmware implementations are released as artefacts.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "Where the SRAM Goes: Per-Symbol Attribution of Static Memory in FreeRTOS-C and Embassy-Rust IoT Firmware on a 64 KB RISC-V Microcontroller",
+      "summary_zh": "Selecting a firmware stack for a memory-constrained microcontroller is usually guided by aggregate binary sizes, which report how much SRAM a build consumes but not where it goes or why. We address that gap with a per-symbol attribution method that decomposes static RAM into architectural categories - scheduler heap, network buffers and pools, task stacks, and linker-reserved regions - by bounding sized ELF symbols to the .data, .bss and .stack section ranges. The method is validated by reconciling every category sum exactly against the size-based totals for all sixteen builds. We apply it to eight cumulative firmware milestones, from a bare task scaffold to a full MQTT-over-Ethernet client, implemented twice, in FreeRTOS-C and in Embassy-Rust, on the CH32V203RBT6, a RISC-V microcontroller with 64 KB SRAM and an on-chip Ethernet MAC and PHY, with functional parity verified on hardware at every milestone. The decomposition shows that both stacks spend a nearly identical share of their RAM on networking (63.8% versus 63.9%), yet the absolute cost differs by 4.4 times: 40,719 bytes for lwIP against 9,316 bytes for smoltcp. FreeRTOS task stacks grow linearly at roughly 1 KB per task while Embassy async state grows with state-machine complexity. We also report that lwIP could not be integrated under an all-static discipline on this platform, requiring a 20 KB arena that smoltcp does not. The measurement harness, the attribution tool, and the sixteen firmware implementations are released as artefacts.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "5f6edea5d06bf272",
+      "title": "FreeSBee: A Constant-Time Compilation Pipeline",
+      "url": "https://arxiv.org/abs/2610.20171v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-14T13:20:04+00:00",
+      "summary": "Constant-time execution is an important security property, especially for IoT devices, that prevents the leakage of sensitive information over timing side-channels. However, achieving constant-time execution is very hard when going down to the cycle level, at least on realistic devices. A lot of research is concerned with producing tools that either determine whether code is constant-time or that ensure it is compiled into a constant-time binary, with various degrees of accuracy. In this work, we present and evaluate a full workflow for hardening against timing side-channels during compilation. It starts with taint analysis to determine the code locations that depend on sensitive information. These are then the object of automated control-flow transformations inside the compiler to seal possible timing side-channels. We evaluate our workflow in detail on a realistic application running on a RISC-V core using both static timing analysis and statistical methods. Even though we do not reach cycle-accurate constant-time execution, our statistical results suggest that our hardened binary is safe against timing attacks.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "FreeSBee: A Constant-Time Compilation Pipeline",
+      "summary_zh": "Constant-time execution is an important security property, especially for IoT devices, that prevents the leakage of sensitive information over timing side-channels. However, achieving constant-time execution is very hard when going down to the cycle level, at least on realistic devices. A lot of research is concerned with producing tools that either determine whether code is constant-time or that ensure it is compiled into a constant-time binary, with various degrees of accuracy. In this work, we present and evaluate a full workflow for hardening against timing side-channels during compilation. It starts with taint analysis to determine the code locations that depend on sensitive information. These are then the object of automated control-flow transformations inside the compiler to seal possible timing side-channels. We evaluate our workflow in detail on a realistic application running on a RISC-V core using both static timing analysis and statistical methods. Even though we do not reach cycle-accurate constant-time execution, our statistical results suggest that our hardened binary is safe against timing attacks.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "004d744935d024f7",
+      "title": "Programmable Data Layouts via On-The-Fly Data Transformation",
+      "url": "https://arxiv.org/abs/2610.15193v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-10T21:38:18+00:00",
+      "summary": "The performance of modern computing systems is heavily bottlenecked by the widening gap between processing throughput and main memory latency, a problem exacerbated when an application's logical data access patterns misalign with the physical layout of data in memory. To address this, we propose a hardware-software co-design framework comprising the Data Transformation Language (DTL) and the Data Transformation Unit (DTU). DTL allows programmers to concisely express complex data layout reorganizations, which the compiler translates into efficient hardware routing configurations. The DTU, a hardware engine logically situated between the Last-Level Cache (LLC) and main memory, transparently evaluates these configurations on-the-fly to gather scattered data elements into dense, logically contiguous cache lines. By converting explicit layout transformations into virtual views, this approach eliminates the need for explicit data materialization in software. We evaluate the DTU within a quad-core RISC-V SoC using FireSim, demonstrating substantial improvements in execution speed and memory efficiency.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "Programmable Data Layouts via On-The-Fly Data Transformation",
+      "summary_zh": "The performance of modern computing systems is heavily bottlenecked by the widening gap between processing throughput and main memory latency, a problem exacerbated when an application's logical data access patterns misalign with the physical layout of data in memory. To address this, we propose a hardware-software co-design framework comprising the Data Transformation Language (DTL) and the Data Transformation Unit (DTU). DTL allows programmers to concisely express complex data layout reorganizations, which the compiler translates into efficient hardware routing configurations. The DTU, a hardware engine logically situated between the Last-Level Cache (LLC) and main memory, transparently evaluates these configurations on-the-fly to gather scattered data elements into dense, logically contiguous cache lines. By converting explicit layout transformations into virtual views, this approach eliminates the need for explicit data materialization in software. We evaluate the DTU within a quad-core RISC-V SoC using FireSim, demonstrating substantial improvements in execution speed and memory efficiency.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "9a57c2a11d8339ad",
+      "title": "We Query, Therefore We Compute: On Oracle Computation beyond the Machine, with an Application to Agents",
+      "url": "https://arxiv.org/abs/2610.09243v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-07T00:14:09+00:00",
+      "summary": "Agentic systems use large language models (LLMs) to carry out concrete tasks. Prior work often borrows abstractions such as scheduling, caching or isolation piecemeal from operating systems, so the mechanisms it builds share little common ground, and the shared view of the two forms of agentic system, Workflows and Agents, is limited. We construct an abstract machine that provides both. We treat the LLM as an Oracle and extend a two-stack pushdown automaton with one instruction, which hands the Oracle a whole stack as its query and appends the answer to that same stack. The machine thus performs two computations, the Oracle's and a Turing-complete one that we call the Priestess. A stack that the program only appends to grows autoregressively, as an agent's context does. Two symmetry breakings, S in storage and T in transitions, make a Priestess program the operating system of the programs the Oracle runs, and produce the Agent and the Workflow as the two placements of a task's program. For internally autoregressive Oracles, the two computations synchronize at the end of every answer under certain conditions, and through that synchronization we model caching and analyse scheduling. No guarantee that holds for every Oracle can fix which content crosses between the two computations, but such a guarantee does fix the boundary itself. The construction V fits the machine to a von Neumann computer. To show that it is realizable, we propose ArchNights, an extended RISC-V ISA and a Linux-style operating system implementing the machine by design. ArchNights-SE runs on gem5 as a computer system, becomes an agentic system when it runs an LLM as the Oracle, and will be open source. Agentic systems can then be designed as computer systems are. With a foundation built and a unified view, future work can share invariants and bounds, each with its conditions.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "We Query, Therefore We Compute: On Oracle Computation beyond the Machine, with an Application to Agents",
+      "summary_zh": "Agentic systems use large language models (LLMs) to carry out concrete tasks. Prior work often borrows abstractions such as scheduling, caching or isolation piecemeal from operating systems, so the mechanisms it builds share little common ground, and the shared view of the two forms of agentic system, Workflows and Agents, is limited. We construct an abstract machine that provides both. We treat the LLM as an Oracle and extend a two-stack pushdown automaton with one instruction, which hands the Oracle a whole stack as its query and appends the answer to that same stack. The machine thus performs two computations, the Oracle's and a Turing-complete one that we call the Priestess. A stack that the program only appends to grows autoregressively, as an agent's context does. Two symmetry breakings, S in storage and T in transitions, make a Priestess program the operating system of the programs the Oracle runs, and produce the Agent and the Workflow as the two placements of a task's program. For internally autoregressive Oracles, the two computations synchronize at the end of every answer under certain conditions, and through that synchronization we model caching and analyse scheduling. No guarantee that holds for every Oracle can fix which content crosses between the two computations, but such a guarantee does fix the boundary itself. The construction V fits the machine to a von Neumann computer. To show that it is realizable, we propose ArchNights, an extended RISC-V ISA and a Linux-style operating system implementing the machine by design. ArchNights-SE runs on gem5 as a computer system, becomes an agentic system when it runs an LLM as the Oracle, and will be open source. Agentic systems can then be designed as computer systems are. With a foundation built and a unified view, future work can share invariants and bounds, each with its conditions.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8f0787bf7eafd912",
+      "title": "Efficient HQC Implementations on RISC-V: A Cross-Layer Design Space Exploration",
+      "url": "https://arxiv.org/abs/2610.06058v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-05T09:51:42+00:00",
+      "summary": "RISC-V-based hardware/software co-design has become an established methodology for implementing post-quantum cryptography (PQC) on embedded devices. Its software programmability, extensible instruction-set architecture, and optional dedicated accelerators create a broad design space that offers the flexibility required for crypto-agility and post-deployment updates. For HQC, a PQC key-encapsulation mechanism selected for standardization, several RISC-V-based implementations have already been published. However, these works explore only a small subset of this design space. We present, to the best of our knowledge, the most comprehensive exploration of RISC-V-based HQC. Our exploration is centered around a new, parametrizable architecture framework on which we characterize 29,920 distinct architectural configurations across all three HQC security levels on FPGA. The Pareto-optimal configurations from this framework outperform the state-of-the-art RISC-V-based HQC implementation, ranging from 4.8x lower LUT utilization at 17% lower latency to 69.6x lower latency at 30% lower LUT utilization, while also requiring up to 10.6x fewer block RAMs.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "HQC在RISC-V上的高效实现：跨层设计空间探索",
+      "summary_zh": "基于RISC-V的软硬件协同设计为嵌入式设备实现后量子密码（PQC）提供了灵活路径。针对已被选定为标准化方案的HQC密钥封装机制，本文提出一个参数化架构框架，在FPGA上对全部三个安全等级共计29,920种架构配置进行了系统表征，并识别出其中的Pareto最优实现方案。",
+      "why_it_matters_zh": "研究覆盖了此前工作未曾充分探索的广阔设计空间，为HQC在RISC-V嵌入式平台上的高效部署提供了系统化的实现参考。",
+      "tags_zh": [
+        "RISC-V",
+        "后量子密码",
+        "HQC",
+        "FPGA",
+        "硬件加速"
+      ]
+    },
+    {
+      "id": "200845390b4a3e52",
+      "title": "RepTC: Representation-Aware Optimization for Efficient Traffic Classification on Edge IoT Devices",
+      "url": "https://arxiv.org/abs/2610.04784v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-03T21:53:01+00:00",
+      "summary": "Traffic classification (TC) is crucial to secure Internet of Things (IoT) networks, whose edge nodes often operate under privacy, bandwidth, and energy constraints. Yet, encrypted payloads and limited computing power make accurate, real-time TC a challenging task. Existing learning-based TC approaches often fix the input configuration a priori, even though it directly influences both predictive performance and computational cost. This paper presents RepTC, a representation-aware hardware-constrained strategy that addresses session-level TC through joint model and input optimization. The method co-optimizes network architecture, session length, and header preprocessing; this enables joint control of model complexity, input scale, and data representation within a unified resource-constrained design space. The proposed approach enforces microcontroller-class constraints on memory, model size, and computation, and yields compact models deployable on low-power edge devices. A gateway monitors traffic by aggregating sessions and either performs inference locally or offloads to a low-power edge node. Both scenarios are validated on heterogeneous embedded hardware, including a Raspberry Pi 3B+, STM32 Nucleo-F401RE, and XIAO ESP32-C3, spanning Cortex-A, Cortex-M, and RISC-V processor architectures; measured inference latency ranges from 0.63 to 18.59 ms, with MCU-side inference energy between 0.50 and 1.41 mJ per session. RepTC yields configurations that achieve high accuracy on a variety of established benchmarks: 96.21% on ISCX VPN-nonVPN, 99.62% on USTC-TFC2016, and 99.97% on Edge-IIoTset; at the same time, model size and computational requirements were reduced by up to three orders of magnitude compared with state-of-the-art methods. The results show that representation-aware optimization can improve efficiency while preserving competitive classification performance.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "RepTC：面向边缘IoT设备高效流量分类的表征感知优化",
+      "summary_zh": "针对边缘IoT节点在隐私、带宽与能耗受限条件下难以对加密流量进行准确实时分类的难题，本文提出表征感知的硬件受限策略RepTC，通过联合优化网络架构、会话长度与头部预处理，在统一资源约束空间中协同调控模型复杂度、输入规模与数据表征。",
+      "why_it_matters_zh": "该方案兼顾分类精度与微控制器级资源约束，为边缘IoT设备实现实时加密流量分类提供了可行的工程路径。",
+      "tags_zh": [
+        "RISC-V",
+        "IoT",
+        "流量分类",
+        "边缘计算",
+        "模型压缩"
+      ]
+    },
+    {
+      "id": "dc132ffaefbe7d4f",
+      "title": "Morph-Aware Computing: Compiler-Ordered Updates of Program State after Topology Changes",
+      "url": "https://arxiv.org/abs/2610.03985v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-02T19:49:43+00:00",
+      "summary": "In wireless sensor and mesh networks, modular robots, and shape-adaptive computers, computing modules attach, detach, or are replaced while the others keep running with their local state. A value computed under the old arrangement, such as a cached next hop, stays in memory but may no longer describe the current one, so a program can send to a neighbor that has left without any runtime errors. We present morph-aware computing, a programming model in which the application specifies a corrective update of such state, called a repair, and the compiler decides when it runs. In MorphLang, the repair is a Reconfigure branch next to the ordinary branches that handle sends, receives, and sensor samples. MorphC compiles MorphLang to bare-metal RISC-V and inserts a guard before every ordinary branch, so that each module repairs its state before any other branch sees a new topology. Relying on this order, MorphC also rejects sends whose target may be a literal or a value the repair does not always refresh. For a model of the code MorphC generates, we prove in Rocq that the repair precedes every later ordinary branch for any number of roles and topology changes. This shows that send-target checking is sound for a core language. On 19 MorphLang programs derived from seven network stacks, removing the repair worsens destination validity in ten of the 13 programs that declare one and never improves it. In a reduced reproduction of a released Contiki-NG defect, a callback-based version sends to a departed parent after 60 of 384 changes and the MorphLang version after none. The guards cost 12 cycles per loop in a microbenchmark, and on an FPGA the delay from each commit to the first send to the new neighbor matches RTL simulation.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "面向拓扑变化的形态感知计算：编译器排序的程序状态更新",
+      "summary_zh": "针对无线传感网、模块化机器人等场景中计算模块动态接入或移除带来的状态不一致问题，提出MorphLang语言与MorphC编译器。MorphC将程序编译为裸机RISC-V代码，并在每个普通分支前插入守卫，确保模块在感知新拓扑前先完成状态修复。",
+      "why_it_matters_zh": "将动态拓扑下的状态修正交给编译器调度，避免向已离场邻居发送数据等静默错误。",
+      "tags_zh": [
+        "形态感知计算",
+        "RISC-V",
+        "MorphLang",
+        "MorphC",
+        "无线传感网",
+        "模块化机器人"
+      ]
+    },
+    {
+      "id": "0631d411ef027f3a",
+      "title": "ZTA-Q: an Open-source RISC-V Platform for Accurate Quantized CNN Inference",
+      "url": "https://arxiv.org/abs/2610.01867v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-01T15:27:14+00:00",
+      "summary": "Low-precision inference is widely adopted in edge AI to reduce computational cost and memory footprint. However, existing open-source accelerator platforms provide limited end-to-end support for CNNs following the standard TensorFlow Lite integer inference scheme. This paper presents ZTA-Q, an open-source RISC-V-based platform that enables accurate deployment of TensorFlow Lite INT8 models. In addition to extending operator support, ZTA-Q provides a configurable post-processing datapath for studying how circuit-level approximations, including reduced multiplier precision, shared shift scaling, and simplified rounding, affect model accuracy. The proposed system is implemented on a Digilent Arty A7-100T FPGA and operates at 83.3 MHz. Evaluations on representative CNN models show that with LUT, register, and DSP overheads of 26.3%, 12.6%, and 150%, respectively, ZTA-Q limits the degradation in both top-1 and top-5 accuracy to within 0.25 percentage points.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "ZTA-Q：面向精确量化CNN推理的开源RISC-V平台",
+      "summary_zh": "ZTA-Q是一个基于RISC-V的开源平台，支持TensorFlow Lite INT8模型的端到端部署，并提供可配置的后处理数据通路以研究电路级近似对精度的影响。该平台在Digilent Arty A7-100T FPGA上以83.3 MHz运行，资源开销可控。",
+      "why_it_matters_zh": "为边缘AI量化推理提供完整的开源RISC-V方案，便于探索硬件近似对模型精度的影响。",
+      "tags_zh": [
+        "ZTA-Q",
+        "RISC-V",
+        "量化推理",
+        "CNN",
+        "TensorFlow Lite",
+        "FPGA"
+      ]
+    },
+    {
+      "id": "0dc62604bba380ee",
+      "title": "U-Sonic: An Open-Source 8-Channel Ultrasound Transmit IP in a 130 nm RISC-V SoC",
+      "url": "https://arxiv.org/abs/2610.01603v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-10-01T12:48:17+00:00",
+      "summary": "Miniaturized ultrasound (US) probes require programmable and synchronized transmit (TX) excitation across multiple elements, while existing compact platforms often rely on limited microcontroller (MCU) pulse generators or closed-source fixed-function pulser devices. We present U-Sonic, an open-source digital US TX peripheral integrated into a 32-bit RISC-V system-on-chip (SoC). The implemented SoC integrates 8 pulser cores, while the parameterized architecture supports up to 16 channels. Each core generates single- or dual-tone bursts with programmable period, duty cycle, pulse count, polarity, and idle level, together with optional inverted stop pulses for active damping. A shared memory-mapped Open Bus Interface (OBI) enables synchronous start and stop of arbitrary channel subsets and supports composite bipolar, gated, and three-level excitation schemes. Functional correctness was verified in Verilator against a Python golden model over 4379 checked cycles across directed and randomized configurations, and confirmed on a Terasic DE10-Lite field-programmable gate array (FPGA). The design was synthesized and placed-and-routed in IHP 130 nm. The post-layout area in kilo gate equivalents (kGE), scales as 1.65 kGE plus 1.66 kGE per channel. The 8-channel instance occupies 14.9 kGE, corresponding to approximately 14.3% of the 104 kGE SoC. The register-transfer level (RTL), register descriptions, verification collateral, and software support are released as open source.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "U-Sonic：基于130nm RISC-V SoC的开源8通道超声发射IP",
+      "summary_zh": "研究者提出开源数字超声发射外设U-Sonic，集成于32位RISC-V片上系统，内含8个脉冲发生器核心，架构可扩展至16通道，每通道支持单/双音突发、可编程周期与占空比等参数，通过OBI总线实现多通道同步启停及复合激励方案。",
+      "why_it_matters_zh": "开源超声前端IP降低小型化探头开发门槛，RISC-V SoC集成方案兼顾灵活性与可扩展性。",
+      "tags_zh": [
+        "RISC-V",
+        "开源硬件",
+        "超声成像",
+        "SoC",
+        "医疗电子"
+      ]
+    },
+    {
+      "id": "c46ba65ebe27369c",
+      "title": "MEGATRON: a 28nm Analog PCM CiM/Digital System-on-Chip for Edge GenAI at 57.5 TOPS/W and 1.52 Mparam/mm${}^2$",
+      "url": "https://arxiv.org/abs/2609.35254v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-28T14:18:35+00:00",
+      "summary": "We present MEGATRON, a heterogeneous Edge GenAI System-on-Chip in 28nm FD-SOI CMOS technology combining a non-volatile analog in-memory-computing engine based on a 4Mi-cell phase-change memory (PCM) array with a digital RISC-V-based flexible neural processing unit. MEGATRON demonstrates up to 3.5 TOPS/W using the RISC-V processors and 57.5 TOPS/W with PCiM, at a storage density of 1.52 Mparam/mm${}^2$ with 4-bit effective weight precision.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "MEGATRON：面向边缘生成式AI的28nm模拟PCM存内计算/数字异构SoC",
+      "summary_zh": "团队发布MEGATRON异构边缘生成式AI芯片，采用28nm FD-SOI工艺，将基于4兆单元相变存储器的模拟存内计算引擎与基于RISC-V的神经处理单元相结合，存内计算能效达57.5 TOPS/W，存储密度1.52 Mparam/mm²，等效权重精度4比特。",
+      "why_it_matters_zh": "模拟PCM存算一体与RISC-V NPU融合，为边缘端大模型推理提供高能效方案。",
+      "tags_zh": [
+        "RISC-V",
+        "存内计算",
+        "边缘AI",
+        "相变存储器",
+        "生成式AI",
+        "SoC"
+      ]
+    },
+    {
+      "id": "109f393097358c6c",
+      "title": "Efficient TCitH-Based Alternatives to SLH-DSA: Cross-Layer ASIC Design of Mirath",
+      "url": "https://arxiv.org/abs/2609.35053v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-28T12:47:52+00:00",
+      "summary": "To address the security risks posed by quantum computers, the U.S. National Institute of Standards and Technology (NIST) has standardized the post-quantum signature schemes ML-DSA, FN-DSA, and SLH-DSA. While ML-DSA and FN-DSA are lattice-based, SLH-DSA relies on hash-based assumptions. To support cryptographic agility against future vulnerabilities, NIST is evaluating non-lattice candidates as alternatives to SLH-DSA. Among these, TCitH-based schemes are particularly promising due to their compact keys and small signatures. However, their high computational complexity and memory footprint pose significant challenges for efficient implementations on resource-constrained embedded platforms. They remain largely unexplored in this context, particularly in ASIC implementations. To address this gap, we use a cross-layer methodology combining algorithmic and hardware layers to present, to the best of our knowledge, the first ASIC implementation of Mirath, a TCitH-based signature scheme, in a RISC-V-based system. The design is implemented in a 22nm FD-SOI technology node. Compared with an SLH-DSA ASIC implemented in the same technology node, the proposed architecture achieves 17.8x lower signing latency while requiring 58% less total cell area, showing the potential of TCitH-based signatures as efficient non-lattice alternatives from an implementation perspective.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "TCitH替代SLH-DSA的跨层ASIC设计——Mirath高效实现",
+      "summary_zh": "NIST已标准化ML-DSA、FN-DSA和SLH-DSA等后量子签名方案，SLH-DSA基于哈希假设。NIST正评估TCitH等非格基替代方案，因其密钥紧凑、签名较小。但其高计算复杂度和内存占用给资源受限嵌入式平台带来挑战，ASIC实现尚少。本文采用跨层方法提出Mirath的高效ASIC实现方案。",
+      "why_it_matters_zh": "填补TCitH方案在ASIC实现上的研究空白，为后量子密码在嵌入式场景的灵活部署提供高效硬件方案。",
+      "tags_zh": [
+        "后量子密码学",
+        "ASIC设计",
+        "TCitH",
+        "SLH-DSA",
+        "嵌入式安全"
+      ]
+    },
+    {
+      "id": "2ba151d241db7f40",
+      "title": "Compiler and Hardware Co-Design for Accelerator Architectures",
+      "url": "https://arxiv.org/abs/2609.30099v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-24T16:44:09+00:00",
+      "summary": "Heterogeneous accelerator architectures offer an efficient path to performance for compute-intensive workloads. However, full-stack integration remains difficult. We present EAAC (Extensible Accelerator Architecture), a flexible and extensible compiler and hardware architecture designed to lower the overhead of hardware-compiler co-development for rapid prototyping of hardware accelerators. EAAC targets static data-flow workloads with predictable memory access patterns. By using MLIR, we enable possible integration with a range of different frontends that emit MLIR. And by providing a minimal set of compiler functionality that enable necessary data-orchestration we lower the effort needed to get a simple implementation of a hardware acceleration unit up and running, while providing a relatively blank and un-opinionated starting point for further work. We validate this approach with a prototype GEMM accelerator combining a systolic array unit with an embedded RISC-V core, compiled end-to-end through the EAAC MLIR pipeline. On a synthetic fully-connected-layer workload, the accelerator achieves a 28x speedup in execution time over a RISC-V-only baseline, with the GEMM operation itself accounting for only 1.64\\% of total execution time. We further characterize the compiler's hardware-semaphore allocation, showing that the number of semaphores required scales linearly with instruction count in the worst case, and identify this as a concrete target for future optimization.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "加速器架构的编译器与硬件协同设计",
+      "summary_zh": "异构加速器架构为计算密集型负载提供高效路径，但全栈集成困难。本文提出EAAC，一种基于MLIR的编译器与硬件架构，旨在降低硬件-编译器协同开发开销，加速加速器原型设计。EAAC针对具有可预测内存访问模式的静态数据流负载，文中通过实际案例验证了其有效性。",
+      "why_it_matters_zh": "通过MLIR降低加速器软硬件协同开发门槛，为异构计算快速原型设计提供灵活起点。",
+      "tags_zh": [
+        "编译器",
+        "硬件协同设计",
+        "加速器",
+        "MLIR",
+        "异构计算"
+      ]
+    },
+    {
+      "id": "7221df72486043af",
+      "title": "Toki: Profiling HBM Performance on FPGA Systems with RISC-V Soft Cores and PCIe Host DMA Traffic",
+      "url": "https://arxiv.org/abs/2609.26551v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-22T15:06:43+00:00",
+      "summary": "Programmable RISC-V soft cores are becoming more widespread in data-center scenarios, making it crucial to design efficient systems that deploy them on FPGA chips with HBM memory. Toki, released as open source, is the first hardware-software framework that enables profiling the performance of HBM on FPGA accelerator cards by jointly considering (i) the execution of workloads on RISC-V soft cores instantiated on the FPGA and (ii) the injection of memory traffic from the host system via DMA over PCIe, providing insights that cannot be obtained with synthetic traffic generators alone. Extensive experiments target an AMD Alveo U55C card, deploying up to 60 RISC-V compute cores and stressing its HBM2 memory through real-world applications and microbenchmarks with user-defined access patterns. Results showcase how Toki can effectively profile the impact on HBM performance of the compute cores' organization, the workload's memory access patterns, data locality, contention over the memory controllers, and host traffic.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "Toki：基于RISC-V软核与PCIe DMA在FPGA上剖析HBM性能",
+      "summary_zh": "Toki是首个开源的硬件-软件框架，可在搭载HBM的FPGA加速卡上联合剖析RISC-V软核工作负载执行与主机经PCIe DMA注入的内存流量，弥补纯合成流量生成器的不足。研究基于AMD Alveo U55C卡部署最多60个RISC-V计算核，通过真实应用与用户自定义访问模式微基准测试HBM2性能。",
+      "why_it_matters_zh": "揭示真实RISC-V核与主机DMA流量共同作用下的HBM性能特征，为数据中心FPGA+RISC-V系统设计提供参考。",
+      "tags_zh": [
+        "FPGA",
+        "HBM",
+        "RISC-V软核",
+        "性能剖析",
+        "数据中心",
+        "PCIe DMA"
+      ]
+    },
+    {
+      "id": "cbe22ff480af8191",
+      "title": "VSpector: Specification-Driven Bug Detection for RISC-V CPUs",
+      "url": "https://arxiv.org/abs/2609.23517v1",
+      "source": "arXiv RISC-V",
+      "category": "paper",
+      "published_at": "2026-09-20T10:10:19+00:00",
+      "summary": "Detecting RTL design bugs in open-source RISC-V CPU implementations is critical for ensuring system reliability. Traditional detection approaches inherently rely on predefined artifacts. In this paper, we leverage the official,natural-language RISC-V specifications as an effective information source for bug detection. We present VSpector, a specification-driven bug detection pipeline that directly checks whether CPU register-transfer level (RTL) implementations adhere to official specification rules, without requiring specialized construction of reference models, formal properties, or custom bug patterns. To resolve the key technical trade-off between broad context scope and model reasoning accuracy when using Large Language Models (LLMs), VSpector employs a stepwise context refinement scheme across a four-stage pipeline: rule extraction, implementation localization, candidate identification, and sequential violation auditing. We evaluate VSpector on two industrial-strength RISC-V CPUs, CVA6 and XiangShan. Out of 217 reported candidates, manual inspection confirmed 148 true violations, representing a 68.2% precision. These violations correspond to 73 distinct bugs, including 42 previously unknown bugs. In our comparative experiments, DiveFuzz, a state-of-the-art CPU fuzzer, detected none of these new bugs during 24-hour runs per CPU. All 42 new bugs have been reported upstream, with developers already fixing 19 and confirming an additional 11 (30 in total), demonstrating that specification-driven auditing is a practical and complementary strategy for CPU bug detection.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.37,
+      "title_zh": "VSpector：面向RISC-V CPU的规范驱动缺陷检测",
+      "summary_zh": "VSpector利用RISC-V官方自然语言规范作为信息源，直接检查CPU RTL实现是否合规，无需构建参考模型、形式化属性或自定义缺陷模式。其采用四阶段流水线（规则提取、实现定位、候选识别等）与上下文逐步细化方案，平衡LLM的广度与精度权衡。",
+      "why_it_matters_zh": "无需专用参考模型即可发现开源RISC-V CPU RTL缺陷，显著降低验证门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "RTL验证",
+        "缺陷检测",
+        "大语言模型",
+        "形式化验证"
+      ]
+    },
+    {
+      "id": "5ca583943b3dbc07",
+      "title": "Orange Pi O1 SBC features 16 TOPS SOPHGO BM1688 AI SoC, supports 4G/5G cellular connectivity",
+      "url": "https://www.cnx-software.com/2026/10/15/orange-pi-o1-sbc-features-16-tops-sophgo-bm1688-ai-soc-supports-4g-5g-cellular-connectivity/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-14T17:01:28+00:00",
+      "summary": "Orange Pi O1 is a new single board computer (SBC) based on the somewhat older SOPHGO BM1688 octa-core Cortex-A53 SoC with a built-in 16 TOPS AI accelerator/TPU, and support for decoding up to sixteen 1080p30 video streams, or encoding ten. The board comes with 8GB or 16GB memory, supports M.2 NVMe, eMMC module, SPI flash, SATA III, or microSD card storage, and offers HDMI and MIPI DSI display interfaces, two MIPI CSI camera connectors, dual GbE, WiFi 6E, Bluetooth 5.3, and optional 4G/5G cellular connectivity, as well as a few USB ports, audio interfaces, and a 26-pin GPIO header for expansion. Orange Pi O1 specifications: SoC – SOPHGO BM1688 CPU 8-core Arm Cortex-A53 processor @ 1.65 GHz RISC-V C906 co-processor @ 1.2 GHz TPU – SOPHGO Neural Network Acceleration Engine (TPU), delivering 16 TOPS @ INT8 VPU Video decoding – H.264 & H.265 up to 16 channels at 1080p30 Video [...] The post Orange Pi O1 SBC features 16 TOPS SOPHGO BM1688 AI SoC, supports 4G/5G cellular connectivity appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator",
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.34,
+      "title_zh": "Orange Pi O1单板计算机搭载算能BM1688，集成16 TOPS TPU",
+      "summary_zh": "Orange Pi推出O1单板计算机，基于算能BM1688 SoC，配8核Cortex-A53与1.2GHz RISC-V C906协处理器，内置16 TOPS TPU，支持16路1080p30视频解码。板载8/16GB内存、M.2 NVMe、HDMI、MIPI DSI/CSI、双千兆网、WiFi 6E、蓝牙5.3及可选4G/5G蜂窝连接。",
+      "why_it_matters_zh": "RISC-V C906与ARM A53异构组合，为边缘AI推理与视觉处理提供高算力平台。",
+      "tags_zh": [
+        "RISC-V",
+        "边缘AI",
+        "单板计算机",
+        "算能",
+        "Orange Pi"
+      ]
+    },
+    {
+      "id": "fb062d2415a81747",
+      "title": "Efinix Sapphire RV64 SoC – Configurable RISC-V soft-cores with DDR3, LPDDR4x, and HyperRAM for Efinix FPGAs",
+      "url": "https://www.cnx-software.com/2026/10/08/efinix-sapphire-rv64-soc-configurable-risc-v-soft-cores-with-ddr3-lpddr4x-and-hyperram-for-efinix-fpgas/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-08T00:00:32+00:00",
+      "summary": "Efinix has introduced the Sapphire RV64 SoC, a configurable 64-bit RISC-V soft-core processor designed for its Titanium and Trion FPGAs. It is based on the VexiiRiscv core and can be configured with one to four RISC-V cores running at up to 400 MHz. The Sapphire RV64 has a seven-stage pipeline, configurable L1 caches, optional 64–512 KB L2 cache, and 4–512 KB of on-chip RAM. It supports DDR3, LPDDR4x, and HyperRAM with up to 512-bit AXI interfaces and external memory from 4 MB to 8 GB. Other features include an optional FPU, branch predictor, prefetchers, SV39 MMU, up to 32 GPIOs, five I²C, three SPI, three UARTs, timers, watchdog, and up to eight user interrupts. Efinix Sapphire RV64 SoC specifications: CPU 1 to 4x VexiiRiscv 64-bit cores with a 7-stage pipeline (fetch, align-decompress, decode, issue, execute, memory, and writeback) Configurable system clock frequency from 20 MHz to 400 MHz Supports RV64IMACFD_Zba_Zbc_Zbs extensions [...] The post Efinix Sapphire RV64 SoC – Configurable RISC-V soft-cores with DDR3, LPDDR4x, and HyperRAM for Efinix FPGAs appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V",
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.34,
+      "title_zh": "Efinix推出Sapphire RV64 SoC，面向FPGA的可配置64位RISC-V软核",
+      "summary_zh": "Efinix发布Sapphire RV64 SoC，基于VexiiRiscv 64位RISC-V内核，专为Titanium和Trion FPGA设计。支持1–4核、400MHz主频、七级流水线及64–512KB L2缓存，集成DDR3、LPDDR4x与HyperRAM控制器，配备FPU、MMU、GPIO、I²C、SPI、UART等外设。",
+      "why_it_matters_zh": "为Efinix FPGA带来成熟64位RISC-V处理能力，拓展FPGA+软核应用场景。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "软核",
+        "Efinix",
+        "Sapphire"
+      ]
+    },
+    {
+      "id": "554b83767f7d4c42",
+      "title": "V Questions with… DAMO Academy’s Dr. Jianyi Meng",
+      "url": "https://riscv.org/blog/v-questions-with-damo-academy-jianyi-meng/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-10-15T19:45:33+00:00",
+      "summary": "Alibaba DAMO Academy Chief Scientist Dr. Jianyi Meng on what it took to achieve an on-chip AI milestone for RISC-V, and his hopes for RISC-V Summit China 2026. The post <span class=\"vq-prefix\">V Questions with… </span>DAMO Academy’s Dr. Jianyi Meng appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "V访谈：阿里巴巴达摩院孟建熠谈RISC-V片上AI突破",
+      "summary_zh": "阿里巴巴达摩院首席科学家孟建熠博士分享实现RISC-V片上AI里程碑背后的历程，并展望即将于2026年举办的RISC-V Summit China。文章源自RISC-V International官方资讯。",
+      "why_it_matters_zh": "达摩院作为中国头部研究机构在RISC-V领域取得突破，标志着RISC-V在AI场景中的产业化进程加速。",
+      "tags_zh": [
+        "RISC-V",
+        "达摩院",
+        "片上AI",
+        "RISC-V Summit China"
+      ]
+    },
+    {
+      "id": "ebc8730c32372930",
+      "title": "My RISC-V Mentorship: The Problems Nobody Assigned Me",
+      "url": "https://riscv.org/blog/my-risc-v-mentorship-the-problems-nobody-assigned-me/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-10-13T18:43:55+00:00",
+      "summary": "The post My RISC-V Mentorship: The Problems Nobody Assigned Me appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "我的RISC-V导师之旅：那些无人指派的问题",
+      "summary_zh": "一篇关于RISC-V导师计划的个人感悟文章，分享参与者在项目中自主发现问题、解决问题的成长经历，源自RISC-V International官方资讯。",
+      "why_it_matters_zh": "RISC-V生态的人才培养依赖社区互助机制，此文展现了自主探索对新人成长的价值。",
+      "tags_zh": [
+        "RISC-V",
+        "导师计划",
+        "社区发展",
+        "人才培养"
+      ]
+    },
+    {
+      "id": "e2017a8f5d0a71fc",
+      "title": "5 Ways Automakers Lose Control of Software, and How Open Standards Bring It Back",
+      "url": "https://riscv.org/blog/codethink-automakers-software/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-10-07T14:21:32+00:00",
+      "summary": "Codethink's Paul Sherwood shares his experience on how automakers lose control of software, and how open standards like RISC-V restore independence. The post 5 Ways Automakers Lose Control of Software, and How Open Standards Bring It Back appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "车企如何丧失软件控制权，开源标准如何夺回主动权",
+      "summary_zh": "Codethink的Paul Sherwood分享车企在软件领域逐步丧失控制权的经验，探讨RISC-V等开源标准如何帮助汽车行业重获技术独立，避免被专有架构锁定，增强供应链自主性。",
+      "why_it_matters_zh": "车企软件供应链面临供应商锁定风险，RISC-V为汽车行业提供了可控、可定制的开源架构选择。",
+      "tags_zh": [
+        "RISC-V",
+        "汽车软件",
+        "开源标准",
+        "Codethink"
+      ]
+    },
+    {
+      "id": "bfe754d7905a5acb",
+      "title": "Community Motion: What Are RISC-V Advocates Doing?",
+      "url": "https://riscv.org/blog/community-motion-what-are-risc-v-advocates-doing/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-28T11:12:05+00:00",
+      "summary": "The post Community Motion: What Are RISC-V Advocates Doing? appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "RISC-V社区动态：倡导者们在做什么？",
+      "summary_zh": "RISC-V International发布社区动态文章，聚焦全球RISC-V倡导者群体的近期行动与社区发展方向，展现开源指令集生态在全球范围内的活跃进展。",
+      "why_it_matters_zh": "社区倡导者的活动反映RISC-V生态的推动力与未来布局方向，对了解行业趋势有参考价值。",
+      "tags_zh": [
+        "RISC-V",
+        "开源生态",
+        "社区"
+      ]
+    },
+    {
+      "id": "3f016658f04ae672",
+      "title": "V Questions with… Maven Silicon’s P R ‘Siva’ Sivakumar",
+      "url": "https://riscv.org/blog/v-questions-with-maven-siva/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-24T10:44:30+00:00",
+      "summary": "Maven Silicon CEO P R Sivakumar on using RISC-V to bridge the skills gap, building a stronger engineering community and preparing new talent for an AI-driven semiconductor industry. The post <span class=\"vq-prefix\">V Questions with… </span>Maven Silicon’s P R ‘Siva’ Sivakumar appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Maven Silicon CEO对话：RISC-V如何弥合半导体人才缺口",
+      "summary_zh": "Maven Silicon CEO P R Sivakumar在专访中分享如何借助RISC-V弥合行业技能鸿沟、加强工程师社区建设，以及为AI驱动的半导体产业储备新一代人才。",
+      "why_it_matters_zh": "揭示RISC-V在半导体人才培养体系中的关键作用，展现印度RISC-V生态布局与产业教育趋势。",
+      "tags_zh": [
+        "RISC-V",
+        "Maven Silicon",
+        "人才培养",
+        "AI半导体"
+      ]
+    },
+    {
+      "id": "ae9fcaed40f81264",
+      "title": "Monte Cimone v3: Where RISC-V Stands in High-Performance Computing",
+      "url": "https://riscv.org/blog/monte-cimone-v3-where-risc-v-stands-in-high-performance-computing/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-23T18:21:41+00:00",
+      "summary": "The post Monte Cimone v3: Where RISC-V Stands in High-Performance Computing appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Monte Cimone v3揭示RISC-V在高性能计算领域的实际位置",
+      "summary_zh": "文章以Monte Cimone v3平台为切入点，深入评估RISC-V在高性能计算（HPC）领域的现状，涵盖其性能表现、软件生态及面临的实际挑战。",
+      "why_it_matters_zh": "反映RISC-V进军超算与HPC市场的关键进展，体现其与x86、ARM架构竞争的现实潜力。",
+      "tags_zh": [
+        "RISC-V",
+        "高性能计算",
+        "Monte Cimone",
+        "HPC"
+      ]
+    },
+    {
+      "id": "4c0895aba9cb453d",
+      "title": "V Questions with… Openchip’s Cesc Guim and Marc Fernández",
+      "url": "https://riscv.org/blog/v-questions-with-openchips-cesc-guim-and-marc-fernandez/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-17T21:59:27+00:00",
+      "summary": "'V Questions with…' uncovers the backstory to a RISC-V member's latest work in 5 questions. Here, I talk to the duo behind BER10, the sovereign SoC that Barcelona's Openchip taped out in under two years. The post <span class=\"vq-prefix\">V Questions with… </span>Openchip’s Cesc Guim and Marc Fernández appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "Openchip团队揭秘BER10主权SoC：不到两年完成流片",
+      "summary_zh": "RISC-V International的\"V Questions with…\"系列专访了来自巴塞罗那Openchip的Cesc Guim与Marc Fernández，介绍其主权SoC——BER10在不到两年内完成流片背后的故事。",
+      "why_it_matters_zh": "BER10展示欧洲团队在RISC-V主权芯片领域的高效研发能力。",
+      "tags_zh": [
+        "Openchip",
+        "BER10",
+        "主权SoC",
+        "流片",
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8e85ce86fae3a56d",
+      "title": "For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice",
+      "url": "https://riscv.org/blog/automotive-mips/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-09-10T13:37:52+00:00",
+      "summary": "MIPS’ Sameer Wasson explains why an automotive OEM’s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control. The post For Automakers, RISC-V Isn’t Just About Ownership: It’s About Freedom of Choice appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "MIPS高管：车企选择RISC-V不仅是所有权，更是选择自由",
+      "summary_zh": "MIPS的Sameer Wasson撰文指出，汽车OEM在选择ISA时应优先考虑供应商多样性、软件复用和长期经济控制权，RISC-V为此提供了真正的选择自由。",
+      "why_it_matters_zh": "汽车行业转向RISC-V可降低供应链锁定风险，提升长期经济自主性。",
+      "tags_zh": [
+        "MIPS",
+        "汽车芯片",
+        "RISC-V",
+        "ISA",
+        "供应链"
+      ]
+    },
+    {
+      "id": "5a2db0c7c8feef71",
+      "title": "World RISC-V Days: Tel Aviv Israel",
+      "url": "https://riscv.org/blog/world-risc-v-days-tel-aviv-israel/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Tel Aviv Israel",
+      "summary_zh": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "8b0c45ef03c13805",
+      "title": "World RISC-V Days: Turin Italy",
+      "url": "https://riscv.org/blog/world-risc-v-days-turin-italy/",
+      "source": "RISC-V International Feed",
+      "category": "news",
+      "published_at": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.32,
+      "title_zh": "World RISC-V Days: Turin Italy",
+      "summary_zh": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "08ac55f4d5d57028",
+      "title": "tenstorrent/rv_tester updated on GitHub",
+      "url": "https://github.com/tenstorrent/rv_tester",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:30:02+00:00",
+      "summary": "Risc-v cpu testing component (Testbench) written in sv and c++ Stars: 6.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [
+        "Tenstorrent"
+      ],
+      "score": 2.3,
+      "title_zh": "tenstorrent/rv_tester updated on GitHub",
+      "summary_zh": "Risc-v cpu testing component (Testbench) written in sv and c++ Stars: 6.",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "3c786ac9a7142773",
+      "title": "HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control",
+      "url": "https://www.cnx-software.com/2026/10/15/hpmicro-hpm5100-risc-v-mcu-integrates-four-16-bit-adcs-four-op-amps-for-analog-sensing-and-motor-control/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-15T07:00:44+00:00",
+      "summary": "HPMicro has introduced the HPM5100 series, a family of 32-bit RISC-V mixed-signal MCUs, starting with the HPM5151 parts. It features a 400 MHz RISC-V processor, 416 KB SRAM, 1 MB flash, four 16-bit ADCs, four operational amplifiers, and four analog comparators. It also includes a high-speed USB 2.0 OTG interface with an integrated PHY, CAN FD, multiple UART/SPI/I2C interfaces, and 32 PWM channels for motor control. The chip supports hardware floating-point operations and DSP instructions, while the integrated analog peripherals reduce the need for external ADCs and signal-conditioning circuits. HPMicro HPM5100 specifications: MCU core – Single-core 32-bit RISC-V processor @ 400 MHz (up to 480 MHz in high-performance mode with external power supply) Hardware FPU, SIMD, and DSP instruction support 16 KB L1 instruction cache and 16 KB L1 data cache Up to 3.57 CoreMark/MHz Memory 416 KB SRAM 256 KB instruction local memory (ILM) 128 KB data local memory [...] The post HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control",
+      "summary_zh": "HPMicro has introduced the HPM5100 series, a family of 32-bit RISC-V mixed-signal MCUs, starting with the HPM5151 parts. It features a 400 MHz RISC-V processor, 416 KB SRAM, 1 MB flash, four 16-bit ADCs, four operational amplifiers, and four analog comparators. It also includes a high-speed USB 2.0 OTG interface with an integrated PHY, CAN FD, multiple UART/SPI/I2C interfaces, and 32 PWM channels for motor control. The chip supports hardware floating-point operations and DSP instructions, while the integrated analog peripherals reduce the need for external ADCs and signal-conditioning circuits. HPMicro HPM5100 specifications: MCU core – Single-core 32-bit RISC-V processor @ 400 MHz (up to 480 MHz in high-performance mode with external power supply) Hardware FPU, SIMD, and DSP instruction support 16 KB L1 instruction cache and 16 KB L1 data cache Up to 3.57 CoreMark/MHz Memory 416 KB SRAM 256 KB instruction local memory (ILM) 128 KB data local memory [...] The post HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "29f92ff289bba209",
+      "title": "Romu – A Tiny Raspberry Pi RP2354A board for USB application development (Crowdfunding)",
+      "url": "https://www.cnx-software.com/2026/10/14/romu-tiny-raspberry-pi-rp2354a-usb-board/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-14T09:00:43+00:00",
+      "summary": "Bitmerse Romu is a tiny (15.5 x 12 mm), almost minimal Raspberry Pi RP2354A USB board with a USB 2.0 interface on one side of the PCB, and the dual Cortex-M33/RISC-V MCU on the other side, connected to a few debugging/programming pads, buttons, and an RGB LED. It doesn’t come with any GPIO, and it’s mostly designed for USB applications such as a security key for passwordless login, a USB MIDI controller, a macro pad, or a custom HID device. You can plug it directly into a spare USB Type-A port of your computer/host without any cables, breadboard, or adapters required. Romu specifications: SoC – Raspberry Pi RP2354A CPU Dual-core Arm Cortex-M33 @ 150 MHz with Arm Trustzone, Secure boot Dual-core 32-bit RISC-V Hazard3 @ 150 MHz (3-stage in-order pipeline; RV32IMAC with Zba, Zbb, Zbs, Zbkb, Zcb, Zcmp, and Zicsr extensions) Up to two cores can be used at a time, either 2x [...] The post Romu – A Tiny Raspberry Pi RP2354A board for USB application development (Crowdfunding) appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Romu – A Tiny Raspberry Pi RP2354A board for USB application development (Crowdfunding)",
+      "summary_zh": "Bitmerse Romu is a tiny (15.5 x 12 mm), almost minimal Raspberry Pi RP2354A USB board with a USB 2.0 interface on one side of the PCB, and the dual Cortex-M33/RISC-V MCU on the other side, connected to a few debugging/programming pads, buttons, and an RGB LED. It doesn’t come with any GPIO, and it’s mostly designed for USB applications such as a security key for passwordless login, a USB MIDI controller, a macro pad, or a custom HID device. You can plug it directly into a spare USB Type-A port of your computer/host without any cables, breadboard, or adapters required. Romu specifications: SoC – Raspberry Pi RP2354A CPU Dual-core Arm Cortex-M33 @ 150 MHz with Arm Trustzone, Secure boot Dual-core 32-bit RISC-V Hazard3 @ 150 MHz (3-stage in-order pipeline; RV32IMAC with Zba, Zbb, Zbs, Zbkb, Zcb, Zcmp, and Zicsr extensions) Up to two cores can be used at a time, either 2x [...] The post Romu – A Tiny Raspberry Pi RP2354A board for USB application development (Crowdfunding) appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "497f7c8be097db51",
+      "title": "VIEWE launches 4.3-inch ESP32-S31 display development board",
+      "url": "https://www.cnx-software.com/2026/10/14/viewe-4-3-inch-esp32-s31-display-development-board/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-14T00:00:23+00:00",
+      "summary": "VIEWE has introduced the PLCM-UES31S043H800V480C-U, a 4.3-inch smart display module that appears to be the first third-party development board powered by the new ESP32-S31 MCU. The board includes a 4.3-inch display with 2.4 GHz Wi-Fi 6, Bluetooth 5.4 LE and Classic, and IEEE 802.15.4 for Zigbee and Thread. It also features USB-C and USB-A ports, a microSD card slot, RS485 and CAN interfaces, and a 20-pin GPIO expansion header with UART and I2C. The board also includes an ES8389 audio codec, two NS4150B amplifiers, two onboard microphones, four ADC buttons, a WS2812B RGB LED, and BOOT/RESET buttons. It operates on a 5V power supply and supports an operating temperature range of -20°C to +70°C. VIEWE PLCM-UES31S043H800V480C-U Specifications: Wireless module – ESP32-S31-WROOM-3-N16R16V SoC – ESP32-S31NRV16 CPU RISC-V HP (High-performance) RV32IMAFCP CPU @ 320 MHz with FPU, SIMD, etc. RISC-V LP (Low-power) MCU core Memory – 512 KB SRAM, 32 KB low-power SRAM, [...] The post VIEWE launches 4.3-inch ESP32-S31 display development board appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "VIEWE launches 4.3-inch ESP32-S31 display development board",
+      "summary_zh": "VIEWE has introduced the PLCM-UES31S043H800V480C-U, a 4.3-inch smart display module that appears to be the first third-party development board powered by the new ESP32-S31 MCU. The board includes a 4.3-inch display with 2.4 GHz Wi-Fi 6, Bluetooth 5.4 LE and Classic, and IEEE 802.15.4 for Zigbee and Thread. It also features USB-C and USB-A ports, a microSD card slot, RS485 and CAN interfaces, and a 20-pin GPIO expansion header with UART and I2C. The board also includes an ES8389 audio codec, two NS4150B amplifiers, two onboard microphones, four ADC buttons, a WS2812B RGB LED, and BOOT/RESET buttons. It operates on a 5V power supply and supports an operating temperature range of -20°C to +70°C. VIEWE PLCM-UES31S043H800V480C-U Specifications: Wireless module – ESP32-S31-WROOM-3-N16R16V SoC – ESP32-S31NRV16 CPU RISC-V HP (High-performance) RV32IMAFCP CPU @ 320 MHz with FPU, SIMD, etc. RISC-V LP (Low-power) MCU core Memory – 512 KB SRAM, 32 KB low-power SRAM, [...] The post VIEWE launches 4.3-inch ESP32-S31 display development board appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "29702a9e2f0b7085",
+      "title": "Wireless-Tag WT32P4C5-43S – A fully integrated 4.3-inch ESP32-P4 and ESP32-C5 touch display devkit",
+      "url": "https://www.cnx-software.com/2026/10/11/wireless-tag-wt32p4c5-43s-a-fully-integrated-4-3-inch-esp32-p4-and-esp32-c5-touch-display-devkit/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-11T11:36:22+00:00",
+      "summary": "Wireless-Tag WT32P4C5-43S (ZX4D30CE405-V1.3) is a fully integrated 4.3-inch touch display development board that combines an ESP32-P4 MCU with an ESP32-C5 wireless module supporting dual-band WiFi 6 (2.4/5 GHz), Bluetooth LE, and 802.15.4 connectivity. Unlike previous ESP32-P4 + ESP32-C5 solutions, this one comes with a built-in touchscreen, so you don’t need to connect a separate display. Designed for industrial automation, smart control panels, and edge AI vision terminals, the board also integrates a 15-pin MIPI CSI camera interface, a microSD card slot, two USB Type-C ports (USB 2.0 High-Speed and Debug/JTAG), and a 14-pin GPIO expansion header. Wireless-Tag WT32P4C5-43S (ZX4D30CE405-V1.3) specifications: Core module – Wireless Tag WT0132P4-A1-N16R32 SoC – Espressif Systems ESP32-P4 CPU Dual-core 32-bit RISC-V HP (High-performance) CPU @ up to 400 MHz with AI instructions extension and single-precision FPU Single-RISC-V LP (Low-power) MCU core @ up to 40 MHz with 8KB of zero-wait TCM RAM Memory 768 KB HP [...] The post Wireless-Tag WT32P4C5-43S – A fully integrated 4.3-inch ESP32-P4 and ESP32-C5 touch display devkit appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Wireless-Tag WT32P4C5-43S – A fully integrated 4.3-inch ESP32-P4 and ESP32-C5 touch display devkit",
+      "summary_zh": "Wireless-Tag WT32P4C5-43S (ZX4D30CE405-V1.3) is a fully integrated 4.3-inch touch display development board that combines an ESP32-P4 MCU with an ESP32-C5 wireless module supporting dual-band WiFi 6 (2.4/5 GHz), Bluetooth LE, and 802.15.4 connectivity. Unlike previous ESP32-P4 + ESP32-C5 solutions, this one comes with a built-in touchscreen, so you don’t need to connect a separate display. Designed for industrial automation, smart control panels, and edge AI vision terminals, the board also integrates a 15-pin MIPI CSI camera interface, a microSD card slot, two USB Type-C ports (USB 2.0 High-Speed and Debug/JTAG), and a 14-pin GPIO expansion header. Wireless-Tag WT32P4C5-43S (ZX4D30CE405-V1.3) specifications: Core module – Wireless Tag WT0132P4-A1-N16R32 SoC – Espressif Systems ESP32-P4 CPU Dual-core 32-bit RISC-V HP (High-performance) CPU @ up to 400 MHz with AI instructions extension and single-precision FPU Single-RISC-V LP (Low-power) MCU core @ up to 40 MHz with 8KB of zero-wait TCM RAM Memory 768 KB HP [...] The post Wireless-Tag WT32P4C5-43S – A fully integrated 4.3-inch ESP32-P4 and ESP32-C5 touch display devkit appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "3926122fcc82b87e",
+      "title": "M5Stack ToughC5 weatherproof ESP32-C5 IoT controller offers dual-band Wi-Fi 6, BLE 5, and Zigbee/Thread",
+      "url": "https://www.cnx-software.com/2026/10/10/m5stack-toughc5-weatherproof-esp32-c5-iot-controller-offers-dual-band-wi-fi-6-ble-5-and-zigbee-thread/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-10T07:00:45+00:00",
+      "summary": "M5Stack has just introduced the ToughC5, a rugged, weatherproof outdoor IoT controller built around the ESP32-C5. The device features a bright 2.0-inch capacitive touch IPS display and RS485 connectivity. The ToughC5 is an upgrade to the ESP32-base3d M5Stack TOUGH introduced in 2021, with the upgraded model featuring a more modern ESP32-C5 MCU with dual-band (2.4/5 GHz) Wi-Fi 6, Bluetooth 5 LE, and an IEEE 802.15.4 radio for Zigbee and Thread. Other changes include faster Octal PSRAM, an upgraded RTC chip with a dedicated coin cell backup battery, a passive buzzer replacing the previous 1W speaker, and a custom power management system (M5PM1 + M5IOE1) replacing the AXP192 PMU. These features make it suitable for industrial field control, outdoor edge data collection, and smart building applications. M5Stack ToughC5 specifications: Wireless SoC – Espressif Systems ESP32-C5HR8 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz [...] The post M5Stack ToughC5 weatherproof ESP32-C5 IoT controller offers dual-band Wi-Fi 6, BLE 5, and Zigbee/Thread appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "M5Stack ToughC5 weatherproof ESP32-C5 IoT controller offers dual-band Wi-Fi 6, BLE 5, and Zigbee/Thread",
+      "summary_zh": "M5Stack has just introduced the ToughC5, a rugged, weatherproof outdoor IoT controller built around the ESP32-C5. The device features a bright 2.0-inch capacitive touch IPS display and RS485 connectivity. The ToughC5 is an upgrade to the ESP32-base3d M5Stack TOUGH introduced in 2021, with the upgraded model featuring a more modern ESP32-C5 MCU with dual-band (2.4/5 GHz) Wi-Fi 6, Bluetooth 5 LE, and an IEEE 802.15.4 radio for Zigbee and Thread. Other changes include faster Octal PSRAM, an upgraded RTC chip with a dedicated coin cell backup battery, a passive buzzer replacing the previous 1W speaker, and a custom power management system (M5PM1 + M5IOE1) replacing the AXP192 PMU. These features make it suitable for industrial field control, outdoor edge data collection, and smart building applications. M5Stack ToughC5 specifications: Wireless SoC – Espressif Systems ESP32-C5HR8 CPU Single-core 32-bit RISC-V processor @ up to 240 MHz Low-power RISC-V core @ 40 MHz [...] The post M5Stack ToughC5 weatherproof ESP32-C5 IoT controller offers dual-band Wi-Fi 6, BLE 5, and Zigbee/Thread appeared first on CNX Software - Embedded Systems News .",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "RISC-V"
+      ]
+    },
+    {
+      "id": "d02a7c132a86f9ab",
+      "title": "Q8botOne – A palm-sized open-source quadruped robot with ESP32-C3, DYNAMIXEL smart actuators (Crowdfunding)",
+      "url": "https://www.cnx-software.com/2026/10/08/q8botone-a-palm-sized-open-source-quadruped-robot-with-esp32-c3-dynamixel-smart-actuators/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-08T09:00:08+00:00",
+      "summary": "ZeroWire Robotics Q8botOne is an open-source, palm-sized quadruped robot built around an ESP32-C3 MCU and ROBOTIS DYNAMIXEL smart actuators. Designed with a unique wire-free architecture, the robot integrates all components onto a central printed circuit board also used as the structural chassis. The robot is roughly the size of a smartphone and can jog, jump, and carry up to twice its 250-gram weight. The main PCB uses a dedicated 6V/16A step-down converter for motor power and includes a battery management system for two 14500 Li-ion cells. For control, the kit includes a separate ESP32-C3 controller PCB with an Adafruit Mini I2C Gamepad. Q8botOne specifications: Wireless module – Espressif Systems ESP32-C3-MINI-1-N4 module with: ESP32-C3 (ESP32-C3FN4) SoC CPU – 32-bit RISC-V single-core processor up to 160 MHz Memory – 400 KB SRAM (16 KB for cache), 8 KB SRAM in RTC Storage – 4 MB embedded flash, 384 KB ROM Connectivity – [...] The post Q8botOne – A palm-sized open-source quadruped robot with ESP32-C3, DYNAMIXEL smart actuators (Crowdfunding) appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.22,
+      "title_zh": "Q8botOne：基于ESP32-C3与DYNAMIXEL智能舵机的开源手掌大小四足机器人",
+      "summary_zh": "ZeroWire Robotics推出Q8botOne开源四足机器人，体积接近智能手机，自重250克，可承载两倍自重并实现小跑、跳跃。核心采用乐鑫ESP32-C3-MINI-1-N4模组（RISC-V单核160MHz）和ROBOTIS DYNAMIXEL智能舵机，元器件集成于兼作结构骨架的中央PCB，配有6V/16A降压电路及双节14500锂电池BMS管理。",
+      "why_it_matters_zh": "该项目展示了RISC-V MCU在小型机器人控制场景的实际落地，无线连接与低功耗特性为开源机器人提供高性价比方案。",
+      "tags_zh": [
+        "RISC-V",
+        "ESP32-C3",
+        "开源机器人",
+        "四足机器人",
+        "DYNAMIXEL"
+      ]
+    },
+    {
+      "id": "821e91ac10fb6c44",
+      "title": "yinjiayi/openeuler-riscv-packages updated on GitHub",
+      "url": "https://github.com/yinjiayi/openeuler-riscv-packages",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:41:06+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "openEuler RISC-V软件包仓库在GitHub更新",
+      "summary_zh": "yinjiayi/openeuler-riscv-packages仓库在GitHub更新，目前星标数为0。从仓库名判断，该项目为openEuler操作系统在RISC-V架构上提供软件包构建与支持。",
+      "why_it_matters_zh": "openEuler对RISC-V平台的软件包支持有助于完善RISC-V服务器与桌面软件生态。",
+      "tags_zh": [
+        "RISC-V",
+        "openEuler",
+        "软件包",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "1719a153f5799848",
+      "title": "bhind/raveil updated on GitHub",
+      "url": "https://github.com/bhind/raveil",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:39:49+00:00",
+      "summary": "Experimental RISC-V microkernel and experience-driven optimization system Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目bhind/raveil更新",
+      "summary_zh": "bhind/raveil是一个实验性的RISC-V微内核项目，引入经验驱动的优化机制。该项目目前在GitHub上获得0颗星，反映了开发者对微内核与自适应优化结合方向的探索尝试，但尚缺乏社区关注。",
+      "why_it_matters_zh": "探索将经验驱动优化引入RISC-V微内核的设计思路，但尚处于早期实验阶段，影响有限。",
+      "tags_zh": [
+        "RISC-V",
+        "微内核",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "d3fbf707e042b38d",
+      "title": "qs4zqwj85w-ship-it/32-bit-RISC-V-inspired-CPU updated on GitHub",
+      "url": "https://github.com/qs4zqwj85w-ship-it/32-bit-RISC-V-inspired-CPU",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:36:32+00:00",
+      "summary": "Personal attempt to design 32 bit RISC using the skills I've learnt while designing the 8 bit version Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目32-bit-RISC-V-inspired-CPU更新",
+      "summary_zh": "qs4zqwj85w-ship-it在GitHub上更新了一个32位RISC架构CPU设计项目，是作者在完成8位版本后积累经验进一步尝试的进阶作品，目前获得0颗星，属于个人学习性质的开源实践。",
+      "why_it_matters_zh": "展示了爱好者从8位到32位RISC CPU设计的进阶过程，体现RISC-V生态中的个人学习实践。",
+      "tags_zh": [
+        "RISC-V",
+        "CPU设计",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "89e30af5c5308a0c",
+      "title": "evk25/rv32i updated on GitHub",
+      "url": "https://github.com/evk25/rv32i",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:34:55+00:00",
+      "summary": "RISC-V 32bit ISA Verilog Implmentation Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上的RV32I Verilog实现项目更新",
+      "summary_zh": "evk25/rv32i是GitHub上托管的RISC-V 32位指令集架构（ISA）Verilog实现项目，近日完成代码更新。该项目面向处理器设计与FPGA验证场景，提供从指令解码到执行流水线的硬件级RTL参考实现，目前获得0个Star关注。",
+      "why_it_matters_zh": "该项目为RV32I基础整数指令集提供了可直接综合的Verilog参考代码，便于硬件开发者在FPGA平台上快速搭建RISC-V处理器原型并开展教学验证工作。",
+      "tags_zh": [
+        "RISC-V",
+        "RV32I",
+        "Verilog",
+        "处理器设计",
+        "FPGA"
+      ]
+    },
+    {
+      "id": "82ae242d30149867",
+      "title": "amieon/RmikuOS updated on GitHub",
+      "url": "https://github.com/amieon/RmikuOS",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:33:44+00:00",
+      "summary": "RmikuOS 是一个从零实现的教学型操作系统内核，支持 RISC-V 64 与 LoongArch 64 双架构。 Stars: 1.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "支持RISC-V 64与LoongArch 64双架构的教学内核RmikuOS更新",
+      "summary_zh": "RmikuOS是一个从零开始编写的教学型操作系统内核项目，已在GitHub上完成更新。该项目同时支持RISC-V 64与LoongArch 64两种指令集架构双平台运行，涵盖中断处理、内存管理、进程调度等基础内核子系统实现，目前获得1个Star关注。",
+      "why_it_matters_zh": "作为同时覆盖RISC-V与国产LoongArch两种架构的教学内核项目，对推动跨指令集操作系统的教学实践与生态建设具有积极参考意义。",
+      "tags_zh": [
+        "RISC-V",
+        "LoongArch",
+        "操作系统内核",
+        "教学项目",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "c59fafa3c1e894e2",
+      "title": "armaautomotive/haiku-riscv64-pioneer updated on GitHub",
+      "url": "https://github.com/armaautomotive/haiku-riscv64-pioneer",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:32:20+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上haiku-riscv64-pioneer仓库更新",
+      "summary_zh": "Arma Automotive维护的haiku-riscv64-pioneer仓库在GitHub更新，目标是让Haiku操作系统支持RISC-V 64位架构，目前Star数为0。",
+      "why_it_matters_zh": "Haiku向RISC-V 64位移植意味着RISC-V在桌面操作系统领域的生态正在逐步扩展。",
+      "tags_zh": [
+        "Haiku操作系统",
+        "RISC-V",
+        "GitHub仓库",
+        "开源移植"
+      ]
+    },
+    {
+      "id": "e226f0615b4fb95b",
+      "title": "tejaswiniparbat/MINI-RISCV-SOC updated on GitHub",
+      "url": "https://github.com/tejaswiniparbat/MINI-RISCV-SOC",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:31:12+00:00",
+      "summary": "Stars: 0.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub上MINI-RISCV-SOC仓库更新",
+      "summary_zh": "tejaswiniparbat维护的MINI-RISCV-SOC仓库在GitHub更新，是一个迷你RISC-V片上系统（SoC）实现项目，目前Star数为0。",
+      "why_it_matters_zh": "迷你RISC-V SoC实现对教学与嵌入式开发具有参考价值，有助于降低RISC-V学习门槛。",
+      "tags_zh": [
+        "RISC-V",
+        "SoC",
+        "GitHub仓库",
+        "处理器设计",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "a53c1ed372f08bca",
+      "title": "KirillChepkin/RISC_V_testing updated on GitHub",
+      "url": "https://github.com/KirillChepkin/RISC_V_testing",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:24:42+00:00",
+      "summary": "Testing vector acceleration and parallel execution capabilities of RISC-V processors on lossy and lossless compression algorithms. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目RISC_V_testing更新",
+      "summary_zh": "该项目测试RISC-V处理器在有损与无损压缩算法上的向量加速与并行执行能力，探索RISC-V向量扩展在实际计算任务中的性能表现，目前Star数为0。",
+      "why_it_matters_zh": "展示了RISC-V向量扩展在压缩计算等实际负载中的应用潜力。",
+      "tags_zh": [
+        "RISC-V",
+        "向量加速",
+        "并行计算",
+        "压缩算法"
+      ]
+    },
+    {
+      "id": "63c33e4f90ab3b15",
+      "title": "nifeos/nife updated on GitHub",
+      "url": "https://github.com/nifeos/nife",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:24:26+00:00",
+      "summary": "A capability microkernel in Rust for aarch64, riscv64 and x86_64, with machine-checked proofs of the capability core. Built from the first instruction; benchmarked against Linux, macOS, and seL4. Stars: 4.",
+      "tags": [
+        "RISCV"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "GitHub项目nife更新",
+      "summary_zh": "nife是一个用Rust编写的权能微内核，原生支持aarch64、riscv64和x86_64架构，其权能核心带有机器检查的形式化证明，并已与Linux、macOS及seL4进行基准测试对比，目前Star数为4。",
+      "why_it_matters_zh": "面向RISC-V等多架构的经形式化验证的微内核，有助于提升系统安全与可靠性。",
+      "tags_zh": [
+        "RISC-V",
+        "微内核",
+        "Rust",
+        "形式化验证"
+      ]
+    },
+    {
+      "id": "9dd1773dddfee392",
+      "title": "JamesKane/VectraOS updated on GitHub",
+      "url": "https://github.com/JamesKane/VectraOS",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:23:52+00:00",
+      "summary": "Capability microkernel OS for edge hardware, in Embedded Swift. Zircon-derived; amd64, arm64, RISC-V. Stars: 0.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "VectraOS：基于Embedded Swift的边缘硬件Capability微内核",
+      "summary_zh": "VectraOS是一款面向边缘硬件的Capability微内核操作系统，使用Embedded Swift编写，源自Zircon，支持amd64、arm64和RISC-V架构。",
+      "why_it_matters_zh": "该项目展示Embedded Swift在系统级编程中的应用潜力，并为RISC-V架构补充了新的操作系统选择。",
+      "tags_zh": [
+        "RISC-V",
+        "微内核",
+        "Embedded Swift",
+        "边缘计算",
+        "操作系统"
+      ]
+    },
+    {
+      "id": "dd82e7af0837b0d6",
+      "title": "twosigma/frost updated on GitHub",
+      "url": "https://github.com/twosigma/frost",
+      "source": "GitHub RISC-V repositories",
+      "category": "tech",
+      "published_at": "2026-10-18T04:22:55+00:00",
+      "summary": "FROST (FPGA RISC-V Open-sourced in SystemVerilog by TwoSigma) Stars: 14.",
+      "tags": [
+        "RISC-V"
+      ],
+      "entities": [],
+      "score": 2.12,
+      "title_zh": "TwoSigma开源FROST：基于SystemVerilog的FPGA RISC-V实现",
+      "summary_zh": "FROST（FPGA RISC-V Open-sourced in SystemVerilog）是TwoSigma开源的FPGA RISC-V处理器项目，采用SystemVerilog实现。",
+      "why_it_matters_zh": "TwoSigma开源FPGA RISC-V处理器设计，为FPGA上实现RISC-V提供可参考的开源方案。",
+      "tags_zh": [
+        "RISC-V",
+        "FPGA",
+        "SystemVerilog",
+        "开源硬件"
+      ]
+    },
+    {
+      "id": "3cda4841ad699679",
+      "title": "After 23 Years, Longtime Linux Developer To \"Step Back For A While\"",
+      "url": "https://www.phoronix.com/news/Darrick-Wong-Step-Back-23-Years",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-10-16T15:40:27+00:00",
+      "summary": "Longtime Linux kernel engineer Darrick Wong who stepped down as the XFS file-system maintainer in 2023 is now taking a step back from his other Linux kernel development roles after working on the kernel the past 23 years...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "After 23 Years, Longtime Linux Developer To \"Step Back For A While\"",
+      "summary_zh": "Longtime Linux kernel engineer Darrick Wong who stepped down as the XFS file-system maintainer in 2023 is now taking a step back from his other Linux kernel development roles after working on the kernel the past 23 years...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "Linux kernel"
+      ]
+    },
+    {
+      "id": "373b5e0c4f42b1dd",
+      "title": "AI Resurrects AVX-512 Support For Mesa's LLVMpipe Software Driver",
+      "url": "https://www.phoronix.com/news/LLVMpipe-AVX-512-MR",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-10-16T10:28:51+00:00",
+      "summary": "With pending code for Mesa, the LLVMpipe software-based Gallium3D/OpenGL driver could soon become faster on modern systems that support AVX-512. That's assuming the AI/LLVM-generated code is all in order...",
+      "tags": [
+        "LLVM"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "AI Resurrects AVX-512 Support For Mesa's LLVMpipe Software Driver",
+      "summary_zh": "With pending code for Mesa, the LLVMpipe software-based Gallium3D/OpenGL driver could soon become faster on modern systems that support AVX-512. That's assuming the AI/LLVM-generated code is all in order...",
+      "why_it_matters_zh": "等待中文编辑摘要。",
+      "tags_zh": [
+        "LLVM"
+      ]
+    },
+    {
+      "id": "d2c0cfc4e95b0c31",
+      "title": "Intel Nova Lake S & Nova Lake P To Support SR-IOV With Xe Graphics",
+      "url": "https://www.phoronix.com/news/Intel-Nova-Lake-SR-IOV-Xe",
+      "source": "Phoronix",
+      "category": "tech",
+      "published_at": "2026-10-15T21:04:27+00:00",
+      "summary": "A patch has been posted to the Linux kernel mailing list by an Intel engineer confirming that Nova Lake S and Nova Lake P processors with integrated graphics will support SR-IOV in conjunction with the Xe kernel graphics driver...",
+      "tags": [
+        "Linux kernel"
+      ],
+      "entities": [],
+      "score": 1.52,
+      "title_zh": "Intel Nova Lake S/P 将通过 Xe 核显驱动支持 SR-IOV",
+      "summary_zh": "Intel 工程师向 Linux 内核邮件列表提交补丁，确认搭载 Xe 核显的 Nova Lake S 和 Nova Lake P 处理器将在 Xe 核显驱动中支持 SR-IOV 虚拟化功能，进一步完善 Intel 平台在 Linux 系统下的虚拟化能力。",
+      "why_it_matters_zh": "核显支持 SR-IOV 有助于在 Intel 集成显卡上实现更高效的多虚拟机图形资源分配。",
+      "tags_zh": [
+        "Intel",
+        "Xe",
+        "SR-IOV",
+        "Linux内核",
+        "集成显卡"
+      ]
+    },
+    {
+      "id": "4951c82801c874d8",
+      "title": "Microchip MTCH3380P and MTCH3240P capacitive touch controllers support up to 64 buttons with parallel sensing",
+      "url": "https://www.cnx-software.com/2026/10/13/microchip-mtch3380p-and-mtch3240p-capacitive-touch-controllers-support-up-to-64-buttons-with-parallel-sensing/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-13T10:33:57+00:00",
+      "summary": "Microchip Technology has introduced the MTCH3380P and MTCH3240P, two new capacitive touch controllers that handle touch detection internally, making it easier to build display-free HMI devices with touch-sensitive buttons, sliders, and wheels. The main difference between the two controllers is the number of supported touch sensors. The MTCH3380P supports up to 38 self-capacitance or 64 mutual-capacitance keys, while the smaller MTCH3240P supports up to 24 self-capacitance or 32 mutual-capacitance keys. Both controllers use parallel sensing with 12 on-chip ADCs to improve touch response times and noise immunity. They also support touch detection through thick cover materials and when users are wearing gloves, making them suitable for home appliances, industrial control panels, EV chargers, and outdoor kiosks. Both also support IEC/UL 60730 Class B functional safety requirements. Microchip MTCH3380P and MTCH3240P specifications: Controller engine – Microchip patented charge-transfer acquisition engine with pipelined analog sensing and digital processing. Touch sensing Mutual capacitance [...] The post Microchip MTCH3380P and MTCH3240P capacitive touch controllers support up to 64 buttons with parallel sensing appeared first on CNX Software - Embedded Systems News .",
+      "tags": [],
+      "entities": [
+        "Microchip"
+      ],
+      "score": 1.48,
+      "title_zh": "Microchip 推出 MTCH3380P/3240P 电容触摸控制器",
+      "summary_zh": "Microchip 推出 MTCH3380P 和 MTCH3240P 两款电容触摸控制器，内部完成触摸检测，并集成 12 个片上 ADC 实现并行采样，支持厚盖板与手套操作，可用于无显示屏的家电、工业面板、电动车充电桩和户外终端等 HMI 设备。",
+      "why_it_matters_zh": "内置触摸检测与并行 ADC 简化了无屏设备设计，并满足 IEC/UL 60730 Class B 功能安全要求。",
+      "tags_zh": [
+        "Microchip",
+        "电容触摸",
+        "HMI",
+        "功能安全",
+        "ADC"
+      ]
+    },
+    {
+      "id": "6c0e7aa6a90575c0",
+      "title": "Dragonwing FWA Gen 6 Elite Platform combines 5G Advanced, NR-NTN, and tri-band Wi-Fi 8",
+      "url": "https://www.cnx-software.com/2026/10/13/dragonwing-fwa-gen-6-elite-platform-combines-5g-advanced-nr-ntn-and-tri-band-wi-fi-8/",
+      "source": "CNX Software",
+      "category": "tech",
+      "published_at": "2026-10-13T05:35:16+00:00",
+      "summary": "Unveiled at Network X 2026, the Qualcomm Dragonwing FWA Gen 6 Elite Platform combines 5G Advanced (3GPP Rel-19), NR-NTN (New Radio – Non-Terrestrial Networks) satellite communication, and tri-band Wi-Fi 8 with a 5×5 radio configuration. The new Fixed Wireless Access (FWA) solution features a Qualcomm X105 Modem-RF with 5G NR over satellite support, quad-frequency GNSS (L1, L2, L5, and L6), Qualcomm Turbo DSDA for 60% higher throughput compared to Gen 5, a quad-core CPU, an integrated 10 TOPS NPU, LPDDR4x and LPDDR5/5x, and quantum security (CNSA 2.0 compliant). It offers 500 MHz of aggregated bandwidth, 6- and 8-layer MIMO, peak download and upload speeds of 14.8 Gbps and 4.2 Gbps, respectively. Dragonwing FWA Gen 6 Elite Platform (QMX105) specifications: CPU – Quad-core CPU AI accelerator – Up to 10 TOPS, 5th-generation Qualcomm 5G AI processor handling OTT traffic detection for apps (chatbots, social media) 5G gaming traffic prioritization Smooth 5G-to-Wi-Fi [...] The post Dragonwing FWA Gen 6 Elite Platform combines 5G Advanced, NR-NTN, and tri-band Wi-Fi 8 appeared first on CNX Software - Embedded Systems News .",
+      "tags": [
+        "AI accelerator"
+      ],
+      "entities": [],
+      "score": 1.42,
+      "title_zh": "高通发布Dragonwing FWA Gen 6 Elite平台：融合5G Advanced、NR-NTN与三频Wi-Fi 8",
+      "summary_zh": "高通Dragonwing FWA Gen 6 Elite平台在Network X 2026发布，集成5G Advanced（3GPP Rel-19）、NR-NTN卫星通信与三频Wi-Fi 8（5×5配置）。采用X105调制解调器，支持四频GNSS（L1/L2/L5/L6）、Turbo DSDA（吞吐量较上代提升60%）、四核CPU、10 TOPS NPU及CNSA 2.0量子安全。提供500 MHz聚合带宽、6/8层MIMO，峰值下行/上行速率达14.8 Gbps与4.2 Gbps。",
+      "why_it_matters_zh": "该平台首次将5G Advanced、NR-NTN卫星与Wi-Fi 8三技术深度融合，吞吐量与安全性均显著提升，将加速下一代固定无线接入市场部署。",
+      "tags_zh": [
+        "高通",
+        "Dragonwing",
+        "FWA",
+        "5G Advanced",
+        "Wi-Fi 8",
+        "NR-NTN"
+      ]
+    }
+  ],
+  "errors": [],
+  "translation": {
+    "language": "zh-CN",
+    "model": "MiniMax-M3",
+    "translated_items": 43,
+    "total_items": 57,
+    "errors": [
+      "batch 5: MiniMax response did not contain a JSON array",
+      "batch 6: MiniMax response did not contain a JSON array",
+      "batch 17: MiniMax returned incomplete JSON at character 350",
+      "batch 18: MiniMax returned incomplete JSON at character 376",
+      "batch 19: MiniMax returned incomplete JSON at character 880",
+      "batch 20: MiniMax response did not contain a JSON array",
+      "batch 27: MiniMax response did not contain a JSON array"
+    ],
+    "generated_at": "2026-10-18T04:46:17.622483+00:00"
+  }
+}
